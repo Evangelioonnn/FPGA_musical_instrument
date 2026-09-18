@@ -1,0 +1,8 @@
+# vsim -do run.do -l matrix_tb.log -lib work -c matrix_tb 
+# Loading work.matrix_tb
+# Loading work.matrix_network
+# Loading work.matrix_scanner
+# do run.do 
+# MATRIX_TB_PASS layouts=236 debounce=1 ghost_graph=1 diode_rollover=100
+# ** Note: $finish    : $REPO/project/system/sim/matrix_tb.v(49)
+#    Time: 922480 ns  Iteration: 1  Instance: /matrix_tb

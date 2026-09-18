@@ -1,0 +1,7 @@
+# vsim -do run.do -l streams_tb.log -lib work -c streams_tb 
+# Loading work.streams_tb
+# Loading work.stream_fifo
+# do run.do 
+# STREAMS_TB_PASS checked=7456 full_swaps=6033 stalls=10044
+# ** Note: $finish    : $REPO/project/system/sim/streams_tb.v(37)
+#    Time: 400280 ns  Iteration: 1  Instance: /streams_tb

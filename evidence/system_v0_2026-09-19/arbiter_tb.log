@@ -1,0 +1,7 @@
+# vsim -do run.do -l arbiter_tb.log -lib work -c arbiter_tb 
+# Loading work.arbiter_tb
+# Loading work.stream_arbiter2
+# do run.do 
+# ARBITER_TB_PASS a=1481 b=1480
+# ** Note: $finish    : $REPO/project/system/sim/arbiter_tb.v(27)
+#    Time: 80180 ns  Iteration: 1  Instance: /arbiter_tb

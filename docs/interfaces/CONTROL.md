@@ -1,5 +1,7 @@
 # 参数接口与当前能力表
 
+新集成候选[system v0](SYSTEM_V0.md)只接受0/4/5/6，其他地址明确拒绝，并提供独立pressure_gain和配置应答来源。下面的expression/固定试听表仍描述历史工程，不能把旧“接受但忽略”当作新接口行为。
+
 同步50MHz，`cfg_valid && cfg_ready`接受4位地址、32位数据。控制器应答包含`cfg_ack/cfg_accepted/cfg_applied`；非法值拒绝并返回0xffffffff。读状态、事务序号、蓝牙帧格式尚未实现。多参数预置不是原子提交；需先等配置应答，再发依赖它的音符。
 
 | addr | 意义/单位与合法范围 | expression候选 | 固定试听baseline |

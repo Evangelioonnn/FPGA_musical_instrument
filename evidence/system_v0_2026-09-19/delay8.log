@@ -1,0 +1,7 @@
+# vsim -do ../../../system/sim/run.do -l delay8.log -lib work -c -gD=8 feedback_delay_tb 
+# Loading work.feedback_delay_tb
+# Loading work.feedback_delay
+# do ../../../system/sim/run.do 
+# FEEDBACK_DELAY_TB_PASS D=8 samples=6030 clips=437 resets=2 oracle=python_history
+# ** Note: $finish    : feedback_delay_tb.v(26)
+#    Time: 363611 ns  Iteration: 0  Instance: /feedback_delay_tb

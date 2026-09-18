@@ -1,0 +1,24 @@
+# vsim -do run.do -l equivalence_tb.log -lib work -c equivalence_tb 
+# Loading work.equivalence_tb
+# Loading work.baseline_demo
+# Loading work.baseline_core
+# Loading work.expression_controls
+# Loading work.performance_manager
+# Loading work.baseline_mixer
+# Loading work.system_engine
+# Loading work.stream_fifo
+# Loading work.stream_arbiter2
+# Loading work.system_core
+# Loading work.system_controls
+# Loading work.audio_meter
+# Loading work.waveform_tap
+# Loading work.note_table
+# Loading work.baseline_voice
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# Loading work.system_voice
+# do run.do 
+# EQUIVALENCE_TB_PASS samples=769232 snapshots=751 wave_samples=16026
+# ** Note: $finish    : $REPO/project/system/sim/equivalence_tb.v(41)
+#    Time: 246154171 ns  Iteration: 0  Instance: /equivalence_tb

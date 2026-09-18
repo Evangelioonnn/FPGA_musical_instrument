@@ -16,7 +16,8 @@
 - 正式规则看references/competition官方PDF；学长指导是非官方建议。用户禁止软核替代核心是项目架构决定，不伪造为官方逐字规定。
 - 板卡为Tang Mega 60K基础套餐＋NEO Dock。DK_START官方评估板、138K开发板均不等于本板。显示引脚资料存在差异，查docs/board/DISPLAY.md，禁止直接套用整份参考CST。
 - 默认试听音色必须复用原instrument的正弦DDS＋ADSR 68/6/32768/3，遵守AUDIO_TEST_BASELINE.md；新音色单独实验。电脑参考音可接受，真实耳机仍有随音高变化的尖锐声，不能写为已修复。
-- 已有expression_baseline是自动演示；expression是扩展接口候选。实际输入、蓝牙、显示、跨域快照及仲裁尚未实现。基线的meter输出是占位，不可当实测数据；左右样本目前相同，L/R李萨如只能得到直线。
+- expression_baseline保留旧自动演示，expression是扩展候选。system v0已有输入适配/配置仲裁/真实meter与快照/独立CDC的数字验证；外设针位/ADC硬件、蓝牙和显示尚未接入。system_top仍只自动演示；旧baseline的meter仍占位。左右样本相同，L/R李萨如只能得到直线。
+- 新共享契约见docs/interfaces/SYSTEM_V0.md。旧baseline的retune只改元数据，不能引用为真实变调已验证；system v0已将pitch_we送入DDS。8/16声部构建通过，32声部容量实验的50MHz时序未通过，不能作为达标固件。
 - 先定义接口/单位/位宽/时序/错误处理，再实现。算法测试要有独立期望；仿真、综合、PnR、板测分别记录，不能互相替代。
 - 主时钟50MHz，现有Fs=50MHz/1040。显示像素时钟是后续独立域，多位状态跨域需握手/异步FIFO等设计，不能只逐位两级同步。
 
@@ -25,6 +26,6 @@
 - 每轮任务写分支、commit、角色、允许目录、目标、验收标准；结论写入本仓库再交接。Git不共享聊天记忆。
 - 每项功能一个短期分支，PR入main；main标注已完成的验证和已知限制，不等于所有板测完成。保持源码、约束、测试、生成脚本和必要数据一起提交。
 - 不提交impl、ModelSim库、安装包、许可证或个人凭据；手写HDL和IP配置不能因是“生成文件”而一概丢弃。
-- Pull或外部修改gprj后重新打开Designer，并确认Top Module/Entity。错误顶层expression_core曾导致859个IO；耳机演示正确顶层expression_baseline_top只有5个IO。
+- Pull或外部修改gprj后重新打开Designer，并确认Top Module/Entity。旧演示为expression_baseline_top，新system演示为system_top，均5个IO。错误expression_core曾导致859个IO；input_audit_top有316个逻辑审计端口，只能综合不能做板级顶层。
 - 首轮复现见docs/team/WORKFLOW.md；当前基线仿真run.ps1可用ModelSimBin/PythonExe参数指定本机工具。新模块也须提供可重复脚本、独立testbench和资源/时序结果。
 - 完成任务报告：改了什么、验证命令和结果、未验证部分、下一位所需信息。不要把未连接的输入或未实现的屏幕描述成已完成。

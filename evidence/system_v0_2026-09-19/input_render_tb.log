@@ -1,0 +1,27 @@
+# vsim -do run.do -l input_render_tb.log -lib work -c input_render_tb 
+# Loading work.input_render_tb
+# Loading work.matrix_network
+# Loading work.control_surface
+# Loading work.matrix_scanner
+# Loading work.key_pipeline
+# Loading work.stream_fifo
+# Loading work.key_router
+# Loading work.ec11_input
+# Loading work.pressure_expression
+# Loading work.system_engine
+# Loading work.stream_arbiter2
+# Loading work.system_core
+# Loading work.system_controls
+# Loading work.performance_manager
+# Loading work.baseline_mixer
+# Loading work.audio_meter
+# Loading work.waveform_tap
+# Loading work.note_table
+# Loading work.system_voice
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# do run.do 
+# INPUT_RENDER_TB_PASS samples=288462 on=6 off=6 audible=236281
+# ** Note: $finish    : $REPO/project/system/sim/input_render_tb.v(55)
+#    Time: 92307800 ns  Iteration: 1  Instance: /input_render_tb

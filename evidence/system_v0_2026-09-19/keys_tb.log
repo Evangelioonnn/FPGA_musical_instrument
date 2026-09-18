@@ -1,0 +1,7 @@
+# vsim -do run.do -l keys_tb.log -lib work -c keys_tb 
+# Loading work.keys_tb
+# Loading work.key_router
+# do run.do 
+# KEYS_TB_PASS snapshots=2006 events=3808
+# ** Note: $finish    : $REPO/project/system/sim/keys_tb.v(33)
+#    Time: 529680 ns  Iteration: 1  Instance: /keys_tb

@@ -1,0 +1,9 @@
+# vsim -do run.do -l failsafe_tb.log -lib work -c failsafe_tb 
+# Loading work.failsafe_tb
+# Loading work.key_pipeline
+# Loading work.stream_fifo
+# Loading work.key_router
+# do run.do 
+# FAILSAFE_TB_PASS overflow=1 ghost=1 rearm=1 stale_events=0
+# ** Note: $finish    : $REPO/project/system/sim/failsafe_tb.v(25)
+#    Time: 1940 ns  Iteration: 1  Instance: /failsafe_tb

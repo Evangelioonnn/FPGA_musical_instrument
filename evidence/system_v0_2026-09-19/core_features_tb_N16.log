@@ -1,0 +1,16 @@
+# vsim -do run.do -l core_features_tb_N16.log -lib work -c -gN=16 core_features_tb 
+# Loading work.core_features_tb
+# Loading work.note_table
+# Loading work.system_core
+# Loading work.system_controls
+# Loading work.performance_manager
+# Loading work.baseline_mixer
+# Loading work.audio_meter
+# Loading work.system_voice
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# do run.do 
+# CORE_FEATURES_TB_PASS N=16 samples=34015 retune=1 steal=1 sustain=1 panic_silent=1
+# ** Note: $finish    : $REPO/project/system/sim/core_features_tb.v(59)
+#    Time: 10884760 ns  Iteration: 1  Instance: /core_features_tb

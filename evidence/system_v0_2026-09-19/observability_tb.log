@@ -1,0 +1,8 @@
+# vsim -do run.do -l observability_tb.log -lib work -c observability_tb 
+# Loading work.observability_tb
+# Loading work.audio_meter
+# Loading work.waveform_tap
+# do run.do 
+# OBSERVABILITY_TB_PASS samples=18960 meter_windows=18 wave_samples=395 min_signed=1
+# ** Note: $finish    : $REPO/project/system/sim/observability_tb.v(30)
+#    Time: 500091 ns  Iteration: 0  Instance: /observability_tb

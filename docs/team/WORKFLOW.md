@@ -36,7 +36,7 @@ git push -u origin feat/b-control-io
 - A的音频或集成改动也交给队友复核，至少核对需求和验证结果；不要求B/C为没学过的算法背书。
 - 仓库规则不代替用户授权。采购、PCB投板、改写Flash、正式发布及消息发送不由普通编码任务自动授权。
 - 推荐在三人均有访问权限后设置main保护和至少1人评审；当前未代改仓库设置。若启用保护，首个交接提交之后都走PR。
-- 客户端/工程默认路径示例不是固定安装位置；脚本参数优先。拉取gprj更新后重开Designer，并确认顶层为expression_baseline_top，避免旧窗口再次以expression_core综合成859个IO。
+- 客户端/工程默认路径示例不是固定安装位置；脚本参数优先。拉取gprj更新后重开Designer，旧baseline顶层为expression_baseline_top，新system为system_top；按各工程README核对，避免旧窗口再次以expression_core综合成859个IO。
 
 ## 单板卡验收
 

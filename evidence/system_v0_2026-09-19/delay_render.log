@@ -1,0 +1,7 @@
+# vsim -do ../../../system/sim/run.do -l delay_render.log -lib work -c delay_render_tb 
+# Loading work.delay_render_tb
+# Loading work.feedback_delay
+# do ../../../system/sim/run.do 
+# DELAY_RENDER_TB_PASS samples=865232
+# ** Note: $finish    : delay_render_tb.v(17)
+#    Time: 34609351 ns  Iteration: 0  Instance: /delay_render_tb

@@ -4,6 +4,8 @@
 
 **当前是开发与交接基线，不是完成版乐器。** 默认音色及16秒电脑演示暂获认可；板卡耳机仍有随音高变化的尖锐声。4×4/EC11/压力输入尚未接入，蓝牙与显示尚未实现。音色可继续沿用，不能把音质问题写为已解决。最新事实以[项目状态](docs/project/STATUS.md)为准。
 
+**9月19日夜间任务分支：** 新增[system集成候选](project/system/README.md)、输入RTL、真实观测接口、长音诊断和效果实验；已数字验证，未新增真实上板验收。先读[早上验收指南](docs/project/MORNING_REVIEW.md)，B/C看[system接口](docs/interfaces/SYSTEM_V0.md)。这批工作在`feat/playable-system-v0`，不要求大家直接在A的任务分支共同开发。
+
 ## 从这里接手
 
 | 角色 | 负责什么 | 开工入口 |
@@ -35,6 +37,9 @@
 
 | 工程 | 用途与状态 |
 |---|---|
+| [system](project/system/README.md)、[input](project/input/README.md) | 原声不变的集成候选；输入/配置/观测数字验证，物理输入待绑定 |
+| [lab](project/lab/README.md) | C4/A4长音与静音诊断，复用原音色及输出 |
+| [experiments](project/experiments/README.md) | 16/32容量、短反馈延迟、离线新音色，成熟度分别标注 |
 | [expression_baseline](project/expression_baseline/README.md) | 当前默认试听；8声部统一原音色、音量/力度/两类延音，自动演示；电脑可接受，板卡杂音待定位 |
 | [instrument](project/instrument/README.md) | 原单声部正弦DDS＋ADSR，默认音色来源 |
 | [expression](project/expression/README.md) | 表情、参数、状态接口候选；其他音色不作为默认，未接外设 |

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template><Version>5</Version>
+    <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+    <FileList>
+        <File path="../../instrument/src/adsr_envelope.v" type="file.verilog" enable="1"/>
+        <File path="../../instrument/src/sine_rom.v" type="file.verilog" enable="1"/>
+        <File path="../../instrument/src/note_table.v" type="file.verilog" enable="1"/>
+        <File path="../../instrument/src/synth_voice.v" type="file.verilog" enable="1"/>
+        <File path="../../instrument/src/pt8211_tx.v" type="file.verilog" enable="1"/>
+        <File path="../../instrument/src/instrument.cst" type="file.cst" enable="1"/>
+        <File path="../../instrument/src/instrument.sdc" type="file.sdc" enable="1"/>
+        <File path="../../expression/src/performance_manager.v" type="file.verilog" enable="1"/>
+        <File path="../../expression/src/expression_controls.v" type="file.verilog" enable="1"/>
+        <File path="../../expression/src/audio_meter.v" type="file.verilog" enable="1"/>
+        <File path="../../expression_baseline/src/baseline_core.v" type="file.verilog" enable="1"/>
+        <File path="../../expression_baseline/src/baseline_demo.v" type="file.verilog" enable="1"/>
+        <File path="../../system/src/capacity_top.v" type="file.verilog" enable="1"/>
+        <File path="../../system/src/snapshot_cdc.v" type="file.verilog" enable="1"/>
+        <File path="../../system/src/stream_arbiter2.v" type="file.verilog" enable="1"/>
+        <File path="../../system/src/stream_fifo.v" type="file.verilog" enable="1"/>
+        <File path="../../system/src/system_controls.v" type="file.verilog" enable="1"/>
+        <File path="../../system/src/system_core.v" type="file.verilog" enable="1"/>
+        <File path="../../system/src/system_demo.v" type="file.verilog" enable="1"/>
+        <File path="../../system/src/system_engine.v" type="file.verilog" enable="1"/>
+        <File path="../../system/src/system_top.v" type="file.verilog" enable="1"/>
+        <File path="../../system/src/waveform_tap.v" type="file.verilog" enable="1"/>
+    </FileList>
+</Project>

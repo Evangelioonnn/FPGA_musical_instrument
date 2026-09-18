@@ -4,9 +4,10 @@
 
 | 接口 | 状态 | 入口 |
 |---|---|---|
+| system v0统一候选 | FIFO/输入路由/配置仲裁/真实快照/CDC已数字验证；真实外设、BLE和显示待集成 | [SYSTEM_V0](SYSTEM_V0.md) |
 | 音符事件/声部状态 | expression与baseline已有端口，可作为v0参考；未接真实输入 | [EVENTS](EVENTS.md) |
 | 参数握手/能力差异 | 已有控制模块；baseline仅使用部分参数 | [CONTROL](CONTROL.md) |
-| 可视化状态/波形 | 现有可读线网；整机快照/CDC/波形缓冲待设计 | [DISPLAY](DISPLAY.md) |
+| 可视化状态/波形 | system有快照/抽取与独立CDC；显示帧缓冲/像素域待C集成 | [DISPLAY](DISPLAY.md) |
 | 外部电气与IO | 待B/C提案和A集成 | [IO资源](../board/IO_RESOURCES.md) |
 | UART/BLE帧格式 | 尚无冻结协议，由C提案 | [通信入口](../../project/communication/README.md) |
 
