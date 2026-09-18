@@ -14,6 +14,8 @@
 
 9月19日夜间新增内容位于`feat/playable-system-v0`，起点`4ada74e`，未合入main。完整验收入口见[MORNING_REVIEW](MORNING_REVIEW.md)，原工程和下面的历史用户板测仍有效。
 
+实施提交`43fc309`已推送，[草稿PR #1](https://github.com/Evangelioonnn/FPGA_musical_instrument/pull/1)供团队评审。21项仿真通过，并完成[干净导出复现](../../evidence/system_v0_2026-09-19/CLEAN_REPRODUCIBILITY.md)；不等于真实输入/音质板测通过。
+
 | 内容 | 已有证据 | 仍缺什么 |
 |---|---|---|
 | USB/JTAG/SRAM下载、PMOD点灯 | 用户板测成功；T18使PMOD-LEDx8的L2闪烁 | 其余外部针位不能据此全部认定 |
