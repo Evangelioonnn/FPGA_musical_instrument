@@ -1,0 +1,222 @@
+[
+  {
+    "file": "competition/gowin_2026_topics.pdf",
+    "original_filename": "全国大学生嵌入式芯片与系统设计竞赛'2026-高云半导体.pdf",
+    "local_source": "Notification/全国大学生嵌入式芯片与系统设计竞赛'2026-高云半导体.pdf",
+    "purpose": "官方赛题：选题二PDF第15–16页",
+    "source_landing_page": null,
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 1447261,
+    "sha256": "09415c6e2b4922d564317dcd7c28720ce1e1363e6ddbe17d4c5eb9710cc0165d"
+  },
+  {
+    "file": "board/neo_dock_60k_schematic.pdf",
+    "original_filename": "Tang_Mega_NEO_Dock-60K_31004_Schematics.pdf",
+    "local_source": "Notification/Mega60K_官方资料/板卡原理图/Tang_Mega_NEO_Dock-60K_31004_Schematics.pdf",
+    "purpose": "NEO Dock 60K；Rev1.4，2025-03-31",
+    "source_landing_page": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-60k/mega-60k.html",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 5559992,
+    "sha256": "5ca6049ed80bab57bcaa87cc5e58926f569f2ca2aa11b984d52da1782633f976"
+  },
+  {
+    "file": "board/core_30353_schematic.pdf",
+    "original_filename": "tang_mega_60k_30353_schematics.pdf",
+    "local_source": "Notification/Mega60K_官方资料/板卡原理图/tang_mega_60k_30353_schematics.pdf",
+    "purpose": "核心板30353；不要假定等于实物版本",
+    "source_landing_page": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-60k/mega-60k.html",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 725936,
+    "sha256": "f9a1a01862fe8c48cb5461e88f84d61e37d03f2d032e0baee7ef03fb951f6157"
+  },
+  {
+    "file": "board/core_30354_schematic.pdf",
+    "original_filename": "tang_mega_60k_30354_schematics..pdf",
+    "local_source": "Notification/Mega60K_官方资料/板卡原理图/tang_mega_60k_30354_schematics..pdf",
+    "purpose": "核心板30354；需和实物核对",
+    "source_landing_page": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-60k/mega-60k.html",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 819963,
+    "sha256": "e457547f08ca37250b27ccfd4c8e29e3ce44cf309b24324623932fd2626002be"
+  },
+  {
+    "file": "board/full_pins_reference.cst",
+    "original_filename": "tang_mega_60K_pins.cst",
+    "local_source": "Notification/Mega60K_官方资料/全引脚约束/tang_mega_60K_pins.cst",
+    "purpose": "只作参考；显示标注与NEO图纸有差异",
+    "source_landing_page": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-60k/mega-60k.html",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 22738,
+    "sha256": "dcaced4a5d15d60a3615190138ad3522b562c82748e35ffd150139bc7542ff4c"
+  },
+  {
+    "file": "board/neo_dock_ibom.html",
+    "original_filename": "ibom_Tang_Mega_NEO_Dock_31004.html",
+    "local_source": "Notification/Mega60K_官方资料/PCB_BOM/ibom_Tang_Mega_NEO_Dock_31004.html",
+    "purpose": "交互BOM，日期2024-09-23；定位元件，不保证网络版本一致",
+    "source_landing_page": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-60k/mega-60k.html",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 721356,
+    "sha256": "a239de4ac398adaeb426e991d6afeceba8708223cc1a208b126ff869bd08b53a"
+  },
+  {
+    "file": "board/assembly.pdf",
+    "original_filename": "TANG_MEGA_138K_60K_Assembly.pdf",
+    "local_source": "Notification/Mega60K_官方资料/PCB_BOM/TANG_MEGA_138K_60K_Assembly.pdf",
+    "purpose": "共享装配参考，核对适用版本",
+    "source_landing_page": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-60k/mega-60k.html",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 1371299,
+    "sha256": "dc925e63255b2725968fc25731b134560492bc89722a4b0a11bf7f1aff37503e"
+  },
+  {
+    "file": "mechanical/core_dimensions.pdf",
+    "original_filename": "Tang_Mega_138K_60K_SOM.pdf",
+    "local_source": "Notification/Mega60K_官方资料/板卡尺寸图/Tang_Mega_138K_60K_SOM.pdf",
+    "purpose": "核心板尺寸参考",
+    "source_landing_page": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-60k/mega-60k.html",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 183360,
+    "sha256": "e0c108b94d54782a4c3f1ed6c4cb91e15c3ab10543200ee8ec03c6a45bea7cd8"
+  },
+  {
+    "file": "mechanical/neo_dock_dimensions.pdf",
+    "original_filename": "Tang_Mega_138K_NEO_Dock.pdf",
+    "local_source": "Notification/Mega60K_官方资料/板卡尺寸图/Tang_Mega_138K_NEO_Dock.pdf",
+    "purpose": "NEO Dock尺寸参考",
+    "source_landing_page": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-60k/mega-60k.html",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 213411,
+    "sha256": "04bdf94579b2e1c86d9d89abf531f4f1ae9bffe07ecd7e8fb0d1796c1a664a70"
+  },
+  {
+    "file": "mechanical/core_30354_refdes.pdf",
+    "original_filename": "tang_mega_138k-60k_30354_RefDes_SOM..pdf",
+    "local_source": "Notification/Mega60K_官方资料/板卡尺寸图/tang_mega_138k-60k_30354_RefDes_SOM..pdf",
+    "purpose": "元件参考标识图",
+    "source_landing_page": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-60k/mega-60k.html",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 206272,
+    "sha256": "138f25ac6332cbb7c651f0f3122a385030ecfd40e8db2d6f30cd0880f6b43b5f"
+  },
+  {
+    "file": "mechanical/core_dimensions.dxf",
+    "original_filename": "Tang_Mega_138K_60K_SOM.dxf",
+    "local_source": "Notification/Mega60K_官方资料/板卡尺寸图/Tang_Mega_138K_60K_SOM.dxf",
+    "purpose": "核心板可编辑尺寸",
+    "source_landing_page": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-60k/mega-60k.html",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 5630905,
+    "sha256": "4ebe43e78bc18b023d4e82e050a24792002dc1cdcadf16c617c2420f44cf99e1"
+  },
+  {
+    "file": "mechanical/neo_dock_dimensions.dxf",
+    "original_filename": "Tang_Mega_138K_NEO_Dock.dxf",
+    "local_source": "Notification/Mega60K_官方资料/板卡尺寸图/Tang_Mega_138K_NEO_Dock.dxf",
+    "purpose": "NEO Dock可编辑尺寸",
+    "source_landing_page": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-60k/mega-60k.html",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 5642338,
+    "sha256": "2df84e6d1de978e8af0ce49b7f3e58c134e64e7890e03b54a7bd65a5de71cd7a"
+  },
+  {
+    "file": "mechanical/neo_dock_3d.7z",
+    "original_filename": "Tang_Mega_138K_NEO_Dock.7z",
+    "local_source": "Notification/Mega60K_官方资料/板卡3D模型/Tang_Mega_138K_NEO_Dock.7z",
+    "purpose": "原始压缩包；用于空间参考，安装前实测核对",
+    "source_landing_page": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-60k/mega-60k.html",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 11400182,
+    "sha256": "b087062c570b1c45e4e834a16b8960e2585d6c5206745d753e6f26ee80b74a84"
+  },
+  {
+    "file": "mechanical/core_3d.7z",
+    "original_filename": "Tang138K_60K_484_Core.7z",
+    "local_source": "Notification/Mega60K_官方资料/板卡3D模型/Tang138K_60K_484_Core.7z",
+    "purpose": "原始核心板3D压缩包",
+    "source_landing_page": "https://wiki.sipeed.com/hardware/zh/tang/tang-mega-60k/mega-60k.html",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 4173056,
+    "sha256": "d77d31604db67eb7cc82033394349ac6aa036ebb4afdeb722b9863c7d41ac2aa"
+  },
+  {
+    "file": "devices/PT8211_V1.6.pdf",
+    "original_filename": "PT8211_V1.6.pdf",
+    "local_source": "Notification/Mega60K_官方资料/部分芯片手册/PT8211_V1.6.pdf",
+    "purpose": "PTC DAC手册；LSBJ与电气特性",
+    "source_landing_page": "https://www.pjrc.com/store/pt8211.pdf",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 430922,
+    "sha256": "254d8f3122128c6c587c2926a0aa237baa5098a1fbeb1570fa12770e503b6897"
+  },
+  {
+    "file": "devices/UG299_ADC.pdf",
+    "original_filename": "UG299-1.0.1_Arora_Ⅴ模拟数字转换器(ADC)用户指南.pdf",
+    "local_source": "Notification/Mega60K_官方资料/部分芯片手册/UG299-1.0.1_Arora_Ⅴ模拟数字转换器(ADC)用户指南.pdf",
+    "purpose": "系列ADC指南，不直接证明60K外部ADC通道",
+    "source_landing_page": "https://www.gowinsemi.com.cn/",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 1000181,
+    "sha256": "9b3c033b9f540fe1305b23e7d42278c09405d2259fdb96642f770628ed17b750"
+  },
+  {
+    "file": "eda/SUG100_IDE.pdf",
+    "original_filename": "SUG100-4.4.6_Gowin云源软件用户指南.pdf",
+    "local_source": "Notification/高云EDA软件使用手册/SUG100-4.4.6_Gowin云源软件用户指南.pdf",
+    "purpose": "用户从官网下载的EDA参考；依本机软件版本判断适用性",
+    "source_landing_page": "https://www.gowinsemi.com.cn/",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 3076154,
+    "sha256": "79e6724946ca250c9a4d8a26eb962b4151575e83f86c9370db7609fe4e57a5dc"
+  },
+  {
+    "file": "eda/SUG1018_AroraV_constraints.pdf",
+    "original_filename": "SUG1018-1.7_Arora_Ⅴ设计物理约束用户指南.pdf",
+    "local_source": "Notification/高云EDA软件使用手册/SUG1018-1.7_Arora_Ⅴ设计物理约束用户指南.pdf",
+    "purpose": "用户从官网下载的EDA参考；依本机软件版本判断适用性",
+    "source_landing_page": "https://www.gowinsemi.com.cn/",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 4065418,
+    "sha256": "fccb04c5125b76f56ae74f3bc989178b1a7cfc199ae356f168a2715653e56aaa"
+  },
+  {
+    "file": "eda/SUG940_timing.pdf",
+    "original_filename": "SUG940-2.0.4_Gowin设计时序约束用户指南.pdf",
+    "local_source": "Notification/高云EDA软件使用手册/SUG940-2.0.4_Gowin设计时序约束用户指南.pdf",
+    "purpose": "用户从官网下载的EDA参考；依本机软件版本判断适用性",
+    "source_landing_page": "https://www.gowinsemi.com.cn/",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 1974568,
+    "sha256": "fced59dc61681376ffd502abc94f12e9ccf84c7515365d5a388a21b3899353d6"
+  },
+  {
+    "file": "eda/SUG283_primitives.pdf",
+    "original_filename": "SUG283-3.6_Gowin原语用户指南.pdf",
+    "local_source": "Notification/高云EDA软件使用手册/SUG283-3.6_Gowin原语用户指南.pdf",
+    "purpose": "用户从官网下载的EDA参考；依本机软件版本判断适用性",
+    "source_landing_page": "https://www.gowinsemi.com.cn/",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 1418102,
+    "sha256": "bbfd34536fdc49839aadb918725c6fd388c6425ed8dbdde79a0ed26c3e10552f"
+  },
+  {
+    "file": "eda/SUG949_HDL_style.pdf",
+    "original_filename": "SUG949-2.2_Gowin_HDL编码风格用户指南.pdf",
+    "local_source": "Notification/高云EDA软件使用手册/SUG949-2.2_Gowin_HDL编码风格用户指南.pdf",
+    "purpose": "用户从官网下载的EDA参考；依本机软件版本判断适用性",
+    "source_landing_page": "https://www.gowinsemi.com.cn/",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 1368415,
+    "sha256": "36c34142a451e8c49b1686bd84af64118b91855e55691fec09697f0d8a085ead"
+  },
+  {
+    "file": "eda/SUG1220_Tcl.pdf",
+    "original_filename": "SUG1220-2.0_Gowin云源软件Tcl命令用户指南.pdf",
+    "local_source": "Notification/高云EDA软件使用手册/SUG1220-2.0_Gowin云源软件Tcl命令用户指南.pdf",
+    "purpose": "用户从官网下载的EDA参考；依本机软件版本判断适用性",
+    "source_landing_page": "https://www.gowinsemi.com.cn/",
+    "provenance": "User-downloaded document; copied without modification on 2026-09-19. Landing page is not necessarily the exact download URL.",
+    "bytes": 1213480,
+    "sha256": "91fecd46a45ff08ddc9d88c342c49f5a0420dddc98774414e2f4072c13a8a907"
+  }
+]

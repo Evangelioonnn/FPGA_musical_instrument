@@ -1,0 +1,23 @@
+{
+  "source": "RTL simulation; not a board recording",
+  "samples": 769232,
+  "sample_rate_hz": 48076.92307692308,
+  "minimum": -2602,
+  "maximum": 3206,
+  "reference_c4_hz": 261.63138380576487,
+  "reference_sustain_rms": 181.0036022522429,
+  "velocity_rms": [
+    45.2098821016491,
+    90.47345211926095,
+    180.98564256578018
+  ],
+  "volume_rms": [
+    181.05637221594824,
+    45.227768461422016,
+    180.97461166873626
+  ],
+  "preview_gain": 8,
+  "note_events": 48,
+  "simultaneous_voices": 8,
+  "original_instrument_samples_compared": 96154
+}

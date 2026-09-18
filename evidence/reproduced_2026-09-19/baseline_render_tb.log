@@ -1,0 +1,16 @@
+# vsim -do run.do -l baseline_render_tb.log -lib work -c baseline_render_tb
+# Loading work.baseline_render_tb
+# Loading work.baseline_demo
+# Loading work.baseline_core
+# Loading work.expression_controls
+# Loading work.performance_manager
+# Loading work.baseline_mixer
+# Loading work.note_table
+# Loading work.baseline_voice
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# do run.do
+# BASELINE_RENDER_TB_PASS samples=769232 events=48 commands=17 voices=8 sustain_checks=4807 sostenuto_checks=4326 new_note_checks=3845
+# ** Note: $finish    : ./baseline_render_tb.v(79)
+#    Time: 246154171 ns  Iteration: 0  Instance: /baseline_render_tb

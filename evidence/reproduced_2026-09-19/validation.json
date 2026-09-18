@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-19",
+  "method": "Standalone export of staged repository, no cached ModelSim work or prior sample text",
+  "modelsim": "ALTERA Starter Edition 10.1d",
+  "python": "Python 3 (stdlib only for baseline)",
+  "result": "All four benches and audio analysis passed",
+  "benches": {
+    "baseline_voice_tb": "BASELINE_VOICE_TB_PASS samples=192308 positive=62410 negative=63091",
+    "baseline_mixer_tb": "BASELINE_MIXER_TB_PASS vectors=2000 saturations=921",
+    "baseline_tb": "BASELINE_TB_PASS events=48 commands=17 audible=1906 max_occ=8 peak=574 frames=2048",
+    "baseline_render_tb": "BASELINE_RENDER_TB_PASS samples=769232 events=48 commands=17 voices=8 sustain_checks=4807 sostenuto_checks=4326 new_note_checks=3845"
+  },
+  "wave_sha256": {
+    "baseline_raw.wav": "fafdc30ee7c654fb364af0c39352d242d6d6b0e842b9319fa20d3269297e8002",
+    "baseline_preview.wav": "a014a81342722506688d32fb19c2cf05688acee13aa7ddb3d03ad1a3f7789808"
+  },
+  "wave_matches_published_reference": true,
+  "additional_comparison": "First 96154 PCM samples exactly equal published instrument_original.wav",
+  "historical_text_comparison": "Skipped as expected in a clean export; original_instrument_samples_compared=0",
+  "source_hash_encoding": "UTF-8, LF-normalized text, no BOM; input files listed below",
+  "source_sha256": {
+    "project/expression/src/expression_controls.v": "c72fc04c4f84ea839c435defda4c3adc8eddf56723359ef50e0cc8488754b3d5",
+    "project/expression/src/performance_manager.v": "82733165420c4de95e83de6a865bfa29569206d971f7355d51d87b1acac8e5a3",
+    "project/expression_baseline/build.tcl": "e0e53850791d603ae6bcf8d624bacf537c0fa04e42ac625eb6993cf63d5e3b91",
+    "project/expression_baseline/expression_baseline.gprj": "7c8acb207f41789c9ba49f707eebe37f1d8bb70d7087f69fbcceb23ca3465853",
+    "project/expression_baseline/sim/baseline_mixer_tb.v": "b2ab6852534777205407c89f3b2635eeda52a8e529bae40adaa6bc8e76cd9d1b",
+    "project/expression_baseline/sim/baseline_render_tb.v": "bff11610a4ea6e6795999cd035326ca5a051d7c4b6c3e70da3a3a7eac983bc32",
+    "project/expression_baseline/sim/baseline_tb.v": "7740110d1293f41870fe9991eb5156cd5bc11d64ebefd365adb81585ce17f2e8",
+    "project/expression_baseline/sim/baseline_voice_tb.v": "35c9b63d797f6c933092fc2756efb63ea2b27a177eba6e060c81578e45a586e0",
+    "project/expression_baseline/sim/run.do": "080239f56674d81de7acb254c488ca0e9ca775d6513194a0b452b34ba1164f5d",
+    "project/expression_baseline/sim/run.ps1": "6194f0175c9a05cc222323b98bbd450696df5827c44b09aefabd0d45b3ca3bdb",
+    "project/expression_baseline/src/baseline_core.v": "d686dc36ad998d993c38dfb4fd9a8a16d26fbfb80668c3b2530c23cd04a7b36c",
+    "project/expression_baseline/src/baseline_demo.v": "6cb95580813f230bf9def5ed013a770577a80c19107184dc0c50ac875c3dbbcf",
+    "project/expression_baseline/src/expression_baseline_top.v": "cff0cedb2ec0dfabf4fdf76bfb26c9c60eda7a79cb673aa024215b8e8f483fe2",
+    "project/expression_baseline/tools/analyze_baseline.py": "a24a66bd599ac9cb33cda550dd8f871e5d40b658bc3bed172df2fded48d0b006",
+    "project/instrument/sim/transport_tb.v": "6e1d4d907513c059dee5ddf6ff65786a02eec9e4c048f0ca87eae8cbf14223fe",
+    "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+    "project/instrument/src/instrument.cst": "ab16816b57af3946566f255257fef0f247c9e8dab9b79ff877b083b8e1a386aa",
+    "project/instrument/src/instrument.sdc": "1bab23df2a3b86705304b965bded82f454b96a6d14f15cea2f1049f38d2f6587",
+    "project/instrument/src/note_table.v": "7d8b1c77069598b4737b685b6d5a733faa2e2f6e77e870132be435112cf4a100",
+    "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+    "project/instrument/src/sine_rom.v": "11c050290b2bd5594b9b64f5e23a0e7fbe1576236b6ebc674493e20284481e44",
+    "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305"
+  },
+  "limitations": [
+    "No new Gowin synthesis/PnR run",
+    "No new board measurement",
+    "Other historical projects not re-simulated in this packaging task"
+  ]
+}

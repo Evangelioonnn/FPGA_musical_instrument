@@ -1,0 +1,49 @@
+# Local downloads stay on A's computer; curated reference copies are under references/.
+/Notification/
+/tmp/
+.codex/
+.agents/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.lic
+*.pem
+# Gowin build outputs and per-user GUI state, never the handwritten HDL/IP config.
+**/impl/
+*.gprj.user
+# ModelSim libraries and generated simulation products.
+**/sim/work*/
+**/sim/vwork/
+**/sim/smokework/
+**/sim/transcript
+**/sim/*.log
+**/sim/*.wlf
+**/sim/*.vcd
+**/sim/*.txt
+**/sim/*.json
+**/sim/*.wav
+**/sim/smoke_tb.v
+**/sim/voice_smoke_tb.v
+# Historical large artifacts / local machine records. Curated evidence has its own directory.
+**/audio/*.wav
+!/evidence/audio/*.wav
+**/reports/
+**/validation_manifest.json
+**/validation_manifest.sha256
+**/file_hashes.json
+**/source_hashes.json
+*.fs
+*.bin
+*.binx
+*.db
+*.pr
+# Original working notes are retained locally; published history is curated in docs/history/.
+/MEETING_BRIEF_2026-09-18.md

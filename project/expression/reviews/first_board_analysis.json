@@ -1,0 +1,80 @@
+{
+  "source": "existing RTL render; not a recording or identification of reported transient",
+  "original_steady_single_sine_nominal_peak_codes": 256,
+  "expression_steady_single_sine_nominal_peak_codes": 32,
+  "new_to_old_single_sine_gain_db": -18.06179973983887,
+  "E5_gate_samples": 130,
+  "E5_gate_ms": 2.7039999999999997,
+  "E5_first_nonzero_sample_in_slot16": 1,
+  "E5_last_nonzero_sample_in_slot16": 3076,
+  "E5_last_nonzero_ms_after_slot16_start": 63.9808,
+  "E5_voice_peak_before_mix": 4381,
+  "slot16_state_changes": [
+    {
+      "sample_in_slot": 0,
+      "occupied_held_gated_sostenuto": [
+        3,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "sample_in_slot": 128,
+      "occupied_held_gated_sostenuto": [
+        3,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "sample_in_slot": 130,
+      "occupied_held_gated_sostenuto": [
+        3,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "sample_in_slot": 3077,
+      "occupied_held_gated_sostenuto": [
+        1,
+        0,
+        1,
+        1
+      ]
+    }
+  ],
+  "windows": [
+    {
+      "slot": 14,
+      "peak_abs_codes": 80,
+      "max_adjacent_step_codes": 4,
+      "max_step_offset_ms": 0.7904,
+      "final_0_5s_all_zero": true
+    },
+    {
+      "slot": 16,
+      "peak_abs_codes": 40,
+      "max_adjacent_step_codes": 3,
+      "max_step_offset_ms": 0.7904,
+      "final_0_5s_all_zero": false
+    },
+    {
+      "slot": 17,
+      "peak_abs_codes": 32,
+      "max_adjacent_step_codes": 3,
+      "max_step_offset_ms": 0.1872,
+      "final_0_5s_all_zero": true
+    },
+    {
+      "slot": 18,
+      "peak_abs_codes": 16,
+      "max_adjacent_step_codes": 1,
+      "max_step_offset_ms": 0.0208,
+      "final_0_5s_all_zero": false
+    }
+  ]
+}

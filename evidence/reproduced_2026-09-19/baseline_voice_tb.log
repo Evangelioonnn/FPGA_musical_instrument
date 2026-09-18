@@ -1,0 +1,11 @@
+# vsim -do run.do -l baseline_voice_tb.log -lib work -c baseline_voice_tb
+# Loading work.baseline_voice_tb
+# Loading work.note_table
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# Loading work.baseline_voice
+# do run.do
+# BASELINE_VOICE_TB_PASS samples=192308 positive=62410 negative=63091
+# ** Note: $finish    : ./baseline_voice_tb.v(46)
+#    Time: 30769440 ns  Iteration: 1  Instance: /baseline_voice_tb

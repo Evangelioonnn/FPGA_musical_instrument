@@ -1,0 +1,24 @@
+* text=auto
+*.md text eol=lf
+*.v text eol=lf
+*.sv text eol=lf
+*.cst text eol=lf
+*.sdc text eol=lf
+*.tcl text eol=lf
+*.do text eol=lf
+*.py text eol=lf
+*.ps1 text eol=crlf
+*.gprj text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.pdf binary
+*.png binary
+*.wav binary
+*.zip binary
+*.7z binary
+# Preserve original reference bytes so manifest SHA256 remains portable.
+references/** -text -diff
+references/*.md text eol=lf diff
+references/*.json text eol=lf diff
+# Preserve whitespace in exported vendor reports and original simulator logs.
+evidence/baseline_2026-09-18/** -whitespace

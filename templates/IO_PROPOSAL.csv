@@ -1,0 +1,2 @@
+owner,signal,function,connector,pin_number,fpga_ball,direction,signal_voltage,bank_vccio,pull_or_default,max_rate,source_page_revision,conflicts,verification_status
+B,example_key,placeholder_only,TBD,TBD,TBD,input,TBD,TBD,TBD,TBD,TBD,TBD,proposal_not_for_wiring

@@ -1,0 +1,7 @@
+{
+  "description": "Historical local final build; bitstream is intentionally not committed. Rebuilds may produce different bytes.",
+  "path": "project/expression_baseline/impl/pnr/expression_baseline.fs",
+  "bytes": 17819587,
+  "sha256": "f56643e43b0766f57acafd7fabf0afb280e21ceeb99b6b99bbcc54d24b417713",
+  "stale_manifest": "Earlier 18:23:13 manifest contained 4A3BBD...; not the final 18:25 build. Git normalizes source line endings."
+}

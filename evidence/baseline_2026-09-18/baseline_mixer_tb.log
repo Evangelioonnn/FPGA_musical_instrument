@@ -1,0 +1,7 @@
+# vsim -do run.do -l baseline_mixer_tb.log -lib work -c baseline_mixer_tb 
+# Loading work.baseline_mixer_tb
+# Loading work.baseline_mixer
+# do run.do 
+# BASELINE_MIXER_TB_PASS vectors=2000 saturations=921
+# ** Note: $finish    : ./baseline_mixer_tb.v(41)
+#    Time: 160080 ns  Iteration: 1  Instance: /baseline_mixer_tb
