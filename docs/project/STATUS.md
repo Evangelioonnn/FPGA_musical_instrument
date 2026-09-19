@@ -16,6 +16,8 @@
 
 实施提交`43fc309`已推送，[草稿PR #1](https://github.com/Evangelioonnn/FPGA_musical_instrument/pull/1)供团队评审。21项仿真通过，并完成[干净导出复现](../../evidence/system_v0_2026-09-19/CLEAN_REPRODUCIBILITY.md)；不等于真实输入/音质板测通过。
 
+FM/拨弦单声部实现提交`13cc5a0`已推送至`feat/fm-pluck-rtl`，[草稿PR #2](https://github.com/Evangelioonnn/FPGA_musical_instrument/pull/2)依赖PR #1并以其分支为基线。5个bench、独立数学分析、两份50MHz构建及[干净导出复现](../../evidence/timbre_rtl_2026-09-19/CLEAN_REPRODUCIBILITY.md)通过；新RTL未新增板测，两份PR均未合并。
+
 | 内容 | 已有证据 | 仍缺什么 |
 |---|---|---|
 | USB/JTAG/SRAM下载、PMOD点灯 | 用户板测成功；T18使PMOD-LEDx8的L2闪烁 | 其余外部针位不能据此全部认定 |

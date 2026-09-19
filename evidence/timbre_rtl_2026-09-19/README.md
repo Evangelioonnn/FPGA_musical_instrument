@@ -2,6 +2,8 @@
 
 分支`feat/fm-pluck-rtl`，起点`cac8fe0c7789e09731c7c62ca947c84bf7e96930`，依赖system v0任务分支；角色A，范围为`project/experiments/timbre`及对应证据和交接文档。用户已认可两份离线候选，并授权同时实现。目标是可复现的两个单声部定点模块，验收以独立浮点期望、接口边界、真实串行时序和Gowin构建为准。
 
+实现提交`13cc5a0`已推送，[草稿PR #2](https://github.com/Evangelioonnn/FPGA_musical_instrument/pull/2)供审阅；基线为`feat/playable-system-v0`，未合并main。
+
 **这批结果没有新增上板验收。** 原默认音色未改，耳机尖锐声未定位；未接入system多声部音色选择、踏板或实时变调。电脑音频均为数字样本，不是板卡模拟录音。使用与复现入口见[工程说明](../../project/experiments/timbre/README.md)。
 
 ## 数学与接口验收
