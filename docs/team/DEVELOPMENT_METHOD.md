@@ -1,4 +1,4 @@
-> 当前方法文档。最新职责/边界见[AGENTS](AGENTS.md)，当前事实见[STATUS](docs/project/STATUS.md)。历史论文方法不要求使用多智能体，也不替代验证。
+> 当前方法文档。最新职责/边界见[AGENTS](../../AGENTS.md)，当前事实见[STATUS](../project/STATUS.md)。历史论文方法不要求使用多智能体，也不替代验证。
 
 # 电子乐器项目开发约定
 

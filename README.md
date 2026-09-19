@@ -6,7 +6,7 @@
 
 **9月19日夜间任务分支：** 新增[system集成候选](project/system/README.md)、输入RTL、真实观测接口、长音诊断和效果实验；已数字验证，未新增真实上板验收。先读[早上验收指南](docs/project/MORNING_REVIEW.md)，B/C看[system接口](docs/interfaces/SYSTEM_V0.md)。这批工作在`feat/playable-system-v0`，不要求大家直接在A的任务分支共同开发。
 
-**新音色任务分支：** `feat/fm-pluck-rtl`在system v0分支上新增[FM/拨弦单声部RTL](project/experiments/timbre/README.md)及真实RTL试听、数值测试和独立构建。两个离线候选已获认可；新RTL未完成用户上板验收或整机音色切换接入。
+**新音色任务分支：** `feat/fm-pluck-rtl`在system v0分支上新增[FM/拨弦单声部RTL](project/experiments/timbre/README.md)及真实RTL试听、数值测试和独立构建。用户已上板试听：主体与WAV相符，pluck杂音很轻、FM杂音明显；音质仍待定位，未接入整机音色切换。
 
 ## 从这里接手
 
@@ -18,11 +18,14 @@
 
 每位队员和Codex按顺序读：[AGENTS.md](AGENTS.md) → [当前状态](docs/project/STATUS.md) → [官方指标与项目边界](docs/project/REQUIREMENTS.md) → [板卡事实](docs/board/BOARD.md) → 对应角色入口 → [接口](docs/interfaces/README.md)。然后从角色文档的首轮任务开始，不必先读完全部历史或所有RTL。
 
+工程是否可以复用、只是候选、仅用于诊断或已经归档，统一看[工程分类索引](docs/catalog/PROJECT_INDEX.md)；验证输出看[证据索引](evidence/INDEX.md)。不要只根据文件夹名称或某次仿真通过来判断整机状态。
+
 ## 仓库分区
 
 | 目录 | 内容 |
 |---|---|
 | `docs/project/` | 当前进度、赛题指标、架构、路线 |
+| `docs/catalog/` | 工程分类、证据分类和文件生命周期 |
 | `docs/board/` | 实物事实、IO与电气约束、显示资料差异 |
 | `docs/team/`、`docs/interfaces/` | 分工、GitHub流程、首轮任务、共享接口 |
 | `docs/history/` | 原工作区有价值的带日期规划/讨论，不作为当前默认决定 |

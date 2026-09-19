@@ -1,10 +1,14 @@
 # 验证证据与试听
 
-音频来源逐项标注，**均不是板卡模拟录音**。baseline、lab、输入序列、delay及candidate_fm/pluck_rtl来自RTL；candidate_fm/pluck_offline是保留的Python浮点候选。用户已接受当前电脑默认音色及两个离线候选，新RTL试听仍待用户确认；实际耳机仍有随音高变化的尖锐声。不要把这些WAV当作板卡音质达标证明，也不能送回FPGA当预录音播放。
+音频来源逐项标注，**均不是板卡模拟录音**。baseline、lab、输入序列、delay及candidate_fm/pluck_rtl来自RTL；candidate_fm/pluck_offline是保留的Python浮点候选。用户已板上试听新RTL，主体与WAV相符，pluck杂音很轻、FM杂音明显，详见[板测反馈](timbre_rtl_2026-09-19/BOARD_LISTENING.md)。
+
+EC11独立探针已完成用户耳机板测，见[EC11板级试听](ec11_board_2026-09-19/BOARD_LISTENING.md)。不要把这些WAV当作板卡音质达标证明，也不能送回FPGA当预录音播放。
+
+各日期证据包和它们的通过范围见[证据索引](INDEX.md)。
 
 9月19日夜间新增[system v0证据](system_v0_2026-09-19/README.md)：18项系统仿真、3项效果仿真、输入链/长音试听、8/16/32资源时序及可复现脚本。32声部时序失败已保留。
 
-9月19日新增[FM/拨弦RTL证据](timbre_rtl_2026-09-19/README.md)：两种独立单声部、浮点数值对照、命令/串行验证和五引脚试听顶层资源时序；没有新增板测。
+9月19日新增[FM/拨弦RTL证据](timbre_rtl_2026-09-19/README.md)：两种独立单声部、浮点数值对照、命令/串行验证和五引脚试听顶层资源时序；用户后续听感另列板测记录，数字构建报告不代表模拟验收。
 
 ## 可试听文件
 
@@ -18,6 +22,7 @@
 | [delay_preview.wav](audio/delay_preview.wav) | 原16秒演示经独立RTL短延迟＋尾音，固定×4 |
 | [candidate_fm_offline.wav](audio/candidate_fm_offline.wav)、[candidate_pluck_offline.wav](audio/candidate_pluck_offline.wav) | 各7.5秒独立新音色选择，只是离线浮点候选 |
 | [candidate_fm_rtl.wav](audio/candidate_fm_rtl.wav)、[candidate_pluck_rtl.wav](audio/candidate_pluck_rtl.wav) | 各7.5秒，真正来自新单声部定点RTL；原算法电平，无归一化；第七段是单个C4 |
+| [fm_monitor_preview.wav](audio/fm_monitor_preview.wav)、[pluck_monitor_preview.wav](audio/pluck_monitor_preview.wav) | 核心RTL样本施加板级整数衰减后统一×32试听，保留新增量化影响；不是板卡录音，见[说明](timbre_rtl_2026-09-19/BOARD_LISTENING.md) |
 
 当前演示包含原单音、音量/静音、三档力度、普通延音、选择性延音、四声部、跨八度八音和弦；不是多音色/滑音/弯音全功能演示。详细时间见[工程说明](../project/expression_baseline/README.md)。GitHub可能需下载WAV再播放。
 

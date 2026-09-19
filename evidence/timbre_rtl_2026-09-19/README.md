@@ -4,7 +4,7 @@
 
 实现提交`13cc5a0`已推送，[草稿PR #2](https://github.com/Evangelioonnn/FPGA_musical_instrument/pull/2)供审阅；基线为`feat/playable-system-v0`，未合并main。
 
-**这批结果没有新增上板验收。** 原默认音色未改，耳机尖锐声未定位；未接入system多声部音色选择、踏板或实时变调。电脑音频均为数字样本，不是板卡模拟录音。使用与复现入口见[工程说明](../../project/experiments/timbre/README.md)。
+**本页构建/仿真结果与后续板测分别记录。** 用户随后上板试听：两者主体与WAV相符，pluck杂音很轻、FM杂音很大，见[板测反馈](BOARD_LISTENING.md)。原默认音色未改，耳机尖锐声未定位；未接入system多声部音色选择、踏板或实时变调。电脑音频均为数字样本，不是板卡模拟录音。使用与复现入口见[工程说明](../../project/experiments/timbre/README.md)。
 
 ## 数学与接口验收
 

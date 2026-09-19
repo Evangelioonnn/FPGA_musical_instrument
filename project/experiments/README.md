@@ -7,7 +7,7 @@
 | capacity16 | 16个独立音号、频谱、实际retune、抢占/延音/全释放；50MHz PnR通过 | 真实上板，接入整机输入/显示后的重新实现 |
 | capacity32 | 32个独立音号与谱峰，2048帧真实时钟串行仿真；器件资源放得下 | 50MHz时序未通过，禁止作为达标上板固件 |
 | [delay](delay/README.md) | BSRAM反馈延迟，数值oracle/波形渲染/单音探针PnR通过 | 与整机接入、控制与用户板测 |
-| [timbre](timbre/README.md) | 用户认可2份离线候选；FM/拨弦单声部定点RTL、数学/事务/串行仿真、独立50MHz PnR | 新RTL试听、板测、音色选择及复音整机接入 |
+| [timbre](timbre/README.md) | 用户认可2份离线候选；单声部定点RTL、数学/事务/串行仿真、独立50MHz PnR；已上板试听，主体与WAV相符 | 音质仍有变调杂音（FM明显、pluck很轻）；仪器定位、音色选择及复音整机接入 |
 
 容量工程在 `capacity16/capacity16.gprj`、`capacity32/capacity32.gprj`，Top分别为capacity16_top/capacity32_top，仍只有5个已核验时钟/音频IO。自动顺序触发48..48+N-1音号后同时保持约1秒，再释放，2秒循环。它们是吞吐测试，不是成品演奏曲目。
 

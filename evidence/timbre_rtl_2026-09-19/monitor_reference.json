@@ -1,0 +1,42 @@
+{
+  "source": "captured single-voice RTL WAV; numeric monitor transform only",
+  "transform": "signed arithmetic shift right 5, clamp to [-512,511]",
+  "preview_gain": 32,
+  "normalization": "none; same fixed gain for both",
+  "board_recording": false,
+  "models_probe_event_timing": false,
+  "voices": {
+    "fm": {
+      "input": "evidence/audio/candidate_fm_rtl.wav",
+      "input_sha256": "501e4ea7982c9da21a196fac2aa422f102788fd9ba67a5bff64192dc428061b3",
+      "samples": 360580,
+      "wav_rate_hz": 48077,
+      "monitor_peak": 116,
+      "monitor_peak_dbfs": -49.019838914655985,
+      "monitor_rms": 42.43322768673317,
+      "clamped_samples": 0,
+      "restored_preview_max_error_lsb": 31,
+      "restored_preview_rms_error_lsb": 17.177225708271155,
+      "raw_file": "evidence/audio/fm_monitor_raw.wav",
+      "raw_sha256": "a6ebaef180c9e7a3d4ded867f0f001e8a1b61f761027755cc0cf4b31254a2864",
+      "preview_file": "evidence/audio/fm_monitor_preview.wav",
+      "preview_sha256": "de621e11063d9f2fde6cfd53cb6080fc90769cd8694916fe9e018b9f71a1c20d"
+    },
+    "pluck": {
+      "input": "evidence/audio/candidate_pluck_rtl.wav",
+      "input_sha256": "8a407eae09a224dc39eefc3271d4171a01532b049c6b4a8ce28aa9b2852f34b3",
+      "samples": 360580,
+      "wav_rate_hz": 48077,
+      "monitor_peak": 221,
+      "monitor_peak_dbfs": -43.42115322549215,
+      "monitor_rms": 21.216240390019458,
+      "clamped_samples": 0,
+      "restored_preview_max_error_lsb": 31,
+      "restored_preview_rms_error_lsb": 17.185031142173692,
+      "raw_file": "evidence/audio/pluck_monitor_raw.wav",
+      "raw_sha256": "d9792643b5cc36b411665755ac1d1f67a53d95869a19aff3fb57bf7392cb8826",
+      "preview_file": "evidence/audio/pluck_monitor_preview.wav",
+      "preview_sha256": "cd997e83758ae2a1c3044c75b4f9ba919139ab26d38c56856ca25558af7db5c5"
+    }
+  }
+}
