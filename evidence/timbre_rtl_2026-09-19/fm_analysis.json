@@ -1,0 +1,849 @@
+{
+  "algorithm": "1:1 phase modulation, independent accepted closed-form oracle",
+  "sample_rate_hz": 48076.92307692308,
+  "wav_rate_hz": 48077,
+  "cases": 69,
+  "samples": 1092390,
+  "max_raw_peak": 4121,
+  "max_abs_error_lsb": 0.9748881996279124,
+  "rms_error_lsb": 0.2964932398251149,
+  "error_snr_db": 74.12223246041206,
+  "pitch": [
+    {
+      "note": 36,
+      "expected_hz": 65.40639132514966,
+      "measured_hz": 65.40640010711189,
+      "error_cents": 0.00023244870580159323
+    },
+    {
+      "note": 60,
+      "expected_hz": 261.6255653005986,
+      "measured_hz": 261.6255728113205,
+      "error_cents": 4.970010218421926e-05
+    },
+    {
+      "note": 84,
+      "expected_hz": 1046.5022612023945,
+      "measured_hz": 1046.502263795613,
+      "error_cents": 4.289974951028423e-06
+    }
+  ],
+  "velocity_rms": {
+    "0": 0.0,
+    "1": 9.340770846134703,
+    "64": 553.6792795733883,
+    "128": 1056.5654968670526,
+    "256": 2244.370394487364,
+    "511": 2244.370394487364
+  },
+  "audition_samples": 360580,
+  "audition_peak": 3704,
+  "audition_score": [
+    [
+      48,
+      205
+    ],
+    [
+      55,
+      205
+    ],
+    [
+      60,
+      205
+    ],
+    [
+      64,
+      205
+    ],
+    [
+      67,
+      205
+    ],
+    [
+      72,
+      205
+    ],
+    [
+      60,
+      154
+    ],
+    [
+      60,
+      64
+    ],
+    [
+      60,
+      128
+    ],
+    [
+      60,
+      230
+    ]
+  ],
+  "audition_mono": true,
+  "release_samples": 7212,
+  "slot_samples": 36058,
+  "gate_samples": 25481,
+  "notes": "No normalization. Slot 7 is one C4, not the offline candidate chord.",
+  "cases_detail": [
+    {
+      "id": 0,
+      "note": 36,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3302,
+      "max_abs_error_lsb": 0.8392792899697952,
+      "rms_error_lsb": 0.31087779874222976
+    },
+    {
+      "id": 1,
+      "note": 37,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.8773241322888907,
+      "rms_error_lsb": 0.31277788164523856
+    },
+    {
+      "id": 2,
+      "note": 38,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3298,
+      "max_abs_error_lsb": 0.8380795510627195,
+      "rms_error_lsb": 0.3112664328516425
+    },
+    {
+      "id": 3,
+      "note": 39,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3295,
+      "max_abs_error_lsb": 0.8871497985091992,
+      "rms_error_lsb": 0.31246117431407777
+    },
+    {
+      "id": 4,
+      "note": 40,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3299,
+      "max_abs_error_lsb": 0.8114859012517002,
+      "rms_error_lsb": 0.3115445046583512
+    },
+    {
+      "id": 5,
+      "note": 41,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.810593599708227,
+      "rms_error_lsb": 0.31050177417810537
+    },
+    {
+      "id": 6,
+      "note": 42,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3302,
+      "max_abs_error_lsb": 0.8608613092147834,
+      "rms_error_lsb": 0.31114847871853785
+    },
+    {
+      "id": 7,
+      "note": 43,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.8156634890383856,
+      "rms_error_lsb": 0.3133183424261448
+    },
+    {
+      "id": 8,
+      "note": 44,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3300,
+      "max_abs_error_lsb": 0.8414187450792951,
+      "rms_error_lsb": 0.3131616893855227
+    },
+    {
+      "id": 9,
+      "note": 45,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3298,
+      "max_abs_error_lsb": 0.8650450086496733,
+      "rms_error_lsb": 0.31101426252892095
+    },
+    {
+      "id": 10,
+      "note": 46,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.8920762453406041,
+      "rms_error_lsb": 0.3134982855316114
+    },
+    {
+      "id": 11,
+      "note": 47,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3302,
+      "max_abs_error_lsb": 0.8320390119799868,
+      "rms_error_lsb": 0.31319189621915705
+    },
+    {
+      "id": 12,
+      "note": 48,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3302,
+      "max_abs_error_lsb": 0.7691824743606617,
+      "rms_error_lsb": 0.30994098035434375
+    },
+    {
+      "id": 13,
+      "note": 49,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3299,
+      "max_abs_error_lsb": 0.8057752852755584,
+      "rms_error_lsb": 0.30948783396424284
+    },
+    {
+      "id": 14,
+      "note": 50,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3300,
+      "max_abs_error_lsb": 0.7917200772326396,
+      "rms_error_lsb": 0.3118959378543147
+    },
+    {
+      "id": 15,
+      "note": 51,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3302,
+      "max_abs_error_lsb": 0.8272011294765989,
+      "rms_error_lsb": 0.3123128998792155
+    },
+    {
+      "id": 16,
+      "note": 52,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.810591745274337,
+      "rms_error_lsb": 0.3152430786858794
+    },
+    {
+      "id": 17,
+      "note": 53,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3300,
+      "max_abs_error_lsb": 0.7927256804389344,
+      "rms_error_lsb": 0.3148681801204655
+    },
+    {
+      "id": 18,
+      "note": 54,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.880956371555385,
+      "rms_error_lsb": 0.31623914455044133
+    },
+    {
+      "id": 19,
+      "note": 55,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.7979501679064924,
+      "rms_error_lsb": 0.3110241356916279
+    },
+    {
+      "id": 20,
+      "note": 56,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3300,
+      "max_abs_error_lsb": 0.8269811365097581,
+      "rms_error_lsb": 0.30897171487528896
+    },
+    {
+      "id": 21,
+      "note": 57,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3302,
+      "max_abs_error_lsb": 0.8261066211780417,
+      "rms_error_lsb": 0.30899707962844286
+    },
+    {
+      "id": 22,
+      "note": 58,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3300,
+      "max_abs_error_lsb": 0.8601796103189372,
+      "rms_error_lsb": 0.3149369799652436
+    },
+    {
+      "id": 23,
+      "note": 59,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3300,
+      "max_abs_error_lsb": 0.8653096458459686,
+      "rms_error_lsb": 0.3138896175050984
+    },
+    {
+      "id": 24,
+      "note": 60,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3302,
+      "max_abs_error_lsb": 0.8704532497663422,
+      "rms_error_lsb": 0.31324078671421973
+    },
+    {
+      "id": 25,
+      "note": 61,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.8960643930228969,
+      "rms_error_lsb": 0.3109541706014596
+    },
+    {
+      "id": 26,
+      "note": 62,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.8767831515240232,
+      "rms_error_lsb": 0.31422668111978985
+    },
+    {
+      "id": 27,
+      "note": 63,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.8439319055091801,
+      "rms_error_lsb": 0.3121613545795644
+    },
+    {
+      "id": 28,
+      "note": 64,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3299,
+      "max_abs_error_lsb": 0.8854597481853261,
+      "rms_error_lsb": 0.3112462476671594
+    },
+    {
+      "id": 29,
+      "note": 65,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.804332813007818,
+      "rms_error_lsb": 0.31033090848658007
+    },
+    {
+      "id": 30,
+      "note": 66,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.866039051693468,
+      "rms_error_lsb": 0.3143064535052641
+    },
+    {
+      "id": 31,
+      "note": 67,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3300,
+      "max_abs_error_lsb": 0.7915439057626372,
+      "rms_error_lsb": 0.31295900462690807
+    },
+    {
+      "id": 32,
+      "note": 68,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3299,
+      "max_abs_error_lsb": 0.8638749980834746,
+      "rms_error_lsb": 0.3144614970975277
+    },
+    {
+      "id": 33,
+      "note": 69,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3300,
+      "max_abs_error_lsb": 0.8453484711096735,
+      "rms_error_lsb": 0.3110505277524981
+    },
+    {
+      "id": 34,
+      "note": 70,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3299,
+      "max_abs_error_lsb": 0.9069904422478459,
+      "rms_error_lsb": 0.31070814002756336
+    },
+    {
+      "id": 35,
+      "note": 71,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.819271541364742,
+      "rms_error_lsb": 0.31327719805289117
+    },
+    {
+      "id": 36,
+      "note": 72,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3297,
+      "max_abs_error_lsb": 0.8328276570897515,
+      "rms_error_lsb": 0.31110929127737996
+    },
+    {
+      "id": 37,
+      "note": 73,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.8666228055624288,
+      "rms_error_lsb": 0.31040671902868017
+    },
+    {
+      "id": 38,
+      "note": 74,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.8935672334213507,
+      "rms_error_lsb": 0.3109421333445716
+    },
+    {
+      "id": 39,
+      "note": 75,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.8821099469728324,
+      "rms_error_lsb": 0.3128851901874737
+    },
+    {
+      "id": 40,
+      "note": 76,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3295,
+      "max_abs_error_lsb": 0.8357196130038176,
+      "rms_error_lsb": 0.3123778283780615
+    },
+    {
+      "id": 41,
+      "note": 77,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.8508371095801976,
+      "rms_error_lsb": 0.3148583218661518
+    },
+    {
+      "id": 42,
+      "note": 78,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.8441641560900166,
+      "rms_error_lsb": 0.3105569245199815
+    },
+    {
+      "id": 43,
+      "note": 79,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.8547990245426718,
+      "rms_error_lsb": 0.3068625970119969
+    },
+    {
+      "id": 44,
+      "note": 80,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3300,
+      "max_abs_error_lsb": 0.8186816135744834,
+      "rms_error_lsb": 0.31098556148168743
+    },
+    {
+      "id": 45,
+      "note": 81,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3300,
+      "max_abs_error_lsb": 0.8045438723427196,
+      "rms_error_lsb": 0.3114792883080525
+    },
+    {
+      "id": 46,
+      "note": 82,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.8546863505630427,
+      "rms_error_lsb": 0.31258459203506317
+    },
+    {
+      "id": 47,
+      "note": 83,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3299,
+      "max_abs_error_lsb": 0.858248947002437,
+      "rms_error_lsb": 0.3112334192220608
+    },
+    {
+      "id": 48,
+      "note": 84,
+      "velocity": 205,
+      "samples": 8192,
+      "gate": -1,
+      "group": "chromatic",
+      "peak": 3299,
+      "max_abs_error_lsb": 0.7962090304804406,
+      "rms_error_lsb": 0.3130382503044471
+    },
+    {
+      "id": 49,
+      "note": 36,
+      "velocity": 205,
+      "samples": 45673,
+      "gate": -1,
+      "group": "pitch",
+      "peak": 3302,
+      "max_abs_error_lsb": 0.8392792899697952,
+      "rms_error_lsb": 0.30055255563177663
+    },
+    {
+      "id": 50,
+      "note": 60,
+      "velocity": 205,
+      "samples": 45673,
+      "gate": -1,
+      "group": "pitch",
+      "peak": 3302,
+      "max_abs_error_lsb": 0.8704532497663422,
+      "rms_error_lsb": 0.30105072159452645
+    },
+    {
+      "id": 51,
+      "note": 84,
+      "velocity": 205,
+      "samples": 45673,
+      "gate": -1,
+      "group": "pitch",
+      "peak": 3299,
+      "max_abs_error_lsb": 0.7962090304804406,
+      "rms_error_lsb": 0.301461680527809
+    },
+    {
+      "id": 52,
+      "note": 69,
+      "velocity": 0,
+      "samples": 8192,
+      "gate": -1,
+      "group": "velocity",
+      "peak": 0,
+      "max_abs_error_lsb": 0.0,
+      "rms_error_lsb": 0.0
+    },
+    {
+      "id": 53,
+      "note": 69,
+      "velocity": 1,
+      "samples": 8192,
+      "gate": -1,
+      "group": "velocity",
+      "peak": 16,
+      "max_abs_error_lsb": 0.5007156747753907,
+      "rms_error_lsb": 0.288582460102846
+    },
+    {
+      "id": 54,
+      "note": 69,
+      "velocity": 64,
+      "samples": 8192,
+      "gate": -1,
+      "group": "velocity",
+      "peak": 1031,
+      "max_abs_error_lsb": 0.5611032511592384,
+      "rms_error_lsb": 0.2913469264777649
+    },
+    {
+      "id": 55,
+      "note": 69,
+      "velocity": 128,
+      "samples": 8192,
+      "gate": -1,
+      "group": "velocity",
+      "peak": 2061,
+      "max_abs_error_lsb": 0.6561952912519473,
+      "rms_error_lsb": 0.29382420966633316
+    },
+    {
+      "id": 56,
+      "note": 69,
+      "velocity": 256,
+      "samples": 8192,
+      "gate": -1,
+      "group": "velocity",
+      "peak": 4121,
+      "max_abs_error_lsb": 0.9748881996279124,
+      "rms_error_lsb": 0.3235609318359196
+    },
+    {
+      "id": 57,
+      "note": 69,
+      "velocity": 511,
+      "samples": 8192,
+      "gate": -1,
+      "group": "velocity",
+      "peak": 4121,
+      "max_abs_error_lsb": 0.9748881996279124,
+      "rms_error_lsb": 0.3235609318359196
+    },
+    {
+      "id": 58,
+      "note": 60,
+      "velocity": 256,
+      "samples": 144231,
+      "gate": 120192,
+      "group": "envelope",
+      "peak": 4121,
+      "max_abs_error_lsb": 0.9315560676036512,
+      "rms_error_lsb": 0.28283414496522186
+    },
+    {
+      "id": 59,
+      "note": 48,
+      "velocity": 205,
+      "samples": 36058,
+      "gate": 25481,
+      "group": "audition",
+      "peak": 3302,
+      "max_abs_error_lsb": 0.7691824743606617,
+      "rms_error_lsb": 0.2857393767021854
+    },
+    {
+      "id": 60,
+      "note": 55,
+      "velocity": 205,
+      "samples": 36058,
+      "gate": 25481,
+      "group": "audition",
+      "peak": 3301,
+      "max_abs_error_lsb": 0.7979501679064924,
+      "rms_error_lsb": 0.2864407723703063
+    },
+    {
+      "id": 61,
+      "note": 60,
+      "velocity": 205,
+      "samples": 36058,
+      "gate": 25481,
+      "group": "audition",
+      "peak": 3302,
+      "max_abs_error_lsb": 0.8704532497663422,
+      "rms_error_lsb": 0.28734619237208303
+    },
+    {
+      "id": 62,
+      "note": 64,
+      "velocity": 205,
+      "samples": 36058,
+      "gate": 25481,
+      "group": "audition",
+      "peak": 3299,
+      "max_abs_error_lsb": 0.8854597481853261,
+      "rms_error_lsb": 0.286114804551802
+    },
+    {
+      "id": 63,
+      "note": 67,
+      "velocity": 205,
+      "samples": 36058,
+      "gate": 25481,
+      "group": "audition",
+      "peak": 3300,
+      "max_abs_error_lsb": 0.7915439057626372,
+      "rms_error_lsb": 0.286554390059996
+    },
+    {
+      "id": 64,
+      "note": 72,
+      "velocity": 205,
+      "samples": 36058,
+      "gate": 25481,
+      "group": "audition",
+      "peak": 3297,
+      "max_abs_error_lsb": 0.8328276570897515,
+      "rms_error_lsb": 0.2863091948303756
+    },
+    {
+      "id": 65,
+      "note": 60,
+      "velocity": 154,
+      "samples": 36058,
+      "gate": 25481,
+      "group": "audition",
+      "peak": 2479,
+      "max_abs_error_lsb": 0.7062768882864674,
+      "rms_error_lsb": 0.2809894886859841
+    },
+    {
+      "id": 66,
+      "note": 60,
+      "velocity": 64,
+      "samples": 36058,
+      "gate": 25481,
+      "group": "audition",
+      "peak": 1030,
+      "max_abs_error_lsb": 0.5574951935581627,
+      "rms_error_lsb": 0.27559745903657457
+    },
+    {
+      "id": 67,
+      "note": 60,
+      "velocity": 128,
+      "samples": 36058,
+      "gate": 25481,
+      "group": "audition",
+      "peak": 2061,
+      "max_abs_error_lsb": 0.6662232893436695,
+      "rms_error_lsb": 0.28003770455233956
+    },
+    {
+      "id": 68,
+      "note": 60,
+      "velocity": 230,
+      "samples": 36058,
+      "gate": 25481,
+      "group": "audition",
+      "peak": 3704,
+      "max_abs_error_lsb": 0.9115181192608475,
+      "rms_error_lsb": 0.28961254396481656
+    }
+  ]
+}

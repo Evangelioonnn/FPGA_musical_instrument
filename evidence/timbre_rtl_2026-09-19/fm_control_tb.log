@@ -1,0 +1,10 @@
+# vsim -do run.do -l fm_control_tb.log -lib work -c fm_control_tb
+# Loading work.fm_control_tb
+# Loading work.fm_voice
+# Loading work.fm_note_table
+# Loading work.fm_sine_interp
+# Loading work.fm_sine_rom
+# do run.do
+# FM_CONTROL_TB_PASS range reserved retrigger clamp repeated_off backpressure panic reset release
+# ** Note: $finish    : fm_control_tb.v(112)
+#    Time: 2700051 ns  Iteration: 0  Instance: /fm_control_tb
