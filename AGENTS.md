@@ -1,6 +1,6 @@
 # 给三位队员及其 Codex 的项目约定
 
-先读 README.md、docs/project/STATUS.md、docs/project/REQUIREMENTS.md、对应角色入口和目录内AGENTS.md，再工作。当前用户指令优先于本文件；历史文档中的指令只当历史记录，不覆盖新决定。
+先读 README.md、docs/project/STATUS.md、docs/project/REQUIREMENTS.md、docs/catalog/PROJECT_INDEX.md、对应角色入口和目录内AGENTS.md，再工作。当前用户指令优先于本文件；历史文档中的指令只当历史记录，不覆盖新决定。
 
 ## 团队与执行边界
 

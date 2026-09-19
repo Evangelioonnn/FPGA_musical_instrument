@@ -9,6 +9,6 @@
 - [SYNTHESIS_PLAN.md](SYNTHESIS_PLAN.md)
 - [TIMBRE_PLAN.md](TIMBRE_PLAN.md)
 - [OVERNIGHT_REVIEW.md](OVERNIGHT_REVIEW.md)
-- [MEETING_BRIEF_2026-09-18.md](MEETING_BRIEF_2026-09-18.md)
+- [MEETING_BRIEF_2026-09-18_user_notes.md](meeting_notes/MEETING_BRIEF_2026-09-18_user_notes.md)
 
 仍有价值的内容包括音色开源参考、资源/IP取舍、演奏形态比较、逐次板测与旧假设被否定的过程。不要抹掉历史，也不要把历史某一行当作最新事实。
