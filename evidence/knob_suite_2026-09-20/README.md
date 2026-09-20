@@ -2,6 +2,8 @@
 
 本包对应分支 `codex/knob-performance-suite`，基线提交 `7a9ac41`。它记录五份待上板的 EC11 固件、数字验证和 Gowin 实现结果；**不包含真实板卡录音，也不表示旋钮新固件已经板测通过**。实际下载顺序和反馈表见[早上验收指南](../../docs/project/KNOB_REVIEW_2026-09-20.md)。
 
+后续用户已完成首次试听，见[BOARD_LISTENING](BOARD_LISTENING.md)：音量/释放控制及基础弹奏认可，新增起音/音色切换杂音仍需定位。下列数字验证和`validation.json`中的`board_tested=false`保留原构建时的证据范围，不改写为音质通过。
+
 ## 验证结果
 
 - 11 个 ModelSim bench 通过：原音色回归、16 声部分配、五模式控制、增益/回声、生命周期取消、8 声部混合音色、50 MHz/1040 传输、完整渲染、滑音/弯音和普通/选择性延音。
