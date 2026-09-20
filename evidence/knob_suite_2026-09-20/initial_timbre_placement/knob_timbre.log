@@ -1,0 +1,14 @@
+Reading netlist file: "$REPO\project\input\knob_suite\board\timbre\impl\gwsynthesis\knob_timbre.vg"
+Parsing netlist file "$REPO\project\input\knob_suite\board\timbre\impl\gwsynthesis\knob_timbre.vg" completed
+Processing netlist completed
+Reading constraint file: "$REPO\project\input\ec11_probe\src\ec11_probe.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+ERROR  (PR0003) : Failed to place with '2 BSRAM(s) unPlaced ' in the device 'GW5AT-60B-PBGA484A-1'
+Generate file "$REPO\project\input\knob_suite\board\timbre\impl\pnr\knob_timbre.pin.html" completed
+Generate file "$REPO\project\input\knob_suite\board\timbre\impl\pnr\knob_timbre.rpt.html" completed
+Generate file "$REPO\project\input\knob_suite\board\timbre\impl\pnr\knob_timbre.rpt.txt" completed
+Sun Sep 20 01:33:36 2026

@@ -1,0 +1,36 @@
+{
+  "reference": "Initial render before all_release/ADSR guard hardening; full physical pools 16/16/8/16/16, 128 clocks per frame except pluck initialization 1040. Historical execution; no complete initial source snapshot retained.",
+  "candidate": "Final RTL; pools 16/4/8/2/2, 96 clocks per frame except pluck initialization 1040. Pedal render accelerated from 128 to 80 clocks.",
+  "checks": {
+    "performance": {
+      "samples": 384616,
+      "sha256": "3b55642c08b47a677bdf702f98528cd57b57d32a21db75efdba4a8b0dda48e79",
+      "identical": true
+    },
+    "volume": {
+      "samples": 384616,
+      "sha256": "0296bc71d2e0aa4e6602606a5eaa42f71de42414c8217df77fded2ffb494a146",
+      "identical": true
+    },
+    "timbre": {
+      "samples": 384616,
+      "sha256": "99c6d71c9000a810f7102af38bf87885f5940dabd56ab48bbe9a299fd6611876",
+      "identical": true
+    },
+    "release": {
+      "samples": 384616,
+      "sha256": "5902a84197f3368d82e965a8ac514505cb02455ddc30f6aa4ecbe17320fdfdd6",
+      "identical": true
+    },
+    "echo": {
+      "samples": 384616,
+      "sha256": "ffbf45ab32b78a2338524e08de946b0776356169edd3067b63d645d9de869d3a",
+      "identical": true
+    },
+    "pedals": {
+      "samples": 384616,
+      "sha256": "18d0b6fc463f474fed438ca541edcb9faa001ea84447950533b0c1930d9aa78b",
+      "identical": true
+    }
+  }
+}

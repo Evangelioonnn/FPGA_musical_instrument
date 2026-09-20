@@ -2,7 +2,9 @@
 
 2026 嵌入式芯片与系统设计竞赛，高云 FPGA 创新设计赛道，选题二「基于 FPGA 的实时多音色合成电子乐器引擎」。板卡：**Sipeed Tang Mega 60K 基础套餐＋Tang Mega NEO Dock**。目标：2026年11月前形成可以实际演奏、可测量、可复现的作品。
 
-**当前是开发与交接基线，不是完成版乐器。** 默认音色及16秒电脑演示暂获认可；板卡耳机仍有随音高变化的尖锐声。4×4/EC11/压力输入尚未接入，蓝牙与显示尚未实现。音色可继续沿用，不能把音质问题写为已解决。最新事实以[项目状态](docs/project/STATUS.md)为准。
+**当前是开发与交接基线，不是完成版乐器。** 默认音色及16秒电脑演示暂获认可；板卡耳机仍有随音高变化的尖锐声。EC11独立持续变调探针已完成板测，4×4/压力输入、蓝牙与显示尚未接入。音色可继续沿用，不能把音质问题写为已解决。最新事实以[项目状态](docs/project/STATUS.md)为准。
+
+**9月20日旋钮候选：** [knob_suite](project/input/knob_suite/README.md)提供逐格完整弹奏、音量、三音色、释放、回声五份固件；11项数字仿真、独立音频数值核对及五份50MHz构建通过，新固件待实际试听。先读[旋钮验收指南](docs/project/KNOB_REVIEW_2026-09-20.md)，从16声部逐格弹奏开始。分支`codex/knob-performance-suite`，共享接口边界见[候选接口](docs/interfaces/KNOB_CANDIDATE.md)。
 
 **9月19日夜间任务分支：** 新增[system集成候选](project/system/README.md)、输入RTL、真实观测接口、长音诊断和效果实验；已数字验证，未新增真实上板验收。先读[早上验收指南](docs/project/MORNING_REVIEW.md)，B/C看[system接口](docs/interfaces/SYSTEM_V0.md)。这批工作在`feat/playable-system-v0`，不要求大家直接在A的任务分支共同开发。
 

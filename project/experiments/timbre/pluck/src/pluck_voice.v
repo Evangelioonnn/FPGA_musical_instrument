@@ -1,6 +1,6 @@
 // Fractional Karplus-Strong single voice; see ../README.md for transaction timing.
 // State RAM is Q22, not PCM. RAM is never bulk reset.
-module pluck_voice(
+module pluck_voice #(parameter LOGIC_SCALE=0)(
     input wire clk, rst, sample_ce,
     input wire cmd_valid, input wire [1:0] cmd_kind,
     input wire [6:0] note, input wire [8:0] velocity,
@@ -41,6 +41,9 @@ module pluck_voice(
     reg signed [41:0] interpolation_product;
     reg signed [40:0] feedback_product;
     reg signed [37:0] raw_product;
+    // Optional bit-exact constant scale using fabric adders, freeing DSP sites
+    // for multitimbral integration. 7864 = 8192 - 256 - 64 - 8.
+    wire signed [37:0] wide_value={{14{value[23]}},value};
     reg signed [15:0] raw_sample;
     reg signed [25:0] velocity_product;
     reg signed [15:0] velocity_sample;
@@ -187,7 +190,10 @@ module pluck_voice(
                     WRITE_FB: begin
                         previous<=value;
                         if(pointer==length-1) pointer<=0;else pointer<=pointer+1'b1;
-                        raw_product<=value*14'sd7864;state<=RAW_SCALE;
+                        if(LOGIC_SCALE)
+                            raw_product<=(wide_value<<<13)-(wide_value<<<8)-(wide_value<<<6)-(wide_value<<<3);
+                        else raw_product<=value*14'sd7864;
+                        state<=RAW_SCALE;
                     end
                     RAW_SCALE: begin raw_sample<=raw_product>>>22;state<=VELOCITY_SCALE;end
                     VELOCITY_SCALE: begin

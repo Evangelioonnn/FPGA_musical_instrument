@@ -1,0 +1,19 @@
+# vsim -do {$REPO\project\input\knob_suite\sim\run.do} -l multi_tb.log -lib work -c multi_tb
+# Loading work.multi_tb
+# Loading work.knob_bank
+# Loading work.knob_slot
+# Loading work.note_table
+# Loading work.knob_reference_voice
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# Loading work.fm_voice
+# Loading work.fm_note_table
+# Loading work.fm_sine_interp
+# Loading work.fm_sine_rom
+# Loading work.pluck_voice
+# Loading work.pluck_note_table
+# do {$REPO\project\input\knob_suite\sim\run.do}
+# MULTI_TB_PASS frames=33400 voices=8 isolated_sum_exact=1 all_tails_zero=1
+# ** Note: $finish    : $REPO/project/input/knob_suite/sim/multi_tb.v(55)
+#    Time: 85503020 ns  Iteration: 1  Instance: /multi_tb

@@ -1,0 +1,11 @@
+# vsim -do run.do -l reference_tb.log -lib work -c reference_tb
+# Loading work.reference_tb
+# Loading work.note_table
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# Loading work.knob_reference_voice
+# do run.do
+# REFERENCE_TB_PASS samples=55736 default_exact=1 independent_adsr=1
+# ** Note: $finish    : $REPO/project/input/knob_suite/sim/reference_tb.v(52)
+#    Time: 17835380 ns  Iteration: 1  Instance: /reference_tb

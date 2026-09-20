@@ -1,0 +1,13 @@
+# vsim -do {$REPO\project\input\knob_suite\sim\run.do} -l pedal_render_tb.log -lib work -c pedal_render_tb
+# Loading work.pedal_render_tb
+# Loading work.knob_bank
+# Loading work.knob_slot
+# Loading work.note_table
+# Loading work.knob_reference_voice
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# do {$REPO\project\input\knob_suite\sim\run.do}
+# PEDAL_RENDER_TB_PASS samples=384616 normal_sustain_sostenuto=1
+# ** Note: $finish    : $REPO/project/input/knob_suite/sim/pedal_render_tb.v(32)
+#    Time: 615385780 ns  Iteration: 1  Instance: /pedal_render_tb

@@ -1,0 +1,19 @@
+# vsim -do {$REPO\project\input\knob_suite\sim\run.do} -l lifecycle_tb.log -lib work -c lifecycle_tb
+# Loading work.lifecycle_tb
+# Loading work.knob_bank
+# Loading work.knob_slot
+# Loading work.note_table
+# Loading work.knob_reference_voice
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# Loading work.fm_voice
+# Loading work.fm_note_table
+# Loading work.fm_sine_interp
+# Loading work.fm_sine_rom
+# Loading work.pluck_voice
+# Loading work.pluck_note_table
+# do {$REPO\project\input\knob_suite\sim\run.do}
+# LIFECYCLE_TB_PASS cancelled_start_phases=8 unsupported_adsr_rejected=1 restart=1
+# ** Note: $finish    : $REPO/project/input/knob_suite/sim/lifecycle_tb.v(34)
+#    Time: 287820 ns  Iteration: 1  Instance: /lifecycle_tb

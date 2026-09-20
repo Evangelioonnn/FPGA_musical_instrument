@@ -5,6 +5,7 @@
 | 接口 | 状态 | 入口 |
 |---|---|---|
 | system v0统一候选 | FIFO/输入路由/配置仲裁/真实快照/CDC已数字验证；真实外设、BLE和显示待集成 | [SYSTEM_V0](SYSTEM_V0.md) |
+| 旋钮独立实例候选 | 定时弹奏、同音尾音叠加、音色/参数模式；外部逐实例松键与整机协议待集成 | [KNOB_CANDIDATE](KNOB_CANDIDATE.md) |
 | 音符事件/声部状态 | expression与baseline已有端口，可作为v0参考；未接真实输入 | [EVENTS](EVENTS.md) |
 | 参数握手/能力差异 | 已有控制模块；baseline仅使用部分参数 | [CONTROL](CONTROL.md) |
 | 可视化状态/波形 | system有快照/抽取与独立CDC；显示帧缓冲/像素域待C集成 | [DISPLAY](DISPLAY.md) |

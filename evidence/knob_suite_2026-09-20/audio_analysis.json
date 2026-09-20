@@ -1,0 +1,109 @@
+{
+  "source": "RTL simulation, not board recording",
+  "fs_hz_exact": 48076.92307692308,
+  "wav_header_rate": 48077,
+  "preview_gain": 8,
+  "per_segment_normalization": false,
+  "audio": {
+    "performance": {
+      "samples": 384616,
+      "seconds": 8.0000128,
+      "peak_raw": 1857,
+      "rms_raw": 271.8209228054704,
+      "raw_file": "evidence/audio/knob_performance_raw.wav",
+      "raw_sha256": "a2b8ff68cd277751ba88cfc7b442005d3f24ceb1f7d051abd5659bef55d2c787",
+      "preview_file": "evidence/audio/knob_performance_preview.wav",
+      "preview_sha256": "6ad5c5e36f2c4e3203416be27dd60a95b0bf325fcc3407150a465b92cf79fa09"
+    },
+    "volume": {
+      "samples": 384616,
+      "seconds": 8.0000128,
+      "peak_raw": 1837,
+      "rms_raw": 207.10466174534685,
+      "raw_file": "evidence/audio/knob_volume_raw.wav",
+      "raw_sha256": "29bf108bf5edf4550c4b66a74ce8cede6f7ef0ca3cdecdaa0987bf0c5581d900",
+      "preview_file": "evidence/audio/knob_volume_preview.wav",
+      "preview_sha256": "1c2d03a8343cc959e33c58e352b557cdad950f11c2e33dcd0c91927407f24271"
+    },
+    "timbre": {
+      "samples": 384616,
+      "seconds": 8.0000128,
+      "peak_raw": 755,
+      "rms_raw": 161.21841774063796,
+      "raw_file": "evidence/audio/knob_timbre_raw.wav",
+      "raw_sha256": "89f61b8f61e0eeeb15cda5c993f4aa96ca49162168bd84ae0d81d3bd0353843c",
+      "preview_file": "evidence/audio/knob_timbre_preview.wav",
+      "preview_sha256": "8122eb200ee637518589c5826fda5954a395db2700fe026d1a25db58d39f1d58"
+    },
+    "release": {
+      "samples": 384616,
+      "seconds": 8.0000128,
+      "peak_raw": 511,
+      "rms_raw": 119.65973601289669,
+      "raw_file": "evidence/audio/knob_release_raw.wav",
+      "raw_sha256": "9f93d1b90760a167a171c4fcf9dfe889af6187bf42f1b1b9601ea4097b03fc92",
+      "preview_file": "evidence/audio/knob_release_preview.wav",
+      "preview_sha256": "9209b69e52616e6c52cf757073b40d5894850cdc43f0567012544b5640232b0a"
+    },
+    "echo": {
+      "samples": 384616,
+      "seconds": 8.0000128,
+      "peak_raw": 511,
+      "rms_raw": 116.47637993518114,
+      "raw_file": "evidence/audio/knob_echo_raw.wav",
+      "raw_sha256": "1ed521119de811dc5b8215bdb309c7797049daae122d43bdd43442318cb9aa54",
+      "preview_file": "evidence/audio/knob_echo_preview.wav",
+      "preview_sha256": "67c905300a2c9230ad462ebda6229319d6cb81eea6fe1b536a919e5a8618ba2d"
+    },
+    "pitch": {
+      "samples": 240385,
+      "seconds": 5.000008,
+      "peak_raw": 509,
+      "rms_raw": 164.56851219989707,
+      "raw_file": "evidence/audio/knob_pitch_raw.wav",
+      "raw_sha256": "ee8dc9f9e2eded61431c870d3cad7e70998fd5b57285290f828958dc0a221235",
+      "preview_file": "evidence/audio/knob_pitch_preview.wav",
+      "preview_sha256": "e01e00c1649057d6a98a4cdb5de51dd54c63c7b0b8c03d13a9da2ca551a75c8d"
+    },
+    "pedals": {
+      "samples": 384616,
+      "seconds": 8.0000128,
+      "peak_raw": 730,
+      "rms_raw": 153.2596026713847,
+      "raw_file": "evidence/audio/knob_pedals_raw.wav",
+      "raw_sha256": "57150f427df2a8ee96437e90a50773b03e35f4975961221bfb0ba204536fd15b",
+      "preview_file": "evidence/audio/knob_pedals_preview.wav",
+      "preview_sha256": "ba3da6c68dd3055033ba4fb4181c2c83d84e3975062daef57d32a3b264d38e09"
+    }
+  },
+  "checks": {
+    "performance_first_note_midi": 61,
+    "frequency_hz": 277.1730366069989,
+    "pitch_error_cents": -0.059925786915275905,
+    "performance_tail_silent": true,
+    "volume_mute_and_restore": true,
+    "echo_disabled_matches_dry": true,
+    "echo_return_to_dry_exact": true,
+    "release_lengths": [
+      {
+        "start_sample": 0,
+        "release_step": 3,
+        "last_nonzero_sample_offset": 20537,
+        "expected_envelope_end_offset": 20538
+      },
+      {
+        "start_sample": 57692,
+        "release_step": 96,
+        "last_nonzero_sample_offset": 9954,
+        "expected_envelope_end_offset": 9957
+      },
+      {
+        "start_sample": 173076,
+        "release_step": 1,
+        "last_nonzero_sample_offset": 42382,
+        "expected_envelope_end_offset": 42383
+      }
+    ],
+    "pedal_and_pitch_tails_silent": true
+  }
+}
