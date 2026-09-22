@@ -9,10 +9,10 @@
 | pa_en | AB16 | LVCMOS33，0开1关 | 已使用，保留 |
 | PMOD信号组 | T18,R18,R17,P16,U21,T21,R19,P19 | 现存全引脚CST；用户照片核对过对应一组PMOD | 仅T18→LED L2已逐路实测；整组分配未冻结 |
 | EC11独立探针 A/B | T18 / R17 | 用户9月19日实际接线；Bank6、LVCMOS33、输入上拉 | 独立探针数字仿真、构建和耳机板测完成；C/按压仍未知，仅供探针使用，不是整机IO冻结 |
-| sys_rst_n候选 | AA13 | 参考CST 1.5V，PULL_UP | 当前音频顶层未使用；不能作普通3.3V输入 |
-| Key_in[1:0]候选 | Y12 / AB13 | 参考CST 1.5V，PULL_UP | 未做当前交互验收 |
-| WS2812候选 | J16 | 参考CST 3.3V | 未接入当前演奏核心 |
-| 第二组PMOD/扩展口 | 待交叉核对 | 接头编号、Bank/VCCIO、复用资源待填 | 不猜引脚 |
+| USER_BUTTON0 / S4 | AA13 | NEO Rev1.4第9页，Bank9 1.5V，PULL_UP | matrix_playable短按模式/长按止音；待实物验收，不能接外部3.3V |
+| USER_BUTTON2 / S1、USER_BUTTON1 / S2 | Y12 / AB13 | NEO Rev1.4第9页，Bank9 1.5V，PULL_UP | matrix_playable音色/延音；待实物验收 |
+| 板载WS2812 | J16 | 参考CST 3.3V | matrix_playable状态反馈，RTL解码通过，实物待验收 |
+| PMOD1 / J8 | Y21,Y22,AB21,AB22,AA20,AA21,AA19,AB20 | NEO Rev1.4第7/19页，3.3V；按IO0..7顺序 | matrix_playable矩阵候选，列上拉/行低或高阻；具体物理针号见其WIRING，待实物验收 |
 | ADC/FSR | 待确认 | 通道、片内/片外、输入量程、分压与保护待核对 | 不可据GPIO电压推断 |
 | 显示 | 见DISPLAY.md | 图纸与全引脚CST存在差异 | 不冻结/不下载未经核对约束 |
 | 蓝牙串口/状态脚 | 待C提案 | 模块供电、电平、上电默认态待确认 | 不预占任何针位 |

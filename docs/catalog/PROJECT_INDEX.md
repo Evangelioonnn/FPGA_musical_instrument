@@ -24,6 +24,7 @@
 | `project/test` | `BOARD_SMOKE` | T18驱动PMOD-LEDx8的用户板测 | PMOD/下载最小烟雾测试，不是产品功能 |
 | `project/input/ec11_probe` | `BOARD_SMOKE` | A=T18、B=R17，3.3V供电，用户确认双向、快慢旋转、每格一音、静止稳定 | EC11输入复现和整机接入前回归；C脚/按压未定义 |
 | `project/input/knob_suite` | `INTEGRATION_CANDIDATE` | 五种控制固件；首次板测认可音量/释放与基础弹奏，数字/启动相位检查通过 | 快转起音/转动切换音色有新增杂音；按压未绑定，定时接口还需扩展成正式按键接口 |
+| `project/input/matrix_playable` | `INTEGRATION_CANDIDATE` | 一份八声部三音色真实输入顶层，实例松键/矩阵/面板数字验证及50MHz PnR；完整音频证据整理中 | 本轮矩阵/板载键/指示灯和音质待实物验收；拨弦自然衰减；共享协议后续由A集成 |
 | `project/input/src` | `RTL_REFERENCE` | 矩阵、EC11、键路由和数字压力模块独立仿真 | 接入最终外部电气前，先遵守接口和电压边界 |
 | `project/polyphony` | `RTL_REFERENCE` | 四声部管理、混音、串行和构建验证 | 复音结构参考；合并真实输入后需重做资源/板测 |
 | `project/system` | `INTEGRATION_CANDIDATE` | 输入适配、配置仲裁、快照和音频系统数字验证 | A的整机汇合候选；当前system_top仍是自动演示 |

@@ -4,9 +4,11 @@ A是当前持板成员及项目用户。负责实时声音生成、选定效果�
 
 ## 当前最有价值的工作
 
+9月21/22最新候选为[matrix_playable](../../project/input/matrix_playable/README.md)。先按该工程完成真实矩阵/板载键和三音色验收，再将其32bit实例接口与主工程观察/配置接口合并；未确认的矩阵针序、模拟杂音和端到端延迟分别保留。拨弦保持自然衰减，回声/选择性延音暂缓。[资源/IP路线](../project/IP_RESOURCE_PLAN.md)给出后续优化依据。
+
 夜间候选已新增输入链路、真实状态、独立CDC、配置仲裁与诊断工程；交接见[MORNING_REVIEW](../project/MORNING_REVIEW.md)。下面的“增加/建立”任务可复用这些模块，先检查[SYSTEM_V0](../interfaces/SYSTEM_V0.md)和已知限制，避免重新写一套。
 
-9月20日的[旋钮候选验收](../project/KNOB_REVIEW_2026-09-20.md)是当前持板操作入口：EC11旧持续变调已经板测，新增五份固件待验收。独立实例、满载保护和混音可参考新模块；外部按键的身份/松键接口仍需正式集成，资源与接口边界见[KNOB_CANDIDATE](../interfaces/KNOB_CANDIDATE.md)。
+9月20日的[旋钮候选验收](../project/KNOB_REVIEW_2026-09-20.md)保留为历史复现入口：EC11旧持续变调已板测，五份旋钮固件已收到首次功能与杂音反馈，详见STATUS。外部按键的身份/松键接口本轮在matrix_playable候选实现，仍需正式集成；旧定时接口边界见[KNOB_CANDIDATE](../interfaces/KNOB_CANDIDATE.md)。
 
 1. 用原固定音色完成[模拟链路定位](../../project/audio_quality/NOISE_DIAGNOSIS.md)，保存实际.fs哈希、耳机/电源和测量条件。不要把问题转交B/C盲调。
 2. 9月20日器件到货后与B逐项核对电气，再建立扫描/去抖→事件→8声部的最小可演奏链路。矩阵扫描、EC11、ADC适配的RTL归属逐项写入任务，不能含糊地认为“画板的人全包”。

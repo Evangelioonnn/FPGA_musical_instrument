@@ -19,6 +19,7 @@
 - expression_baseline保留旧自动演示，expression是扩展候选。system v0已有输入适配/配置仲裁/真实meter与快照/独立CDC的数字验证；外设针位/ADC硬件、蓝牙和显示尚未接入。system_top仍只自动演示；旧baseline的meter仍占位。左右样本相同，L/R李萨如只能得到直线。
 - 新共享契约见docs/interfaces/SYSTEM_V0.md。旧baseline的retune只改元数据，不能引用为真实变调已验证；system v0已将pitch_we送入DDS。8/16声部构建通过，32声部容量实验的50MHz时序未通过，不能作为达标固件。
 - EC11独立持续变调探针已板测通过，A=T18/B=R17、3.3V、C悬空；按压未确认。knob_suite五份固件数字验证/PnR通过，首次板测认可音量/释放与基础弹奏，但快转新音起音有大噪声，转动切换音色时有延后附加声；本轮电脑参考无此异常，固定音色不转时无新增间隔声。见evidence/knob_suite_2026-09-20/BOARD_LISTENING.md，不可写为音质通过。逐格弹奏16声部、三音色8声部；其定时接口不替代SYSTEM_V0，不支持外部按键逐实例note_off。
+- 9月21/22用户要求一份固件切换三音色，分别验证适用控制；拨弦保持一次触发自然衰减，不强行延音/可调尾音，回声和选择性延音暂缓。matrix_playable候选已增加32bit实例松键、PMOD1矩阵与板载三用户键，见其SPEC/WIRING及MATRIX_PLAYABLE_V1；数字和50MHz PnR不等于矩阵或音质已上板验收，也未替换SYSTEM_V0。
 - 先定义接口/单位/位宽/时序/错误处理，再实现。算法测试要有独立期望；仿真、综合、PnR、板测分别记录，不能互相替代。
 - 主时钟50MHz，现有Fs=50MHz/1040。显示像素时钟是后续独立域，多位状态跨域需握手/异步FIFO等设计，不能只逐位两级同步。
 

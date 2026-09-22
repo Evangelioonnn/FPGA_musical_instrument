@@ -10,6 +10,8 @@
 
 **新音色任务分支：** `feat/fm-pluck-rtl`在system v0分支上新增[FM/拨弦单声部RTL](project/experiments/timbre/README.md)及真实RTL试听、数值测试和独立构建。用户已上板试听：主体与WAV相符，pluck杂音很轻、FM杂音明显；音质仍待定位，未接入整机音色切换。
 
+**9月21/22日当前任务：** [matrix_playable](project/input/matrix_playable/README.md)把矩阵、旋钮、三个板载用户键和八声部三音色合成到一份固件；数字验证和50MHz PnR已通过，长参考音频/交接证据正在整理，真实外设与音质仍待板测。拨弦保持自然衰减，回声/选择性延音暂缓。[接线](project/input/matrix_playable/WIRING.md) · [实例接口](docs/interfaces/MATRIX_PLAYABLE_V1.md) · [IP与资源路线](docs/project/IP_RESOURCE_PLAN.md)。
+
 ## 从这里接手
 
 | 角色 | 负责什么 | 开工入口 |

@@ -10,6 +10,7 @@
 - 当前默认baseline的meter是固定0，音色/包络/滑音等配置也有未接入项；接口能力见[CONTROL](../interfaces/CONTROL.md)。不能给手机显示“配置成功”却实际未生效。
 - 音频L/R相同；李萨如直线是输入本身决定。波形、频谱需要实际样本与缓存/运算，不能用装饰动画代替。
 - 音频/显示核心由FPGA逻辑完成，不用软核CPU替代。MATLAB/Python离线生成素材、手机/PC作通信客户端均可。
+- 9月22日[matrix_playable](../../project/input/matrix_playable/README.md)是新的真实输入候选，32bit实例事件尚未接入SYSTEM_V0快照；继续按原契约独立开发。其八声部三音色已占97/118 DSP、40/118 BSRAM，做FFT/图片缓存前与A确认整机预算，见[IP资源路线](../project/IP_RESOURCE_PLAN.md)。不能按旧baseline的13 DSP占用估算这版剩余空间。
 
 ## 第一轮显示工作
 

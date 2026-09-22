@@ -1,0 +1,80 @@
+{
+  "source_hashes": {
+    "project/input/matrix_playable/matrix_playable.gprj": "acf263faa20c57a89aa2d568c8cca279ba8b6a23d68dbf0c3651e8933934d273",
+    "project/input/matrix_playable/build.tcl": "7aced78a5bed35664d7ad8345bdbf6d99fe5fd0ee27cfce59022ff1affe9258c",
+    "project/input/matrix_playable/src/matrix_playable_top.v": "1c08fafbc9fa6e15badef582ad8169cf1103e6b74f53b48bef22b88ee22e17e2",
+    "project/input/matrix_playable/src/playable_bank.v": "f94b15dafd0386e2569b787c7d803b221d959f39989d094f6cfb3e36ab341618",
+    "project/input/matrix_playable/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+    "project/input/matrix_playable/src/playable_controls.v": "3acea42c2def8c45f1723e211289c5e14270f87937c3f64c88ab9610204ea2fe",
+    "project/input/matrix_playable/src/playable_engine.v": "a1b57d49f17844c4bc38d49b0ca8e4a55e3ae191b11464b352af9569369de3b4",
+    "project/input/matrix_playable/src/playable_fm_voice.v": "82520ac061e01c3ab6831b58415c78614cde107d96ae217c631cbba3ca9468e7",
+    "project/input/matrix_playable/src/playable_keys.v": "069eb80aed2918f4476fa71a1cfe090d31bff98adbd2bf833adb3d47964718bd",
+    "project/input/matrix_playable/src/playable_led.v": "128e18f2440b82da4130c5648b9b14500a4777e45ec7db0e31084660965b62a2",
+    "project/input/matrix_playable/src/playable_slot.v": "8333c4a901c5e57e613dcfad0bb4d724019780505d33236e995d637459977ff9",
+    "project/input/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+    "project/input/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+    "project/system/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+    "project/input/knob_suite/src/knob_reference_voice.v": "80600a27194bef52769a01de3d05e29145971ac7d1644d202318946913818950",
+    "project/input/knob_suite/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+    "project/input/knob_suite/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+    "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+    "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+    "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+    "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+    "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+    "project/experiments/timbre/fm/src/fm_note_table.v": "630731dac0438d6df55bb0a9a500e2dcfe0605ecd5138b868e09918a4fe541fe",
+    "project/experiments/timbre/fm/src/fm_sine_interp.v": "6f015813481c5ae7b794d577e524f6846a24de7bd51dfab03ed83d9211699825",
+    "project/experiments/timbre/fm/src/fm_sine_rom.v": "5d850c00aba7c04f9c90748eb86a904e68fae3c811c81dfb11a98d74f37805f3",
+    "project/experiments/timbre/pluck/src/pluck_voice.v": "8ede30c5e3f85506a22c56791cf7d25f33cd57c1ad241ad9095ee40187291c05",
+    "project/experiments/timbre/pluck/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+    "project/input/matrix_playable/src/matrix_playable.cst": "b5c2afbd734a78788d00265bd1838420278c31f9034e8bfbf6296e5524cce277",
+    "project/input/matrix_playable/src/matrix_playable.sdc": "7e4825970ff74fe06d44b5d223510370f5b3da965dce8753cc7d5d77337d33b2"
+  },
+  "elapsed_seconds": 545.71,
+  "board_tested": false,
+  "exit_code": 0,
+  "build_pass": true,
+  "bitstream_sha256": "043186d77142e80ef40f49408bcce4af3812f49db46171df5d99a81b1b42a7cd",
+  "resources": {
+    "Logic": {
+      "used": 23272,
+      "available": 59904
+    },
+    "Register": {
+      "used": 9396,
+      "available": 60780
+    },
+    "BSRAM": {
+      "used": 40,
+      "available": 118
+    },
+    "DSP": {
+      "used": 97,
+      "available": 118
+    },
+    "I/O Port": {
+      "used": 19,
+      "available": 297
+    }
+  },
+  "setup_violated_endpoints": 15,
+  "setup_worst_slack_ns": -1.657,
+  "hold_violated_endpoints": 0,
+  "hold_worst_slack_ns": 0.157,
+  "timing_pass": false,
+  "warnings": [
+    "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\input\\src\\ec11_input.v\":41)",
+    "WARN  (EX3791) : Expression size 26 truncated to fit in target size 16(\"D:\\uestc\\SCM\\GowinFPGA\\project\\experiments\\timbre\\fm\\src\\fm_sine_interp.v\":34)",
+    "WARN  (EX3791) : Expression size 64 truncated to fit in target size 29(\"D:\\uestc\\SCM\\GowinFPGA\\project\\input\\matrix_playable\\src\\playable_fm_voice.v\":109)",
+    "WARN  (EX3791) : Expression size 64 truncated to fit in target size 29(\"D:\\uestc\\SCM\\GowinFPGA\\project\\input\\matrix_playable\\src\\playable_fm_voice.v\":115)",
+    "WARN  (EX3791) : Expression size 64 truncated to fit in target size 32(\"D:\\uestc\\SCM\\GowinFPGA\\project\\input\\matrix_playable\\src\\playable_fm_voice.v\":122)",
+    "WARN  (EX3791) : Expression size 32 truncated to fit in target size 10(\"D:\\uestc\\SCM\\GowinFPGA\\project\\experiments\\timbre\\pluck\\src\\pluck_voice.v\":58)",
+    "WARN  (EX3791) : Expression size 42 truncated to fit in target size 25(\"D:\\uestc\\SCM\\GowinFPGA\\project\\experiments\\timbre\\pluck\\src\\pluck_voice.v\":70)",
+    "WARN  (EX3791) : Expression size 36 truncated to fit in target size 24(\"D:\\uestc\\SCM\\GowinFPGA\\project\\experiments\\timbre\\pluck\\src\\pluck_voice.v\":175)",
+    "WARN  (EX3791) : Expression size 18 truncated to fit in target size 16(\"D:\\uestc\\SCM\\GowinFPGA\\project\\experiments\\timbre\\pluck\\src\\pluck_voice.v\":202)",
+    "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\input\\matrix_playable\\src\\playable_led.v\":36)",
+    "WARN  (NL0002) : The module \"knob_volume_table\" instantiated to \"volume\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\input\\matrix_playable\\src\\playable_controls.v\":20)",
+    "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+  ],
+  "recommended_for_board_test": false
+}

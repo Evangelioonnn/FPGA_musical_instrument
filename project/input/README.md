@@ -1,5 +1,7 @@
 # 输入适配候选
 
+9月21/22新增[matrix_playable](matrix_playable/README.md)：一份八声部三音色矩阵/旋钮/板载键固件，逐实例松键、自然拨弦和故障恢复；数字/PnR已通过，音频证据整理与实物验收状态见[STATUS](../../docs/project/STATUS.md)。接线在其WIRING，不能直接沿用旧input_audit的逻辑端口。
+
 这里的扫描、去抖、键位路由、EC11 和数字压力表达模块已经有独立 RTL 仿真；它们只接受已经采样的数字 ADC 总线，尚未假定 Tang Mega NEO 的 ADC 针位或外部器件电气连接。
 
 `input_audit.gprj` / `build_audit.tcl` 是不带 CST 的综合资源审计，端口名只是逻辑边界，不能直接下载到板卡。B 提交控制板电气和 IO 提案后，A 才能建立带真实约束的整机顶层。

@@ -30,6 +30,7 @@ venv/
 **/sim/*.txt
 **/sim/*.json
 **/sim/*.wav
+**/sim/audio/
 **/sim/smoke_tb.v
 **/sim/voice_smoke_tb.v
 # Historical large artifacts / local machine records. Curated evidence has its own directory.
