@@ -35,6 +35,7 @@
 | `project/experiments/delay` | `EXPERIMENT` | 短反馈延迟的独立RTL和数值证据 | 效果器候选，尚未接入system |
 | `project/experiments/timbre` | `EXPERIMENT` | FM/拨弦独立RTL、PnR和用户试听 | 新音色候选；FM/拨弦杂音与整机切换仍未解决 |
 | `project/audio_quality` | `DIAGNOSTIC` | 数字精度、长音和监听参考分析 | 继续定位耳机尖锐声，不作为产品音色工程 |
+| `project/audio_noise_lab` | `DIAGNOSTIC` | 五个输出链软件对照通过RTL/PnR；基准、数字增益×2/×4、PT8211帧率×2/×4 | 真实试听和示波器未做；activity-gate RTL等价但PnR有336条未布线，不能下载 |
 | `project/audio_format` | `DIAGNOSTIC` | PT8211格式A/B排查 | 只有新测量支持时才修改发送器 |
 | `project/lab` | `DIAGNOSTIC` | C4/A4/静音长音测试顶层 | 板卡实验室测量入口，不作为最终顶层 |
 | `project/input/input_audit.gprj` | `DIAGNOSTIC` | 输入逻辑资源综合审计 | 316逻辑端口，不能下载，不能当板级顶层 |

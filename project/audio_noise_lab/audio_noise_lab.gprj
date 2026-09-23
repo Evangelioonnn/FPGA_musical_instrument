@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+  <Template>FPGA</Template>
+  <Version>5</Version>
+  <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+  <FileList>
+    <File path="src/noise_audio_output.v" type="file.verilog" enable="1" />
+    <File path="src/noise_lab_top.v" type="file.verilog" enable="1" />
+    <File path="src/noise_pt8211_tx.v" type="file.verilog" enable="1" />
+    <File path="src/playable_bank.v" type="file.verilog" enable="1" />
+    <File path="src/playable_engine.v" type="file.verilog" enable="1" />
+    <File path="src/playable_slot.v" type="file.verilog" enable="1" />
+    <File path="../input/src/matrix_scanner.v" type="file.verilog" enable="1" />
+    <File path="../system/src/stream_fifo.v" type="file.verilog" enable="1" />
+    <File path="../input/matrix_playable/src/playable_button.v" type="file.verilog" enable="1" />
+    <File path="../input/matrix_playable/src/playable_controls.v" type="file.verilog" enable="1" />
+    <File path="../input/matrix_playable/src/playable_keys.v" type="file.verilog" enable="1" />
+    <File path="../input/matrix_playable/src/playable_led.v" type="file.verilog" enable="1" />
+    <File path="../input/knob_suite/src/knob_reference_voice.v" type="file.verilog" enable="1" />
+    <File path="../input/knob_suite/src/knob_gain.v" type="file.verilog" enable="1" />
+    <File path="../input/knob_suite/src/knob_volume_table.v" type="file.verilog" enable="1" />
+    <File path="../instrument/src/synth_voice.v" type="file.verilog" enable="1" />
+    <File path="../instrument/src/adsr_envelope.v" type="file.verilog" enable="1" />
+    <File path="../instrument/src/sine_rom.v" type="file.verilog" enable="1" />
+    <File path="../instrument/src/note_table.v" type="file.verilog" enable="1" />
+    <File path="../input/matrix_playable/src/playable_fm_voice.v" type="file.verilog" enable="1" />
+    <File path="../experiments/timbre/fm/src/fm_note_table.v" type="file.verilog" enable="1" />
+    <File path="../experiments/timbre/fm/src/fm_sine_interp.v" type="file.verilog" enable="1" />
+    <File path="../experiments/timbre/fm/src/fm_sine_rom.v" type="file.verilog" enable="1" />
+    <File path="../experiments/timbre/pluck/src/pluck_voice.v" type="file.verilog" enable="1" />
+    <File path="../experiments/timbre/pluck/src/pluck_note_table.v" type="file.verilog" enable="1" />
+    <File path="src/audio_noise_lab.cst" type="file.cst" enable="1" />
+    <File path="src/audio_noise_lab.sdc" type="file.sdc" enable="1" />
+  </FileList>
+</Project>
