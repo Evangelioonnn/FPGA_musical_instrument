@@ -33,6 +33,8 @@
 
 固定输入事件、参考电平、采样率，测每项候选的Logic/Register/DSP/BSRAM、setup/hold、每采样计算周期、初始化阻塞、数值误差和声部上限。优先释放DSP给更多有用声部或C的频谱，不能以填满资源作为目标。C先给显示模式/FFT点数预算，合入后重新做整机PnR。
 
+2026-09-25 新增独立 [resource_optimization_lab](../../project/resource_optimization_lab/README.md)：正弦-only 下限从 97 DSP 降到 9 DSP；完整八声部共享正弦候选用 1 个同步 ROM 和 1 条波形×包络路径，最新构建为 3894 Logic、2277 Register、1 BSRAM、2 DSP、19 IO，50 MHz setup/hold 最差 slack 6.547/0.247 ns。与正弦-only 生产参考在同一事件边界逐样本比较 624 帧、0 mismatch。该候选只接受默认 timbre 0，尚未板测；FM/拨弦共享算子仍需独立验证。算子级共享乘法探针逐样本等价，DSP 从 32 降到 4。结果不能直接扩大为三音色整机结论。
+
 暂不引入：软核CPU替代音频/显示、为简单键扫描引入总线处理器、无需要的DDR帧缓存、用标准Philips I2S发送器替换本板PT8211右对齐格式。Soft IP不等于软核CPU，功能和架构需逐项判断。
 
 ## 音质与产品优先级
