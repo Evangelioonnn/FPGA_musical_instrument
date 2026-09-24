@@ -12,7 +12,7 @@
 - 统一参考音色为原instrument正弦DDS＋ADSR 68/6/32768/3；“类似钢琴”是听感描述，不是真实钢琴建模。
 - GitHub仓库用于共享源码、接口、资料和记录；不是共享聊天记忆。首次交接保留有用的实验代码，不宣称全部成熟。
 
-**9月24日音质软件对照夜间任务已完成数字阶段**：新增 [audio_noise_lab](../../project/audio_noise_lab/README.md)，保持矩阵、三音色和原默认 ADSR，只分别改变输出数字增益、PT8211 帧率/线性插值以及未选中声部时钟门控。基准、增益×2/×4、过采样×2/×4 均完成独立 RTL bench 和 15-IO/50MHz PnR；过采样×2 setup 余量仅 0.014ns，activity-gate PnR 有336条未布线，不能下载。当前五版都**没有用户板测**，不能写成噪声已修复；下一步按工程 [BOARD_TEST](../../project/audio_noise_lab/BOARD_TEST.md) 做同条件试听，随后在示波器上核对数字与模拟测点。
+**9月24日音质软件对照夜间任务已完成数字阶段并完成首轮板测**：新增 [audio_noise_lab](../../project/audio_noise_lab/README.md)，保持矩阵、三音色和原默认 ADSR，只分别改变输出数字增益、PT8211 帧率/线性插值以及未选中声部时钟门控。基准、增益×2/×4、过采样×2/×4 均完成独立 RTL bench 和 15-IO/50MHz PnR；过采样×2 setup 余量仅 0.014ns，activity-gate PnR 有336条未布线，不能下载。用户试听确认五版噪声规律没有改变；USB 与 USB＋12 V 无明显差异，增益版只是更响，过采样未听出实质改善；FM 噪声最大、拨弦最小，静音底噪接近。默认音色同时按 S1/S2 的颤抖暂列为可能的拍频/相位叠加现象。噪声仍未修复，下一步按工程 [BOARD_TEST](../../project/audio_noise_lab/BOARD_TEST.md) 的定位记录在示波器上核对数字与模拟测点。
 
 ## 功能状态
 
