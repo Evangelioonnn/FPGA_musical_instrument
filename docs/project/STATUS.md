@@ -14,7 +14,7 @@
 
 **9月24日音质软件对照夜间任务已完成数字阶段并完成首轮板测**：新增 [audio_noise_lab](../../project/audio_noise_lab/README.md)，保持矩阵、三音色和原默认 ADSR，只分别改变输出数字增益、PT8211 帧率/线性插值以及未选中声部时钟门控。基准、增益×2/×4、过采样×2/×4 均完成独立 RTL bench 和 15-IO/50MHz PnR；过采样×2 setup 余量仅 0.014ns，activity-gate PnR 有336条未布线，不能下载。用户试听确认五版噪声规律没有改变；USB 与 USB＋12 V 无明显差异，增益版只是更响，过采样未听出实质改善；FM 噪声最大、拨弦最小，静音底噪接近。默认音色同时按 S1/S2 的颤抖暂列为可能的拍频/相位叠加现象。噪声仍未修复，下一步按工程 [BOARD_TEST](../../project/audio_noise_lab/BOARD_TEST.md) 的定位记录在示波器上核对数字与模拟测点。
 
-**9月24日干净音色候选任务已完成数字阶段**：新增 [audio_clean_lab](../../project/audio_clean_lab/README.md)，不改正式 `matrix_playable`。四个候选复用同一矩阵、八声部和 PT8211：原正弦声部级高电平、低阶加法谐波、低复杂度双谐波、三角波。四个版本均通过独立音色仿真、15-IO/50MHz PnR，尚未用户板测；首选试听顺序见工程 [BOARD_TEST](../../project/audio_clean_lab/BOARD_TEST.md)。
+**9月24日干净音色候选任务已完成首轮板测**：新增 [audio_clean_lab](../../project/audio_clean_lab/README.md)，不改正式 `matrix_playable`。四个候选复用同一矩阵、八声部和 PT8211，均通过独立音色仿真、15-IO/50MHz PnR，并已由用户完成下载试听。`harmonic_piano` 听感最好、颤音较弱，暂列主音色候选；`triangle` 几乎无尖锐声但偏数字化，作为干净备用/诊断候选；`reference_x8` 与 `low_fm` 音色接近旧默认且比旧默认好，但相邻音符偶有低频更明显的颤音。四版仍有接近水平的底噪，不能写成公共模拟链路已修复。用户关于高频成分可能是确定性谐波的判断合理但未证实，下一步按 [BOARD_TEST](../../project/audio_clean_lab/BOARD_TEST.md) 做固定音程和示波器对照。
 
 ## 功能状态
 
