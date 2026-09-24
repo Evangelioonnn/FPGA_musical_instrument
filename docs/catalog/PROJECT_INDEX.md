@@ -38,6 +38,7 @@
 | `project/audio_noise_lab` | `DIAGNOSTIC` | 五个输出链软件对照通过RTL/PnR；基准、数字增益×2/×4、PT8211帧率×2/×4；用户已完成首轮试听 | 五版均仍有噪声；增益只改变响度，过采样未听出实质改善；示波器未做；activity-gate RTL等价但PnR有336条未布线，不能下载 |
 | `project/audio_clean_lab` | `EXPERIMENT` | 四个矩阵复用音色候选通过RTL/PnR并完成用户首轮板测；`harmonic_piano` 主观最佳，`triangle` 最干净但偏数字化 | 仍是候选，不替换正式默认音色；四版底噪接近，尖锐成分根因需示波器/频谱定位 |
 | `project/resource_optimization_lab` | `EXPERIMENT` | 正弦-only 下限、共享 ROM/乘法探针和完整八声部共享正弦候选；完整候选 `3894 Logic / 2277 Register / 1 BSRAM / 2 DSP`，624帧逐样本对照0 mismatch，50 MHz PnR通过 | 只覆盖默认正弦，未板测；FM/拨弦共享和三音色整机迁移未完成 |
+| `project/final_dual_timbre` | `INTEGRATION_CANDIDATE` | harmonic_piano/pluck 双音色、矩阵、EC11、三板载键、八声部 RTL 回归；`12723 Logic / 5459 Register / 80 BSRAM / 57 DSP / 19 IO`，50MHz PnR通过 | 独立终版候选，尚未板测；`.fs` 只在本机生成，不把数字时序当成音质验收 |
 | `project/audio_format` | `DIAGNOSTIC` | PT8211格式A/B排查 | 只有新测量支持时才修改发送器 |
 | `project/lab` | `DIAGNOSTIC` | C4/A4/静音长音测试顶层 | 板卡实验室测量入口，不作为最终顶层 |
 | `project/input/input_audit.gprj` | `DIAGNOSTIC` | 输入逻辑资源综合审计 | 316逻辑端口，不能下载，不能当板级顶层 |

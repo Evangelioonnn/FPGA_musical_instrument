@@ -43,7 +43,7 @@ python project/resource_optimization_lab/tools/build.py `
 
 构建产物在本机 `impl/`，不提交 ModelSim 库、日志缓存或 `.fs`。构建脚本会记录源文件哈希、资源、IO 和时序，避免把旧报告当成新结果。
 
-完整结果见 [VALIDATION.md](VALIDATION.md)。当前最有迁移价值的是 `shared_sine8_complete`；`pruned_sine8` 是资源下限，三个 probe 是算子级证据。共享候选最新 PnR 为 `3894 Logic / 2277 Register / 1 BSRAM / 2 DSP / 19 IO`，setup/hold 最差报告 slack 为 `6.547/0.247 ns`。
+完整结果见 [VALIDATION.md](VALIDATION.md)。当前最有迁移价值的是 `shared_sine8_complete`；`pruned_sine8` 是资源下限，三个 probe 是算子级证据。共享候选最新 PnR 为 `3894 Logic / 2277 Register / 1 BSRAM / 2 DSP / 19 IO`，setup/hold 最差报告 slack 为 `6.547/0.247 ns`。终版候选的整机资源、时序和复现命令见 [FINAL_DUAL_TIMBRE.md](FINAL_DUAL_TIMBRE.md)。
 
 ## 当前不做的事
 
