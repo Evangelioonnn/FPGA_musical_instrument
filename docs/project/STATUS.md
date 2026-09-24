@@ -14,6 +14,8 @@
 
 **9月24日音质软件对照夜间任务已完成数字阶段并完成首轮板测**：新增 [audio_noise_lab](../../project/audio_noise_lab/README.md)，保持矩阵、三音色和原默认 ADSR，只分别改变输出数字增益、PT8211 帧率/线性插值以及未选中声部时钟门控。基准、增益×2/×4、过采样×2/×4 均完成独立 RTL bench 和 15-IO/50MHz PnR；过采样×2 setup 余量仅 0.014ns，activity-gate PnR 有336条未布线，不能下载。用户试听确认五版噪声规律没有改变；USB 与 USB＋12 V 无明显差异，增益版只是更响，过采样未听出实质改善；FM 噪声最大、拨弦最小，静音底噪接近。默认音色同时按 S1/S2 的颤抖暂列为可能的拍频/相位叠加现象。噪声仍未修复，下一步按工程 [BOARD_TEST](../../project/audio_noise_lab/BOARD_TEST.md) 的定位记录在示波器上核对数字与模拟测点。
 
+**9月24日干净音色候选任务已完成数字阶段**：新增 [audio_clean_lab](../../project/audio_clean_lab/README.md)，不改正式 `matrix_playable`。四个候选复用同一矩阵、八声部和 PT8211：原正弦声部级高电平、低阶加法谐波、低复杂度双谐波、三角波。四个版本均通过独立音色仿真、15-IO/50MHz PnR，尚未用户板测；首选试听顺序见工程 [BOARD_TEST](../../project/audio_clean_lab/BOARD_TEST.md)。
+
 ## 功能状态
 
 **9月21/22日矩阵演奏任务进行中**：分支`codex/matrix-playable-v1`，起点`f9bcd79`。新增[一份三音色矩阵固件](../../project/input/matrix_playable/README.md)，八声部逐实例按下/松开、同音尾音叠加、三板载按键和EC11联动；拨弦自然衰减，不强行加入普通延音/尾音旋钮，回声和选择性延音暂缓。矩阵候选接PMOD1/J8，旋钮T18/R17保持，板载用户键AA13/AB13/Y12按1.5V约束，接线详见[WIRING](../../project/input/matrix_playable/WIRING.md)。本轮全部实物接线/试听尚待用户验收。
