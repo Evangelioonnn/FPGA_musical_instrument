@@ -24,14 +24,17 @@ separate from the audio final build.
 
 ## Result
 
-- Date/time:
+- Date/time: 2026-09-25 (exact time not recorded)
 - Display make/model:
 - Cable type and length:
 - Display input selected:
-- Picture: `stable color bars / unstable / no signal`
+- Picture: `stable color bars`
 - Reported mode (if shown):
 - Photo or screenshot path:
-- Notes:
+- Notes: User observed stable bars in approximately this order: red, orange,
+  yellow, green, cyan, blue, violet, pink, gray, black. This is a successful
+  physical test of the first candidate TMDS mapping on the user's board and
+  display. The alternate schematic candidate was not tested.
 
 If there is no image, first recheck the selected input, cable, reset state,
 and the exact `.fs` hash. A failed first candidate test is not enough to
