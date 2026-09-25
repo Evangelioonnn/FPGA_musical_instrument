@@ -65,6 +65,8 @@ FM/拨弦单声部实现提交`13cc5a0`已推送至`feat/fm-pluck-rtl`，[草稿
 
 **显示引脚未冻结。** 现存全引脚CST与NEO Dock图纸的DVI/TMDS标注不同，且实物版本未核实，见[显示资料](../board/DISPLAY.md)。C可以先做渲染、扫描时序和通信仿真；不能直接据其中一份烧录显示顶层。
 
+**9月25日新增显示物理链路探针**：[`dvi_colorbar_probe`](../../project/visual/dvi_colorbar_probe/README.md) 是独立的 1920x1080 彩条工程，使用候选 TMDS 映射 `J14/H14`、`J15/H15`、`K17/J17`、`G15/G16`，已完成 50MHz 综合、PnR 和 `.fs` 生成（347 Logic、83 Register、1 PLL、10 IO；setup/hold 未报违例）。用户将用自己的 HDMI 外形接口和 1080p 显示器做首次板测；当前仍不能写为显示已接收，也不能把该工程的约束并入音频终版。板测记录模板见工程内 `BOARD_TEST.md`。
+
 **输入针位未分配。** B先提交交互和IO需求表；A/B/C核对电压、物理连接与冲突，再由A合并整机约束。baseline/system_top是自动播放；新的control_surface与system_engine已逻辑联通，不能把仿真按键说成已读取实物。
 
 **EC11独立验证已完成。** 分支`feat/ec11-board-probe`、起点`d96ef7f`，新增[编码器音频探针](../../project/input/ec11_probe/README.md)，复用原音色并按用户实接的T18/R17约束，只局部占用这两脚。83次正反旋转数字事件、抖动/非法跳变/边界和串行PCM实际音高测试通过，7个IO的50MHz构建完成；用户随后用同一固件实测确认连续变调不卡顿、快慢旋转无异常、双向有效、每格一音、静止稳定。C仍悬空，C/按压功能不纳入结论；探针也不等于整机输入已接通。见[验证记录](../../project/input/ec11_probe/VALIDATION.md)。

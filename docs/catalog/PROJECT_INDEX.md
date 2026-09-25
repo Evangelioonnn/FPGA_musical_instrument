@@ -44,6 +44,7 @@
 | `project/input/input_audit.gprj` | `DIAGNOSTIC` | 输入逻辑资源综合审计 | 316逻辑端口，不能下载，不能当板级顶层 |
 | `project/communication` | `FUTURE_SKELETON` | 蓝牙方向和接口说明 | C负责协议/客户端评估，硬件和RTL尚未接入 |
 | `project/visual` | `FUTURE_SKELETON` | 显示渲染接口说明 | C先做独立仿真，显示针位和物理输出尚未冻结 |
+| `project/visual/dvi_colorbar_probe` | `DIAGNOSTIC` | 独立 1920x1080 TMDS 彩条探针；GW5AT-60B 综合/PnR/比特流通过，候选映射为 J14/H14、J15/H15、K17/J17、G15/G16 | 用户待用 HDMI 显示器板测；成功只证明该候选链路有实物证据，不替代显示终版约束 |
 
 ## 复用前的最小检查
 
