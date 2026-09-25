@@ -65,7 +65,7 @@ FM/拨弦单声部实现提交`13cc5a0`已推送至`feat/fm-pluck-rtl`，[草稿
 
 **显示引脚未冻结。** 现存全引脚CST与NEO Dock图纸的DVI/TMDS标注不同，且实物版本未核实，见[显示资料](../board/DISPLAY.md)。C可以先做渲染、扫描时序和通信仿真；不能直接据其中一份烧录显示顶层。
 
-**9月25日显示物理链路探针已完成首次板测**：[`dvi_colorbar_probe`](../../project/visual/dvi_colorbar_probe/README.md) 是独立的 1920x1080 彩条工程，使用候选 TMDS 映射 `J14/H14`、`J15/H15`、`K17/J17`、`G15/G16`，已完成 50MHz 综合、PnR 和 `.fs` 生成（347 Logic、83 Register、1 PLL、10 IO；setup/hold 未报违例）。用户实测显示器稳定输出彩条，颜色顺序约为红、橙、黄、绿、青、蓝、紫、粉、灰、黑。这为第一套候选映射和 HDMI 外形接口提供了实物证据；另一套原理图候选未测试，显示终版仍需独立约束和模式设计。板测记录见工程内 `BOARD_TEST.md`。
+**9月25日显示物理链路探针已完成首次板测**：[`dvi_colorbar_probe`](../../project/visual/dvi_colorbar_probe/README.md) 是独立的 1920x1080 彩条工程，使用候选 TMDS 映射 `J14/H14`、`J15/H15`、`K17/J17`、`G15/G16`，已完成 50MHz 综合、PnR 和 `.fs` 生成（347 Logic、83 Register、1 PLL、10 IO；setup/hold 未报违例）。用户实测普通 HDMI 显示器稳定输出彩条，显示器报告 `1920x1080、61 Hz`，颜色顺序约为红、橙、黄、绿、青、蓝、紫、粉、灰、黑。这为第一套候选映射和 HDMI 外形接口提供了实物证据；另一套原理图候选未测试，显示终版仍需独立约束和模式设计。板测记录见工程内 `BOARD_TEST.md`。
 
 **输入针位未分配。** B先提交交互和IO需求表；A/B/C核对电压、物理连接与冲突，再由A合并整机约束。baseline/system_top是自动播放；新的control_surface与system_engine已逻辑联通，不能把仿真按键说成已读取实物。
 

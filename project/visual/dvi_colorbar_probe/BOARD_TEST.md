@@ -29,10 +29,11 @@ separate from the audio final build.
 - Cable type and length:
 - Display input selected:
 - Picture: `stable color bars`
-- Reported mode (if shown):
+- Reported mode (if shown): 1920x1080, 61 Hz; stable
 - Photo or screenshot path:
 - Notes: User observed stable bars in approximately this order: red, orange,
-  yellow, green, cyan, blue, violet, pink, gray, black. This is a successful
+  yellow, green, cyan, blue, violet, pink, gray, black. The display reported
+  1920x1080 at 61 Hz and remained stable. This is a successful
   physical test of the first candidate TMDS mapping on the user's board and
   display. The alternate schematic candidate was not tested.
 
