@@ -2,7 +2,7 @@
 
 Branch: `codex/resource-optimization-lab`
 Role: A
-Scope: independent final integration candidate; no Flash write and no board claim.
+Scope: independent audio integration candidate; digital evidence below, followed by later user board feedback. No Flash write.
 
 ## Verified
 
@@ -13,4 +13,4 @@ Scope: independent final integration candidate; no Flash write and no board clai
 
 ## Limits
 
-This is not a board listening result. The final candidate still needs SRAM download and user verification of matrix wiring, the three board keys, EC11 volume/release modes, sustain, timbre switching, natural pluck decay and audio quality. The known hardware high-frequency component has not been declared fixed.
+The user subsequently confirmed SRAM listening and reported that the implemented effects worked well, accepting this as the first complete audio demonstration. This supplements the original digital evidence; no new waveform capture, analog latency measurement or combined audio/video test was supplied. The high-frequency component's root cause has not been declared fixed. See [current status](../../docs/project/STATUS.md) and [team budget](../../docs/team/RESOURCE_BUDGET_V1.md) for the next integration stage.

@@ -22,4 +22,4 @@ python ./tools/build.py --gowin 'E:/Gowin/Gowin_V1.9.12.03_x64/IDE/bin/gw_sh.exe
 
 ## 板测边界
 
-本目录只证明 RTL、综合、布局布线和仿真。`impl/pnr/final_dual_timbre.fs` 是本机生成的 SRAM 下载候选，未提交 Git。用户尚未对本终版完成板卡下载，因此矩阵线序、三键控制、音色切换、旋钮和音质均待实际验收；此前实验中的耳机尖锐成分也不能写成已修复。
+用户已对本版完成下载试听，明确反馈“效果实现都比较理想”，作为音频方向第一版完整演示；矩阵、三键、旋钮与双音色功能获得认可。`impl/pnr/final_dual_timbre.fs` 为本机SRAM构建产物，未提交Git。该反馈不等于模拟噪声根因已修复，也没有新增模拟延迟、逐项灯色或音频/显示合并验收。后续[团队预算V1](../../docs/team/RESOURCE_BUDGET_V1.md)要求A先优化80块BSRAM占用；当前已验收版保留作回归基准。

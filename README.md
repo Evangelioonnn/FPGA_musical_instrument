@@ -2,7 +2,9 @@
 
 2026 嵌入式芯片与系统设计竞赛，高云 FPGA 创新设计赛道，选题二「基于 FPGA 的实时多音色合成电子乐器引擎」。板卡：**Sipeed Tang Mega 60K 基础套餐＋Tang Mega NEO Dock**。目标：2026年11月前形成可以实际演奏、可测量、可复现的作品。
 
-**当前是开发与交接基线，不是完成版乐器。** 默认音色及16秒电脑演示暂获认可；板卡耳机仍有随音高变化的尖锐声。EC11独立持续变调探针已完成板测，4×4/压力输入、蓝牙与显示尚未接入。音色可继续沿用，不能把音质问题写为已解决。最新事实以[项目状态](docs/project/STATUS.md)为准。
+**当前是开发与交接基线，不是完成版乐器。** `final_dual_timbre` 的 harmonic_piano/pluck、矩阵、旋钮和板载键已获用户板测认可，是音频方向第一版完整演示；独立彩条已在普通HDMI显示器稳定显示1920×1080、61Hz。两者尚未合并，压力/蓝牙/实时可视化与成品控制板仍待实现；模拟噪声根因未查明。最新事实以[项目状态](docs/project/STATUS.md)为准。
+
+**9月26日团队开工入口：** [A/B/C资源与接口预算V1](docs/team/RESOURCE_BUDGET_V1.md)。B按12根外接信号上限规划，C按4根蓝牙信号及专用TMDS链路、26块BSRAM/16 DSP规划；音频单独预留68块BSRAM，须由A优化后达成。本分支为`codex/resource-feature-budget`，下列9月19–22日记录保留历史边界，不能覆盖本轮板测与音色选择。
 
 **9月20日旋钮候选：** [knob_suite](project/input/knob_suite/README.md)提供逐格完整弹奏、音量、三音色、释放、回声五份固件；11项数字仿真、独立音频数值核对及五份50MHz构建通过。首次板测认可音量/释放控制及基础弹奏，但快转起音和转动切换音色时有新增杂音，详见[板测记录](evidence/knob_suite_2026-09-20/BOARD_LISTENING.md)。操作见[旋钮验收指南](docs/project/KNOB_REVIEW_2026-09-20.md)。分支`codex/knob-performance-suite`，共享接口边界见[候选接口](docs/interfaces/KNOB_CANDIDATE.md)。
 
@@ -46,6 +48,8 @@
 
 | 工程 | 用途与状态 |
 |---|---|
+| [final_dual_timbre](project/final_dual_timbre/README.md) | 当前已板测的音频完整演示：harmonic_piano/pluck、矩阵/旋钮/板载键；未整合显示/蓝牙 |
+| [dvi_colorbar_probe](project/visual/dvi_colorbar_probe/README.md) | 普通HDMI显示器彩条已板测，是C的物理输出起点 |
 | [system](project/system/README.md)、[input](project/input/README.md) | 原声不变的集成候选；输入/配置/观测数字验证，物理输入待绑定 |
 | [lab](project/lab/README.md) | C4/A4长音与静音诊断，复用原音色及输出 |
 | [experiments](project/experiments/README.md) | 16/32容量、短反馈延迟、FM/拨弦单声部新音色，成熟度分别标注 |

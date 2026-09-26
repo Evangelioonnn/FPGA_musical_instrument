@@ -1,8 +1,8 @@
 # 外屏与可视化工作区 · C
 
-当前没有视频RTL或已经验收的显示约束。先读[板卡显示资料](../../docs/board/DISPLAY.md)、[显示接口](../../docs/interfaces/DISPLAY.md)和[C交接](../../docs/team/ROLE_C.md)。
+独立[dvi_colorbar_probe](dvi_colorbar_probe/README.md)已在A的普通HDMI显示器稳定显示1920×1080、61Hz，源码和板测记录均在仓库；尚未接入真实音频状态、波形或频谱。先读[板卡显示资料](../../docs/board/DISPLAY.md)、[团队预算V1](../../docs/team/RESOURCE_BUDGET_V1.md)和[C交接](../../docs/team/ROLE_C.md)。
 
-首版建议：独立时序发生器＋图形绘制＋模拟状态TB，输出PPM等可检查图片；再确认引脚/PLL/输出原语后做彩条上板，最后接实时状态。推荐分别放`src/`、`sim/`、`ip/`与`tools/`；真实增加时再建。
+下一版建议：复用已验证扫描/输出，新增图形绘制＋模拟状态TB，输出PPM等可检查图片，再接实时状态。整合时处理Y12复位用途、Bank5电气属性与CDC；不能仅拼接两个独立CST。推荐分别放`src/`、`sim/`、`ip/`与`tools/`。
 
 素材处理见[assets](../../assets/README.md)。程序画图、字模、调色板和照片背景均可比较，C决定画面效果；复杂ROM不是项目目的。评估LED指导、键区高亮、音高/参数、波形、李萨如和频谱各自的演奏价值与官方拓展证据。
 

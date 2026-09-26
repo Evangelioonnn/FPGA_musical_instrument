@@ -4,22 +4,25 @@
 
 入口：[通信](../../project/communication/README.md)、[显示](../../project/visual/README.md)、[素材](../../assets/README.md)、[客户端](../../host/README.md)。先读[官方指标](../project/REQUIREMENTS.md)和[显示硬件差异](../board/DISPLAY.md)。
 
+**当前开工依据（9月26日）：** [团队预算V1](RESOURCE_BUDGET_V1.md)，重点读第3–5节。C总预算13000 Logic、10000 Register、26 BSRAM、16 DSP、1 PLL，包含显示/FFT/通信/曲目/灯帧/CDC；蓝牙预留2–4根PMOD信号，视频另用专用TMDS。内部方案、画面与迭代由C决定，可先用mock数据独立实现；A负责接入真实音频接口。预算是设计目标，音频需优化后再整合。
+
 ## 当前可用与不可假设
 
 - 新[system v0](../interfaces/SYSTEM_V0.md)提供真实meter/快照/波形抽取、配置来源仲裁和独立CDC候选；已数字验证。UART/BLE协议、像素域接入及显示驱动仍需你完成。
 - 当前默认baseline的meter是固定0，音色/包络/滑音等配置也有未接入项；接口能力见[CONTROL](../interfaces/CONTROL.md)。不能给手机显示“配置成功”却实际未生效。
 - 音频L/R相同；李萨如直线是输入本身决定。波形、频谱需要实际样本与缓存/运算，不能用装饰动画代替。
 - 音频/显示核心由FPGA逻辑完成，不用软核CPU替代。MATLAB/Python离线生成素材、手机/PC作通信客户端均可。
-- 9月22日[matrix_playable](../../project/input/matrix_playable/README.md)是新的真实输入候选，32bit实例事件尚未接入SYSTEM_V0快照；继续按原契约独立开发。其八声部三音色已占97/118 DSP、40/118 BSRAM，做FFT/图片缓存前与A确认整机预算，见[IP资源路线](../project/IP_RESOURCE_PLAN.md)。不能按旧baseline的13 DSP占用估算这版剩余空间。
+- 当前音频基准为已板测的[final_dual_timbre](../../project/final_dual_timbre/README.md)，12723 Logic、80/118 BSRAM、57/118 DSP；旧matrix的97 DSP不是当前值。它尚未直接提供SYSTEM_V0快照/配置口，适配由A负责，未实现字段不得当作真实状态。
+- [独立彩条](../../project/visual/dvi_colorbar_probe/README.md)已在普通HDMI显示器稳定输出1920×1080、61Hz，C可复现已验证TMDS链路。1 PLL、0 BSRAM/DSP仅代表彩条，不含实时画面/频谱；整合时还需解决Y12复位用途和Bank5电气属性差异。
 
 ## 第一轮显示工作
 
 1. 提出首屏：比如键区/网格高亮＋音高/音量/踏板状态＋波形；映射需和B的布局解耦。说明哪些信息帮助演奏，哪些用于比赛证明。
-2. 确认板卡版本、官方参考例程、DVI/TMDS资源，解决全引脚CST与NEO图纸差异后再上板。未解决前先做像素计数、渲染与testbench导出的图像。
+2. 复现已板测彩条及其模式/引脚，保留图纸冲突的来源边界；按[显示事实](../board/DISPLAY.md)处理整合电气属性。独立做像素计数、渲染与testbench图像，无需等待音频全部功能完成。
 3. 提交分辨率/时钟、ROM/RAM、PLL、差分口、CDC需求和资源估算。照片RGB→ROM只是素材路线候选；程序画键/字模/调色板可能更省资源。
 4. 与A冻结快照、音频抽取和有效标志。显示消费最新状态、不反压音频；用模拟输入独立完成画面验收。
 
-可以立即做的最小提交：按SYSTEM_V0的229bit（N=8）布局解包，用人工快照与音频侧仿真数据驱动画面；测试held/gated/occupied三种颜色、clip与序号回绕。不要把48倍抽样波形当抗混叠音频给FFT。使用snapshot_cdc前安排共同链路复位和物理时序约束；main尚无本轮候选时，先从PR阅读协议，待合并再依赖对应RTL。
+可以立即做的最小提交：用人工快照与PCM驱动画面，测试held/gated/occupied、逐声部音色、clip与序号回绕。SYSTEM_V0的229bit是旧N=8布局，新的语义目标见预算文档；解包放在独立适配层，不永久写死声部数。不要把48倍抽样流当抗混叠音频给FFT。使用snapshot_cdc前安排共同链路复位和物理约束，状态/样本缓存计入C预算。
 
 ## 第一轮蓝牙工作
 

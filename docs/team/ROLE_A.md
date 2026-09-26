@@ -4,7 +4,9 @@ A是当前持板成员及项目用户。负责实时声音生成、选定效果�
 
 ## 当前最有价值的工作
 
-9月21/22最新候选为[matrix_playable](../../project/input/matrix_playable/README.md)。先按该工程完成真实矩阵/板载键和三音色验收，再将其32bit实例接口与主工程观察/配置接口合并；未确认的矩阵针序、模拟杂音和端到端延迟分别保留。拨弦保持自然衰减，回声/选择性延音暂缓。[资源/IP路线](../project/IP_RESOURCE_PLAN.md)给出后续优化依据。
+9月26日当前基准是已获用户板测认可的[final_dual_timbre](../../project/final_dual_timbre/README.md)，harmonic_piano/pluck与矩阵/旋钮/板载键为第一版完整音频演示；显示彩条另已板测，尚未整合。按[团队预算V1](RESOURCE_BUDGET_V1.md)优化音频至68块BSRAM额度内，新增第三音色、选择性延音/滑音、完整ADSR及适量数字效果器；拨弦自然衰减。A负责真实状态/PCM/配置适配，先做音频+显示最小整合，再扩展。预算是目标，当前音频仍为80块BSRAM。
+
+下列9月19–22日工作描述保留为历史参考，旧“待到货/未验收”不覆盖当前状态。
 
 夜间候选已新增输入链路、真实状态、独立CDC、配置仲裁与诊断工程；交接见[MORNING_REVIEW](../project/MORNING_REVIEW.md)。下面的“增加/建立”任务可复用这些模块，先检查[SYSTEM_V0](../interfaces/SYSTEM_V0.md)和已知限制，避免重新写一套。
 

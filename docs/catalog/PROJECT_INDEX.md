@@ -24,7 +24,7 @@
 | `project/test` | `BOARD_SMOKE` | T18驱动PMOD-LEDx8的用户板测 | PMOD/下载最小烟雾测试，不是产品功能 |
 | `project/input/ec11_probe` | `BOARD_SMOKE` | A=T18、B=R17，3.3V供电，用户确认双向、快慢旋转、每格一音、静止稳定 | EC11输入复现和整机接入前回归；C脚/按压未定义 |
 | `project/input/knob_suite` | `INTEGRATION_CANDIDATE` | 五种控制固件；首次板测认可音量/释放与基础弹奏，数字/启动相位检查通过 | 快转起音/转动切换音色有新增杂音；按压未绑定，定时接口还需扩展成正式按键接口 |
-| `project/input/matrix_playable` | `INTEGRATION_CANDIDATE` | 一份八声部三音色真实输入顶层，实例松键/矩阵/面板数字验证及50MHz PnR；完整音频证据整理中 | 本轮矩阵/板载键/指示灯和音质待实物验收；拨弦自然衰减；共享协议后续由A集成 |
+| `project/input/matrix_playable` | `INTEGRATION_CANDIDATE` | 八声部三音色输入顶层、数字验证及50MHz PnR；用户反馈除原有杂音外功能良好 | 保留旧三音色控制参考；当前产品音频使用final双音色，音质根因未定；不推断灯色已逐项验收 |
 | `project/input/src` | `RTL_REFERENCE` | 矩阵、EC11、键路由和数字压力模块独立仿真 | 接入最终外部电气前，先遵守接口和电压边界 |
 | `project/polyphony` | `RTL_REFERENCE` | 四声部管理、混音、串行和构建验证 | 复音结构参考；合并真实输入后需重做资源/板测 |
 | `project/system` | `INTEGRATION_CANDIDATE` | 输入适配、配置仲裁、快照和音频系统数字验证 | A的整机汇合候选；当前system_top仍是自动演示 |
@@ -36,15 +36,15 @@
 | `project/experiments/timbre` | `EXPERIMENT` | FM/拨弦独立RTL、PnR和用户试听 | 新音色候选；FM/拨弦杂音与整机切换仍未解决 |
 | `project/audio_quality` | `DIAGNOSTIC` | 数字精度、长音和监听参考分析 | 继续定位耳机尖锐声，不作为产品音色工程 |
 | `project/audio_noise_lab` | `DIAGNOSTIC` | 五个输出链软件对照通过RTL/PnR；基准、数字增益×2/×4、PT8211帧率×2/×4；用户已完成首轮试听 | 五版均仍有噪声；增益只改变响度，过采样未听出实质改善；示波器未做；activity-gate RTL等价但PnR有336条未布线，不能下载 |
-| `project/audio_clean_lab` | `EXPERIMENT` | 四个矩阵复用音色候选通过RTL/PnR并完成用户首轮板测；`harmonic_piano` 主观最佳，`triangle` 最干净但偏数字化 | 仍是候选，不替换正式默认音色；四版底噪接近，尖锐成分根因需示波器/频谱定位 |
+| `project/audio_clean_lab` | `EXPERIMENT` | 四个矩阵复用音色候选通过RTL/PnR并完成用户首轮板测；`harmonic_piano` 主观最佳，`triangle` 最干净但偏数字化 | harmonic_piano已用于final双音色；其余保留实验，公共噪声根因仍待定位 |
 | `project/resource_optimization_lab` | `EXPERIMENT` | 正弦-only 下限、共享 ROM/乘法探针和完整八声部共享正弦候选；完整候选 `3894 Logic / 2277 Register / 1 BSRAM / 2 DSP`，624帧逐样本对照0 mismatch，50 MHz PnR通过 | 只覆盖默认正弦，未板测；FM/拨弦共享和三音色整机迁移未完成 |
-| `project/final_dual_timbre` | `INTEGRATION_CANDIDATE` | harmonic_piano/pluck 双音色、矩阵、EC11、三板载键、八声部 RTL 回归；`12723 Logic / 5459 Register / 80 BSRAM / 57 DSP / 19 IO`，50MHz PnR通过 | 独立终版候选，尚未板测；`.fs` 只在本机生成，不把数字时序当成音质验收 |
+| `project/final_dual_timbre` | `REUSE_BASELINE` | harmonic_piano/pluck、矩阵、EC11、三板载键、八声部RTL回归；`12723 Logic / 5459 Register / 80 BSRAM / 57 DSP / 19 IO`，50MHz PnR通过，用户已板测认可 | 音频方向第一版完整演示；未整合显示/蓝牙，噪声根因未查明；优化在新候选验证 |
 | `project/audio_format` | `DIAGNOSTIC` | PT8211格式A/B排查 | 只有新测量支持时才修改发送器 |
 | `project/lab` | `DIAGNOSTIC` | C4/A4/静音长音测试顶层 | 板卡实验室测量入口，不作为最终顶层 |
 | `project/input/input_audit.gprj` | `DIAGNOSTIC` | 输入逻辑资源综合审计 | 316逻辑端口，不能下载，不能当板级顶层 |
 | `project/communication` | `FUTURE_SKELETON` | 蓝牙方向和接口说明 | C负责协议/客户端评估，硬件和RTL尚未接入 |
-| `project/visual` | `FUTURE_SKELETON` | 显示渲染接口说明 | C先做独立仿真，显示针位和物理输出尚未冻结 |
-| `project/visual/dvi_colorbar_probe` | `DIAGNOSTIC` | 独立 1920x1080 TMDS 彩条探针；GW5AT-60B 综合/PnR/比特流通过，候选映射为 J14/H14、J15/H15、K17/J17、G15/G16 | 用户待用 HDMI 显示器板测；成功只证明该候选链路有实物证据，不替代显示终版约束 |
+| `project/visual` | `INTEGRATION_CANDIDATE` | 已有独立彩条及显示接口说明 | C按团队预算加入真实状态/波形/FFT与CDC，尚未整合音频 |
+| `project/visual/dvi_colorbar_probe` | `BOARD_SMOKE` | 独立1920×1080 TMDS彩条，综合/PnR通过；用户普通HDMI显示器稳定显示1080p、61Hz；映射J14/H14、J15/H15、K17/J17、G15/G16 | C物理链路复现起点；统一Y12用途及Bank5电气属性后再合并，不代表实时可视化已完成 |
 
 ## 复用前的最小检查
 

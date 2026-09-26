@@ -2,20 +2,22 @@
 
 这是已知占用和候选，不是最终接线表。B填写[IO提案模板](../../templates/IO_PROPOSAL.csv)，A维护合并后的CST/SDC，C报告显示/通信占用。FPGA球号不等于排针物理针号。
 
+9月26日[团队预算V1](../team/RESOURCE_BUDGET_V1.md)：两PMOD共16根信号，B上限12、C蓝牙上限4；显示另用板载专用TMDS。当前矩阵8根+EC11两根已用于用户认可的双音色演奏版，尚余6根未分配。下表按当前事实更新，ADC及终版PCB仍未冻结。
+
 | 信号/用途 | FPGA球号 | 电压/依据 | 状态 |
 |---|---|---|---|
 | sys_clk | V22 | 50MHz；当前LVCMOS33 | 已构建上板，保留 |
 | hp_bck / hp_ws / hp_din | Y17 / AB17 / AA16 | LVCMOS33，音频图纸和现有CST | 已发声，保留 |
 | pa_en | AB16 | LVCMOS33，0开1关 | 已使用，保留 |
-| PMOD信号组 | T18,R18,R17,P16,U21,T21,R19,P19 | 现存全引脚CST；用户照片核对过对应一组PMOD | 仅T18→LED L2已逐路实测；整组分配未冻结 |
+| PMOD0 / J9 | T18,R18,R17,P16,U21,T21,R19,P19 | 现存全引脚CST；按IO0..7顺序 | T18/R17用于已板测EC11；余6根未分配，不能全默认为B独占 |
 | EC11独立探针 A/B | T18 / R17 | 用户9月19日实际接线；Bank6、LVCMOS33、输入上拉 | 独立探针数字仿真、构建和耳机板测完成；C/按压仍未知，仅供探针使用，不是整机IO冻结 |
-| USER_BUTTON0 / S4 | AA13 | NEO Rev1.4第9页，Bank9 1.5V，PULL_UP | matrix_playable短按模式/长按止音；待实物验收，不能接外部3.3V |
-| USER_BUTTON2 / S1、USER_BUTTON1 / S2 | Y12 / AB13 | NEO Rev1.4第9页，Bank9 1.5V，PULL_UP | matrix_playable音色/延音；待实物验收 |
-| 板载WS2812 | J16 | 参考CST 3.3V | matrix_playable状态反馈，RTL解码通过，实物待验收 |
-| PMOD1 / J8 | Y21,Y22,AB21,AB22,AA20,AA21,AA19,AB20 | NEO Rev1.4第7/19页，3.3V；按IO0..7顺序 | matrix_playable矩阵候选，列上拉/行低或高阻；具体物理针号见其WIRING，待实物验收 |
+| USER_BUTTON0 / S4 | AA13 | NEO Rev1.4第9页，Bank9 1.5V，PULL_UP | final双音色模式/长按止音已获用户功能认可；不能接外部3.3V |
+| USER_BUTTON2 / S1、USER_BUTTON1 / S2 | Y12 / AB13 | NEO Rev1.4第9页，Bank9 1.5V，PULL_UP | final音色/延音已获用户功能认可；Y12与显示探针复位语义冲突需整合 |
+| 板载WS2812 | J16 | 音频CST 3.3V | 状态反馈；Bank5电气属性与显示探针不一致，见DISPLAY；不推断已逐项验收灯色 |
+| PMOD1 / J8 | Y21,Y22,AB21,AB22,AA20,AA21,AA19,AB20 | NEO Rev1.4第7/19页，3.3V；按IO0..7顺序 | 已用于final矩阵板测；列上拉/行低或高阻，物理针号见matrix_playable/WIRING |
 | ADC/FSR | 待确认 | 通道、片内/片外、输入量程、分压与保护待核对 | 不可据GPIO电压推断 |
-| 显示 | 见DISPLAY.md | 图纸与全引脚CST存在差异 | 不冻结/不下载未经核对约束 |
-| 蓝牙串口/状态脚 | 待C提案 | 模块供电、电平、上电默认态待确认 | 不预占任何针位 |
+| 显示 | J14/H14、J15/H15、K17/J17、G15/G16 | 已板测映射；电气属性整合见DISPLAY | 普通HDMI显示器1080p、61Hz稳定；不占上述PMOD信号 |
+| 蓝牙串口/状态脚 | 待C提案 | 模块供电、电平、上电默认态待确认 | 在PMOD池预留2–4根额度，具体球号未冻结 |
 
 ## B/C提交IO时必须包含
 

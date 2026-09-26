@@ -13,6 +13,7 @@
 ## 事实与验证
 
 - docs/project/STATUS.md为当前进度；docs/history是有日期的历史，旧“待上板”或“琴键优先”等建议不能直接沿用。
+- 2026-09-26当前决定：final_dual_timbre的harmonic_piano/pluck和实体控制已获用户板测认可；旧原正弦只保留历史诊断基准，不强制作为新产品默认。用户拟增加第三音色、恢复选择性延音/滑音。独立HDMI彩条已实测1920×1080、61Hz稳定，尚未合并音频。B/C按docs/team/RESOURCE_BUDGET_V1.md独立开发；音频80块BSRAM需优化至预算内，不能把目标表当成实测。下面带旧日期的状态按历史范围理解。
 - 正式规则看references/competition官方PDF；学长指导是非官方建议。用户禁止软核替代核心是项目架构决定，不伪造为官方逐字规定。
 - 板卡为Tang Mega 60K基础套餐＋NEO Dock。DK_START官方评估板、138K开发板均不等于本板。显示引脚资料存在差异，查docs/board/DISPLAY.md，禁止直接套用整份参考CST。
 - 默认试听音色必须复用原instrument的正弦DDS＋ADSR 68/6/32768/3，遵守AUDIO_TEST_BASELINE.md；新音色单独实验。电脑参考音可接受，真实耳机仍有随音高变化的尖锐声，不能写为已修复。
