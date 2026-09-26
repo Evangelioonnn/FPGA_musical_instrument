@@ -4,7 +4,7 @@
 
 **当前是开发与交接基线，不是完成版乐器。** `final_dual_timbre` 的 harmonic_piano/pluck、矩阵、旋钮和板载键已获用户板测认可，是音频方向第一版完整演示；独立彩条已在普通HDMI显示器稳定显示1920×1080、61Hz。两者尚未合并，压力/蓝牙/实时可视化与成品控制板仍待实现；模拟噪声根因未查明。最新事实以[项目状态](docs/project/STATUS.md)为准。
 
-**9月26日团队开工入口：** [A/B/C资源与接口预算V1](docs/team/RESOURCE_BUDGET_V1.md)。B按12根外接信号上限规划，C按4根蓝牙信号及专用TMDS链路、26块BSRAM/16 DSP规划；音频单独预留68块BSRAM，须由A优化后达成。本分支为`codex/resource-feature-budget`，下列9月19–22日记录保留历史边界，不能覆盖本轮板测与音色选择。
+**9月26日团队开工入口（40针IO修正）：** [A/B/C资源与接口预算V1](docs/team/RESOURCE_BUDGET_V1.md)。B可用[J13 40针扩展口](docs/board/J13_GPIO.md)，先预留32根直接信号；旧12根仅是PMOD方案，已取消总上限含义。C从PMOD预留4根蓝牙信号，另有专用TMDS、26块BSRAM/16 DSP；音频单独预留68块BSRAM，须由A优化后达成。本分支为`codex/resource-feature-budget`，下列旧日期记录不覆盖最新板测与音色选择。
 
 **9月20日旋钮候选：** [knob_suite](project/input/knob_suite/README.md)提供逐格完整弹奏、音量、三音色、释放、回声五份固件；11项数字仿真、独立音频数值核对及五份50MHz构建通过。首次板测认可音量/释放控制及基础弹奏，但快转起音和转动切换音色时有新增杂音，详见[板测记录](evidence/knob_suite_2026-09-20/BOARD_LISTENING.md)。操作见[旋钮验收指南](docs/project/KNOB_REVIEW_2026-09-20.md)。分支`codex/knob-performance-suite`，共享接口边界见[候选接口](docs/interfaces/KNOB_CANDIDATE.md)。
 
