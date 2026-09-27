@@ -36,4 +36,4 @@
 
 如需电脑对照：`evidence/audio/output_control_volume18.wav`、`output_control_volume24.wav`、`output_headroom_volume24.wav`、`output_polarity_volume24.wav`。前约0.9秒是C3→C3+D3→C3+D3+E3→释放；之后高八度、八同音、八不同音、钢琴与拨弦混合及释放。是实际RTL样本，没有响度归一化。02用00的参考即可。
 
-当前板测状态：**等待用户验收，未写入任何“已消除杂音”结论。**
+首轮板测已反馈：02/03相对00无明显差异；01上限小很多；整体起音问题未再听到，颤动及伴随杂音改善但未消失，勉强可接受。是否在24档等电平比较尚未确认，详见[板测记录](../../evidence/audio_output_lab_2026-09-27/BOARD_LISTENING.md)。以上步骤保留作后续对照参考，不代表用户已逐项执行。
