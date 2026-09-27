@@ -19,7 +19,7 @@
 
 | 工程 | 标签 | 已有证据 | 后续使用方式 |
 |---|---|---|---|
-| [project/audio_palette_lab](../../project/audio_palette_lab/README.md) | `EXPERIMENT` | 七份八声部双区音色候选全部50MHz PnR通过，22–34 BSRAM/50–51 DSP；共享原版4582帧逐样本等价；25键映射/同音身份/49音域/串行输出数字验证 | 01–06首轮试听：01/05/06获肯定，02/03/04有高电平异常，原尖锐声仍在；共享表/双区为候选复用，未覆盖已板测final/扩复音/加效果器 |
+| [project/audio_palette_lab](../../project/audio_palette_lab/README.md) | `EXPERIMENT` | 七份八声部双区音色候选全部50MHz PnR通过，22–34 BSRAM/50–51 DSP；共享原版4582帧逐样本等价；25键映射/同音身份/49音域/串行输出数字验证 | 01–06首轮试听：01/05/06音色获肯定，01–04有高电平异常（01伴随颤动，无独立起音问题），原尖锐声仍在；共享表/双区为候选复用，未覆盖已板测final/扩复音/加效果器 |
 | `project/instrument` | `REUSE_BASELINE` | 原正弦DDS、ADSR、PT8211的RTL、PnR和用户基础试听 | 默认音色和音频发送器来源；板卡尖锐附加声仍未解决 |
 | `project/audio_probe` | `BOARD_SMOKE` | PT8211左右输出和基础时序的用户板测 | 新顶层验证音频物理链路时复用 |
 | `project/test` | `BOARD_SMOKE` | T18驱动PMOD-LEDx8的用户板测 | PMOD/下载最小烟雾测试，不是产品功能 |
