@@ -1,6 +1,6 @@
 # FPGA 实时电子乐器 · 三人协作仓库
 
-**9月27日音质排查候选：** [audio_output_lab](project/audio_output_lab/README.md)提供统一钢琴/柔和拨弦对照、钢琴固定降低电平、发送沿错开、整体反相四份独立工程。四版50MHz PnR通过，均34 BSRAM/50 DSP；[上板顺序](project/audio_output_lab/BOARD_TEST.md)。此轮是有针对性的缓解/诊断，**首轮试听：起音问题未再听到、颤动杂音减轻但仍残留，02/03与00无明显差别；等电平条件待确认，不宣称根因修复**；旧palette/final仍保留。
+**9月27日音质排查候选：** [audio_output_lab](project/audio_output_lab/README.md)提供统一钢琴/柔和拨弦对照、钢琴固定降低电平、发送沿错开、整体反相四份独立工程。四版50MHz PnR通过，均34 BSRAM/50 DSP；[上板顺序](project/audio_output_lab/BOARD_TEST.md)。此轮是有针对性的缓解/诊断，**首轮试听：起音问题未再听到、颤动杂音减轻但仍残留，02/03与00无明显差别；用户补充00最大音量下颤动仍明显改善，不宣称根因修复**；旧palette/final仍保留。
 
 2026 嵌入式芯片与系统设计竞赛，高云 FPGA 创新设计赛道，选题二「基于 FPGA 的实时多音色合成电子乐器引擎」。板卡：**Sipeed Tang Mega 60K 基础套餐＋Tang Mega NEO Dock**。目标：2026年11月前形成可以实际演奏、可测量、可复现的作品。
 

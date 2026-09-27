@@ -17,7 +17,7 @@
 
 ## 当前工程清单
 
-新增[project/audio_output_lab](../../project/audio_output_lab/README.md)：`DIAGNOSTIC / EXPERIMENT`，四份钢琴/柔和拨弦可演奏对照，50MHz PnR均通过，34 BSRAM/50 DSP。检查固定钢琴电平、串行边沿和极性相关性；不替代palette/final，不标记杂音修复；[数字与实现证据](../../project/audio_output_lab/VALIDATION.md)，首轮用户反馈整体起音/颤动改善但仍有杂音，02/03与00无差别，试听音量档位待确认；详见[板测记录](../../evidence/audio_output_lab_2026-09-27/BOARD_LISTENING.md)。
+新增[project/audio_output_lab](../../project/audio_output_lab/README.md)：`DIAGNOSTIC / EXPERIMENT`，四份钢琴/柔和拨弦可演奏对照，50MHz PnR均通过，34 BSRAM/50 DSP。检查固定钢琴电平、串行边沿和极性相关性；不替代palette/final，不标记杂音修复；[数字与实现证据](../../project/audio_output_lab/VALIDATION.md)，首轮用户反馈整体起音/颤动改善但仍有杂音，02/03与00无差别，用户补充00最大音量下颤动仍明显改善，原因待定位；详见[板测记录](../../evidence/audio_output_lab_2026-09-27/BOARD_LISTENING.md)。
 
 | 工程 | 标签 | 已有证据 | 后续使用方式 |
 |---|---|---|---|
