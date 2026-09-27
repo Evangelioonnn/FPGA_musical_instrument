@@ -1,5 +1,7 @@
 # 音色合辑 V1 验证记录（2026-09-27）
 
+后续首轮板测已反馈：Warm pluck、Drive lead、Metallic bell获用户可选音色认可，Clean lead较干净；钢琴/Organ/Clean lead音区响度待平衡，Organ/Pad仍有明显杂音。详见[板测记录](../../evidence/timbre_gallery_2026-09-27/BOARD_LISTENING.md)。下文“尚未试听”保留为构建时状态，不能覆盖这次反馈，也不能将首轮试听扩大为完整验收。
+
 角色A，分支 `codex/playable-timbre-gallery`，起点 `0f71e44`。本轮仅增加独立实验工程；旧 `audio_output_lab/00_control` 未修改，仍可回退。以下分开陈述数字仿真、实际Gowin布线和实物听感；本轮尚未由用户下载、试听，不宣称尖锐伴音或底噪已经解决。
 
 ## 构建与资源

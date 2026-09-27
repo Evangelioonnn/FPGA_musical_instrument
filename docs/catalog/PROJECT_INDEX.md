@@ -17,7 +17,7 @@
 
 ## 当前工程清单
 
-新增[project/timbre_gallery](../../project/timbre_gallery/README.md)：`EXPERIMENT / INTEGRATION_CANDIDATE`，一份可演奏工程在板载S1切换八音色，旧钢琴/拨弦数字等价；六种新声音、按音色适配的控制及Lead滑音通过RTL测试。独立50MHz PnR为19381 Logic、8509 Register、34 BSRAM、52 DSP、19 IO，setup/hold无违例但setup余量仅0.183ns。[试听步骤](../../project/timbre_gallery/BOARD_TEST.md)与[验证边界](../../project/timbre_gallery/VALIDATION.md)；新音色和整机显示/蓝牙仍待板测与整合，不能替换已认可的final/00回退基准。
+新增[project/timbre_gallery](../../project/timbre_gallery/README.md)：`EXPERIMENT / INTEGRATION_CANDIDATE`，一份可演奏工程在板载S1切换八音色，旧钢琴/拨弦数字等价；六种新声音、按音色适配的控制及Lead滑音通过RTL测试。独立50MHz PnR为19381 Logic、8509 Register、34 BSRAM、52 DSP、19 IO，setup/hold无违例但setup余量仅0.183ns。[试听步骤](../../project/timbre_gallery/BOARD_TEST.md)与[验证边界](../../project/timbre_gallery/VALIDATION.md)；八音色已收到[首轮用户试听反馈](../../evidence/timbre_gallery_2026-09-27/BOARD_LISTENING.md)，不等于全部控制和音质通过；整机显示/蓝牙仍待整合，不能替换已认可的final/00回退基准。
 
 新增[project/audio_output_lab](../../project/audio_output_lab/README.md)：`DIAGNOSTIC / EXPERIMENT`，四份钢琴/柔和拨弦可演奏对照，50MHz PnR均通过，34 BSRAM/50 DSP。检查固定钢琴电平、串行边沿和极性相关性；不替代palette/final，不标记杂音修复；[数字与实现证据](../../project/audio_output_lab/VALIDATION.md)，首轮用户反馈整体起音/颤动改善但仍有杂音，02/03与00无差别，用户补充00最大音量下颤动仍明显改善，原因待定位；详见[板测记录](../../evidence/audio_output_lab_2026-09-27/BOARD_LISTENING.md)。
 
