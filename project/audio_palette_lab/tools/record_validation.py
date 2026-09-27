@@ -66,7 +66,7 @@ def main():
     if old.exists():hashes.append(f'| 回退final_dual_timbre.fs | `{sha(old)}` |')
     body='''# 本轮验证 · 2026-09-26任务（9月27日收尾）
 
-分支`codex/audio-clean-zones`，角色A，起点`d5ee69f`。七份均完成纯RTL仿真、综合及Gowin 50MHz PnR，setup/hold违例均为0。**本轮七份尚未用户上板验收。** 源码/固件哈希与原始测试摘要在[证据包](../../evidence/audio_palette_lab_2026-09-26/results.json)。
+分支`codex/audio-clean-zones`，角色A，起点`d5ee69f`。七份均完成纯RTL仿真、综合及Gowin 50MHz PnR，setup/hold违例均为0。**以下记录生成时尚未上板；随后01–06的首轮反馈见[9月27日试听记录](../../evidence/audio_palette_lab_2026-09-26/BOARD_LISTENING_2026-09-27.md)，不能将本页数字通过等同于音质通过。** 源码/固件哈希与原始测试摘要在[证据包](../../evidence/audio_palette_lab_2026-09-26/results.json)。
 
 ## 资源：采用最终PnR计数
 
@@ -107,6 +107,6 @@ ModelSim使用纯RTL，不包含器件布局延迟或模拟DAC。`palette_board_
 - 不宣称耳机/音箱噪声根因已经定位，原版及所有新音色都需用户试听。未修改旧已板测工程、烧写Flash或合并显示/蓝牙。
 '''
     (HERE/'VALIDATION.md').write_text(body,encoding='utf-8')
-    (EVIDENCE/'README.md').write_text('# 双区/音色实验数字证据\n\n结论见[工程验证](../../project/audio_palette_lab/VALIDATION.md)，结构化数据在[results.json](results.json)。七份均是待用户试听的新候选，不能覆盖旧final已板测事实。\n',encoding='utf-8')
+    (EVIDENCE/'README.md').write_text('# 双区/音色实验数字证据\n\n结论见[工程验证](../../project/audio_palette_lab/VALIDATION.md)，结构化数据在[results.json](results.json)。七份为独立新候选，不能覆盖旧final已板测事实。后续[9月27日首轮试听](BOARD_LISTENING_2026-09-27.md)记录01–06的实物听感，高电平异常及尖锐声仍待定位。\n',encoding='utf-8')
     print('Evidence collected; source hashes, seven FS, seven bench logs and audio checked.')
 if __name__=='__main__':main()

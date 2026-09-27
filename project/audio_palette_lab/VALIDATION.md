@@ -1,6 +1,6 @@
 # 本轮验证 · 2026-09-26任务（9月27日收尾）
 
-分支`codex/audio-clean-zones`，角色A，起点`d5ee69f`。七份均完成纯RTL仿真、综合及Gowin 50MHz PnR，setup/hold违例均为0。**本轮七份尚未用户上板验收。** 源码/固件哈希与原始测试摘要在[证据包](../../evidence/audio_palette_lab_2026-09-26/results.json)。
+分支`codex/audio-clean-zones`，角色A，起点`d5ee69f`。七份均完成纯RTL仿真、综合及Gowin 50MHz PnR，setup/hold违例均为0。**以下记录生成时尚未上板；随后01–06的首轮反馈见[9月27日试听记录](../../evidence/audio_palette_lab_2026-09-26/BOARD_LISTENING_2026-09-27.md)，不能将本页数字通过等同于音质通过。** 源码/固件哈希与原始测试摘要在[证据包](../../evidence/audio_palette_lab_2026-09-26/results.json)。
 
 ## 资源：采用最终PnR计数
 
