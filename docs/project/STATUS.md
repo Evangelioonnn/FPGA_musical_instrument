@@ -8,6 +8,8 @@
 
 **五音色后续方向：** 用户选择Precision harmonic piano、原有拨弦、Warm pluck、Metallic bell、Drive lead，取代未来音频工程的双音色编号。A建立独立的[five_timbre_core](../../project/five_timbre_core/README.md)与三份同操作音区对照；真实听感仍待用户验收，不覆盖已板测的final_dual_timbre。其双区25键适配是数字验证，现有实物仍为16键矩阵。项目状态、资源与时序以该工程[验证记录](../../project/five_timbre_core/VALIDATION.md)更新为准。
 
+**可编辑四谐波候选：** [custom_harmonic_lab](../../project/custom_harmonic_lab/README.md)新增可选preset5。CH0为混音后主音量，CH1–CH4为基频至4倍频的Q8幅度；默认`[256,64,32,16]`与认可钢琴逐样本等价。六项RTL回归通过，包含4096码映射、超限顺序归一化、忙碌整帧拒收、实时平滑和八声部峰值；独立PnR为21330 Logic / 9755 Register / 38 BSRAM / 70 DSP / 19 IO，setup/hold 0/0、余量3.967ns、Fmax 62.369MHz。该候选尚未实体ADC/J13接入或用户板测，且与C显示/蓝牙合并后必须重做整机PnR；旧`final_dual_timbre`仍是物理回退。
+
 **八音色合辑首轮板测反馈：** 用户认可Warm pluck（“好像没有尖锐杂音了”）、Drive lead和Metallic bell作为拓展可选音色；Clean lead很干净但电子感较重、起音尾音不突出。钢琴、Organ、Clean lead均有低音小/高音大的听感差异；Organ尖锐声明显、Pad杂音大且效果一般，Electric keys与钢琴相近但偏好低于钢琴。见[逐项记录与数字电平核对](../../evidence/timbre_gallery_2026-09-27/BOARD_LISTENING.md)。原“待用户试听”指生成时状态，本次不扩大为全部控制功能通过或噪声根因修复；未改变RTL/固件或冻结最终音色。
 
 **9月27日八音色单固件候选，待用户上板试听：** 新增[timbre_gallery](../../project/timbre_gallery/README.md)，在一份 `.gprj/.fs` 中循环八预设：保留精度钢琴与柔和拨弦，新增风琴、Pad、干声/轻过载Lead、电声键盘、金属铃音。后六种是自研RTL候选，未移植完整OPL3；普通延音、释放与Lead滑音按音色适配，拨弦仍自然衰减。旧钢琴/拨弦3934帧逐样本等价，独立数学12288向量及矩阵/控制/事件/PT8211回归通过；用户尚未听新固件，声音纯净度和原尖锐伴音是否变化不能推断。50MHz PnR为19381 Logic / 8509 Register / 34 BSRAM / 52 DSP / 19 IO、setup/hold违例0，最小setup余量仅0.183ns；首次未流水化版本有575个setup违例，不可下载。见[验证与限制](../../project/timbre_gallery/VALIDATION.md)和[上板步骤](../../project/timbre_gallery/BOARD_TEST.md)。这是独立音频实验，未合并C的显示/蓝牙，不能据此宣称整机时序达标；旧00_control保持可回退。

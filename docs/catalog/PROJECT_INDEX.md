@@ -19,6 +19,8 @@
 
 新增[project/five_timbre_core](../../project/five_timbre_core/README.md)：`INTEGRATION_CANDIDATE / EXPERIMENT`，用户选定的五音色及00/01/02音区对照、选择性延音与Drive lead弯/滑音；数字和50 MHz实现结果、16声部独立容量实验见[验证记录](../../project/five_timbre_core/VALIDATION.md)。五音色编号作为后续开发方向；新固件未用户上板试听，final_dual_timbre仍是已验收的回退版本。
 
+新增[project/custom_harmonic_lab](../../project/custom_harmonic_lab/README.md)：`EXPERIMENT / INTEGRATION_CANDIDATE`，在五音色之后增加候选preset5；Q8四谐波、CH0后混音音量、EC11模拟推子及完整八声部音频链。6项RTL测试、全ADC映射、顺序归一化、跨帧限幅不变量及整机PnR记录在[验证报告](../../project/custom_harmonic_lab/VALIDATION.md)。当前候选PnR为21330 Logic / 9755 Register / 38 BSRAM / 70 DSP / 19 IO，setup/hold违例0/0，余量3.967ns，Fmax 62.369MHz；SPI ADC与J13没有接入，板上结果待A试听。
+
 新增[project/timbre_gallery](../../project/timbre_gallery/README.md)：`EXPERIMENT / INTEGRATION_CANDIDATE`，一份可演奏工程在板载S1切换八音色，旧钢琴/拨弦数字等价；六种新声音、按音色适配的控制及Lead滑音通过RTL测试。独立50MHz PnR为19381 Logic、8509 Register、34 BSRAM、52 DSP、19 IO，setup/hold无违例但setup余量仅0.183ns。[试听步骤](../../project/timbre_gallery/BOARD_TEST.md)与[验证边界](../../project/timbre_gallery/VALIDATION.md)；八音色已收到[首轮用户试听反馈](../../evidence/timbre_gallery_2026-09-27/BOARD_LISTENING.md)，不等于全部控制和音质通过；整机显示/蓝牙仍待整合，不能替换已认可的final/00回退基准。
 
 新增[project/audio_output_lab](../../project/audio_output_lab/README.md)：`DIAGNOSTIC / EXPERIMENT`，四份钢琴/柔和拨弦可演奏对照，50MHz PnR均通过，34 BSRAM/50 DSP。检查固定钢琴电平、串行边沿和极性相关性；不替代palette/final，不标记杂音修复；[数字与实现证据](../../project/audio_output_lab/VALIDATION.md)，首轮用户反馈整体起音/颤动改善但仍有杂音，02/03与00无差别，用户补充00最大音量下颤动仍明显改善，原因待定位；详见[板测记录](../../evidence/audio_output_lab_2026-09-27/BOARD_LISTENING.md)。

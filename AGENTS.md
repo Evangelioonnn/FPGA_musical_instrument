@@ -13,6 +13,7 @@
 ## 事实与验证
 
 - 2026-09-28新决定：A后续音频核心统一采用五音色编号：0 Precision harmonic piano、1 final_dual_timbre原拨弦、2 Warm pluck、3 Metallic bell、4 Drive lead。独立候选见project/five_timbre_core；新候选完成数字/PnR不等于用户已试听，旧final_dual_timbre仍是实物回退基准。未来共享接口与最终整合应明确使用五音色映射，不再默认只有两个。
+- 2026-09-28自定义音色实验：project/custom_harmonic_lab加入可选候选ID 5；Q8谐波默认[256,64,32,16]、CH0后混音主音量；五路系数/音量以sample_ce平滑更新，四谐波按声部分时计算。EC11在preset5下临时模拟CH0..CH4推子，SPI ADC仍未接入。数字/PnR通过不等于用户板测；详情看该目录SPEC/VALIDATION/BOARD_TEST，五音色及final基线仍保留。
 - docs/project/STATUS.md为当前进度；docs/history是有日期的历史，旧“待上板”或“琴键优先”等建议不能直接沿用。
 - 2026-09-26当前决定：final_dual_timbre的harmonic_piano/pluck和实体控制已获用户板测认可；旧原正弦只保留历史诊断基准，不强制作为新产品默认。用户拟增加第三音色、恢复选择性延音/滑音。独立HDMI彩条已实测1920×1080、61Hz稳定，尚未合并音频。B/C按docs/team/RESOURCE_BUDGET_V1.md独立开发；音频80块BSRAM需优化至预算内，不能把目标表当成实测。下面带旧日期的状态按历史范围理解。
 - 同日IO修正：B可使用J13 40针扩展口，原PMOD 12根不是B总上限。J13为36根直接信号+2根电阻选择信号+5V/GND；与两组PMOD合计52根直接候选信号。见docs/board/J13_GPIO.md；该结论是资料核对，尚无J13逐针实测，不能把J14/SDRAM1共享排针重复计入。

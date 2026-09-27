@@ -6,6 +6,8 @@ A是当前持板成员及项目用户。负责实时声音生成、选定效果�
 
 9月28日用户选定五音色作为后续音频核心：Precision harmonic piano、原拨弦、Warm pluck、Metallic bell、Drive lead。新[五音色工程](../../project/five_timbre_core/README.md)用于音区响度、主奏表达、普通/选择性延音和资源实验；源码及固定编号见其SPEC，数字/PnR及板测边界见VALIDATION。与B/C整合时以五音色编号作为新接口提案，尚未实物试听前保持final_dual_timbre为已认可的回退固件。下条9月26日记载保留其当时范围。
 
+9月28日新增[可编辑四谐波实验](../../project/custom_harmonic_lab/README.md)：候选preset5保留0..4五音色编号；Q8默认[256,64,32,16]对照钢琴，CH0独立控制混音后音量。四谐波共相位，分时共享乘法器；EC11临时模拟5路fader，外部8通道12bit SPI ADC/J13尚未接入。验证结果和资源/时序见其VALIDATION；这仍是数字候选，须由A实物验收后才考虑合入正式接口。
+
 9月26日当前基准是已获用户板测认可的[final_dual_timbre](../../project/final_dual_timbre/README.md)，harmonic_piano/pluck与矩阵/旋钮/板载键为第一版完整音频演示；显示彩条另已板测，尚未整合。按[团队预算V1](RESOURCE_BUDGET_V1.md)优化音频至68块BSRAM额度内，新增第三音色、选择性延音/滑音、完整ADSR及适量数字效果器；拨弦自然衰减。A负责真实状态/PCM/配置适配，先做音频+显示最小整合，再扩展。预算是目标，当前音频仍为80块BSRAM。
 
 下列9月19–22日工作描述保留为历史参考，旧“待到货/未验收”不覆盖当前状态。
