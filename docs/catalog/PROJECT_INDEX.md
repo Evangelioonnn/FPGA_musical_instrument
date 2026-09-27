@@ -17,6 +17,8 @@
 
 ## 当前工程清单
 
+新增[project/audio_output_lab](../../project/audio_output_lab/README.md)：`DIAGNOSTIC / EXPERIMENT`，四份钢琴/柔和拨弦可演奏对照，50MHz PnR均通过，34 BSRAM/50 DSP。检查固定钢琴电平、串行边沿和极性相关性；不替代palette/final，不标记杂音修复；[数字与实现证据](../../project/audio_output_lab/VALIDATION.md)，真实效果等待用户。
+
 | 工程 | 标签 | 已有证据 | 后续使用方式 |
 |---|---|---|---|
 | [project/audio_palette_lab](../../project/audio_palette_lab/README.md) | `EXPERIMENT` | 七份八声部双区音色候选全部50MHz PnR通过，22–34 BSRAM/50–51 DSP；共享原版4582帧逐样本等价；25键映射/同音身份/49音域/串行输出数字验证 | 01–06首轮试听：01/05/06音色获肯定，01–04有高电平异常（01伴随颤动，无独立起音问题），原尖锐声仍在；共享表/双区为候选复用，未覆盖已板测final/扩复音/加效果器 |

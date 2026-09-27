@@ -1,0 +1,63 @@
+Reading E:/QuartusII/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.1d
+
+# vsim -do {run -all; quit -f} -lib work_output -c output_render_tb
+# Loading work_output.output_render_tb
+# Loading work_output.output_bank
+# Loading work_output.note_table
+# Loading work_output.pluck_note_table
+# Loading work_output.output_shared_tone
+# Loading work_output.knob_volume_table
+# Loading work_output.knob_gain
+# Loading work_output.palette_sine
+# Loading work_output.palette_slot
+# Loading work_output.palette_tone_state
+# Loading work_output.palette_pluck
+# Loading work_output.adsr_envelope
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[0]/levels[0]/table_gain
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[0]/levels[1]/table_gain
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[0]/levels[2]/table_gain
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[0]/levels[3]/table_gain
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[0]/levels[4]/table_gain
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[0]/levels[5]/table_gain
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[0]/levels[6]/table_gain
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[1]/levels[0]/table_gain
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[1]/levels[1]/table_gain
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[1]/levels[2]/table_gain
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[1]/levels[3]/table_gain
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[1]/levels[4]/table_gain
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[1]/levels[5]/table_gain
+# ** Warning: (vsim-3015) D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(15): [PCDPC] - Port size (5 or 5) does not match connection size (32) for port 'index'. The port definition is at: D:/uestc/SCM/GowinFPGA/project/final_dual_timbre/src/knob_volume_table.v(2).
+#
+#         Region: /output_render_tb/banks[1]/levels[6]/table_gain
+# run -all
+# OUTPUT_RENDER_TB_PASS 150600 samples; gain18..24; pluck exact; fixed per-voice piano gain; no clip/deadline
+# ** Note: $finish    : D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_render_tb.v(78)
+#    Time: 385583440 ns  Iteration: 1  Instance: /output_render_tb

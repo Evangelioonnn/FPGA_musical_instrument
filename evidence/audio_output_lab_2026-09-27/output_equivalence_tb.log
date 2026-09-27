@@ -1,0 +1,21 @@
+Reading E:/QuartusII/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.1d
+
+# vsim -do {run -all; quit -f} -lib work_output -c output_equivalence_tb
+# Loading work_output.output_equivalence_tb
+# Loading work_output.palette_bank
+# Loading work_output.note_table
+# Loading work_output.pluck_note_table
+# Loading work_output.palette_shared_tone
+# Loading work_output.output_bank
+# Loading work_output.output_shared_tone
+# Loading work_output.palette_sine
+# Loading work_output.palette_slot
+# Loading work_output.palette_tone_state
+# Loading work_output.palette_pluck
+# Loading work_output.adsr_envelope
+# run -all
+# OUTPUT_EQUIVALENCE_TB_PASS 4582 frames: eight voices, mixed timbres, sustain, release, full rejection
+# ** Note: $finish    : D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_equivalence_tb.v(56)
+#    Time: 95288571 ns  Iteration: 1  Instance: /output_equivalence_tb

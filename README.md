@@ -1,5 +1,7 @@
 # FPGA 实时电子乐器 · 三人协作仓库
 
+**9月27日音质排查候选：** [audio_output_lab](project/audio_output_lab/README.md)提供统一钢琴/柔和拨弦对照、钢琴固定降低电平、发送沿错开、整体反相四份独立工程。四版50MHz PnR通过，均34 BSRAM/50 DSP；[上板顺序](project/audio_output_lab/BOARD_TEST.md)。此轮是有针对性的缓解/诊断，**等待用户验收，不宣称噪声已修复**；旧palette/final仍保留。
+
 2026 嵌入式芯片与系统设计竞赛，高云 FPGA 创新设计赛道，选题二「基于 FPGA 的实时多音色合成电子乐器引擎」。板卡：**Sipeed Tang Mega 60K 基础套餐＋Tang Mega NEO Dock**。目标：2026年11月前形成可以实际演奏、可测量、可复现的作品。
 
 **当前是开发与交接基线，不是完成版乐器。** `final_dual_timbre` 的 harmonic_piano/pluck、矩阵、旋钮和板载键已获用户板测认可，是音频方向第一版完整演示；独立彩条已在普通HDMI显示器稳定显示1920×1080、61Hz。两者尚未合并，压力/蓝牙/实时可视化与成品控制板仍待实现；模拟噪声根因未查明。最新事实以[项目状态](docs/project/STATUS.md)为准。
