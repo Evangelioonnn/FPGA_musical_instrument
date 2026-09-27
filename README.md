@@ -1,5 +1,7 @@
 # FPGA 实时电子乐器 · 三人协作仓库
 
+**9月28日音频下一版候选：** [five_timbre_core](project/five_timbre_core/README.md)将钢琴、原拨弦、Warm pluck、Metallic bell、Drive lead固定为五个编号；00/01/02分别用于原声、音区响度、响度加高音谐波对照。包含普通/选择性延音、Drive lead滑音与持音弯音、双区和25键输入适配实验。五音色编号是后续开发方向，新固件仍待用户上板试听，已验收的双音色版本保持回退；资源与时序见[验证记录](project/five_timbre_core/VALIDATION.md)。
+
 **9月27日八音色单固件候选：** [timbre_gallery](project/timbre_gallery/README.md)保留已听过的钢琴/柔和拨弦，新增风琴、Pad、两种Lead、电声键盘和金属铃音；板载S1循环切换，S2延音按音色适配，S4/EC11调音量、双区八度、释放或Lead滑音。八声部、50 MHz PnR通过，34 BSRAM/52 DSP，最小setup余量0.183 ns；[上板试听步骤](project/timbre_gallery/BOARD_TEST.md)。**八音色已收到首轮试听反馈：Warm pluck、Drive lead、Metallic bell获认可作为拓展候选；钢琴/Organ/Clean lead有音区响度差异，Organ/Pad杂音仍明显。详见[板测记录](evidence/timbre_gallery_2026-09-27/BOARD_LISTENING.md)。旧噪声根因未解决；独立报告不能替代与C整合后的时序。**
 
 **9月27日音质排查候选：** [audio_output_lab](project/audio_output_lab/README.md)提供统一钢琴/柔和拨弦对照、钢琴固定降低电平、发送沿错开、整体反相四份独立工程。四版50MHz PnR通过，均34 BSRAM/50 DSP；[上板顺序](project/audio_output_lab/BOARD_TEST.md)。此轮是有针对性的缓解/诊断，**首轮试听：起音问题未再听到、颤动杂音减轻但仍残留，02/03与00无明显差别；用户补充00最大音量下颤动仍明显改善，不宣称根因修复**；旧palette/final仍保留。

@@ -1,10 +1,12 @@
-# 当前状态 · 2026-09-27
+# 当前状态 · 2026-09-28
 
 本页是三人共同工作的事实入口。根目录旧规划已归档；历史日期的“等待板测”“仓库尚未创建”等不代表现在。功能状态必须区分RTL仿真、构建、真实上板、用户验收。
 
 工程目录的复用等级和证据范围见[工程分类索引](../catalog/PROJECT_INDEX.md)与[证据索引](../../evidence/INDEX.md)；本页负责当前项目事实，索引负责文件生命周期，不互相替代。
 
 ## 已确定
+
+**五音色后续方向：** 用户选择Precision harmonic piano、原有拨弦、Warm pluck、Metallic bell、Drive lead，取代未来音频工程的双音色编号。A建立独立的[five_timbre_core](../../project/five_timbre_core/README.md)与三份同操作音区对照；真实听感仍待用户验收，不覆盖已板测的final_dual_timbre。其双区25键适配是数字验证，现有实物仍为16键矩阵。项目状态、资源与时序以该工程[验证记录](../../project/five_timbre_core/VALIDATION.md)更新为准。
 
 **八音色合辑首轮板测反馈：** 用户认可Warm pluck（“好像没有尖锐杂音了”）、Drive lead和Metallic bell作为拓展可选音色；Clean lead很干净但电子感较重、起音尾音不突出。钢琴、Organ、Clean lead均有低音小/高音大的听感差异；Organ尖锐声明显、Pad杂音大且效果一般，Electric keys与钢琴相近但偏好低于钢琴。见[逐项记录与数字电平核对](../../evidence/timbre_gallery_2026-09-27/BOARD_LISTENING.md)。原“待用户试听”指生成时状态，本次不扩大为全部控制功能通过或噪声根因修复；未改变RTL/固件或冻结最终音色。
 

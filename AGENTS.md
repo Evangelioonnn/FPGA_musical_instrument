@@ -12,12 +12,13 @@
 
 ## 事实与验证
 
+- 2026-09-28新决定：A后续音频核心统一采用五音色编号：0 Precision harmonic piano、1 final_dual_timbre原拨弦、2 Warm pluck、3 Metallic bell、4 Drive lead。独立候选见project/five_timbre_core；新候选完成数字/PnR不等于用户已试听，旧final_dual_timbre仍是实物回退基准。未来共享接口与最终整合应明确使用五音色映射，不再默认只有两个。
 - docs/project/STATUS.md为当前进度；docs/history是有日期的历史，旧“待上板”或“琴键优先”等建议不能直接沿用。
 - 2026-09-26当前决定：final_dual_timbre的harmonic_piano/pluck和实体控制已获用户板测认可；旧原正弦只保留历史诊断基准，不强制作为新产品默认。用户拟增加第三音色、恢复选择性延音/滑音。独立HDMI彩条已实测1920×1080、61Hz稳定，尚未合并音频。B/C按docs/team/RESOURCE_BUDGET_V1.md独立开发；音频80块BSRAM需优化至预算内，不能把目标表当成实测。下面带旧日期的状态按历史范围理解。
 - 同日IO修正：B可使用J13 40针扩展口，原PMOD 12根不是B总上限。J13为36根直接信号+2根电阻选择信号+5V/GND；与两组PMOD合计52根直接候选信号。见docs/board/J13_GPIO.md；该结论是资料核对，尚无J13逐针实测，不能把J14/SDRAM1共享排针重复计入。
 - 正式规则看references/competition官方PDF；学长指导是非官方建议。用户禁止软核替代核心是项目架构决定，不伪造为官方逐字规定。
 - 板卡为Tang Mega 60K基础套餐＋NEO Dock。DK_START官方评估板、138K开发板均不等于本板。显示引脚资料存在差异，查docs/board/DISPLAY.md，禁止直接套用整份参考CST。
-- 默认试听音色必须复用原instrument的正弦DDS＋ADSR 68/6/32768/3，遵守AUDIO_TEST_BASELINE.md；新音色单独实验。电脑参考音可接受，真实耳机仍有随音高变化的尖锐声，不能写为已修复。
+- 原instrument正弦DDS＋ADSR 68/6/32768/3是历史诊断基准，AUDIO_TEST_BASELINE.md适用于引用它的旧测试；当前五音色试听默认钢琴见上条。电脑参考音可接受，真实耳机仍有随音高变化的尖锐声，不能写为已修复。
 - expression_baseline保留旧自动演示，expression是扩展候选。system v0已有输入适配/配置仲裁/真实meter与快照/独立CDC的数字验证；外设针位/ADC硬件、蓝牙和显示尚未接入。system_top仍只自动演示；旧baseline的meter仍占位。左右样本相同，L/R李萨如只能得到直线。
 - 新共享契约见docs/interfaces/SYSTEM_V0.md。旧baseline的retune只改元数据，不能引用为真实变调已验证；system v0已将pitch_we送入DDS。8/16声部构建通过，32声部容量实验的50MHz时序未通过，不能作为达标固件。
 - EC11独立持续变调探针已板测通过，A=T18/B=R17、3.3V、C悬空；按压未确认。knob_suite五份固件数字验证/PnR通过，首次板测认可音量/释放与基础弹奏，但快转新音起音有大噪声，转动切换音色时有延后附加声；本轮电脑参考无此异常，固定音色不转时无新增间隔声。见evidence/knob_suite_2026-09-20/BOARD_LISTENING.md，不可写为音质通过。逐格弹奏16声部、三音色8声部；其定时接口不替代SYSTEM_V0，不支持外部按键逐实例note_off。
