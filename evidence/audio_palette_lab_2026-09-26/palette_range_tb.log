@@ -1,0 +1,19 @@
+Reading E:/QuartusII/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.1d
+
+# vsim -do {run -all; quit -f} -lib work_palette -c palette_range_tb
+# Loading work_palette.palette_range_tb
+# Loading work_palette.palette_bank
+# Loading work_palette.note_table
+# Loading work_palette.pluck_note_table
+# Loading work_palette.palette_shared_tone
+# Loading work_palette.palette_sine
+# Loading work_palette.palette_slot
+# Loading work_palette.palette_tone_state
+# Loading work_palette.palette_pluck
+# Loading work_palette.adsr_envelope
+# run -all
+# PALETTE_RANGE_TB_PASS 49 notes C2-C6, back-to-back init, 35/85/127 rejected, frames=217
+# ** Note: $finish    : D:/uestc/SCM/GowinFPGA/project/audio_palette_lab/sim/palette_range_tb.v(49)
+#    Time: 4384020 ns  Iteration: 1  Instance: /palette_range_tb

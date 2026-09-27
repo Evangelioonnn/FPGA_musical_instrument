@@ -1,0 +1,23 @@
+Reading E:/QuartusII/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.1d
+
+# vsim -do {run -all; quit -f} -lib work_palette -c palette_equivalence_tb
+# Loading work_palette.palette_equivalence_tb
+# Loading work_palette.final_bank
+# Loading work_palette.palette_bank
+# Loading work_palette.note_table
+# Loading work_palette.pluck_note_table
+# Loading work_palette.palette_shared_tone
+# Loading work_palette.final_slot
+# Loading work_palette.clean_voice
+# Loading work_palette.adsr_envelope
+# Loading work_palette.pluck_voice
+# Loading work_palette.sine_rom
+# Loading work_palette.palette_slot
+# Loading work_palette.palette_tone_state
+# Loading work_palette.palette_pluck
+# run -all
+# PALETTE_EQUIVALENCE_TB_PASS 4582 frames: eight voices, mixed timbres, sustain, release, full rejection
+# ** Note: $finish    : D:/uestc/SCM/GowinFPGA/project/audio_palette_lab/sim/palette_equivalence_tb.v(56)
+#    Time: 95288571 ns  Iteration: 1  Instance: /palette_equivalence_tb

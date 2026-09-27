@@ -1,0 +1,13 @@
+Reading E:/QuartusII/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.1d
+
+# vsim -do {run -all; quit -f} -lib work_palette -c palette_math_tb
+# Loading work_palette.palette_math_tb
+# Loading work_palette.palette_shared_tone
+# Loading work_palette.sine_rom
+# Loading work_palette.palette_sine
+# run -all
+# PALETTE_MATH_TB_PASS 14336 profile/phase/envelope vectors
+# ** Note: $finish    : D:/uestc/SCM/GowinFPGA/project/audio_palette_lab/sim/palette_math_tb.v(20)
+#    Time: 450640 ns  Iteration: 1  Instance: /palette_math_tb
