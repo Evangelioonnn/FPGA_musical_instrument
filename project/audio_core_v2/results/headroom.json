@@ -1,0 +1,91 @@
+{
+  "pluck_capacity": 12,
+  "logical_capacity": 32,
+  "raw_q4_bounds": {
+    "piano": 47103,
+    "custom_sum368": 47103,
+    "bell": 32768,
+    "lead": 46249,
+    "warm": 16384
+  },
+  "allowed_mixtures": [
+    {
+      "pluck": 0,
+      "harmonic": 32,
+      "mixed_pcm_bound": 23552
+    },
+    {
+      "pluck": 1,
+      "harmonic": 31,
+      "mixed_pcm_bound": 23840
+    },
+    {
+      "pluck": 2,
+      "harmonic": 30,
+      "mixed_pcm_bound": 24128
+    },
+    {
+      "pluck": 3,
+      "harmonic": 29,
+      "mixed_pcm_bound": 24416
+    },
+    {
+      "pluck": 4,
+      "harmonic": 28,
+      "mixed_pcm_bound": 24704
+    },
+    {
+      "pluck": 5,
+      "harmonic": 27,
+      "mixed_pcm_bound": 24992
+    },
+    {
+      "pluck": 6,
+      "harmonic": 26,
+      "mixed_pcm_bound": 25280
+    },
+    {
+      "pluck": 7,
+      "harmonic": 25,
+      "mixed_pcm_bound": 25568
+    },
+    {
+      "pluck": 8,
+      "harmonic": 24,
+      "mixed_pcm_bound": 25856
+    },
+    {
+      "pluck": 9,
+      "harmonic": 23,
+      "mixed_pcm_bound": 26144
+    },
+    {
+      "pluck": 10,
+      "harmonic": 22,
+      "mixed_pcm_bound": 26432
+    },
+    {
+      "pluck": 11,
+      "harmonic": 21,
+      "mixed_pcm_bound": 26720
+    },
+    {
+      "pluck": 12,
+      "harmonic": 20,
+      "mixed_pcm_bound": 27008
+    }
+  ],
+  "mixed_peak_bound": 27008,
+  "pcm_headroom_codes": 5759,
+  "master_max_q16": 65536,
+  "room_bounded_convex": true,
+  "passed": true,
+  "source_sha256": {
+    "project/audio_core_v2/tools/headroom.py": "fbf19f92f7eedd037f38e3097030126bad02b69a73047ca966a31b190d4c5dcf",
+    "project/audio_core_v2/src/audio_v2_bank_stream.v": "c16f77aa1d9daab1f779ff58d48a3d7596331d8984712cd7dd6b027fab580b86",
+    "project/audio_core_v2/src/audio_v2_tone.v": "2837ca4c2d4fdc47b5a20ff35d847fe854530db66dda93aca9afefbe4b2b2761",
+    "project/audio_core_v2/src/audio_v2_pluck.v": "fde15a0ee4ffa359fffc5d170903974132e60732e35df9898e7cb8cfac0175f4",
+    "project/audio_core_v2/src/audio_v2_pool_slot.v": "582233542c72383d999129a5f402ceb96b00b1f372f74da8b24fe9baf3919b4b",
+    "project/audio_fx_lab/src/short_room_reverb.v": "6eb46abe6475e578b73ea6e40def648a4a6304b293ac56c8679bb4478099742d"
+  }
+}

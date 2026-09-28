@@ -6,6 +6,8 @@ A是当前持板成员及项目用户。负责实时声音生成、选定效果�
 
 ## 当前最有价值的工作
 
+9月29日用户已认可V1及独立钢琴16/32声部。新的[音频V2](../../project/audio_core_v2/README.md)已完成八项数字回归、七段RTL参考音及源码核对：四种谐波音色共享32槽、Warm pluck12、混合总32，实际19针24052 Logic/10684 Reg/66 BSRAM/24.5 DSP，50MHz余量0.632ns。完整接口+输入仅综合余718 Logic，SPI和新扫描器接入时必须再核算，不能抢占C额度。A下一步按V2的BOARD_TEST单独验收；B/C无需改变独立研发顺序，接口对接看[AUDIO_CORE_V2](../interfaces/AUDIO_CORE_V2.md)。旧V1及final保持回退。
+
 9月28日下午的新[音频核心V1](../../project/audio_core_v1/README.md)已完成数字/50MHz阶段，菜单0/2/3/4/5、统一参数、ADSR/延音/Lead调制、房间效果、真实PCM/状态。主版本42 BSRAM/72.5 DSP、setup余量2.562ns；独立钢琴16/32共享架构也通过，不等于已合并多模式。A下一步先按[本轮验收](../project/AUDIO_CORE_REVIEW_2026-09-28.md)试听，再与B聚焦控制板；实体ADC接入只需局部适配，不复制一套音量/系数状态。C交接用[AUDIO_CORE_V1](../interfaces/AUDIO_CORE_V1.md)，保留原SYSTEM_V0为历史契约。新固件未板测、显示/蓝牙未整合。
 
 下面9月28日早期/9月26日规划保留生成时范围；已认可的五音色与四谐波调节、删原拨弦后的最新名单以上条和STATUS为准。

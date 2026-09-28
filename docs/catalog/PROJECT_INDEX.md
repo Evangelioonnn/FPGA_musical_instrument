@@ -1,5 +1,7 @@
 # 工程分类索引
 
+新增[audio_core_v2](../../project/audio_core_v2/README.md)：`INTEGRATION_CANDIDATE`，固定0/2/3/4/5菜单、32共享逻辑声部/12路Warm pluck物理池，混合总数≤32；谐波固定每音1/4、拨弦原电平。正式入口audio_v2.gprj/audio_v2_top，19针50MHz PnR24052/10684/66/24.5、余量0.632ns；完整25键+现有输入仅综合28282/15135/53/24.5。八项数字回归、七段参考音及当前源码核对完成，新固件未板测，未合并C/实体ADC；16拨弦及其他失败架构明确分在experiments，不能下载。用户已认可V1和独立16/32板测，详见[9月29日记录](../../evidence/audio_core_v1_2026-09-29/BOARD_LISTENING.md)。
+
 新增[project/audio_core_v1](../../project/audio_core_v1/README.md)：`INTEGRATION_CANDIDATE`，当前0/2/3/4/5五项菜单、八声部、统一参数/ADC模拟输入、ADSR/延音/Lead调制、短房间效果及真实PCM/832bit状态。19针50MHz PnR为24151 Logic/10918 Reg/42 BSRAM/72.5 DSP、setup余量2.562ns；数字验证与非对称立体声串行通过，新固件待用户板测。入口：[验收](../project/AUDIO_CORE_REVIEW_2026-09-28.md)、[接口](../interfaces/AUDIO_CORE_V1.md)。
 
 新增[project/audio_polyphony_lab](../../project/audio_polyphony_lab/README.md)：`EXPERIMENT / RTL_REFERENCE`，钢琴共享ROM/算子，16/32声部独立模型和50MHz PnR通过，4/10 BSRAM、各2 DSP；安全版每音固定1/2、1/4，不偷音或按活跃数改电平。没有和五音色合并，未板测，不能替换旧full-volume声音评价。

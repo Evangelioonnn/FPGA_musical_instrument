@@ -1,5 +1,7 @@
 # FPGA 实时电子乐器 · 三人协作仓库
 
+**9月29日音频V2候选已完成：** 用户已验收音频V1及独立钢琴16/32复音，见[实物反馈](evidence/audio_core_v1_2026-09-29/BOARD_LISTENING.md)。新增[音频V2](project/audio_core_v2/README.md)完成八项数字回归及七段真实RTL参考音：钢琴/铃音/Lead/custom共享32声部、Warm pluck12声部，总数不超过32；同一五项菜单，谐波固定每音1/4、拨弦原电平。19针50MHz PnR为24052 Logic/10684 Reg/66 BSRAM/24.5 DSP、setup余量0.632ns；全接口含现有输入仅综合28282/15135/53/24.5。V2仍待本轮板测，显示/蓝牙/真实ADC未合并，C预算不变。[验收入口](docs/project/AUDIO_CORE_REVIEW_2026-09-29.md) · [接口V2](docs/interfaces/AUDIO_CORE_V2.md)。下文旧“待板测”按其日期理解，最新以STATUS为准。
+
 **9月28日音频核心V1整合候选：** [audio_core_v1](project/audio_core_v1/README.md)已将菜单改为0→2→3→4→5，保留钢琴/Warm pluck/铃音/Drive lead/自定义四谐波；八声部、统一配置/ADC模拟接口、ADSR覆盖、两种延音、Lead调制、可旁路短房间效果和真实PCM/状态。19针顶层50MHz PnR为24151 Logic / 10918 Register / 42 BSRAM / 72.5 DSP，setup/hold 0/0，最小setup余量2.562ns。另有[独立16/32声部钢琴](project/audio_polyphony_lab/README.md)通过50MHz，安全版每音固定1/2、1/4电平；尚未与五音色合并。入口：[本轮验收](docs/project/AUDIO_CORE_REVIEW_2026-09-28.md)、[给B/C的新接口](docs/interfaces/AUDIO_CORE_V1.md)。本轮新固件仍待实物验收；旧六项custom固件及final回退保持原样，显示/蓝牙/实体ADC未接入。
 
 **9月28日试听与选择记录：** 五音色及四谐波分别调节已获用户听感认可；保留Precision harmonic piano、Warm pluck、Metallic bell、Drive lead、自定义四谐波，原拨弦退出选择名单但保留历史源码。RTL ID依次为0/2/3/4/5；试听时的custom_harmonic_lab仍为六项循环，随后audio_core_v1已改为上述五项菜单。详见[试听记录与编号边界](evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。下列旧名单与生成时“待试听”描述只适用于各自历史工程，当前入口见本页首条及STATUS。

@@ -1,5 +1,7 @@
 # C：蓝牙扩展与外屏可视化
 
+**9月29日音频更新：** V1已获用户认可，V2新候选扩为总32逻辑声部/12 Warm pluck，音色ID仍0/2/3/4/5。你的13k Logic/10k Reg/26 BSRAM/16 DSP/1 PLL预算不变。当前数据接口以[AUDIO_CORE_V2](../interfaces/AUDIO_CORE_V2.md)为新适配提案，V1保留回退；请用能力表选择版本，不把旧832bit解析器直接用于V2的2368bit基础快照+256bit扩展+键图。整个bundle同沿发布并需整体CDC，最终L/R可在房间效果开启时不同；关闭效果通常相同。V2本轮新固件仍待板测，显示/蓝牙未合并，不能将独立PnR数字相加宣称整机实现通过。以下旧日期系统说明仅为历史参考。
+
 你负责蓝牙模块扩展、客户端必要功能，以及利用NEO Dock外接显示器资源实现FPGA实时反馈。具体画面和效果由你设计；不预先强制琴键照片、五线谱或某一显示分辨率。
 
 入口：[通信](../../project/communication/README.md)、[显示](../../project/visual/README.md)、[素材](../../assets/README.md)、[客户端](../../host/README.md)。先读[官方指标](../project/REQUIREMENTS.md)和[显示硬件差异](../board/DISPLAY.md)。

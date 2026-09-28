@@ -4,6 +4,7 @@
 
 | 接口 | 状态 | 入口 |
 |---|---|---|
+| 音频核心V2 | 32共享声部/12 Warm pluck、V2能力表/2368bit基础快照+扩展+键图；19针PnR与全接口输入综合通过，新固件待板测；真实ADC/C/整机PnR仍待接入 | [AUDIO_CORE_V2](AUDIO_CORE_V2.md) |
 | 音频核心V1 | 统一五音色配置/ADC模拟接口、真实最终PCM/832bit快照；数字及19针PnR通过，实体ADC/显示CDC/蓝牙整机待集成；不覆盖旧SYSTEM_V0 | [AUDIO_CORE_V1](AUDIO_CORE_V1.md) |
 | system v0统一候选 | FIFO/输入路由/配置仲裁/真实快照/CDC已数字验证；真实外设、BLE和显示待集成 | [SYSTEM_V0](SYSTEM_V0.md) |
 | 矩阵演奏实例候选 | 32bit独立身份与逐实例松键、三音色真实输入顶层；数字/PnR通过，实物未验收；不替换SYSTEM_V0 | [MATRIX_PLAYABLE_V1](MATRIX_PLAYABLE_V1.md) |

@@ -12,6 +12,8 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 RECORDS = (
+    ('project/audio_core_v2/results/validation.json', 'audio_core_v2'),
+    ('evidence/audio_core_v2_2026-09-29/validation.json', 'audio_core_v2'),
     ('project/audio_core_v1/results/validation.json', 'audio_core_v1'),
     ('evidence/audio_core_v1_2026-09-28/validation.json', 'audio_core_v1'),
     ('project/audio_core_v1/experiments/interface_audit/result.json', 'audio_core_v1'),

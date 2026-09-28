@@ -12,6 +12,8 @@
 
 ## 事实与验证
 
+- 2026-09-29：用户已认可audio_core_v1主工程和独立piano16/piano32的音色、效果及复音，见evidence/audio_core_v1_2026-09-29/BOARD_LISTENING.md；不是模拟SNR/延迟或C/ADC整机验收。新audio_core_v2完成八项数字回归、七段RTL参考音及当前源指纹核对：0/3/4/5共享32槽、Warm pluck2物理池12、混合总数≤32，谐波每音固定V1的1/4、拨弦原电平，不偷音、不按活跃数归一化。最坏渲染653/1040时钟，32个不同音高独立相位对照通过；实际矩阵参数下四种闭合相位到非零串行字最坏2.12198ms，非模拟端延迟。唯一入口audio_v2.gprj/audio_v2_top/19 IO；最终50MHz PnR24052 Logic/10684 Reg/66 BSRAM/24.5 DSP，setup/hold 0/0、余量0.632ns。完整25键+现有输入/发送器仅综合28282/15135/53/24.5，Logic余718；实体SPI/新扫描器/显示/蓝牙接入需再PnR，不能借综合或独立数相加宣称整机通过。V2新固件未板测，C预算26 BSRAM/16 DSP等不变；接口看docs/interfaces/AUDIO_CORE_V2.md，旧V1/final保持回退。以下旧日期“待板测”按当时范围理解。
+
 - 2026-09-28下午音频V1：project/audio_core_v1已采用0→2→3→4→5菜单，八声部，统一host/local/ADC模拟参数服务、真实PCM/832bit快照、ADSR覆盖、两种延音、Lead滑入/弯音/可关颤音、可旁路短房间效果。19针audio_top的最终50MHz PnR为24151 Logic/10918 Reg/42 BSRAM/72.5 DSP，setup/hold 0/0、余量2.562ns；全接口另仅综合审计，非整机PnR。新固件仍待用户板测、SPI ADC/J13/显示/蓝牙未接；先读docs/project/AUDIO_CORE_REVIEW_2026-09-28.md与docs/interfaces/AUDIO_CORE_V1.md。旧custom六项菜单和final回退保留原样。
 - 同轮高复音：project/audio_polyphony_lab钢琴16/32共享ROM与算子独立模型、50MHz PnR均通过，4/10 BSRAM、各2 DSP，渲染258/514时钟。安全版16每音固定1/2、32每音固定1/4，不能描述为原电平不变；不用活跃数压音量、不偷音。尚未合并五音色或C、未板测；旧capacity32时序失败只指旧实现。四谐波共相位/包络不能冒充32个独立振荡器。
 - 2026-09-28试听决定记录：五音色与四谐波分别调节获用户认可；暂定保留0 Precision harmonic piano、2 Warm pluck、3 Metallic bell、4 Drive lead、5自定义四谐波。ID 1原拨弦退出后续菜单但保留历史源码；禁止静默重编号。当时custom实验仍六项循环、仅记录菜单计划；后续audio_core_v1已采用0→2→3→4→5→0。见evidence/audio_selection_2026-09-28/BOARD_LISTENING.md；final_dual_timbre仍保留回退。

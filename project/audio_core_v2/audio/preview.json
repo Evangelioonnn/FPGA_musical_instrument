@@ -1,0 +1,114 @@
+{
+  "pluck_capacity": 12,
+  "master_q16": 65536,
+  "normalised": false,
+  "harmonic_per_note_gain": "1/4 of V1",
+  "pluck_per_note_gain": "unchanged",
+  "actual_frame_clocks": 1040,
+  "sample_rate_exact_hz": 48076.92307692308,
+  "order": [
+    "piano0",
+    "Warm pluck2",
+    "bell3",
+    "Drive lead4",
+    "custom5",
+    "piano32 repeats",
+    "Lead + room/vibrato"
+  ],
+  "sources": {
+    "project/custom_harmonic_lab/src/custom_gallery_shared_tone.v": "4a5ef80d76e1a2a1e6b029fb19f8b973b37bd23d398cee0c3b69731ddb03e592",
+    "project/custom_harmonic_lab/src/custom_harmonic_params.v": "cfc51e8929c76915cad5ca1338ac0627dfeb20e7ee74ae9503f64327236fe6a2",
+    "project/five_timbre_core/src/gallery_keys.v": "5599d315235f1f49c01cd3161f7cd0f676fd8ef38c80bfdc8c0ee8771428b800",
+    "project/five_timbre_core/src/gallery_led.v": "129d66b9b4322b6c7973087c93e467ce1792ffe55dc96931999ad6ddcc2b4700",
+    "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+    "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+    "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+    "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+    "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+    "project/final_dual_timbre/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+    "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+    "project/final_dual_timbre/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+    "project/final_dual_timbre/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+    "project/final_dual_timbre/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+    "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+    "project/audio_palette_lab/src/palette_pluck.v": "c7c86d36f3a500c16ff2e1a28e358669de5bee3d2e6bd0a2933a9c997ea4e851",
+    "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+    "project/audio_output_lab/src/output_tx.v": "7cefd245f5c8984ee6b0a4089b8aabd6ee950f242a11c4a6d34fde46933460c3",
+    "project/audio_output_lab/src/output_polarity.v": "678f6604d4a6f0c48074fe9373c5e0d679d06a92ad7804e8146d95fbcd3fe70a",
+    "project/audio_core_v1/src/audio_panel.v": "55bafc9b9a47577ab331f426f55d1a9503a88a761fec58a6b955051f6d70032a",
+    "project/audio_parameter_lab/src/audio_parameter_service.v": "528b047f1cba950e96b5dff8a6054ccdabe42df54c9af7f71529ebdba3616974",
+    "project/audio_fx_lab/src/short_room_reverb.v": "6eb46abe6475e578b73ea6e40def648a4a6304b293ac56c8679bb4478099742d",
+    "project/audio_fx_lab/src/vibrato_factor.v": "b4f705871fdc3e32e7f41995fefe62c7322c08de2b98830d7468ae2cdbda2b5e",
+    "project/audio_core_v2/src/audio_v2_bank_stream.v": "c16f77aa1d9daab1f779ff58d48a3d7596331d8984712cd7dd6b027fab580b86",
+    "project/audio_core_v2/src/audio_v2_pluck.v": "fde15a0ee4ffa359fffc5d170903974132e60732e35df9898e7cb8cfac0175f4",
+    "project/audio_core_v2/src/audio_v2_pool_slot.v": "582233542c72383d999129a5f402ceb96b00b1f372f74da8b24fe9baf3919b4b",
+    "project/audio_core_v2/src/audio_v2_tone.v": "2837ca4c2d4fdc47b5a20ff35d847fe854530db66dda93aca9afefbe4b2b2761",
+    "project/audio_core_v2/src/audio_v2_core.v": "e6487ff9ca5d027ecdc3668cb453d5af82d1318709c0458fd9f41bd23d0f3a39",
+    "project/audio_core_v2/src/audio_v2_slot.v": "c274ef795562020bcd0e533dd8acfb65d912e5f893282afdeb2c7b5029849f34",
+    "project/audio_core_v2/src/audio_v2_state.v": "7455735c777c5db2dab7c139da32acdfd2665a9de560a720cc84dac20e1580e0",
+    "project/audio_core_v2/src/audio_v2_top.v": "b697064239ecd0f11d0268717360fda28800d94885e3c0add6e3e2822fbf9a61",
+    "project/audio_core_v2/variants/stream12/top.v": "9b6e5eec6d3902809d15139af1385e90d351b116eac0312f11fc145b068d6ba3",
+    "project/audio_core_v2/sim/v2_render_tb.v": "5132b49fa59759cfe1dfb614bd5425535a7d74d690b5475c6cfd3821d3339b56",
+    "project/audio_core_v2/tools/render.py": "58a4d845b60689bdb5d9c400b67f34fad832155df6b903fc0ead8b99565981fc",
+    "project/audio_core_v2/variants/stream12/stream12.gprj": "0106c53472311d207c82a6666e94bfe2923a053f86969d1463f1c0388f44b31e"
+  },
+  "scenes": [
+    {
+      "scene": 0,
+      "frames": 24008,
+      "peak": 1290,
+      "sha256": "d4cf52fa8c873388eee075a2a3a5c71bc59d961ff627a61770ad9d9267cc08c3",
+      "file": "project/audio_core_v2/audio/v2_00_preview.wav",
+      "marker": "# V2_RENDER_TB_PASS P=12 SCENE=0 actual1040-clock PCM frames=25108"
+    },
+    {
+      "scene": 1,
+      "frames": 24008,
+      "peak": 569,
+      "sha256": "896a94939506409e984f39777dc4e43ae48d86f7e46393feb2fb9986edfe0e56",
+      "file": "project/audio_core_v2/audio/v2_01_preview.wav",
+      "marker": "# V2_RENDER_TB_PASS P=12 SCENE=1 actual1040-clock PCM frames=25108"
+    },
+    {
+      "scene": 2,
+      "frames": 24008,
+      "peak": 1089,
+      "sha256": "6bda6c4cbb18c6a520259025fd6b48b4335b962a833d7b0794b5b53b10af185e",
+      "file": "project/audio_core_v2/audio/v2_02_preview.wav",
+      "marker": "# V2_RENDER_TB_PASS P=12 SCENE=2 actual1040-clock PCM frames=25108"
+    },
+    {
+      "scene": 3,
+      "frames": 24008,
+      "peak": 1536,
+      "sha256": "ac412e4f41427eafca97666f40951e25088e44a2bb2582e023dab11d05e6aaa7",
+      "file": "project/audio_core_v2/audio/v2_03_preview.wav",
+      "marker": "# V2_RENDER_TB_PASS P=12 SCENE=3 actual1040-clock PCM frames=25108"
+    },
+    {
+      "scene": 4,
+      "frames": 24008,
+      "peak": 1290,
+      "sha256": "d4cf52fa8c873388eee075a2a3a5c71bc59d961ff627a61770ad9d9267cc08c3",
+      "file": "project/audio_core_v2/audio/v2_04_preview.wav",
+      "marker": "# V2_RENDER_TB_PASS P=12 SCENE=4 actual1040-clock PCM frames=25108"
+    },
+    {
+      "scene": 5,
+      "frames": 13353,
+      "peak": 410,
+      "sha256": "b5e5e49294bf59d287c5a9147975825dcf6e33a0fa23ac34f6903c1d77bd50b4",
+      "file": "project/audio_core_v2/audio/v2_05_preview.wav",
+      "marker": "# V2_RENDER_TB_PASS P=12 SCENE=5 actual1040-clock PCM frames=14453"
+    },
+    {
+      "scene": 6,
+      "frames": 24008,
+      "peak": 1184,
+      "sha256": "90819c90838a902acb727e8fbe36fb74b5b8091d9836d5d0d9a9f6041486b1d9",
+      "file": "project/audio_core_v2/audio/v2_06_preview.wav",
+      "marker": "# V2_RENDER_TB_PASS P=12 SCENE=6 actual1040-clock PCM frames=25111"
+    }
+  ],
+  "ROM_exhaustive_equivalence": true
+}
