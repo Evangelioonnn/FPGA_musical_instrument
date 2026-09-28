@@ -1,5 +1,7 @@
 # 工程分类索引
 
+**9月28日最新试听与选择：** 五音色及四谐波分别调节已获用户听感认可；后续暂定保留Precision harmonic piano、Warm pluck、Metallic bell、Drive lead、自定义四谐波，原拨弦退出选择名单但保留历史源码。现有RTL ID依次为0/2/3/4/5；当前固件仍为六项循环，尚未改菜单。详见[试听记录与编号边界](../../evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。下列旧名单与生成时“待试听”描述保留历史范围，以本条更新为准。
+
 本页是 `project/` 下工程的分类入口。分类描述工程当前能承担的用途，不把某个模块的仿真结果扩大成整机验收。具体命令、参数、资源和限制以工程内的 `README.md`、`SPEC.md`、`VALIDATION.md` 及 `docs/project/STATUS.md` 为准。
 
 ## 状态标签

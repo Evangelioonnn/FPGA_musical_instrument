@@ -1,5 +1,7 @@
 # Board audition candidate
 
+**2026-09-28 audition update:** 用户已认可五音色及四谐波分别调节效果；暂定保留ID 0/2/3/4/5，旧ID 1退出后续菜单。当前固件及以下操作未改变；“待试听”描述为生成时状态。实体ADC及音频/显示/蓝牙整合仍未验证。见[最新试听与选择记录](../../evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。
+
 This is a separate six-option audition build. The first five preset sounds and
 controls retain the five-timbre candidate behavior; pressing S1 once more
 selects preset 5, the editable four-harmonic renderer at its accepted piano

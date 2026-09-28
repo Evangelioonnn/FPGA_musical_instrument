@@ -1,10 +1,12 @@
 # Editable harmonic validation
 
+**2026-09-28 audition update:** 用户已认可五音色及四谐波分别调节效果；暂定保留ID 0/2/3/4/5，旧ID 1退出后续菜单。当前固件及以下操作未改变；“待试听”描述为生成时状态。实体ADC及音频/显示/蓝牙整合仍未验证。见[最新试听与选择记录](../../evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。
+
 Date: 2026-09-28. Owner: A. Branch: `codex/editable-harmonic`.
 
 This is a digital design candidate. It is not yet connected to a physical ADC,
-has not been auditioned on the board, and is not integrated with display or
-Bluetooth. `final_dual_timbre` remains the physical rollback. Four shared-phase
+has received positive user audition feedback for individual harmonic controls,
+and is not integrated with display or Bluetooth. `final_dual_timbre` remains the physical rollback. Four shared-phase
 harmonics are a spectral shape per voice, not 32 independent oscillators.
 
 ## RTL checks

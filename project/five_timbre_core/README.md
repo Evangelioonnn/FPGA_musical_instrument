@@ -1,5 +1,7 @@
 # Five-timbre performance core
 
+**2026-09-28 audition update:** 用户已认可五音色及四谐波分别调节效果；暂定保留ID 0/2/3/4/5，旧ID 1退出后续菜单。当前固件及以下操作未改变；“待试听”描述为生成时状态。实体ADC及音频/显示/蓝牙整合仍未验证。见[最新试听与选择记录](../../evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。
+
 This A-owned candidate collects the five user-selected presets in one playable
 firmware, with two sound-balancing comparisons. See [SPEC](SPEC.md) for stable
 IDs and control semantics, [BOARD_TEST](BOARD_TEST.md) for physical audition,

@@ -1,5 +1,7 @@
 # 验证证据索引
 
+新增[9月28日试听与音色选择](audio_selection_2026-09-28/BOARD_LISTENING.md)：五音色及四谐波调节获认可，暂定后续保留钢琴/Warm pluck/铃音/Drive lead/自定义四谐波。当前固件仍六项，实体ADC未接入。
+
 这里列出当前保留的证据包。证据是结论的记录，不是源码依赖，也不等于最终比赛验收。
 
 新增[八音色合辑首轮板测记录](timbre_gallery_2026-09-27/BOARD_LISTENING.md)：拨弦/Drive lead/铃音获可选音色认可；钢琴/Organ/Clean lead有音区响度差异，Organ/Pad杂音仍待处理。含既有C3/C5数字电平对照，未宣称噪声根因修复。

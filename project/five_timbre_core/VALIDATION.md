@@ -1,13 +1,15 @@
 # Five-timbre candidate validation
 
+**2026-09-28 audition update:** 用户已认可五音色及四谐波分别调节效果；暂定保留ID 0/2/3/4/5，旧ID 1退出后续菜单。当前固件及以下操作未改变；“待试听”描述为生成时状态。实体ADC及音频/显示/蓝牙整合仍未验证。见[最新试听与选择记录](../../evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。
+
 Date: 2026-09-28
 
 Owner: A
 
 Branch: `codex/five-timbre-night`
 
-This is a digital candidate for the Tang Mega 60K + NEO Dock. **The user has
-not yet auditioned any of these five-preset builds on the board.** The tested
+This is a digital candidate for the Tang Mega 60K + NEO Dock. **The user reports acceptable sound and tested controls across the five
+presets, with no large audible difference among 00/01/02.** The tested
 `final_dual_timbre` build remains the physical rollback point. A passing RTL
 test, PnR, or rendered WAV does not establish board audio quality or fix the
 known pitch-related sharp noise.

@@ -1,5 +1,7 @@
 # FPGA 实时电子乐器 · 三人协作仓库
 
+**9月28日最新试听与选择：** 五音色及四谐波分别调节已获用户听感认可；后续暂定保留Precision harmonic piano、Warm pluck、Metallic bell、Drive lead、自定义四谐波，原拨弦退出选择名单但保留历史源码。现有RTL ID依次为0/2/3/4/5；当前固件仍为六项循环，尚未改菜单。详见[试听记录与编号边界](evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。下列旧名单与生成时“待试听”描述保留历史范围，以本条更新为准。
+
 **9月28日音频下一版候选：** [five_timbre_core](project/five_timbre_core/README.md)将钢琴、原拨弦、Warm pluck、Metallic bell、Drive lead固定为五个编号；00/01/02分别用于原声、音区响度、响度加高音谐波对照。包含普通/选择性延音、Drive lead滑音与持音弯音、双区和25键输入适配实验。五音色编号是后续开发方向，新固件仍待用户上板试听，已验收的双音色版本保持回退；资源与时序见[验证记录](project/five_timbre_core/VALIDATION.md)。
 
 **9月28日可编辑音色候选：** [custom_harmonic_lab](project/custom_harmonic_lab/README.md)在五音色后增加候选编号5，提供四谐波Q8推子参数、CH0混音后音量、平滑更新和EC11模拟推子。八声部以分时共享乘法器运行，六项数字回归和独立整机PnR通过（21330 Logic / 9755 Register / 38 BSRAM / 70 DSP / 19 IO，Fmax 62.369MHz，setup/hold 0/0）；没有实体ADC/J13接入，也未做板卡试听。操作和限制见[板测候选说明](project/custom_harmonic_lab/BOARD_TEST.md)及[验证记录](project/custom_harmonic_lab/VALIDATION.md)。
