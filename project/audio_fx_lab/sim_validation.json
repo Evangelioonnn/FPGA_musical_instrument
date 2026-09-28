@@ -1,0 +1,25 @@
+{
+  "role": "A",
+  "board_tested": false,
+  "sample_rate_hz": 48076.92307692308,
+  "frame_spacing_clocks": 40,
+  "output_latency_clocks": 24,
+  "effect_frames_checked": 182384,
+  "vibrato_frames_checked": 200000,
+  "reference_source": "synthetic harmonic melody, effect rendered by real RTL",
+  "exact_integer_oracle_pass": true,
+  "bypass_pass": true,
+  "stereo_impulse_pass": true,
+  "full_scale_dc_bounds_pass": true,
+  "tail_decay_pass": true,
+  "source_sha256": {
+    "fx_resource_top.v": "e02e635d62f98a0b789fc1731376156c88f1a9bf07e60601357c5272f2b36d02",
+    "short_room_reverb.v": "6eb46abe6475e578b73ea6e40def648a4a6304b293ac56c8679bb4478099742d",
+    "vibrato_factor.v": "b4f705871fdc3e32e7f41995fefe62c7322c08de2b98830d7468ae2cdbda2b5e"
+  },
+  "source_lf_sha256": {
+    "fx_resource_top.v": "e02e635d62f98a0b789fc1731376156c88f1a9bf07e60601357c5272f2b36d02",
+    "short_room_reverb.v": "6eb46abe6475e578b73ea6e40def648a4a6304b293ac56c8679bb4478099742d",
+    "vibrato_factor.v": "b4f705871fdc3e32e7f41995fefe62c7322c08de2b98830d7468ae2cdbda2b5e"
+  }
+}

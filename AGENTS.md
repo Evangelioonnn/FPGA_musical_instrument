@@ -12,7 +12,9 @@
 
 ## 事实与验证
 
-- 2026-09-28最新试听决定：五音色与四谐波分别调节获用户认可；暂定保留0 Precision harmonic piano、2 Warm pluck、3 Metallic bell、4 Drive lead、5自定义四谐波。ID 1原拨弦退出后续菜单但保留历史源码；禁止静默重编号。当前custom固件仍六项循环，未来菜单拟0→2→3→4→5→0，本轮仅记录。见evidence/audio_selection_2026-09-28/BOARD_LISTENING.md；final_dual_timbre仍保留回退。
+- 2026-09-28下午音频V1：project/audio_core_v1已采用0→2→3→4→5菜单，八声部，统一host/local/ADC模拟参数服务、真实PCM/832bit快照、ADSR覆盖、两种延音、Lead滑入/弯音/可关颤音、可旁路短房间效果。19针audio_top的最终50MHz PnR为24151 Logic/10918 Reg/42 BSRAM/72.5 DSP，setup/hold 0/0、余量2.562ns；全接口另仅综合审计，非整机PnR。新固件仍待用户板测、SPI ADC/J13/显示/蓝牙未接；先读docs/project/AUDIO_CORE_REVIEW_2026-09-28.md与docs/interfaces/AUDIO_CORE_V1.md。旧custom六项菜单和final回退保留原样。
+- 同轮高复音：project/audio_polyphony_lab钢琴16/32共享ROM与算子独立模型、50MHz PnR均通过，4/10 BSRAM、各2 DSP，渲染258/514时钟。安全版16每音固定1/2、32每音固定1/4，不能描述为原电平不变；不用活跃数压音量、不偷音。尚未合并五音色或C、未板测；旧capacity32时序失败只指旧实现。四谐波共相位/包络不能冒充32个独立振荡器。
+- 2026-09-28试听决定记录：五音色与四谐波分别调节获用户认可；暂定保留0 Precision harmonic piano、2 Warm pluck、3 Metallic bell、4 Drive lead、5自定义四谐波。ID 1原拨弦退出后续菜单但保留历史源码；禁止静默重编号。当时custom实验仍六项循环、仅记录菜单计划；后续audio_core_v1已采用0→2→3→4→5→0。见evidence/audio_selection_2026-09-28/BOARD_LISTENING.md；final_dual_timbre仍保留回退。
 - 2026-09-28自定义音色实验：project/custom_harmonic_lab加入可选候选ID 5；Q8谐波默认[256,64,32,16]、CH0后混音主音量；五路系数/音量以sample_ce平滑更新，四谐波按声部分时计算。EC11在preset5下临时模拟CH0..CH4推子，SPI ADC仍未接入。用户已认可四谐波分别调节的试听效果，不等于实体ADC或所有压力工况板测通过；详情看该目录SPEC/VALIDATION/BOARD_TEST，旧五音色及final基线仍保留。
 - docs/project/STATUS.md为当前进度；docs/history是有日期的历史，旧“待上板”或“琴键优先”等建议不能直接沿用。
 - 2026-09-26当前决定：final_dual_timbre的harmonic_piano/pluck和实体控制已获用户板测认可；旧原正弦只保留历史诊断基准，不强制作为新产品默认。用户拟增加第三音色、恢复选择性延音/滑音。独立HDMI彩条已实测1920×1080、61Hz稳定，尚未合并音频。B/C按docs/team/RESOURCE_BUDGET_V1.md独立开发；音频80块BSRAM需优化至预算内，不能把目标表当成实测。下面带旧日期的状态按历史范围理解。
@@ -21,7 +23,7 @@
 - 板卡为Tang Mega 60K基础套餐＋NEO Dock。DK_START官方评估板、138K开发板均不等于本板。显示引脚资料存在差异，查docs/board/DISPLAY.md，禁止直接套用整份参考CST。
 - 原instrument正弦DDS＋ADSR 68/6/32768/3是历史诊断基准，AUDIO_TEST_BASELINE.md适用于引用它的旧测试；当前五音色试听默认钢琴见上条。电脑参考音可接受，真实耳机仍有随音高变化的尖锐声，不能写为已修复。
 - expression_baseline保留旧自动演示，expression是扩展候选。system v0已有输入适配/配置仲裁/真实meter与快照/独立CDC的数字验证；外设针位/ADC硬件、蓝牙和显示尚未接入。system_top仍只自动演示；旧baseline的meter仍占位。左右样本相同，L/R李萨如只能得到直线。
-- 新共享契约见docs/interfaces/SYSTEM_V0.md。旧baseline的retune只改元数据，不能引用为真实变调已验证；system v0已将pitch_we送入DDS。8/16声部构建通过，32声部容量实验的50MHz时序未通过，不能作为达标固件。
+- system历史共享契约见docs/interfaces/SYSTEM_V0.md；当前音频V1契约见docs/interfaces/AUDIO_CORE_V1.md。旧baseline的retune只改元数据，不能引用为真实变调已验证；system v0已将pitch_we送入DDS。旧8/16声部构建通过、旧capacity32的50MHz时序未通过；后续独立audio_polyphony_lab/piano32已通过，不混用两份实现的结论。
 - EC11独立持续变调探针已板测通过，A=T18/B=R17、3.3V、C悬空；按压未确认。knob_suite五份固件数字验证/PnR通过，首次板测认可音量/释放与基础弹奏，但快转新音起音有大噪声，转动切换音色时有延后附加声；本轮电脑参考无此异常，固定音色不转时无新增间隔声。见evidence/knob_suite_2026-09-20/BOARD_LISTENING.md，不可写为音质通过。逐格弹奏16声部、三音色8声部；其定时接口不替代SYSTEM_V0，不支持外部按键逐实例note_off。
 - 9月21/22用户要求一份固件切换三音色，分别验证适用控制；拨弦保持一次触发自然衰减，不强行延音/可调尾音，回声和选择性延音暂缓。matrix_playable候选已增加32bit实例松键、PMOD1矩阵与板载三用户键，见其SPEC/WIRING及MATRIX_PLAYABLE_V1；数字和50MHz PnR不等于矩阵或音质已上板验收，也未替换SYSTEM_V0。
 - 先定义接口/单位/位宽/时序/错误处理，再实现。算法测试要有独立期望；仿真、综合、PnR、板测分别记录，不能互相替代。

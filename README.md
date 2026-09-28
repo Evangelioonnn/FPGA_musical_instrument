@@ -1,10 +1,12 @@
 # FPGA 实时电子乐器 · 三人协作仓库
 
-**9月28日最新试听与选择：** 五音色及四谐波分别调节已获用户听感认可；后续暂定保留Precision harmonic piano、Warm pluck、Metallic bell、Drive lead、自定义四谐波，原拨弦退出选择名单但保留历史源码。现有RTL ID依次为0/2/3/4/5；当前固件仍为六项循环，尚未改菜单。详见[试听记录与编号边界](evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。下列旧名单与生成时“待试听”描述保留历史范围，以本条更新为准。
+**9月28日音频核心V1整合候选：** [audio_core_v1](project/audio_core_v1/README.md)已将菜单改为0→2→3→4→5，保留钢琴/Warm pluck/铃音/Drive lead/自定义四谐波；八声部、统一配置/ADC模拟接口、ADSR覆盖、两种延音、Lead调制、可旁路短房间效果和真实PCM/状态。19针顶层50MHz PnR为24151 Logic / 10918 Register / 42 BSRAM / 72.5 DSP，setup/hold 0/0，最小setup余量2.562ns。另有[独立16/32声部钢琴](project/audio_polyphony_lab/README.md)通过50MHz，安全版每音固定1/2、1/4电平；尚未与五音色合并。入口：[本轮验收](docs/project/AUDIO_CORE_REVIEW_2026-09-28.md)、[给B/C的新接口](docs/interfaces/AUDIO_CORE_V1.md)。本轮新固件仍待实物验收；旧六项custom固件及final回退保持原样，显示/蓝牙/实体ADC未接入。
 
-**9月28日音频下一版候选：** [five_timbre_core](project/five_timbre_core/README.md)将钢琴、原拨弦、Warm pluck、Metallic bell、Drive lead固定为五个编号；00/01/02分别用于原声、音区响度、响度加高音谐波对照。包含普通/选择性延音、Drive lead滑音与持音弯音、双区和25键输入适配实验。五音色编号是后续开发方向，新固件仍待用户上板试听，已验收的双音色版本保持回退；资源与时序见[验证记录](project/five_timbre_core/VALIDATION.md)。
+**9月28日试听与选择记录：** 五音色及四谐波分别调节已获用户听感认可；保留Precision harmonic piano、Warm pluck、Metallic bell、Drive lead、自定义四谐波，原拨弦退出选择名单但保留历史源码。RTL ID依次为0/2/3/4/5；试听时的custom_harmonic_lab仍为六项循环，随后audio_core_v1已改为上述五项菜单。详见[试听记录与编号边界](evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。下列旧名单与生成时“待试听”描述只适用于各自历史工程，当前入口见本页首条及STATUS。
 
-**9月28日可编辑音色候选：** [custom_harmonic_lab](project/custom_harmonic_lab/README.md)在五音色后增加候选编号5，提供四谐波Q8推子参数、CH0混音后音量、平滑更新和EC11模拟推子。八声部以分时共享乘法器运行，六项数字回归和独立整机PnR通过（21330 Logic / 9755 Register / 38 BSRAM / 70 DSP / 19 IO，Fmax 62.369MHz，setup/hold 0/0）；没有实体ADC/J13接入，也未做板卡试听。操作和限制见[板测候选说明](project/custom_harmonic_lab/BOARD_TEST.md)及[验证记录](project/custom_harmonic_lab/VALIDATION.md)。
+**9月28日早期五音色对照：** [five_timbre_core](project/five_timbre_core/README.md)最初名单为钢琴、原拨弦、Warm pluck、Metallic bell、Drive lead；00/01/02分别用于原声、音区响度、响度加高音谐波对照。该轮已收到用户认可的试听反馈；后来删去原拨弦并加入自定义四谐波，最新名单与菜单以上述V1为准。旧工程和[验证记录](project/five_timbre_core/VALIDATION.md)保留作对照。
+
+**9月28日可编辑音色实验：** [custom_harmonic_lab](project/custom_harmonic_lab/README.md)在原五音色后增加编号5，提供四谐波Q8参数、CH0混音后音量、平滑更新和EC11模拟推子。六项数字回归和独立PnR通过（21330 Logic / 9755 Register / 38 BSRAM / 70 DSP / 19 IO，Fmax 62.369MHz）；随后四谐波分别调节获用户试听认可。没有实体ADC/J13接入，六项菜单仍保留在该历史实验。操作和限制见[板测说明](project/custom_harmonic_lab/BOARD_TEST.md)及[验证记录](project/custom_harmonic_lab/VALIDATION.md)。
 
 **9月27日八音色单固件候选：** [timbre_gallery](project/timbre_gallery/README.md)保留已听过的钢琴/柔和拨弦，新增风琴、Pad、两种Lead、电声键盘和金属铃音；板载S1循环切换，S2延音按音色适配，S4/EC11调音量、双区八度、释放或Lead滑音。八声部、50 MHz PnR通过，34 BSRAM/52 DSP，最小setup余量0.183 ns；[上板试听步骤](project/timbre_gallery/BOARD_TEST.md)。**八音色已收到首轮试听反馈：Warm pluck、Drive lead、Metallic bell获认可作为拓展候选；钢琴/Organ/Clean lead有音区响度差异，Organ/Pad杂音仍明显。详见[板测记录](evidence/timbre_gallery_2026-09-27/BOARD_LISTENING.md)。旧噪声根因未解决；独立报告不能替代与C整合后的时序。**
 
@@ -65,7 +67,7 @@
 | [system](project/system/README.md)、[input](project/input/README.md) | 原声不变的集成候选；输入/配置/观测数字验证，物理输入待绑定 |
 | [lab](project/lab/README.md) | C4/A4长音与静音诊断，复用原音色及输出 |
 | [experiments](project/experiments/README.md) | 16/32容量、短反馈延迟、FM/拨弦单声部新音色，成熟度分别标注 |
-| [expression_baseline](project/expression_baseline/README.md) | 当前默认试听；8声部统一原音色、音量/力度/两类延音，自动演示；电脑可接受，板卡杂音待定位 |
+| [expression_baseline](project/expression_baseline/README.md) | 历史默认试听；8声部统一原音色、音量/力度/两类延音，自动演示；电脑可接受，板卡杂音待定位 |
 | [instrument](project/instrument/README.md) | 原单声部正弦DDS＋ADSR，默认音色来源 |
 | [expression](project/expression/README.md) | 表情、参数、状态接口候选；其他音色不作为默认，未接外设 |
 | [polyphony](project/polyphony/README.md) | 较简单的四声部管理/混音参考 |

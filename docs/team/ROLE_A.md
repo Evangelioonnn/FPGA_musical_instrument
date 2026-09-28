@@ -1,10 +1,14 @@
 # A：音频核心与系统集成
 
-**9月28日最新试听与选择：** 五音色及四谐波分别调节已获用户听感认可；后续暂定保留Precision harmonic piano、Warm pluck、Metallic bell、Drive lead、自定义四谐波，原拨弦退出选择名单但保留历史源码。现有RTL ID依次为0/2/3/4/5；当前固件仍为六项循环，尚未改菜单。详见[试听记录与编号边界](../../evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。下列旧名单与生成时“待试听”描述保留历史范围，以本条更新为准。
+**9月28日试听与选择记录：** 五音色及四谐波分别调节已获用户听感认可；保留Precision harmonic piano、Warm pluck、Metallic bell、Drive lead、自定义四谐波，原拨弦退出选择名单但保留历史源码。RTL ID依次为0/2/3/4/5；试听时的custom_harmonic_lab仍为六项循环，随后audio_core_v1已改为上述五项菜单。详见[试听记录与编号边界](../../evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。旧工程描述保留其历史范围，当前工作入口见下文音频V1。
 
 A是当前持板成员及项目用户。负责实时声音生成、选定效果、音质定位、共享接口、整机顶层/CST/SDC、资源时序和最终验证。B/C的内部实现无需逐行等A批准；跨子系统改变通过PR说明影响并合并。
 
 ## 当前最有价值的工作
+
+9月28日下午的新[音频核心V1](../../project/audio_core_v1/README.md)已完成数字/50MHz阶段，菜单0/2/3/4/5、统一参数、ADSR/延音/Lead调制、房间效果、真实PCM/状态。主版本42 BSRAM/72.5 DSP、setup余量2.562ns；独立钢琴16/32共享架构也通过，不等于已合并多模式。A下一步先按[本轮验收](../project/AUDIO_CORE_REVIEW_2026-09-28.md)试听，再与B聚焦控制板；实体ADC接入只需局部适配，不复制一套音量/系数状态。C交接用[AUDIO_CORE_V1](../interfaces/AUDIO_CORE_V1.md)，保留原SYSTEM_V0为历史契约。新固件未板测、显示/蓝牙未整合。
+
+下面9月28日早期/9月26日规划保留生成时范围；已认可的五音色与四谐波调节、删原拨弦后的最新名单以上条和STATUS为准。
 
 9月28日用户选定五音色作为后续音频核心：Precision harmonic piano、原拨弦、Warm pluck、Metallic bell、Drive lead。新[五音色工程](../../project/five_timbre_core/README.md)用于音区响度、主奏表达、普通/选择性延音和资源实验；源码及固定编号见其SPEC，数字/PnR及板测边界见VALIDATION。与B/C整合时以五音色编号作为新接口提案，尚未实物试听前保持final_dual_timbre为已认可的回退固件。下条9月26日记载保留其当时范围。
 

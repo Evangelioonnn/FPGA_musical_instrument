@@ -1,6 +1,10 @@
 # 当前状态 · 2026-09-28
 
-**9月28日最新试听与选择：** 五音色及四谐波分别调节已获用户听感认可；后续暂定保留Precision harmonic piano、Warm pluck、Metallic bell、Drive lead、自定义四谐波，原拨弦退出选择名单但保留历史源码。现有RTL ID依次为0/2/3/4/5；当前固件仍为六项循环，尚未改菜单。详见[试听记录与编号边界](../../evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。下列旧名单与生成时“待试听”描述保留历史范围，以本条更新为准。
+**9月28日最新实现：** 新[audio_core_v1](../../project/audio_core_v1/README.md)已实际采用0→2→3→4→5菜单，八声部，统一host/local/ADC参数服务、真实PCM与832bit状态、完整ADSR覆盖、普通/选择性延音、Lead滑入/弯音/可关颤音和可旁路短房间效果。默认声部9000帧与旧路径精确一致，矩阵/旋钮/按钮及非对称左右串行已数字验证。最终19针50MHz PnR为24151 Logic / 10918 Register / 42 BSRAM / 72.5 DSP，setup/hold 0/0、余量2.562ns；全接口仅综合审计也在容量预算内，未替代合并实现。新主版本尚未用户上板；验收见[本轮入口](AUDIO_CORE_REVIEW_2026-09-28.md)，接口见[AUDIO_CORE_V1](../interfaces/AUDIO_CORE_V1.md)。
+
+**新高复音可行路径：** [audio_polyphony_lab](../../project/audio_polyphony_lab/README.md)用一套共享正弦ROM/包络算子实现独立16/32声部钢琴，均50MHz通过。16：4571 Logic/3627 Reg/4 BSRAM/2 DSP，余量1.832ns；32：6048/3341/10/2，余量3.146ns。计算258/514时钟，低于1040期限；独立模型及实际PCM参考通过。安全版16每音固定1/2、32每音固定1/4；满电平同音确有削波，未隐藏动态压缩。仍待板测，尚未与五音色/显示/蓝牙合并；历史capacity32时序失败结论只指旧工程。
+
+**9月28日试听与选择记录：** 五音色及四谐波分别调节已获用户听感认可；保留Precision harmonic piano、Warm pluck、Metallic bell、Drive lead、自定义四谐波，原拨弦退出选择名单但保留历史源码。RTL ID依次为0/2/3/4/5；试听时的custom_harmonic_lab仍为六项循环，随后audio_core_v1已改为上述五项菜单。详见[试听记录与编号边界](../../evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。下列旧名单与生成时“待试听”描述只适用于各自历史工程，当前实现以上面两条为准。
 
 本页是三人共同工作的事实入口。根目录旧规划已归档；历史日期的“等待板测”“仓库尚未创建”等不代表现在。功能状态必须区分RTL仿真、构建、真实上板、用户验收。
 
@@ -8,9 +12,9 @@
 
 ## 已确定
 
-**五音色后续方向：** 用户选择Precision harmonic piano、原有拨弦、Warm pluck、Metallic bell、Drive lead，取代未来音频工程的双音色编号。A建立独立的[five_timbre_core](../../project/five_timbre_core/README.md)与三份同操作音区对照；真实听感仍待用户验收，不覆盖已板测的final_dual_timbre。其双区25键适配是数字验证，现有实物仍为16键矩阵。项目状态、资源与时序以该工程[验证记录](../../project/five_timbre_core/VALIDATION.md)更新为准。
+**五音色当前方向：** 用户认可五音色/四谐波调节后，保留0钢琴、2 Warm pluck、3铃音、4 Drive lead、5自定义四谐波，原拨弦1退出新菜单且保留历史源码。三份[five_timbre_core](../../project/five_timbre_core/README.md)对照已试听，听不出较大差异；扬声器上的低/高音响度差在3.5mm耳机未出现，后续V1选择原声不补偿路径。现有实物仍为16键，25键双区适配为逻辑验证；实体控制板待A/B设计。
 
-**可编辑四谐波候选：** [custom_harmonic_lab](../../project/custom_harmonic_lab/README.md)新增可选preset5。CH0为混音后主音量，CH1–CH4为基频至4倍频的Q8幅度；默认`[256,64,32,16]`与认可钢琴逐样本等价。六项RTL回归通过，包含4096码映射、超限顺序归一化、忙碌整帧拒收、实时平滑和八声部峰值；独立PnR为21330 Logic / 9755 Register / 38 BSRAM / 70 DSP / 19 IO，setup/hold 0/0、余量3.967ns、Fmax 62.369MHz。该候选尚未实体ADC/J13接入或用户板测，且与C显示/蓝牙合并后必须重做整机PnR；旧`final_dual_timbre`仍是物理回退。
+**可编辑四谐波实验：** [custom_harmonic_lab](../../project/custom_harmonic_lab/README.md)提供preset5。CH0为混音后主音量，CH1–CH4为基频至4倍频的Q8幅度；默认`[256,64,32,16]`与认可钢琴声部逐样本等价。六项RTL回归、4096码映射、限幅/平滑通过；独立PnR为21330 Logic / 9755 Register / 38 BSRAM / 70 DSP / 19 IO、50MHz通过。四谐波分别调节已获用户试听认可；实体ADC/J13尚未接入，后续参数仲裁与新接口在audio_core_v1，整合C后还要整机PnR。旧`final_dual_timbre`仍是物理回退。
 
 **八音色合辑首轮板测反馈：** 用户认可Warm pluck（“好像没有尖锐杂音了”）、Drive lead和Metallic bell作为拓展可选音色；Clean lead很干净但电子感较重、起音尾音不突出。钢琴、Organ、Clean lead均有低音小/高音大的听感差异；Organ尖锐声明显、Pad杂音大且效果一般，Electric keys与钢琴相近但偏好低于钢琴。见[逐项记录与数字电平核对](../../evidence/timbre_gallery_2026-09-27/BOARD_LISTENING.md)。原“待用户试听”指生成时状态，本次不扩大为全部控制功能通过或噪声根因修复；未改变RTL/固件或冻结最终音色。
 
@@ -71,12 +75,13 @@ FM/拨弦单声部实现提交`13cc5a0`已推送至`feat/fm-pluck-rtl`，[草稿
 | instrument DDS/ADSR/PT8211 | 仿真、PnR、用户音准/尾音反馈 | 板卡正弦叠加尖锐声 |
 | 四声部polyphony | 管理、混音、串行、渲染仿真及构建；电脑试听认可 | 完整真实输入板测 |
 | expression八声部扩展 | 仿真/PnR；首轮板测认可力度、音量静音、和弦 | 音色未选定；旧延音演示有噪声/瞬态反馈 |
-| expression_baseline当前默认 | 直接复用原voice；16秒电脑试听认可；仿真与构建通过 | 耳机尖锐声仍明显；真实交互尚未接入 |
+| expression_baseline历史默认 | 直接复用原voice；16秒电脑试听认可；仿真与构建通过 | 耳机尖锐声仍明显；真实交互尚未接入 |
 | 矩阵/EC11/FSR | 矩阵/EC11已在final双音色板测获功能认可；数字压力/故障/去抖仍有独立仿真参考 | EC11 C/按压用途仍未知；FSR/ADC实物链与成品控制板未验收 |
 | 旋钮控制候选knob_suite | 11项仿真及五份50MHz构建；首次板测认可音量/释放控制及基础弹奏，回声可辨、拨弦主观最佳 | 快转新音起音大噪声；转动切换音色时延后附加声；FM杂音重；可闻底噪；模拟延迟/踏板/按压/整机仍缺 |
 | 蓝牙、外屏、指导LED、可视化 | 外屏独立彩条已板测1080p、61Hz稳定；需求/预算见C入口 | 蓝牙、LED曲目、真实波形/频谱/相图及音频显示整合未完成 |
 | system v0 | 769232样本与旧默认精确一致；队列/配置/真实meter/快照/独立CDC验证；8声部演示PnR通过 | 真正外设顶层、显示CDC物理约束、全机时序及真实板测 |
-| 16/32声部 | 两者独立音符/频谱/retune/释放仿真通过；16声部50MHz通过；32声部资源能放下 | 32声部50MHz时序失败，增加事件寄存仍未解决管理器长路径，不算32声部硬件达标 |
+| 历史system/capacity16/32 | 两者独立音符/频谱/retune/释放仿真通过；旧16声部50MHz通过；旧32资源能放下 | 旧capacity32的50MHz时序失败，不能作为达标固件；不适用于下行新实现 |
+| audio_polyphony_lab钢琴16/32 | 共享算子、独立模型和50MHz PnR通过；32不同频率/状态及32768帧数字频谱补证据通过 | 固定每音1/2、1/4；新固件未板测，未与五音色/显示/蓝牙合并 |
 | 短反馈延迟 | 独立RTL、384068数值oracle样本；865232渲染样本；单音效果探针PnR通过 | 未接入system控制或完成板测 |
 | FM/拨弦新音色 | 独立单声部定点RTL、数学/事务/串行仿真与50MHz PnR；用户已板上试听，两者主体与WAV相符，pluck主观更干净，见[反馈](../../evidence/timbre_rtl_2026-09-19/BOARD_LISTENING.md) | 两者仍有变调杂音，FM明显、pluck很轻；未接入整机音色选择/复音/踏板/实时变调 |
 | 成品PCB与外壳 | B负责，产品布局仍开放 | 尚未完成，不算已有指标 |

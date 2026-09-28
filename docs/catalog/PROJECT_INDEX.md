@@ -1,6 +1,12 @@
 # 工程分类索引
 
-**9月28日最新试听与选择：** 五音色及四谐波分别调节已获用户听感认可；后续暂定保留Precision harmonic piano、Warm pluck、Metallic bell、Drive lead、自定义四谐波，原拨弦退出选择名单但保留历史源码。现有RTL ID依次为0/2/3/4/5；当前固件仍为六项循环，尚未改菜单。详见[试听记录与编号边界](../../evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。下列旧名单与生成时“待试听”描述保留历史范围，以本条更新为准。
+新增[project/audio_core_v1](../../project/audio_core_v1/README.md)：`INTEGRATION_CANDIDATE`，当前0/2/3/4/5五项菜单、八声部、统一参数/ADC模拟输入、ADSR/延音/Lead调制、短房间效果及真实PCM/832bit状态。19针50MHz PnR为24151 Logic/10918 Reg/42 BSRAM/72.5 DSP、setup余量2.562ns；数字验证与非对称立体声串行通过，新固件待用户板测。入口：[验收](../project/AUDIO_CORE_REVIEW_2026-09-28.md)、[接口](../interfaces/AUDIO_CORE_V1.md)。
+
+新增[project/audio_polyphony_lab](../../project/audio_polyphony_lab/README.md)：`EXPERIMENT / RTL_REFERENCE`，钢琴共享ROM/算子，16/32声部独立模型和50MHz PnR通过，4/10 BSRAM、各2 DSP；安全版每音固定1/2、1/4，不偷音或按活跃数改电平。没有和五音色合并，未板测，不能替换旧full-volume声音评价。
+
+新增[project/audio_parameter_lab](../../project/audio_parameter_lab/README.md)：`RTL_REFERENCE`，公平host/local仲裁、sample_ce提交、5路ADC快照、pickup与默认恢复；两项回归通过，实体SPI未接。新增[project/audio_fx_lab](../../project/audio_fx_lab/README.md)：`EXPERIMENT / RTL_REFERENCE`，有界立体声短房间效果和Lead颤音，独立整数模型与50MHz通过，主版本已整合，尚未实物试听。
+
+**9月28日试听与选择记录：** 五音色及四谐波分别调节已获用户听感认可；保留Precision harmonic piano、Warm pluck、Metallic bell、Drive lead、自定义四谐波，原拨弦退出选择名单但保留历史源码。RTL ID依次为0/2/3/4/5；试听时的custom_harmonic_lab仍为六项循环，随后audio_core_v1已改为上述五项菜单。详见[试听记录与编号边界](../../evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。下列旧名单与生成时“待试听”描述只适用于各自历史工程，当前实现见本页新增V1入口。
 
 本页是 `project/` 下工程的分类入口。分类描述工程当前能承担的用途，不把某个模块的仿真结果扩大成整机验收。具体命令、参数、资源和限制以工程内的 `README.md`、`SPEC.md`、`VALIDATION.md` 及 `docs/project/STATUS.md` 为准。
 
@@ -19,9 +25,9 @@
 
 ## 当前工程清单
 
-新增[project/five_timbre_core](../../project/five_timbre_core/README.md)：`INTEGRATION_CANDIDATE / EXPERIMENT`，用户选定的五音色及00/01/02音区对照、选择性延音与Drive lead弯/滑音；数字和50 MHz实现结果、16声部独立容量实验见[验证记录](../../project/five_timbre_core/VALIDATION.md)。五音色编号作为后续开发方向；新固件未用户上板试听，final_dual_timbre仍是已验收的回退版本。
+新增[project/five_timbre_core](../../project/five_timbre_core/README.md)：`EXPERIMENT / RTL_REFERENCE`，原五音色及00/01/02音区对照、选择性延音与Drive lead弯/滑音；已收到用户试听认可，三份差异不明显。其旧名单含原拨弦1，后续产品名单用audio_core_v1的0/2/3/4/5；数字/PnR见[验证记录](../../project/five_timbre_core/VALIDATION.md)，final仍为完整回退。
 
-新增[project/custom_harmonic_lab](../../project/custom_harmonic_lab/README.md)：`EXPERIMENT / INTEGRATION_CANDIDATE`，在五音色之后增加候选preset5；Q8四谐波、CH0后混音音量、EC11模拟推子及完整八声部音频链。6项RTL测试、全ADC映射、顺序归一化、跨帧限幅不变量及整机PnR记录在[验证报告](../../project/custom_harmonic_lab/VALIDATION.md)。当前候选PnR为21330 Logic / 9755 Register / 38 BSRAM / 70 DSP / 19 IO，setup/hold违例0/0，余量3.967ns，Fmax 62.369MHz；SPI ADC与J13没有接入，板上结果待A试听。
+新增[project/custom_harmonic_lab](../../project/custom_harmonic_lab/README.md)：`EXPERIMENT / RTL_REFERENCE`，六项菜单含preset5、Q8四谐波、CH0后混音音量、EC11模拟推子。6项RTL测试/限幅不变量/PnR见[验证报告](../../project/custom_harmonic_lab/VALIDATION.md)，21330 Logic/9755 Reg/38 BSRAM/70 DSP，50MHz通过；四谐波分别调节已获用户认可，实体SPI ADC与J13未接，当前参数整合候选转入audio_core_v1。
 
 新增[project/timbre_gallery](../../project/timbre_gallery/README.md)：`EXPERIMENT / INTEGRATION_CANDIDATE`，一份可演奏工程在板载S1切换八音色，旧钢琴/拨弦数字等价；六种新声音、按音色适配的控制及Lead滑音通过RTL测试。独立50MHz PnR为19381 Logic、8509 Register、34 BSRAM、52 DSP、19 IO，setup/hold无违例但setup余量仅0.183ns。[试听步骤](../../project/timbre_gallery/BOARD_TEST.md)与[验证边界](../../project/timbre_gallery/VALIDATION.md)；八音色已收到[首轮用户试听反馈](../../evidence/timbre_gallery_2026-09-27/BOARD_LISTENING.md)，不等于全部控制和音质通过；整机显示/蓝牙仍待整合，不能替换已认可的final/00回退基准。
 

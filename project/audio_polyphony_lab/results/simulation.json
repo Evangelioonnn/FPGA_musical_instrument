@@ -1,0 +1,18 @@
+{
+  "pass_markers": [
+    "# POLY_CORE_TB_PASS N=8 shift=0 frames=5827 maximum-latency=130 peak=17268 clipping-frames=0",
+    "# POLY_CORE_TB_PASS N=16 shift=1 frames=5827 maximum-latency=258 peak=17268 clipping-frames=0",
+    "# POLY_CORE_TB_PASS N=32 shift=2 frames=5827 maximum-latency=514 peak=17268 clipping-frames=0",
+    "# POLY_CORE_TB_PASS N=16 shift=0 frames=5827 maximum-latency=258 peak=32768 clipping-frames=57",
+    "# POLY_CORE_TB_PASS N=32 shift=0 frames=5827 maximum-latency=514 peak=32768 clipping-frames=274",
+    "# POLY_BOARD_TB_PASS N=16 samples=599 matrix/restrike/pedal/octave/encoder/panic",
+    "# POLY_BOARD_TB_PASS N=32 samples=599 matrix/restrike/pedal/octave/encoder/panic",
+    "# POLY_PREVIEW_TB_PASS N=32 shift=2 FAST=0 SHORT=1 samples=403 max-occupied=1",
+    "# POLY_PREVIEW_TB_PASS N=32 shift=2 FAST=1 SHORT=1 samples=403 max-occupied=1",
+    "POLY_CADENCE_EQUIVALENCE_PASS actual1040 == accelerated520",
+    "# POLY_EQUIVALENCE_TB_PASS 4096 default piano phase/envelope vectors exact Q4",
+    "# POLY_PREVIEW_TB_PASS N=8 shift=0 FAST=1 SHORT=0 samples=75700 max-occupied=8",
+    "# POLY_PREVIEW_TB_PASS N=16 shift=1 FAST=1 SHORT=0 samples=81300 max-occupied=16",
+    "# POLY_PREVIEW_TB_PASS N=32 shift=2 FAST=1 SHORT=0 samples=92500 max-occupied=32"
+  ]
+}
