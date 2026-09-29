@@ -4,7 +4,7 @@
 
 ## GitHub与开工入口
 
-当前交接分支 **`codex/audio-integration-pack`**，音频/接入代码基线 `e500e30`，后续为本轮C规划和文档整理。已拉取远端核实：`main`仍停在首次交接`4ada74e`，最新音频、显示探针、资料及接入包在交接分支，尚未通过PR合并到main。不要仅拉main后照旧说明开工。
+当前交接分支 **`codex/audio-integration-pack`**，音频/接入代码基线 `e500e30`，后续为C规划和文档整理。`main`首页已通过PR #3更新，远端提交`b8efb43`；此次只修改README并链接最新交接，其余源码仍是首次交接`4ada74e`的基线。最新音频、显示探针、资料及接入包仍在交接分支，尚未整体合入main。主页更新和远端内容核对见[本轮记录](HOMEPAGE_REFRESH_2026-09-29.md)。开发前切换交接分支。
 
 - C先读[交接与显示设计目标](../team/C_HANDOFF_AND_DISPLAY_PLAN.md)和[ROLE_C](../team/ROLE_C.md)，再用[接入包](../../project/audio_integration/README.md)开发。
 - B先读[ROLE_B](../team/ROLE_B.md)、[J13针表](../board/J13_GPIO.md)和[唯一团队预算](../team/RESOURCE_BUDGET_V1.md)。A与B共同规划成品控制板。

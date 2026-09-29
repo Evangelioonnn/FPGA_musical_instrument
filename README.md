@@ -6,7 +6,7 @@
 
 **A/B/C从本页开始，不从历史工程文件名猜版本。**
 
-**当前交接在 `codex/audio-integration-pack`，音频/接口基线 `e500e30`，其后为本轮文档更新。** 本轮Fetch核实 `main`仍是`4ada74e`初始交接，尚未合入这些成果；新成员先取本分支，从它创建各自工作分支，见[工作流](docs/team/WORKFLOW.md)。
+**当前交接在 `codex/audio-integration-pack`，音频/接口基线 `e500e30`，其后为文档更新。** `main`首页已通过[PR #3](https://github.com/Evangelioonnn/FPGA_musical_instrument/pull/3)更新并链接到本分支，其余源码仍是`4ada74e`初始交接基线，尚未合入这些成果；新成员先取本分支，从它创建各自工作分支，见[工作流](docs/team/WORKFLOW.md)。
 
 | 目的 | 当前入口 |
 |---|---|

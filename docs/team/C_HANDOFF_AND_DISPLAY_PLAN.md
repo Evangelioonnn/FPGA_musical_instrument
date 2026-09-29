@@ -4,7 +4,7 @@
 
 ## 五分钟交接
 
-- 当前交接分支：`codex/audio-integration-pack`；音频/传输代码基线为 `e500e30`，本文件及入口清理在其后续文档提交中。先Fetch并查看此分支最新README；截至本次核对，GitHub `main` 仍是 `4ada74e` 的首次交接，不能从它推断当前能力。C从最新交接分支新建自己的 `codex/c-...` 分支，不共同修改A的分支。不要把已有未提交改动覆盖掉。
+- 当前交接分支：`codex/audio-integration-pack`；音频/传输代码基线为 `e500e30`，本文件及入口清理在其后续文档提交中。先Fetch并查看此分支最新README；GitHub `main` 首页已通过PR #3更新并链接本交接，但其余源码仍是 `4ada74e` 的首次交接，不能从旧目录推断当前能力。C从最新交接分支新建自己的 `codex/c-...` 分支，不共同修改A的分支。不要把已有未提交改动覆盖掉。
 - 已认可的演奏基线是 [audio_core_v2](../../project/audio_core_v2/README.md)：钢琴0、Warm pluck2、铃音3、Drive lead4、自定义四谐波5；四种谐波音色共享32槽、拨弦物理池12，总数含尾音≤32。不偷音；谐波每音固定为V1的1/4，拨弦不变。
 - 直接复用[音频接入包](../../project/audio_integration/README.md)：源码清单、状态/PCM/命令跨域桥、精简解包器和mock。接口优先级为[音频V2](../interfaces/AUDIO_CORE_V2.md) → [传输](../interfaces/AUDIO_TRANSPORT_V1.md) → [导入](../interfaces/AUDIO_IMPORT_V1.md)；V1只提供V2明确继承的字段/单位，SYSTEM_V0是历史参考。
 - C额度不变：**13,000 Logic、10,000 Register、26 BSRAM、16 DSP、1 PLL**。公共音频传输桥已计入A，C新增UI、FFT、缓存、通信、曲谱和仲裁必须计入C。唯一总账是[团队预算](RESOURCE_BUDGET_V1.md)。

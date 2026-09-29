@@ -5,7 +5,7 @@
 ## 第一次接手
 
 1. 安装GitHub Desktop并登录自己的账号，File→Clone repository→URL。选择本机固定目录，避免云盘实时同步这个目录。
-2. 先Fetch origin。本轮核实main仍为首次交接4ada74e；目前选择远端`codex/audio-integration-pack`读取最新README、AGENTS、STATUS、REQUIREMENTS和角色文档，再从该基线新建自己的工作分支。待交接真正合入main后恢复以main为起点。
+2. 先Fetch origin。main首页已更新并链接当前资料，其余源码仍为首次交接4ada74e基线；目前选择远端`codex/audio-integration-pack`读取最新README、AGENTS、STATUS、REQUIREMENTS和角色文档，再从该基线新建自己的工作分支。待完整交接真正合入main后恢复以main为起点。
 3. 安装Gowin Designer/Programmer，按[板卡说明](../board/BOARD.md)选GW5AT-60B。ModelSim或兼容Verilog仿真器用于RTL；当前脚本为Windows ModelSim。纯RTL能跑不代表Gowin IP模型已配置。
 4. 安装Python 3，运行`python tools/check_repository.py`；需要音频仿真时，运行接入包的package_check/run_transport脚本并指定自己的ModelSim路径。脚本依赖按对应工程README；部分历史分析需要NumPy。
 5. 新建短期分支，首个任务采用角色入口给出的交付。B可先提交文档/原理图，C可先提交协议/显示仿真，无需借板才能开始。
