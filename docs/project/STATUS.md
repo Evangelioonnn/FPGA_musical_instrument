@@ -2,7 +2,7 @@
 
 **9月29日V2当前状态：** [audio_core_v2](../../project/audio_core_v2/README.md)扩展钢琴0/铃音3/Lead4/custom5至32个共享逻辑槽位，Warm pluck2至12，混合及尾音合计≤32。不偷音、不按活跃数压电平；谐波每音固定V1的1/4，拨弦原电平。状态RAM和算子分时共享，最坏渲染653/1040时钟。19针50MHz PnR为24052 Logic/10684 Reg/66 BSRAM/24.5 DSP，setup/hold 0/0、余量0.632ns。八项数字回归、七段RTL参考音、32个不同音高独立相位对照均通过；当前矩阵参数下四种闭合相位至首个非零PT8211串行字最坏2.12198ms，这是数字延迟。用户随后对V2完整版本表示总体听感认可，范围见[反馈记录](../../evidence/audio_core_v2_2026-09-29/BOARD_LISTENING.md)；模拟噪声根因、32/12满载实物和模拟延迟未验收。
 
-**9月29日音频接入包：** C的当前入口是[接入包README](../../project/audio_integration/README.md)，含20源核心/25源集成清单、统一API常量、完整快照/PCM/命令回复跨域桥、轻量状态视图和mock。三桥独立ModelSim回归及真实核心联动通过。32-IO保留接口审计PnR为31075 Logic/15790 Reg/64 BSRAM/24.5 DSP，setup/hold 0/0，余量0.076ns，无未命中约束；内部ADC/host刺激及逻辑扩展键不等于真实外设或可下载顶层。packed bank候选PCM不等价而拒绝。完整证据与边界见接入包[VALIDATION](../../project/audio_integration/VALIDATION.md)及[最新团队预算](../team/RESOURCE_BUDGET_V1.md)；C的26 BSRAM/16 DSP额度不变，实际显示/蓝牙、SPI ADC和实体控制板仍需接入并重跑整机PnR。
+**9月29日音频接入包：** C的当前入口是[接入包README](../../project/audio_integration/README.md)，含20源核心/25源集成清单、统一API常量、完整快照/PCM/命令回复跨域桥、轻量状态视图和mock。三桥独立ModelSim回归已在本轮重跑通过；真实核心联动有带源码指纹的既有PASS记录，但本轮新建仿真库的复跑停滞并已终止，不计为新PASS。32-IO保留接口审计PnR为31075 Logic/15790 Reg/64 BSRAM/24.5 DSP，setup/hold 0/0，余量0.076ns，无未命中约束；内部ADC/host刺激及逻辑扩展键不等于真实外设或可下载顶层。packed bank候选PCM不等价而拒绝。完整证据与边界见接入包[VALIDATION](../../project/audio_integration/VALIDATION.md)及[最新团队预算](../team/RESOURCE_BUDGET_V1.md)；C的26 BSRAM/16 DSP额度不变，实际显示/蓝牙、SPI ADC和实体控制板仍需接入并重跑整机PnR。
 
 **9月29日用户验收更新：** V1主工程五音色和效果、独立钢琴16/32复音均获用户认可，见[记录](../../evidence/audio_core_v1_2026-09-29/BOARD_LISTENING.md)。用户随后对V2完整版本表示总体听感认可，见[V2反馈边界](../../evidence/audio_core_v2_2026-09-29/BOARD_LISTENING.md)。这些听感反馈不证明模拟SNR、端到端模拟延迟、真实ADC或显示/蓝牙整机通过。
 
@@ -24,7 +24,7 @@
 
 **八音色合辑首轮板测反馈：** 用户认可Warm pluck（“好像没有尖锐杂音了”）、Drive lead和Metallic bell作为拓展可选音色；Clean lead很干净但电子感较重、起音尾音不突出。钢琴、Organ、Clean lead均有低音小/高音大的听感差异；Organ尖锐声明显、Pad杂音大且效果一般，Electric keys与钢琴相近但偏好低于钢琴。见[逐项记录与数字电平核对](../../evidence/timbre_gallery_2026-09-27/BOARD_LISTENING.md)。原“待用户试听”指生成时状态，本次不扩大为全部控制功能通过或噪声根因修复；未改变RTL/固件或冻结最终音色。
 
-**9月27日八音色单固件候选，待用户上板试听：** 新增[timbre_gallery](../../project/timbre_gallery/README.md)，在一份 `.gprj/.fs` 中循环八预设：保留精度钢琴与柔和拨弦，新增风琴、Pad、干声/轻过载Lead、电声键盘、金属铃音。后六种是自研RTL候选，未移植完整OPL3；普通延音、释放与Lead滑音按音色适配，拨弦仍自然衰减。旧钢琴/拨弦3934帧逐样本等价，独立数学12288向量及矩阵/控制/事件/PT8211回归通过；用户尚未听新固件，声音纯净度和原尖锐伴音是否变化不能推断。50MHz PnR为19381 Logic / 8509 Register / 34 BSRAM / 52 DSP / 19 IO、setup/hold违例0，最小setup余量仅0.183ns；首次未流水化版本有575个setup违例，不可下载。见[验证与限制](../../project/timbre_gallery/VALIDATION.md)和[上板步骤](../../project/timbre_gallery/BOARD_TEST.md)。这是独立音频实验，未合并C的显示/蓝牙，不能据此宣称整机时序达标；旧00_control保持可回退。
+**9月27日八音色单固件首轮板测记录：** 新增[timbre_gallery](../../project/timbre_gallery/README.md)，在一份 `.gprj/.fs` 中循环八预设：保留精度钢琴与柔和拨弦，新增风琴、Pad、干声/轻过载Lead、电声键盘、金属铃音。后六种是自研RTL候选，未移植完整OPL3；普通延音、释放与Lead滑音按音色适配，拨弦仍自然衰减。旧钢琴/拨弦3934帧逐样本等价，独立数学12288向量及矩阵/控制/事件/PT8211回归通过。用户已试听并给出逐项反馈；这不代表全部音色/控制均通过，也未证明尖锐伴音已解决。50MHz PnR为19381 Logic / 8509 Register / 34 BSRAM / 52 DSP / 19 IO、setup/hold违例0，最小setup余量仅0.183ns；首次未流水化版本有575个setup违例，不可下载。见[验证与限制](../../project/timbre_gallery/VALIDATION.md)和[上板步骤](../../project/timbre_gallery/BOARD_TEST.md)。这是独立音频实验，未合并C的显示/蓝牙，不能据此宣称整机时序达标；旧00_control保持可回退。
 
 **输出链路隔离首轮试听更新**：用户反馈01音量上限明显降低，02/03相对00听不出差别；整体比此前颤动及伴随杂音减轻，当前试听未再听到起音问题，但仍有残余杂音，评价为“勉强接受”。见[原话与边界](../../evidence/audio_output_lab_2026-09-27/BOARD_LISTENING.md)。用户随后明确00调到最大时颤动问题也明显改善，不能只用启动18档低于旧24档解释；最大音量的补充不扩大为所有起音/尖锐声/底噪都通过。改善原因仍未定位，不能归功于时序/反相，也不能认定根因修复。建议以00继续评估，01/02/03留作诊断，暂未改RTL或替换正式基准。下条“待试听”为固件生成时状态，后续板测以上述更新为准。
 
@@ -46,7 +46,7 @@
 
 **9月26日资源与功能规划**：用户拟增加第三音色并恢复选择性延音、滑音，覆盖本轮决定，旧“选择性延音暂缓”只作历史。已按官方赛题、final源码和现有PnR审查，见[资源与功能预算](RESOURCE_FEATURE_BUDGET_2026-09-26.md)。八声部三音色及控制/显示/适量效果器有可行路线，优先共享正弦ROM及拨弦起音参数；16/32路不能直接复制当前完整声部。当前final持音变调和完整ADSR调参尚未接入；LW占满主要包含复位/高扇出控制，不能解释成八个独立时钟用尽。本轮仅规划记录，没有新RTL、综合、固件或板测结果。
 
-**9月26日B/C独立开发预算（已修正40针遗漏）**：见[团队预算V1](../team/RESOURCE_BUDGET_V1.md)。A音频/效果68 BSRAM、76 DSP；输入适配2 BSRAM、2 DSP；C显示/FFT/蓝牙/曲谱/LED/CDC共26 BSRAM、16 DSP，合计96/94、余22/24。B可使用[J13](../board/J13_GPIO.md)的36根直接信号，第一版预留32根；C蓝牙从PMOD预留4根，显示独立TMDS。旧B12根只适用于PMOD方案，不是硬上限；J13另2根经电阻选择的信号需实物确认。本轮为资料核对，尚无J13逐针板测。当前音频80 BSRAM仍需A优化，整机尚未构建；A负责接口适配，B/C可先用mock独立工作。
+**9月26日B/C独立开发预算（历史快照，已修正40针遗漏）**：当时的GPIO和角色预算见[团队预算V1](../team/RESOURCE_BUDGET_V1.md)及[J13针表](../board/J13_GPIO.md)；音频80 BSRAM、尚未整机PnR均是9月26日旧基线，不代表当前状态。当前V2音频与保留接口审计结果、C额度及其未削减情况见本文9月29日更新和最新团队预算。J13逐针实物接线仍未测；A负责接口适配，B/C可基于mock独立工作。
 
 **9月24日音质软件对照夜间任务已完成数字阶段并完成首轮板测**：新增 [audio_noise_lab](../../project/audio_noise_lab/README.md)，保持矩阵、三音色和原默认 ADSR，只分别改变输出数字增益、PT8211 帧率/线性插值以及未选中声部时钟门控。基准、增益×2/×4、过采样×2/×4 均完成独立 RTL bench 和 15-IO/50MHz PnR；过采样×2 setup 余量仅 0.014ns，activity-gate PnR 有336条未布线，不能下载。用户试听确认五版噪声规律没有改变；USB 与 USB＋12 V 无明显差异，增益版只是更响，过采样未听出实质改善；FM 噪声最大、拨弦最小，静音底噪接近。默认音色同时按 S1/S2 的颤抖暂列为可能的拍频/相位叠加现象。噪声仍未修复，下一步按工程 [BOARD_TEST](../../project/audio_noise_lab/BOARD_TEST.md) 的定位记录在示波器上核对数字与模拟测点。
 

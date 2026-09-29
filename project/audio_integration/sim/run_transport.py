@@ -100,8 +100,7 @@ if with_core:
 else:
     destination = LAB / "results/transport_validation.json"
 destination.parent.mkdir(exist_ok=True)
-record = {"tests": results, "bank_override": args.bank, "profile": profile,
-          "simulation_workspace": workspace.relative_to(ROOT).as_posix()}
+record = {"tests": results, "bank_override": args.bank, "profile": profile}
 if rom is not None:
     record["simulation_rom_verification"] = rom
 destination.write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
