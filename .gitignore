@@ -19,6 +19,10 @@ venv/
 # Gowin build outputs and per-user GUI state, never the handwritten HDL/IP config.
 **/impl/
 *.gprj.user
+# These legacy-named audit directories contain locally generated projects;
+# build_integration.py now creates a fresh project below /tmp for each run.
+/project/audio_integration/audit/baseline_50/
+/project/audio_integration/audit/packed_50/
 # ModelSim libraries and generated simulation products.
 **/sim/work*/
 **/sim/vwork/

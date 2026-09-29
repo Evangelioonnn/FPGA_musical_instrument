@@ -1,36 +1,26 @@
-# A：音频核心与系统集成
+# A：音频与总集成 · 当前交接
 
-**9月28日试听与选择记录：** 五音色及四谐波分别调节已获用户听感认可；保留Precision harmonic piano、Warm pluck、Metallic bell、Drive lead、自定义四谐波，原拨弦退出选择名单但保留历史源码。RTL ID依次为0/2/3/4/5；试听时的custom_harmonic_lab仍为六项循环，随后audio_core_v1已改为上述五项菜单。详见[试听记录与编号边界](../../evidence/audio_selection_2026-09-28/BOARD_LISTENING.md)。旧工程描述保留其历史范围，当前工作入口见下文音频V1。
+A负责实时声音、效果、共享接口、最终顶层/CST/SDC、资源时序和总验收；B/C在各自范围独立设计，不必等待A逐行确认。
 
-A是当前持板成员及项目用户。负责实时声音生成、选定效果、音质定位、共享接口、整机顶层/CST/SDC、资源时序和最终验证。B/C的内部实现无需逐行等A批准；跨子系统改变通过PR说明影响并合并。
+当前演奏基线是[audio_core_v2](../../project/audio_core_v2/README.md)，用户已对完整版本表示听感认可，见[实物反馈范围](../../evidence/audio_core_v2_2026-09-29/BOARD_LISTENING.md)。五音色ID 0/2/3/4/5、共享32槽/12 Warm pluck、总32；谐波固定每音V1的1/4，拨弦原电平。
 
-## 当前最有价值的工作
+## 这一轮交付
 
-9月29日用户已认可V1及独立钢琴16/32声部。新的[音频V2](../../project/audio_core_v2/README.md)已完成八项数字回归、七段RTL参考音及源码核对：四种谐波音色共享32槽、Warm pluck12、混合总32，实际19针24052 Logic/10684 Reg/66 BSRAM/24.5 DSP，50MHz余量0.632ns。完整接口+输入仅综合余718 Logic，SPI和新扫描器接入时必须再核算，不能抢占C额度。A下一步按V2的BOARD_TEST单独验收；B/C无需改变独立研发顺序，接口对接看[AUDIO_CORE_V2](../interfaces/AUDIO_CORE_V2.md)。旧V1及final保持回退。
+[接入包](../../project/audio_integration/README.md)包含精确源码导入、共用常量、真实状态/PCM跨域桥、命令/ACK桥、精简解包和mock。读取[音频接口V2](../interfaces/AUDIO_CORE_V2.md)、[传输契约](../interfaces/AUDIO_TRANSPORT_V1.md)及[最新预算](RESOURCE_BUDGET_V1.md)，按接入包VALIDATION区分验证范围。
 
-9月28日下午的新[音频核心V1](../../project/audio_core_v1/README.md)已完成数字/50MHz阶段，菜单0/2/3/4/5、统一参数、ADSR/延音/Lead调制、房间效果、真实PCM/状态。主版本42 BSRAM/72.5 DSP、setup余量2.562ns；独立钢琴16/32共享架构也通过，不等于已合并多模式。A下一步先按[本轮验收](../project/AUDIO_CORE_REVIEW_2026-09-28.md)试听，再与B聚焦控制板；实体ADC接入只需局部适配，不复制一套音量/系数状态。C交接用[AUDIO_CORE_V1](../interfaces/AUDIO_CORE_V1.md)，保留原SYSTEM_V0为历史契约。新固件未板测、显示/蓝牙未整合。
+原V2、V1和final保持回退；资源优化候选的默认资格取决于独立对照、截止时间和实际PnR，不继承原V2的板测结果。导入示例和资源审计有内部逻辑端口，不能直接作为实物顶层烧录。
 
-下面9月28日早期/9月26日规划保留生成时范围；已认可的五音色与四谐波调节、删原拨弦后的最新名单以上条和STATUS为准。
+## 下一步集成
 
-9月28日用户选定五音色作为后续音频核心：Precision harmonic piano、原拨弦、Warm pluck、Metallic bell、Drive lead。新[五音色工程](../../project/five_timbre_core/README.md)用于音区响度、主奏表达、普通/选择性延音和资源实验；源码及固定编号见其SPEC，数字/PnR及板测边界见VALIDATION。与B/C整合时以五音色编号作为新接口提案，尚未实物试听前保持final_dual_timbre为已认可的回退固件。下条9月26日记载保留其当时范围。
+1. 与B明确最终按键扫描、SPI ADC、标定、连续表达和LED驱动的RTL作者及电气。五推子仍是CH0主音量、CH1..4谐波；ADC型号/模式/速度/针位须落实到具体器件。
+2. C用mock完成首屏及协议测试后，接真实状态/PCM和配置回读；公共传输适配计入A，C新增画面/FFT/无线缓存计入C，避免双算。
+3. 合并顶层先处理Y12功能和Bank5实际电气；共同复位、跨域时序与所有PLL均须在合并工程检查，不能拼接两份CST。
+4. 每批合并重新PnR、满载截止和故障恢复；最后实测输入到模拟输出延迟、音质/SNR和多维手感。独立彩条、数字PCM和理论幅度界不是这些指标的替代证据。
 
-9月28日新增[可编辑四谐波实验](../../project/custom_harmonic_lab/README.md)：候选preset5保留0..4五音色编号；Q8默认[256,64,32,16]对照钢琴，CH0独立控制混音后音量。四谐波共相位，分时共享乘法器；EC11临时模拟5路fader，外部8通道12bit SPI ADC/J13尚未接入。验证结果和资源/时序见其VALIDATION；这仍是数字候选，须由A实物验收后才考虑合入正式接口。
+## 持续保留的边界
 
-9月26日当前基准是已获用户板测认可的[final_dual_timbre](../../project/final_dual_timbre/README.md)，harmonic_piano/pluck与矩阵/旋钮/板载键为第一版完整音频演示；显示彩条另已板测，尚未整合。按[团队预算V1](RESOURCE_BUDGET_V1.md)优化音频至68块BSRAM额度内，新增第三音色、选择性延音/滑音、完整ADSR及适量数字效果器；拨弦自然衰减。A负责真实状态/PCM/配置适配，先做音频+显示最小整合，再扩展。预算是目标，当前音频仍为80块BSRAM。
+25键/双区接口已经具备，现有4×4仅是验证替身。移区后仍按原实例松键；Warm pluck自然衰减，不为指标强行延音。声部容量满拒收新音、不偷音；四谐波共相位和包络不能乘四申报独立振荡器。
 
-下列9月19–22日工作描述保留为历史参考，旧“待到货/未验收”不覆盖当前状态。
+音频/显示核心用FPGA硬件，不用软核CPU代替；PC/MATLAB只离线准备和测试。模拟杂音根因尚未测定；现有主观认可不证明模拟全链路达标。
 
-夜间候选已新增输入链路、真实状态、独立CDC、配置仲裁与诊断工程；交接见[MORNING_REVIEW](../project/MORNING_REVIEW.md)。下面的“增加/建立”任务可复用这些模块，先检查[SYSTEM_V0](../interfaces/SYSTEM_V0.md)和已知限制，避免重新写一套。
-
-9月20日的[旋钮候选验收](../project/KNOB_REVIEW_2026-09-20.md)保留为历史复现入口：EC11旧持续变调已板测，五份旋钮固件已收到首次功能与杂音反馈，详见STATUS。外部按键的身份/松键接口本轮在matrix_playable候选实现，仍需正式集成；旧定时接口边界见[KNOB_CANDIDATE](../interfaces/KNOB_CANDIDATE.md)。
-
-1. 用原固定音色完成[模拟链路定位](../../project/audio_quality/NOISE_DIAGNOSIS.md)，保存实际.fs哈希、耳机/电源和测量条件。不要把问题转交B/C盲调。
-2. 9月20日器件到货后与B逐项核对电气，再建立扫描/去抖→事件→8声部的最小可演奏链路。矩阵扫描、EC11、ADC适配的RTL归属逐项写入任务，不能含糊地认为“画板的人全包”。
-3. 将自动demo与真实输入适配分开；保留演示回归。冻结第一版共享契约和能力表，明确未生效配置、不同输入源仲裁、断连/队列满处理。
-4. 为C提供可靠的状态快照和波形抽取接口；现有baseline的meter固定0，不能直接给C当实时电平使用。
-
-## 合入标准
-
-音频模块提交testbench、数值边界、资源/时序；交互接入需多键/重复音/移调松键/去抖延迟测试；通信显示必须证明不会阻塞音频。每次整机合并保留基准音色回归和未解决缺陷，端到端延迟需要真实输入到输出测量。
-
-默认试听见[AUDIO_TEST_BASELINE](../project/AUDIO_TEST_BASELINE.md)。新音色及32声部探索单独分支，不能为做效果同时改动故障排查基准。先按[路线](../project/ROADMAP.md)完成可用乐器，再用测量选择扩展。
+本轮任务范围和起点见[任务记录](../project/AUDIO_INTEGRATION_TASK_2026-09-29.md)。旧工作描述已保存为[角色历史快照](../history/ROLE_A_BEFORE_INTEGRATION_2026-09-29.txt)。

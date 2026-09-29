@@ -10,6 +10,7 @@ import hashlib
 import json
 import re
 import subprocess
+import tempfile
 import time
 
 LAB = Path(__file__).resolve().parents[1]
@@ -56,9 +57,8 @@ def _extract_table(source):
 def prepare_and_verify(modelsim=DEFAULT_MODELSIM):
     """Return verified simulation replacement paths and exact source hashes.
 
-    Generated files are confined to sim/work_rom_data; the short checker uses
-    only sim/work_rom_check. The function neither edits nor compiles the main
-    rendering library and never touches a running simulator.
+    Generated ROM sources remain under sim/work_rom_data. The checker uses a
+    fresh temporary ModelSim library and never touches a main rendering library.
     """
     started = time.time()
     inputs = [ROM, BENCH, Path(__file__).resolve()]
@@ -69,6 +69,9 @@ def prepare_and_verify(modelsim=DEFAULT_MODELSIM):
     source = input_bytes[ROM].decode('ascii').replace('\r\n', '\n')
     values = _extract_table(source)
     DATA.mkdir(parents=True, exist_ok=True)
+    check_root = ROOT / 'tmp/audio_integration_sim'
+    check_root.mkdir(parents=True, exist_ok=True)
+    check_dir = Path(tempfile.mkdtemp(prefix='rom-check-', dir=check_root))
     hex_path = DATA / 'sine4096.hex'
     replacement = DATA / 'palette_sine_array.v'
     reference = DATA / 'palette_sine_reference.v'
@@ -88,19 +91,18 @@ endmodule
 ''', encoding='ascii', newline='\n')
 
     def run(tool, options):
-        result = subprocess.run([str(Path(modelsim) / tool), *options], cwd=SIM,
+        result = subprocess.run([str(Path(modelsim) / tool), *options], cwd=check_dir,
                                 capture_output=True, text=True, errors='replace')
         log = result.stdout + '\n' + result.stderr
         if result.returncode or re.search(r'\*\* (Error|Fatal)', log):
             raise RuntimeError(tool + ' failed:\n' + log[-6000:])
         return log
 
-    if not (SIM / 'work_rom_check').exists():
-        run('vlib.exe', ['work_rom_check'])
-    run('vlog.exe', ['-vlog01compat', '-work', 'work_rom_check',
+    run('vlib.exe', ['work'])
+    run('vlog.exe', ['-vlog01compat', '-work', 'work',
                      str(reference), str(replacement), str(BENCH)])
-    log = run('vsim.exe', ['-c', '-lib', 'work_rom_check', 'sine_rom_equivalence_tb',
-                           '-l', 'work_rom_data/equivalence.log', '-do', 'run -all; quit -f'])
+    log = run('vsim.exe', ['-c', '-lib', 'work', 'sine_rom_equivalence_tb',
+                           '-l', 'equivalence.log', '-do', 'run -all; quit -f'])
     marker = next((line for line in log.splitlines() if 'SINE_ROM_ARRAY_EQUIVALENCE_PASS' in line), None)
     if marker is None:
         raise RuntimeError('ROM checker did not report PASS:\n' + log[-6000:])
@@ -116,6 +118,7 @@ endmodule
                   generated_sha256={path.relative_to(ROOT).as_posix(): _sha(path.read_bytes())
                                     for path in (replacement, reference, hex_path)},
                   verification_seconds=round(time.time() - started, 3),
+                  verification_workspace=check_dir.relative_to(ROOT).as_posix(),
                   synthesis_sources_changed=False, full_audio_chain_verified=False)
     (DATA / 'verification.json').write_text(json.dumps(result, indent=2) + '\n', encoding='ascii', newline='\n')
     return result

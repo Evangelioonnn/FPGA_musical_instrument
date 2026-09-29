@@ -10,8 +10,10 @@ physical ADC, Bluetooth or video integration.
 
 Clock, reset, coherent keys, host requests/ACK, simulated ADC, PCM, index and
 parameter units follow [V1](AUDIO_CORE_V1.md). They remain in the 50 MHz domain.
-Fs = 50 MHz / 1040. There is no PCM or snapshot backpressure. C crosses complete
-bundles using a handshake or actual asynchronous FIFO and handles sequence gaps.
+Fs = 50 MHz / 1040. There is no PCM or snapshot backpressure. A supplies coherent
+crossing and buffering in [the integration package](../../project/audio_integration/README.md).
+C consumes its held-payload streams and handles sequence gaps; wire protocols
+and UI remain C's responsibility. See [transport V1](AUDIO_TRANSPORT_V1.md).
 The board top still uses 16 undioded keys; the core also supports 25 logical
 keys (`KEYS=25,SPLIT=12,DIATONIC=0`). Hardware scans and voltage/pins are separate.
 
@@ -88,19 +90,18 @@ whole state at a frame boundary; UART congestion must not stop audio.
 
 ## Integration bounds
 
-A+input hard caps remain 29000 Logic /17000 Reg /70 BSRAM /78 DSP, C retains
-13000/10000/26/16 and one PLL. V2 must pass physical-audio PnR and a retained
-full-interface synthesis audit. These are not audio+display+Bluetooth whole
-system PnR. The Bank5/Y12 issue in DISPLAY.md remains an integration gate.
+Current A/input and C caps are maintained in the single
+[team resource budget](../team/RESOURCE_BUDGET_V1.md). The integration package's
+retained-interface PnR is separate from the original 19-pin board build and
+does not qualify audio+display+Bluetooth whole-system PnR. The Bank5/Y12 issue
+in DISPLAY.md remains an integration gate.
 No SPI ADC pin allocation is frozen here. Analogue latency and noise measurements
 still need the real DAC/amplifier chain; RTL reference WAV is not that evidence.
 
-For a resource-conscious C adapter, one coherent handshake and a source-domain
-word-copy into RAM can avoid duplicating thousands of payload FFs in every CDC
-stage. A 64bit burst needs42 words for the N32 base/extension/KEYS25 state, plus
-the static capabilities sent separately. It fits far inside the roughly21.3ms
-snapshot interval at50MHz. Freeze/copy a complete record, attach sequence and
-length, and cross the record boundary coherently; do not sample live words as
-the source updates. This is an implementation suggestion, not a frozen UART
-packet or a promise of measured FIFO cost. Slow video/UART may drop older
-complete records but must not stall audio or merge words from different ones.
+The supplied snapshot bridge reuses stable producer registers and serializes
+each complete bundle into narrow dual-clock RAM. Its V1 transport is exactly
+46 words for N32/KEYS25, including header, sequence/drop counts and capabilities.
+This FPGA-internal record is not a frozen UART packet. Slow observers may drop
+new whole records but must not stall audio or merge words from different ones.
+Use the package's measured validation for resource cost and routed constraints;
+do not duplicate the old wide snapshot CDC from SYSTEM_V0 by default.
