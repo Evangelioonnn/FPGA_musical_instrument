@@ -1,5 +1,7 @@
 # 音符事件与声部状态 · 现有RTL参考
 
+> 历史契约，仅用于本页对应旧工程。当前C对接先读[AUDIO_CORE_V2](AUDIO_CORE_V2.md)、[传输契约](AUDIO_TRANSPORT_V1.md)和[接口索引](README.md)；下文“当前/新”均指当时版本。
+
 所有端口同步到50MHz，`rst`高有效。异步物理输入先同步/去抖，其他时钟域走正确CDC。仅在`event_valid && event_ready`的上升沿接受一条；等待时必须保持所有字段。持续valid不是“持续按住”。
 
 | 字段 | 位宽 | 含义 |

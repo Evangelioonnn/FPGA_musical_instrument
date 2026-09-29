@@ -1,5 +1,7 @@
 # 外屏与可视化工作区 · C
 
+> C先读[交接与屏幕/蓝牙设计目标](../../docs/team/C_HANDOFF_AND_DISPLAY_PLAN.md)。当前交接分支是`codex/audio-integration-pack`，main尚未合入；本规划没有新增该目录RTL。
+
 独立[dvi_colorbar_probe](dvi_colorbar_probe/README.md)已在A的普通HDMI显示器稳定显示1920×1080、61Hz，源码和板测记录均在仓库；尚未接入真实音频状态、波形或频谱。先读[板卡显示资料](../../docs/board/DISPLAY.md)、[团队预算V1](../../docs/team/RESOURCE_BUDGET_V1.md)和[C交接](../../docs/team/ROLE_C.md)。
 
 下一版建议：复用已验证扫描/输出，新增图形绘制＋模拟状态TB，输出PPM等可检查图片，再接实时状态。整合时处理Y12复位用途、Bank5电气属性与CDC；不能仅拼接两个独立CST。推荐分别放`src/`、`sim/`、`ip/`与`tools/`。

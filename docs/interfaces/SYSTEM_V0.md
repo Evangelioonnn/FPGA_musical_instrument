@@ -1,5 +1,7 @@
 # system v0共享接口候选
 
+> 历史契约，仅用于本页对应旧工程。当前C对接先读[AUDIO_CORE_V2](AUDIO_CORE_V2.md)、[传输契约](AUDIO_TRANSPORT_V1.md)和[接口索引](README.md)；下文“当前/新”均指当时版本。
+
 本页对应`feat/playable-system-v0`；不是对旧expression/baseline端口能力的追溯修改。A/B/C集成以此为候选契约，改动在PR标出消费者影响。
 
 ## 时序与数值

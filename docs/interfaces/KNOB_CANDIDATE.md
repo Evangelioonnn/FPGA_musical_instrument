@@ -1,5 +1,7 @@
 # 旋钮演奏候选的接口边界
 
+> 历史契约，仅用于本页对应旧工程。当前C对接先读[AUDIO_CORE_V2](AUDIO_CORE_V2.md)、[传输契约](AUDIO_TRANSPORT_V1.md)和[接口索引](README.md)；下文“当前/新”均指当时版本。
+
 2026-09-20，A的独立任务 `codex/knob-performance-suite`。入口：[工程说明](../../project/input/knob_suite/README.md)、[规格](../../project/input/knob_suite/SPEC.md)。本页解释可以复用什么；不替换[SYSTEM_V0](SYSTEM_V0.md)，也不冻结B的最终交互方式或C的蓝牙协议。
 
 | 层 | 已提供的能力 | 接整机前还要补齐 |

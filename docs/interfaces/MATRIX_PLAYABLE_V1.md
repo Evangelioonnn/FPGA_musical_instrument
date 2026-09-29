@@ -1,5 +1,7 @@
 # 矩阵演奏实例接口候选
 
+> 历史契约，仅用于本页对应旧工程。当前C对接先读[AUDIO_CORE_V2](AUDIO_CORE_V2.md)、[传输契约](AUDIO_TRANSPORT_V1.md)和[接口索引](README.md)；下文“当前/新”均指当时版本。
+
 2026-09-21/22，A，分支`codex/matrix-playable-v1`，起点`f9bcd79`。对应[实现规格](../../project/input/matrix_playable/SPEC.md)。这是独立实例事件候选，**不修改SYSTEM_V0原有事件字、配置地址或快照布局**。
 
 ## 事件边界

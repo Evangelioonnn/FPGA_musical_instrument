@@ -1,6 +1,6 @@
 # C：显示与蓝牙 · 当前开工入口
 
-你负责FPGA可视化、蓝牙扩展、必要客户端、曲谱/LED引导和素材；具体首屏、模式与实现顺序由你设计。你还没有开始最终模块，直接基于A提供的[音频接入包](../../project/audio_integration/README.md)开工，不必从SYSTEM_V0或旧final重新发明音频适配。
+你负责FPGA可视化、蓝牙扩展、必要客户端、曲谱/LED引导和素材；具体首屏、模式与实现顺序由你设计。首先阅读[给C的交接与屏幕/蓝牙设计目标](C_HANDOFF_AND_DISPLAY_PLAN.md)，其中列出多页面/旋钮交互、四谐波编辑、声音分析、练习LED及无线拓展的可选效果和阶段目标。直接基于A提供的[音频接入包](../../project/audio_integration/README.md)开工，不必从SYSTEM_V0或旧final重新发明音频适配。
 
 **先读这四份：** [STATUS](../project/STATUS.md)、[最新资源预算](RESOURCE_BUDGET_V1.md)、[导入规则](../interfaces/AUDIO_IMPORT_V1.md)、[传输契约](../interfaces/AUDIO_TRANSPORT_V1.md)。字段/单位详见[音频V2](../interfaces/AUDIO_CORE_V2.md)及其引用的V1位布局。
 
@@ -29,7 +29,7 @@ C保留 **13000 Logic / 10000 Register / 26 BSRAM / 16 DSP / 1 PLL**，包含自
 
 ## 首轮工作
 
-1. 独立复现彩条，用mock设计键区高亮、音量/踏板/音色和波形首屏；验证帧边界更新，生成可检查的图像或截图。
+1. 先画两种界面草图并选择首屏；按[设计目标](C_HANDOFF_AND_DISPLAY_PLAN.md)用mock验证导航、控制台与音色编辑，再复现彩条/真实像素输出。生成可检查的图像和初次资源报告。
 2. 先接精简状态，再接PCM；FFT独立用已知频率/幅值输入测试。状态序号回绕、坏/截断记录、PCM缺口和共同复位都有测试入口可参考。
 3. 蓝牙先做参数/状态协议；PC/手机只作客户端，无线离线不影响本地演奏。通信测试覆盖分包、粘包、错误CRC/长度、重复增量命令、满队列与重连。
 4. 脱机引导由FPGA自行计时/点灯，C定义逻辑key_id灯帧，B提供面板灯和物理驱动；手机实时点灯不代替脱机。事件记录也不等于PCM录音回传。

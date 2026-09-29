@@ -5,27 +5,27 @@
 ## 第一次接手
 
 1. 安装GitHub Desktop并登录自己的账号，File→Clone repository→URL。选择本机固定目录，避免云盘实时同步这个目录。
-2. 在main执行Fetch origin / Pull origin。阅读README、AGENTS、STATUS、REQUIREMENTS和自己的角色文档。
+2. 先Fetch origin。本轮核实main仍为首次交接4ada74e；目前选择远端`codex/audio-integration-pack`读取最新README、AGENTS、STATUS、REQUIREMENTS和角色文档，再从该基线新建自己的工作分支。待交接真正合入main后恢复以main为起点。
 3. 安装Gowin Designer/Programmer，按[板卡说明](../board/BOARD.md)选GW5AT-60B。ModelSim或兼容Verilog仿真器用于RTL；当前脚本为Windows ModelSim。纯RTL能跑不代表Gowin IP模型已配置。
-4. 安装Python 3，运行`python tools/check_repository.py`；需要音频仿真时，运行README的baseline脚本并指定自己的ModelSim路径。baseline Python分析仅用标准库；部分历史工程需要NumPy。
+4. 安装Python 3，运行`python tools/check_repository.py`；需要音频仿真时，运行接入包的package_check/run_transport脚本并指定自己的ModelSim路径。脚本依赖按对应工程README；部分历史分析需要NumPy。
 5. 新建短期分支，首个任务采用角色入口给出的交付。B可先提交文档/原理图，C可先提交协议/显示仿真，无需借板才能开始。
 
 ## 每天的工作循环
 
-main上Fetch/Pull → Branch→New branch（如`feat/b-control-io`）→修改自己的目录→运行相关检查→查看Changes是否混入缓存/个人资料→填写明确commit→Push origin→Create Pull Request→说明改动、接口影响、验证与待测项→评审合并→切main并Pull。
+确认当前交接基线后Fetch/Pull → Branch→New branch（如`codex/b-control-io`）→修改自己的目录→运行相关检查→查看Changes是否混入缓存/个人资料→填写明确commit→Push origin→Create Pull Request→说明改动、接口影响、验证与待测项→评审合并→切main并Pull。
 
 每项功能一个分支；三个人不要共同写一个长寿命分支。刚开始只用main＋任务分支，不增加develop层。main是“可复现且缺陷有记录”的集成基线，不宣称每个拓展已完成。
 
 CLI等价起步（有未提交改动先保存/提交，再切分支）：
 
 ```powershell
-git switch main
-git pull --ff-only
-git switch -c feat/b-control-io
+git fetch origin
+# 当前main尚未合入交接，先从交接远端分支开自己的工作分支
+git switch -c codex/b-control-io origin/codex/audio-integration-pack
 # 修改并检查后，只选择本任务文件提交
 git add hardware/interaction docs/team/ROLE_B.md
 git commit -m "docs: propose interaction layout and IO needs"
-git push -u origin feat/b-control-io
+git push -u origin codex/b-control-io
 ```
 
 任务进行期间main前进：提交当前工作，再`git fetch origin`、`git merge origin/main`，解决冲突并重测，不用force push覆盖队友。共享接口、CST、顶层冲突由相关人一起核对语义，不能只选“全保留我的”。必要时用revert回退有问题提交，不重写大家已拉取的main。
@@ -35,8 +35,8 @@ git push -u origin feat/b-control-io
 - A负责共享契约和最终顶层/CST/SDC整合；B/C提出改动和影响。接口/电压/引脚变化先形成PR供核对，日常内部开发可继续。
 - A的音频或集成改动也交给队友复核，至少核对需求和验证结果；不要求B/C为没学过的算法背书。
 - 仓库规则不代替用户授权。采购、PCB投板、改写Flash、正式发布及消息发送不由普通编码任务自动授权。
-- 推荐在三人均有访问权限后设置main保护和至少1人评审；当前未代改仓库设置。若启用保护，首个交接提交之后都走PR。
-- 客户端/工程默认路径示例不是固定安装位置；脚本参数优先。拉取gprj更新后重开Designer，旧baseline顶层为expression_baseline_top，新system为system_top；按各工程README核对，避免旧窗口再次以expression_core综合成859个IO。
+- 推荐在三人均有访问权限后设置main保护和至少1人评审；当前未代改仓库设置。交接分支相对main包含多轮成果，PR需说明累计范围，不能把一个小接口变更的验证描述扩大为全部历史内容都重新验收。若启用保护，首个交接提交之后都走PR。
+- 客户端/工程默认路径示例不是固定安装位置；脚本参数优先。拉取gprj更新后重开Designer；当前音频入口audio_v2.gprj/audio_v2_top/19 IO，接入包审计顶层不可下载。旧baseline/system只作历史；按各工程README核对，避免旧窗口再次以expression_core综合成859个IO。
 
 ## 单板卡验收
 

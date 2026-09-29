@@ -6,11 +6,13 @@
 
 **A/B/C从本页开始，不从历史工程文件名猜版本。**
 
+**当前交接在 `codex/audio-integration-pack`，音频/接口基线 `e500e30`，其后为本轮文档更新。** 本轮Fetch核实 `main`仍是`4ada74e`初始交接，尚未合入这些成果；新成员先取本分支，从它创建各自工作分支，见[工作流](docs/team/WORKFLOW.md)。
+
 | 目的 | 当前入口 |
 |---|---|
 | 了解当前成果、限制和下一步 | [STATUS](docs/project/STATUS.md) |
 | B设计控制板，确认按键/推子/IO边界 | [ROLE_B](docs/team/ROLE_B.md) → [最新资源预算](docs/team/RESOURCE_BUDGET_V1.md) |
-| C开始显示/蓝牙，无须等待控制板 | [ROLE_C](docs/team/ROLE_C.md) → [音频接入包](project/audio_integration/README.md) |
+| C开始显示/蓝牙，无须等待控制板 | [C简要交接与屏幕设计目标](docs/team/C_HANDOFF_AND_DISPLAY_PLAN.md) → [ROLE_C](docs/team/ROLE_C.md) → [音频接入包](project/audio_integration/README.md) |
 | 导入真实音频、跨域状态/PCM、提交配置 | [接入包](project/audio_integration/README.md) · [导入规则](docs/interfaces/AUDIO_IMPORT_V1.md) · [传输契约](docs/interfaces/AUDIO_TRANSPORT_V1.md) |
 | 复现当前已认可的实物音频演奏 | [audio_core_v2](project/audio_core_v2/README.md)，顶层 `audio_v2_top`、19 IO |
 | 核对比赛、硬件与显示事实 | [官方指标](docs/project/REQUIREMENTS.md) · [板卡](docs/board/BOARD.md) · [显示](docs/board/DISPLAY.md) |
@@ -26,7 +28,7 @@
 
 三人的Codex先读 `AGENTS.md` → STATUS → REQUIREMENTS → [工程分类](docs/catalog/PROJECT_INDEX.md) → 对应角色入口 → 负责目录内AGENTS。GitHub共享源码和结论，不共享聊天记忆。
 
-每项任务从最新main建立 `codex/` 分支，在负责目录开发，提交测试/证据，通过PR说明共享接口、电气、顶层或约束影响；A负责总集成。C可用接入包mock状态/PCM独立做显示，B可用现有模块验证手感，各自不必随音频实验换针位。细节见[三台电脑一块板卡的工作流](docs/team/WORKFLOW.md)。
+通常每项任务从最新main建立 `codex/` 分支；当前main尚未合入本交接时，先从上述交接分支建立自己的分支，在负责目录开发，提交测试/证据，通过PR说明共享接口、电气、顶层或约束影响；A负责总集成。C可用接入包mock状态/PCM独立做显示，B可用现有模块验证手感，各自不必随音频实验换针位。细节见[三台电脑一块板卡的工作流](docs/team/WORKFLOW.md)。
 
 在仓库根目录运行：
 
