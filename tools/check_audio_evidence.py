@@ -1,7 +1,8 @@
 """Verify new audio evidence and retain portable LF source fingerprints.
 
-Raw build fingerprints remain unchanged. Only CRLF-to-LF equivalence is
-permitted; changes to code, whitespace or encoding still fail verification.
+Raw build fingerprints remain unchanged. CRLF-to-LF equivalence and an
+explicitly reviewed, exact-hash simulation-wrapper transition are supported;
+all other source changes still fail verification.
 """
 from pathlib import Path
 import argparse
@@ -24,6 +25,8 @@ RECORDS = (
     ('project/audio_fx_lab/pnr_validation.json', 'audio_fx_lab'),
     ('project/audio_fx_lab/sim_validation.json', 'audio_fx_lab'),
 )
+HARNESS_REVIEW = ROOT / 'evidence/harness_review_2026-09-29.json'
+REVIEWED_HARNESS_MATCHES = set()
 
 
 def sha(data):
@@ -32,6 +35,18 @@ def sha(data):
 
 def lf_sha(data):
     return sha(data.replace(b'\r\n', b'\n'))
+
+
+def reviewed_harness_match(relative, expected, portable_expected, current_lf):
+    if not HARNESS_REVIEW.is_file() or Path(relative).suffix != '.py':
+        return False
+    for transition in json.loads(HARNESS_REVIEW.read_text(encoding='utf-8'))['transitions']:
+        if (relative == transition['source'] and
+                expected == transition['historical_sha256'] and
+                portable_expected == transition['historical_lf_sha256'] and
+                current_lf == transition['reviewed_current_lf_sha256']):
+            return True
+    return False
 
 
 def source_path(name, lab):
@@ -70,14 +85,20 @@ def verify(record, lab, stamp, check_index):
             data = path.read_bytes()
             raw_match = sha(data) == expected
             lf_match = portable.get(name) == lf_sha(data)
+            historical_harness = False
             if not raw_match and not lf_match:
-                raise RuntimeError(f'Changed evidence source: {path.relative_to(ROOT)}')
-            updated[name] = lf_sha(data)
+                historical_harness = reviewed_harness_match(
+                    path.relative_to(ROOT).as_posix(), expected, portable.get(name), lf_sha(data))
+                if not historical_harness:
+                    raise RuntimeError(f'Changed evidence source: {path.relative_to(ROOT)}')
+                REVIEWED_HARNESS_MATCHES.add(path.relative_to(ROOT).as_posix())
+            # Keep the old evidence fingerprint; this is not a new full-chain run.
+            updated[name] = portable[name] if historical_harness else lf_sha(data)
             if check_index:
                 relative = path.relative_to(ROOT).as_posix()
                 result = subprocess.run(['git', 'show', ':' + relative], cwd=ROOT,
                                         capture_output=True, check=True)
-                if lf_sha(result.stdout) != updated[name]:
+                if lf_sha(result.stdout) != lf_sha(data):
                     raise RuntimeError(f'Staged source differs from verified source: {relative}')
             checked += 1
         if stamp:
@@ -109,7 +130,9 @@ def main():
             path.write_text(json.dumps(record, indent=2) + '\n', encoding='utf-8', newline='\n')
         checked += count
         print(f'AUDIO_SOURCE_EVIDENCE_PASS {relative} inputs={count}')
-    print(f'AUDIO_PORTABLE_EVIDENCE_PASS source comparisons={checked}')
+    for relative in sorted(REVIEWED_HARNESS_MATCHES):
+        print(f'AUDIO_REVIEWED_HISTORICAL_HARNESS {relative}; original fingerprints retained; not a new audio run')
+    print(f'AUDIO_PORTABLE_EVIDENCE_PASS source comparisons={checked}; reviewed historical harnesses={len(REVIEWED_HARNESS_MATCHES)}')
 
 
 if __name__ == '__main__':

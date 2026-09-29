@@ -1,6 +1,6 @@
 # 通信扩展工作区 · C
 
-> C先读[交接与屏幕/蓝牙设计目标](../../docs/team/C_HANDOFF_AND_DISPLAY_PLAN.md)。当前交接分支是`codex/audio-integration-pack`，main尚未合入；本规划没有新增该目录RTL。
+> C先读[交接与屏幕/蓝牙设计目标](../../docs/team/C_HANDOFF_AND_DISPLAY_PLAN.md)，从最新main创建任务分支。完整交接随汇总PR统一进入main；本目录无线协议与蓝牙RTL仍待C实现。
 
 当前无蓝牙/UART实现；A已提供[音频接入包](../audio_integration/README.md)，包含真实命令/ACK跨域桥和完整状态记录。先读[C交接](../../docs/team/ROLE_C.md)、[音频V2](../../docs/interfaces/AUDIO_CORE_V2.md)和[传输契约](../../docs/interfaces/AUDIO_TRANSPORT_V1.md)。首轮交付模块比较和外部协议提案；协议确定后添加`src/`、`sim/`、`tools/`和独立验证顶层。
 

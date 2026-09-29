@@ -4,7 +4,7 @@
 
 ## GitHub与开工入口
 
-当前交接分支 **`codex/audio-integration-pack`**，音频/接入代码基线 `e500e30`，后续为C规划和文档整理。`main`首页已通过PR #3更新，远端提交`b8efb43`；此次只修改README并链接最新交接，其余源码仍是首次交接`4ada74e`的基线。最新音频、显示探针、资料及接入包仍在交接分支，尚未整体合入main。主页更新和远端内容核对见[本轮记录](HOMEPAGE_REFRESH_2026-09-29.md)。开发前切换交接分支。
+当前统一开发与交接基线为 **`main`**。本轮汇总PR将此前`codex/audio-integration-pack`的完整成果及更新说明合入main，源起点`156f12f`；音频/传输代码基线为`e500e30`，本轮没有修改RTL或硬件约束。新成员直接从最新main创建自己的任务分支；此前已从交接分支开发的成员合并origin/main即可。范围与检查见[汇总任务](MAIN_HANDOFF_INTEGRATION_2026-09-29.md)；仅更新首页的旧阶段见[历史记录](HOMEPAGE_REFRESH_2026-09-29.md)。
 
 - C先读[交接与显示设计目标](../team/C_HANDOFF_AND_DISPLAY_PLAN.md)和[ROLE_C](../team/ROLE_C.md)，再用[接入包](../../project/audio_integration/README.md)开发。
 - B先读[ROLE_B](../team/ROLE_B.md)、[J13针表](../board/J13_GPIO.md)和[唯一团队预算](../team/RESOURCE_BUDGET_V1.md)。A与B共同规划成品控制板。
@@ -43,7 +43,7 @@
 
 ## 下一步
 
-1. B/C从交接分支各建工作分支；C首批交屏幕草图、mock渲染、协议/资源和缺口表，B交操控布局、电气和IO提案。
+1. B/C从最新main各建工作分支，已有任务分支合并origin/main；C首批交屏幕草图、mock渲染、协议/资源和缺口表，B交操控布局、电气和IO提案。
 2. A/C尽早做“现有音频＋少量真实状态屏”最小合并，先处理电气/复位/CDC与时序，再加FFT/蓝牙。
 3. 逐批接实体ADC、控制板、真实LED、显示/通信；每次重新整机PnR、故障恢复和音频期限验证。
 4. 实测模拟端延迟、音质/SNR、多维操控与官方拓展项，保留可回退音频固件。采购、投板、Flash、正式比赛发布和队友消息不由文档规划自动触发。

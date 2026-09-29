@@ -5,7 +5,7 @@
 ## 第一次接手
 
 1. 安装GitHub Desktop并登录自己的账号，File→Clone repository→URL。选择本机固定目录，避免云盘实时同步这个目录。
-2. 先Fetch origin。main首页已更新并链接当前资料，其余源码仍为首次交接4ada74e基线；目前选择远端`codex/audio-integration-pack`读取最新README、AGENTS、STATUS、REQUIREMENTS和角色文档，再从该基线新建自己的工作分支。待完整交接真正合入main后恢复以main为起点。
+2. 先Fetch origin，选择最新main读取README、AGENTS、STATUS、REQUIREMENTS和角色文档，再从origin/main新建自己的工作分支。完整交接已随汇总PR统一到main，旧codex/audio-integration-pack保留为历史来源，不再要求新成员先切它。
 3. 安装Gowin Designer/Programmer，按[板卡说明](../board/BOARD.md)选GW5AT-60B。ModelSim或兼容Verilog仿真器用于RTL；当前脚本为Windows ModelSim。纯RTL能跑不代表Gowin IP模型已配置。
 4. 安装Python 3，运行`python tools/check_repository.py`；需要音频仿真时，运行接入包的package_check/run_transport脚本并指定自己的ModelSim路径。脚本依赖按对应工程README；部分历史分析需要NumPy。
 5. 新建短期分支，首个任务采用角色入口给出的交付。B可先提交文档/原理图，C可先提交协议/显示仿真，无需借板才能开始。
@@ -20,8 +20,8 @@ CLI等价起步（有未提交改动先保存/提交，再切分支）：
 
 ```powershell
 git fetch origin
-# 当前main尚未合入交接，先从交接远端分支开自己的工作分支
-git switch -c codex/b-control-io origin/codex/audio-integration-pack
+# 从最新main开自己的工作分支
+git switch -c codex/b-control-io origin/main
 # 修改并检查后，只选择本任务文件提交
 git add hardware/interaction docs/team/ROLE_B.md
 git commit -m "docs: propose interaction layout and IO needs"
@@ -30,12 +30,14 @@ git push -u origin codex/b-control-io
 
 任务进行期间main前进：提交当前工作，再`git fetch origin`、`git merge origin/main`，解决冲突并重测，不用force push覆盖队友。共享接口、CST、顶层冲突由相关人一起核对语义，不能只选“全保留我的”。必要时用revert回退有问题提交，不重写大家已拉取的main。
 
+已经从旧交接分支创建B/C任务分支的成员，继续留在自己的分支：提交已有成果，Fetch后合并`origin/main`；不要重新克隆覆盖工作目录，也不要把新main覆盖粘贴到旧分支。此次汇总保留交接历史，便于正常合并。
+
 ## 评审与执行边界
 
 - A负责共享契约和最终顶层/CST/SDC整合；B/C提出改动和影响。接口/电压/引脚变化先形成PR供核对，日常内部开发可继续。
 - A的音频或集成改动也交给队友复核，至少核对需求和验证结果；不要求B/C为没学过的算法背书。
 - 仓库规则不代替用户授权。采购、PCB投板、改写Flash、正式发布及消息发送不由普通编码任务自动授权。
-- 推荐在三人均有访问权限后设置main保护和至少1人评审；当前未代改仓库设置。交接分支相对main包含多轮成果，PR需说明累计范围，不能把一个小接口变更的验证描述扩大为全部历史内容都重新验收。若启用保护，首个交接提交之后都走PR。
+- 推荐在三人均有访问权限后设置main保护和至少1人评审；当前未代改仓库设置。本轮汇总PR说明累计成果与历史验证边界，不能把仓库合并描述成所有音频或整机重新验收。后续任务继续通过PR入main。
 - 客户端/工程默认路径示例不是固定安装位置；脚本参数优先。拉取gprj更新后重开Designer；当前音频入口audio_v2.gprj/audio_v2_top/19 IO，接入包审计顶层不可下载。旧baseline/system只作历史；按各工程README核对，避免旧窗口再次以expression_core综合成859个IO。
 
 ## 单板卡验收
