@@ -30,3 +30,5 @@ main自初次交接后的独有变更是首页PR #3，与交接分支只在READM
 - `python project/audio_core_v1/tools/sim_rom.py --modelsim E:/QuartusII/modelsim_ase/win32aloem`：6152项ROM比较通过，原始与生成文件指纹被核对。
 - `python -m unittest discover -s tools/tests -p test_audio_evidence.py`：4项通过，包括保留历史指纹、拒绝进一步包装修改/非审阅旧哈希/RTL修改。
 - 以156f12f为来源核对：没有RTL、CST/SDC、IP配置、gprj变更。冲突仅README；既有证据数据不改写。
+- `python tools/check_repository.py`：1242个发布文件的链接、gprj/include依赖与官方资料哈希通过；`git diff --check`通过。
+- 从提交6507227用git archive生成无.git、无本机缓存的完整导出：仓库检查1242文件、1440次证据比较、接入包静态检查及4项保护测试全部通过。此后只追加本条检查记录，没有改变已检查源码。
