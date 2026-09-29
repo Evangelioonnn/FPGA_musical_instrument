@@ -51,7 +51,7 @@
 | `project/input/src` | `RTL_REFERENCE` | 矩阵、EC11、键路由和数字压力模块独立仿真 | 接入最终外部电气前，先遵守接口和电压边界 |
 | `project/polyphony` | `RTL_REFERENCE` | 四声部管理、混音、串行和构建验证 | 复音结构参考；合并真实输入后需重做资源/板测 |
 | `project/system` | `RTL_REFERENCE` | 输入适配、配置仲裁、快照和音频系统数字验证 | 历史整机候选；system_top仍是自动演示，新集成使用V2接入包 |
-| `project/expression_baseline` | `INTEGRATION_CANDIDATE` | 原音色复用、力度/音量/延音和复音电脑演示 | 默认功能回归候选；板上尖锐声和真实交互仍是限制 |
+| `project/expression_baseline` | `HISTORY_OR_NEGATIVE / RTL_REFERENCE` | 原音色复用、力度/音量/延音和复音电脑演示 | 历史功能/噪声对照，不作为当前产品默认；板上尖锐声和当时真实交互仍是限制 |
 | `project/expression` | `INTEGRATION_CANDIDATE` | 表情、效果和状态接口的数字验证 | 只按共享契约逐项接入，不把旧顶层当最终顶层 |
 | `project/experiments/capacity16` | `RTL_REFERENCE` | 16声部资源与50MHz实现通过 | 作为复音容量参考，合入整机必须重新实现 |
 | `project/experiments/capacity32` | `HISTORY_OR_NEGATIVE` | 资源可放下，但50MHz时序未通过 | 只记录失败边界，不作为达标固件 |
@@ -81,6 +81,6 @@
 根目录只保留两个真正的长期入口：`README.md` 和 `AGENTS.md`。其他根目录 Markdown 目前分为两类：
 
 - 兼容入口：`AUDIO_TEST_BASELINE.md`、`DEVELOPMENT_METHOD.md`、`MEETING_BRIEF_2026-09-18.md`、`EXECUTION_ROADMAP.md`、`OVERNIGHT_REVIEW.md`、`PROJECT_CONTEXT.md`、`RESOURCE_IP_PRODUCT_PLAN.md`、`SYNTHESIS_PLAN.md`、`TEAM_WORKFLOW.md`、`TIMBRE_PLAN.md`。它们现在只负责把旧链接指向 `docs/project`、`docs/team` 或 `docs/history`，不应继续在根目录编辑。
-- 当前正文：`docs/project/AUDIO_TEST_BASELINE.md` 和 `docs/team/DEVELOPMENT_METHOD.md`。规范、流程和结论以后只在这两个新位置维护。
+- 两个兼容入口的正文：`docs/project/AUDIO_TEST_BASELINE.md`保留历史正弦诊断参数，`docs/team/DEVELOPMENT_METHOD.md`维护通用开发方法。当前进度、分工和接口分别维护在STATUS、角色入口及docs/interfaces，不要求集中写进这两页。
 
 `Notification/` 是本机下载资料，不是仓库当前事实入口；官方资料的精选版本和来源索引在 `references/`。

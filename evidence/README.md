@@ -1,5 +1,7 @@
 # 验证证据与试听
 
+当前先看[音频V2及总体听感反馈](audio_core_v2_2026-09-29/BOARD_LISTENING.md)、[音频接入包验证](../project/audio_integration/VALIDATION.md)和[证据索引](INDEX.md)。下文音频表与复现段保留9月18～22日的历史参考，不能用其旧默认音色/待板测文字覆盖当前状态。
+
 音频来源逐项标注，**均不是板卡模拟录音**。baseline、lab、输入序列、delay及candidate_fm/pluck_rtl来自RTL；candidate_fm/pluck_offline是保留的Python浮点候选。用户已板上试听新RTL，主体与WAV相符，pluck杂音很轻、FM杂音明显，详见[板测反馈](timbre_rtl_2026-09-19/BOARD_LISTENING.md)。
 
 EC11独立探针已完成用户耳机板测，见[EC11板级试听](ec11_board_2026-09-19/BOARD_LISTENING.md)。不要把这些WAV当作板卡音质达标证明，也不能送回FPGA当预录音播放。
@@ -14,11 +16,11 @@ EC11独立探针已完成用户耳机板测，见[EC11板级试听](ec11_board_2
 
 9月19日新增[FM/拨弦RTL证据](timbre_rtl_2026-09-19/README.md)：两种独立单声部、浮点数值对照、命令/串行验证和五引脚试听顶层资源时序；用户后续听感另列板测记录，数字构建报告不代表模拟验收。
 
-## 可试听文件
+## 历史试听文件
 
 | 文件 | 内容 |
 |---|---|
-| [baseline_preview.wav](audio/baseline_preview.wav) | 当前16秒演示，全段固定×8增益，无逐段归一化 |
+| [baseline_preview.wav](audio/baseline_preview.wav) | 旧baseline的16秒演示，全段固定×8增益，无逐段归一化 |
 | [baseline_raw.wav](audio/baseline_raw.wav) | 同一仿真保留FPGA数字电平 |
 | [instrument_original.wav](audio/instrument_original.wav) | 最初认可的六秒原单声部参考、C4/E4/G4/C5；原数字幅度 |
 | [input_sequence_preview.wav](audio/input_sequence_preview.wav) | 6秒逻辑输入链演奏，仍原音色，固定×8 |
@@ -28,7 +30,7 @@ EC11独立探针已完成用户耳机板测，见[EC11板级试听](ec11_board_2
 | [candidate_fm_rtl.wav](audio/candidate_fm_rtl.wav)、[candidate_pluck_rtl.wav](audio/candidate_pluck_rtl.wav) | 各7.5秒，真正来自新单声部定点RTL；原算法电平，无归一化；第七段是单个C4 |
 | [fm_monitor_preview.wav](audio/fm_monitor_preview.wav)、[pluck_monitor_preview.wav](audio/pluck_monitor_preview.wav) | 核心RTL样本施加板级整数衰减后统一×32试听，保留新增量化影响；不是板卡录音，见[说明](timbre_rtl_2026-09-19/BOARD_LISTENING.md) |
 
-当前演示包含原单音、音量/静音、三档力度、普通延音、选择性延音、四声部、跨八度八音和弦；不是多音色/滑音/弯音全功能演示。详细时间见[工程说明](../project/expression_baseline/README.md)。GitHub可能需下载WAV再播放。
+旧baseline演示包含原单音、音量/静音、三档力度、普通延音、选择性延音、四声部、跨八度八音和弦；不是当前五音色/滑音/弯音全功能演示。详细时间见[历史工程说明](../project/expression_baseline/README.md)。GitHub可能需下载WAV再播放。
 
 ## 历史验证 · 2026-09-18
 
@@ -45,9 +47,9 @@ EC11独立探针已完成用户耳机板测，见[EC11板级试听](ec11_board_2
 
 历史manifest引用18:23的4A3BBD…；最后本机构建为18:25的F56643…，记录于[original_artifact.json](baseline_2026-09-18/original_artifact.json)。本仓库不带.fs；后续用自己的构建哈希记录板测。Git统一源码换行后，不用历史原始字节SHA判断源码等价。
 
-## 从仓库复现
+## 历史baseline复现
 
-执行根README的baseline仿真；日志、样本和两份WAV生成在`project/expression_baseline/sim/`。脚本检查编译、错误文本和PASS标记，不仅检查返回码。
+按[旧baseline工程](../project/expression_baseline/README.md)的仿真命令复现该对照；日志、样本和两份WAV生成在`project/expression_baseline/sim/`。当前根README推荐V2和接入包，不再提供baseline默认命令。脚本检查编译、错误文本和PASS标记，不仅检查返回码。
 
 干净克隆没有旧`instrument/sim/demo_samples.txt`，因此分析器的“与历史instrument文本逐样本比较”可选项会显示0；baseline_voice_tb仍比较独立实例，完整渲染仍检查音高/包络/力度/音量/静音。如需重新取得那项96154样本对照，先运行instrument完整仿真（其分析需NumPy），再运行baseline；不能把可选跳过写成已经对比。当前接手验证另记录于[仓库复现记录](REPRODUCIBILITY.md)。
 
