@@ -1,0 +1,13 @@
+Reading E:/QuartusII/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.1d
+
+# vsim -do {run -all; quit -f} -lib work_palette -c palette_controls_tb
+# Loading work_palette.palette_controls_tb
+# Loading work_palette.palette_controls
+# Loading work_palette.knob_volume_table
+# Loading work_palette.playable_button
+# run -all
+# PALETTE_CONTROLS_TB_PASS volume/left/right/release, clamps, timbre, sustain, panic
+# ** Note: $finish    : D:/uestc/SCM/GowinFPGA/project/audio_palette_lab/sim/palette_controls_tb.v(29)
+#    Time: 6960 ns  Iteration: 1  Instance: /palette_controls_tb

@@ -1,0 +1,8 @@
+# vsim -do run.do -l pluck_equivalence_tb.log -lib work -c pluck_equivalence_tb
+# Loading work.pluck_equivalence_tb
+# Loading work.pluck_voice
+# Loading work.pluck_note_table
+# do run.do
+# PLUCK_EQUIVALENCE_TB_PASS samples=42001 dsp_vs_shift_exact=1 low_mid_high=1
+# ** Note: $finish    : $REPO/project/input/knob_suite/sim/pluck_equivalence_tb.v(33)
+#    Time: 53760120 ns  Iteration: 1  Instance: /pluck_equivalence_tb

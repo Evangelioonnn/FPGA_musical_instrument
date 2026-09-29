@@ -1,0 +1,195 @@
+{
+  "frames": 147982,
+  "peak": 836,
+  "sample_rate_exact_hz": 48076.92307692308,
+  "wav_rate_hz": 48077,
+  "normalised": false,
+  "default_master_gain_q16": 8249,
+  "preview_order": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    "Drive lead + room/vibrato"
+  ],
+  "nominal_vs_accelerated_default_pcm_equal": true,
+  "markers": [
+    "# AUDIO_RENDER_TB_PASS FAST=0 SHORT=1 SCENE=-1 950 actual RTL stereo frames",
+    "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=1 SCENE=-1 950 actual RTL stereo frames",
+    "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=0 SCENE=0 24654 actual RTL stereo frames",
+    "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=0 SCENE=1 24654 actual RTL stereo frames",
+    "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=0 SCENE=2 24654 actual RTL stereo frames",
+    "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=0 SCENE=3 24654 actual RTL stereo frames",
+    "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=0 SCENE=4 24654 actual RTL stereo frames",
+    "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=0 SCENE=5 24712 actual RTL stereo frames"
+  ],
+  "render_logs": [
+    "render_0_1_fastrom.log",
+    "render_1_1_fastrom.log",
+    "render_1_0_fastrom_scene0.log",
+    "render_1_0_fastrom_scene1.log",
+    "render_1_0_fastrom_scene2.log",
+    "render_1_0_fastrom_scene3.log",
+    "render_1_0_fastrom_scene4.log",
+    "render_1_0_fastrom_scene5.log"
+  ],
+  "fast_rom": true,
+  "render_jobs": [
+    {
+      "fast": 0,
+      "short": 1,
+      "scene": -1,
+      "log": "render_0_1_fastrom.log",
+      "marker": "# AUDIO_RENDER_TB_PASS FAST=0 SHORT=1 SCENE=-1 950 actual RTL stereo frames",
+      "pcm": "audio_preview_0_1_fastrom.txt"
+    },
+    {
+      "fast": 1,
+      "short": 1,
+      "scene": -1,
+      "log": "render_1_1_fastrom.log",
+      "marker": "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=1 SCENE=-1 950 actual RTL stereo frames",
+      "pcm": "audio_preview_1_1_fastrom.txt"
+    },
+    {
+      "fast": 1,
+      "short": 0,
+      "scene": 0,
+      "log": "render_1_0_fastrom_scene0.log",
+      "marker": "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=0 SCENE=0 24654 actual RTL stereo frames",
+      "pcm": "audio_preview_1_0_fastrom_scene0.txt"
+    },
+    {
+      "fast": 1,
+      "short": 0,
+      "scene": 1,
+      "log": "render_1_0_fastrom_scene1.log",
+      "marker": "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=0 SCENE=1 24654 actual RTL stereo frames",
+      "pcm": "audio_preview_1_0_fastrom_scene1.txt"
+    },
+    {
+      "fast": 1,
+      "short": 0,
+      "scene": 2,
+      "log": "render_1_0_fastrom_scene2.log",
+      "marker": "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=0 SCENE=2 24654 actual RTL stereo frames",
+      "pcm": "audio_preview_1_0_fastrom_scene2.txt"
+    },
+    {
+      "fast": 1,
+      "short": 0,
+      "scene": 3,
+      "log": "render_1_0_fastrom_scene3.log",
+      "marker": "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=0 SCENE=3 24654 actual RTL stereo frames",
+      "pcm": "audio_preview_1_0_fastrom_scene3.txt"
+    },
+    {
+      "fast": 1,
+      "short": 0,
+      "scene": 4,
+      "log": "render_1_0_fastrom_scene4.log",
+      "marker": "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=0 SCENE=4 24654 actual RTL stereo frames",
+      "pcm": "audio_preview_1_0_fastrom_scene4.txt"
+    },
+    {
+      "fast": 1,
+      "short": 0,
+      "scene": 5,
+      "log": "render_1_0_fastrom_scene5.log",
+      "marker": "# AUDIO_RENDER_TB_PASS FAST=1 SHORT=0 SCENE=5 24712 actual RTL stereo frames",
+      "pcm": "audio_preview_1_0_fastrom_scene5.txt"
+    }
+  ],
+  "parallel_scene_jobs": 3,
+  "scene_frames": [
+    24654,
+    24654,
+    24654,
+    24654,
+    24654,
+    24712
+  ],
+  "scene_reset_mode": "independent reset per scene",
+  "continuous_first_scene_pcm_equal": true,
+  "original_rom_nominal_reference_equal": true,
+  "original_rom_nominal_reference_sha256": "9e5eb7f4a432d9983c3799593958f97220dc28ae7b710dd6c3ae253196be489a",
+  "sine_rom_equivalence": {
+    "replacement_source": "project/audio_core_v1/sim/work_rom_data/palette_sine_array.v",
+    "reference_source": "project/audio_core_v1/sim/work_rom_data/palette_sine_reference.v",
+    "rom_data": "project/audio_core_v1/sim/work_rom_data/sine4096.hex",
+    "bench_source": "project/audio_core_v1/sim/sine_rom_equivalence_tb.v",
+    "table_entries": 4096,
+    "all_address_checks": 4096,
+    "unknown_address_checks": 8,
+    "consecutive_jump_checks": 2048,
+    "initial_zero_checked": true,
+    "pass_marker": "# SINE_ROM_ARRAY_EQUIVALENCE_PASS addresses=4096 unknown=8 jumps=2048 initial=0 checks=6152",
+    "source_sha256": {
+      "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+      "project/audio_core_v1/sim/sine_rom_equivalence_tb.v": "1acd88c14da9224276e2826770da02f5aafce5999275e0640111f85f5a26bdbb",
+      "project/audio_core_v1/tools/sim_rom.py": "13b2180793d00c0ff240944230dbb4a052a074e82f808380d187f91092f6cacc"
+    },
+    "source_lf_sha256": {
+      "project/audio_palette_lab/src/palette_sine.v": "4a9bbdf84525ae5bf8c6df97fa89cbde5b49c3d573153ba7b8fc49bd0e8bb620",
+      "project/audio_core_v1/sim/sine_rom_equivalence_tb.v": "1acd88c14da9224276e2826770da02f5aafce5999275e0640111f85f5a26bdbb",
+      "project/audio_core_v1/tools/sim_rom.py": "13b2180793d00c0ff240944230dbb4a052a074e82f808380d187f91092f6cacc"
+    },
+    "generated_sha256": {
+      "project/audio_core_v1/sim/work_rom_data/palette_sine_array.v": "413e7558fd75cc6c5916cfde44c9a626b258417c27ab48af3eb06d1e87e14f90",
+      "project/audio_core_v1/sim/work_rom_data/palette_sine_reference.v": "8ca45557d5697f94cc5a392e513d168a663dd906770fc36bbb82f93020fa21bc",
+      "project/audio_core_v1/sim/work_rom_data/sine4096.hex": "d1f5952989b7395c13250be61b81b34f0f834c51fe23cfe2975acf9a6712e443"
+    },
+    "verification_seconds": 1.474,
+    "synthesis_sources_changed": false,
+    "full_audio_chain_verified": true,
+    "chain_equivalence_frames": 950,
+    "chain_equivalence_scope": "default piano only; original-ROM nominal vs array-ROM nominal"
+  },
+  "source_sha256": {
+    "project/custom_harmonic_lab/src/custom_gallery_shared_tone.v": "4a5ef80d76e1a2a1e6b029fb19f8b973b37bd23d398cee0c3b69731ddb03e592",
+    "project/custom_harmonic_lab/src/custom_harmonic_params.v": "cfc51e8929c76915cad5ca1338ac0627dfeb20e7ee74ae9503f64327236fe6a2",
+    "project/five_timbre_core/src/gallery_keys.v": "5599d315235f1f49c01cd3161f7cd0f676fd8ef38c80bfdc8c0ee8771428b800",
+    "project/five_timbre_core/src/gallery_led.v": "129d66b9b4322b6c7973087c93e467ce1792ffe55dc96931999ad6ddcc2b4700",
+    "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+    "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+    "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+    "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+    "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+    "project/final_dual_timbre/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+    "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+    "project/final_dual_timbre/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+    "project/final_dual_timbre/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+    "project/final_dual_timbre/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+    "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+    "project/audio_palette_lab/src/palette_pluck.v": "c7c86d36f3a500c16ff2e1a28e358669de5bee3d2e6bd0a2933a9c997ea4e851",
+    "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+    "project/audio_output_lab/src/output_tx.v": "7cefd245f5c8984ee6b0a4089b8aabd6ee950f242a11c4a6d34fde46933460c3",
+    "project/audio_output_lab/src/output_polarity.v": "678f6604d4a6f0c48074fe9373c5e0d679d06a92ad7804e8146d95fbcd3fe70a",
+    "project/audio_core_v1/src/audio_core.v": "566599619d80e2fce776330bd0444e10099aa5dda7e962ceeaa1dedb558fa151",
+    "project/audio_core_v1/src/audio_panel.v": "55bafc9b9a47577ab331f426f55d1a9503a88a761fec58a6b955051f6d70032a",
+    "project/audio_core_v1/src/audio_top.v": "083058c153ffc91a9b44151d31227d2824e1c98e9d518e239edcbc852b7a7a55",
+    "project/audio_core_v1/src/audio_voice_bank.v": "f9d771e20b0df136da286e87daa30453e758331e000441a7c27468c42f78afd7",
+    "project/audio_core_v1/src/audio_voice_slot.v": "0e189c0b722503ccadb48c36b2ed7b7d45fc6cf6b8b24a3be35d2819d513dcad",
+    "project/audio_core_v1/src/audio_voice_state.v": "78d69aef0f7f53a8cc1be5b8c38314827a7d984a7d7da88e47f5d0e0782fdb67",
+    "project/audio_parameter_lab/src/audio_parameter_service.v": "528b047f1cba950e96b5dff8a6054ccdabe42df54c9af7f71529ebdba3616974",
+    "project/audio_fx_lab/src/short_room_reverb.v": "6eb46abe6475e578b73ea6e40def648a4a6304b293ac56c8679bb4478099742d",
+    "project/audio_fx_lab/src/vibrato_factor.v": "b4f705871fdc3e32e7f41995fefe62c7322c08de2b98830d7468ae2cdbda2b5e",
+    "project/audio_core_v1/audio_core.gprj": "4a05abaa21786763d751d000a01b6ae36ff08cb0278e58b614ab817f92b01ce0",
+    "project/audio_core_v1/sim/audio_render_tb.v": "87062708f590162457940d001b40cd00349482a23bc96c8d360bffe0da3da6b1",
+    "project/audio_core_v1/tools/render.py": "b4c67213ffe2e9b542dbc879eb053d93a26d6baeafc9916b9d634c437a13183b",
+    "project/audio_core_v1/tools/sim_rom.py": "13b2180793d00c0ff240944230dbb4a052a074e82f808380d187f91092f6cacc",
+    "project/audio_core_v1/sim/sine_rom_equivalence_tb.v": "1acd88c14da9224276e2826770da02f5aafce5999275e0640111f85f5a26bdbb"
+  },
+  "scene_pcm_sha256": {
+    "0": "d1a515be3c2a950a5a538937f5ffa252da595f0f643be12ab70ce99314fa499e",
+    "1": "ba9fba0934bc552ced560aa31fbc815c7da78b0bb43c9be131383b09d56e9f6b",
+    "2": "5c7957c690e30d985e687074dc4214412bcc96f2849db6f97c91159c0715e837",
+    "3": "169d2870f7ef935b3a65698359d2dbc49af8c1d53dfffbd05f3961847d16476a",
+    "4": "d1a515be3c2a950a5a538937f5ffa252da595f0f643be12ab70ce99314fa499e",
+    "5": "ad9b23f39761c148a4727216ad05d83c769543e27afc5158dc50a70ae6d21d73"
+  },
+  "assembler_sha256": "98d64059994717bd712beddeab3f34a70c449f387aef4bde2767b568397837ac",
+  "sha256": "0f7a025927ccd4a4e0f42901dfb37953fb9af2868fdb03c47c6b7e624fad7cd1",
+  "elapsed_seconds": 0.26
+}

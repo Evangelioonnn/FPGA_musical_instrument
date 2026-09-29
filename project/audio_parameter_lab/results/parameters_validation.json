@@ -1,0 +1,34 @@
+{
+  "scope": "independent parameter targets and fader pickup RTL",
+  "status": "PASS",
+  "timestamp_utc": "2026-09-28T12:38:09.695778+00:00",
+  "modelsim_directory": "E:/QuartusII/modelsim_ase/win32aloem",
+  "source_hashes": {
+    "src/audio_parameter_service.v": "528b047f1cba950e96b5dff8a6054ccdabe42df54c9af7f71529ebdba3616974",
+    "sim/audio_fader_range_tb.v": "078f2baafa1e86a47651c54e79e98134dcec2bef1120175527350090bdd5ecc3",
+    "sim/audio_parameter_tb.v": "91f5e22a787a0191cfacb886d8b9487825689e923379a3a37a7ef1d188c65aec"
+  },
+  "tests": [
+    {
+      "test": "audio_parameter_tb",
+      "status": "PASS",
+      "result": "# AUDIO_PARAMETER_TB_PASS fairness, payload retention, range rejection, pickup, coherent restore, overrun"
+    },
+    {
+      "test": "audio_fader_range_tb",
+      "status": "PASS",
+      "result": "# AUDIO_FADER_RANGE_TB_PASS all4096codes, exact unity/mute, monotonic gain, master-only progress under harmonic backpressure"
+    }
+  ],
+  "not_verified": [
+    "physical SPI ADC, J13 electrical wiring and actual fader noise",
+    "physical input-to-analog-output latency or analog audio quality",
+    "whole-design resource use and setup/hold timing",
+    "display or Bluetooth hardware integration"
+  ],
+  "source_lf_sha256": {
+    "src/audio_parameter_service.v": "528b047f1cba950e96b5dff8a6054ccdabe42df54c9af7f71529ebdba3616974",
+    "sim/audio_fader_range_tb.v": "078f2baafa1e86a47651c54e79e98134dcec2bef1120175527350090bdd5ecc3",
+    "sim/audio_parameter_tb.v": "91f5e22a787a0191cfacb886d8b9487825689e923379a3a37a7ef1d188c65aec"
+  }
+}

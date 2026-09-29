@@ -1,0 +1,469 @@
+{
+  "branch": "codex/knob-performance-suite",
+  "base_commit": "7a9ac41",
+  "board_tested": false,
+  "builds": {
+    "performance": {
+      "variant": "performance",
+      "source_hashes": {
+        "project/input/knob_suite/board/performance/knob_performance.gprj": "405968fb49578fa6e768b151d554321686b9195940c9edcbfe0be3a515f842a9",
+        "project/input/knob_suite/board/performance/build.tcl": "41b6e27b30012f5c79db6df5fd6050f62efe719f0a3e53e9d994d8e688e8d1ab",
+        "project/input/knob_suite/src/knob_bank.v": "50548d9b3b8b0db40146de6a13795a9110b4aa5d130c91f7219ae3ae73968de3",
+        "project/input/knob_suite/src/knob_controls.v": "2c024f8f795355cee61570d1f5173f5d6039e6d51446033f01080585595963cb",
+        "project/input/knob_suite/src/knob_effect.v": "53803338e10009e6c7a4831624c6d495626c9d2890103fcc33abf873334c2127",
+        "project/input/knob_suite/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/input/knob_suite/src/knob_reference_voice.v": "80600a27194bef52769a01de3d05e29145971ac7d1644d202318946913818950",
+        "project/input/knob_suite/src/knob_slot.v": "81ce306e881d37db64544e8f54e3e595fb8fcd4e55e8f4fca15362b05abe26c3",
+        "project/input/knob_suite/src/knob_top.v": "f8ab8f07e24c5f7a4c1881e61ebc0118fff791ba060caa7274d4bd425f9fd127",
+        "project/input/knob_suite/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/input/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/system/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+        "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/experiments/timbre/fm/src/fm_note_table.v": "630731dac0438d6df55bb0a9a500e2dcfe0605ecd5138b868e09918a4fe541fe",
+        "project/experiments/timbre/fm/src/fm_sine_interp.v": "6f015813481c5ae7b794d577e524f6846a24de7bd51dfab03ed83d9211699825",
+        "project/experiments/timbre/fm/src/fm_sine_rom.v": "5d850c00aba7c04f9c90748eb86a904e68fae3c811c81dfb11a98d74f37805f3",
+        "project/experiments/timbre/fm/src/fm_voice.v": "5cb080832ec3f1085cbf1cc008fee5c68fd75f3961bdfa0918545419aa43860e",
+        "project/experiments/timbre/pluck/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/experiments/timbre/pluck/src/pluck_voice.v": "8ede30c5e3f85506a22c56791cf7d25f33cd57c1ad241ad9095ee40187291c05",
+        "project/experiments/delay/src/feedback_delay.v": "881b382c4be9b7549ccf13b6f6bb3a6087fa72dcb0055d0256a96f8dc72acafc",
+        "project/input/ec11_probe/src/ec11_probe.cst": "105aa37fd248ea796a79ac3f5fd7b375e02eb7f4360b627805bf0b05143c798b",
+        "project/input/ec11_probe/src/ec11_probe.sdc": "c0446d60e3fdc2f09f792e0b8f07ab07406bd9182019a25e3fa7792229841aef"
+      },
+      "board_tested": false,
+      "elapsed_seconds": 103.44,
+      "tool_exit_code": 0,
+      "build_pass": true,
+      "setup_violated_endpoints": 0,
+      "setup_worst_slack_ns": 4.285,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.149,
+      "timing_pass": true,
+      "bitstream_sha256": "4d2e34e2e12a5b9b421b9ee310f272e1172f86df5bbfc3f1517f8c67f698f179",
+      "resources": {
+        "Logic": {
+          "used": 9330,
+          "available": 59904
+        },
+        "Register": {
+          "used": 2611,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 16,
+          "available": 118
+        },
+        "DSP": {
+          "used": 17,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 7,
+          "available": 297
+        }
+      },
+      "warnings": {
+        "gwsynthesis": [
+          "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"$REPO\\project\\input\\src\\ec11_input.v\":41)",
+          "WARN  (NL0002) : The module \"knob_volume_table\" instantiated to \"volume_lut\" is swept in optimizing(\"$REPO\\project\\input\\knob_suite\\src\\knob_controls.v\":22)"
+        ],
+        "pnr": [
+          "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+        ]
+      },
+      "recommended_for_board_test": true,
+      "bitstream_local_path": "project/input/knob_suite/board/performance/impl/pnr/knob_performance.fs"
+    },
+    "volume": {
+      "variant": "volume",
+      "source_hashes": {
+        "project/input/knob_suite/board/volume/knob_volume.gprj": "405968fb49578fa6e768b151d554321686b9195940c9edcbfe0be3a515f842a9",
+        "project/input/knob_suite/board/volume/build.tcl": "a00f0c23ecde2bc83eda3ccabdb0af482adb373dfe0175c692de6c36b9249938",
+        "project/input/knob_suite/src/knob_bank.v": "50548d9b3b8b0db40146de6a13795a9110b4aa5d130c91f7219ae3ae73968de3",
+        "project/input/knob_suite/src/knob_controls.v": "2c024f8f795355cee61570d1f5173f5d6039e6d51446033f01080585595963cb",
+        "project/input/knob_suite/src/knob_effect.v": "53803338e10009e6c7a4831624c6d495626c9d2890103fcc33abf873334c2127",
+        "project/input/knob_suite/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/input/knob_suite/src/knob_reference_voice.v": "80600a27194bef52769a01de3d05e29145971ac7d1644d202318946913818950",
+        "project/input/knob_suite/src/knob_slot.v": "81ce306e881d37db64544e8f54e3e595fb8fcd4e55e8f4fca15362b05abe26c3",
+        "project/input/knob_suite/src/knob_top.v": "f8ab8f07e24c5f7a4c1881e61ebc0118fff791ba060caa7274d4bd425f9fd127",
+        "project/input/knob_suite/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/input/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/system/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+        "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/experiments/timbre/fm/src/fm_note_table.v": "630731dac0438d6df55bb0a9a500e2dcfe0605ecd5138b868e09918a4fe541fe",
+        "project/experiments/timbre/fm/src/fm_sine_interp.v": "6f015813481c5ae7b794d577e524f6846a24de7bd51dfab03ed83d9211699825",
+        "project/experiments/timbre/fm/src/fm_sine_rom.v": "5d850c00aba7c04f9c90748eb86a904e68fae3c811c81dfb11a98d74f37805f3",
+        "project/experiments/timbre/fm/src/fm_voice.v": "5cb080832ec3f1085cbf1cc008fee5c68fd75f3961bdfa0918545419aa43860e",
+        "project/experiments/timbre/pluck/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/experiments/timbre/pluck/src/pluck_voice.v": "8ede30c5e3f85506a22c56791cf7d25f33cd57c1ad241ad9095ee40187291c05",
+        "project/experiments/delay/src/feedback_delay.v": "881b382c4be9b7549ccf13b6f6bb3a6087fa72dcb0055d0256a96f8dc72acafc",
+        "project/input/ec11_probe/src/ec11_probe.cst": "105aa37fd248ea796a79ac3f5fd7b375e02eb7f4360b627805bf0b05143c798b",
+        "project/input/ec11_probe/src/ec11_probe.sdc": "c0446d60e3fdc2f09f792e0b8f07ab07406bd9182019a25e3fa7792229841aef"
+      },
+      "board_tested": false,
+      "elapsed_seconds": 90.71,
+      "tool_exit_code": 0,
+      "build_pass": true,
+      "setup_violated_endpoints": 0,
+      "setup_worst_slack_ns": 5.154,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.048,
+      "timing_pass": true,
+      "bitstream_sha256": "2c3cf64f1f041917c4a44513b5d7d5b8ff79969f406a831155323591eecff2c7",
+      "resources": {
+        "Logic": {
+          "used": 5398,
+          "available": 59904
+        },
+        "Register": {
+          "used": 2519,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 16,
+          "available": 118
+        },
+        "DSP": {
+          "used": 17,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 7,
+          "available": 297
+        }
+      },
+      "warnings": {
+        "gwsynthesis": [
+          "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"$REPO\\project\\input\\src\\ec11_input.v\":41)",
+          "WARN  (NL0002) : The module \"knob_volume_table\" instantiated to \"volume_lut\" is swept in optimizing(\"$REPO\\project\\input\\knob_suite\\src\\knob_controls.v\":22)"
+        ],
+        "pnr": [
+          "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+        ]
+      },
+      "recommended_for_board_test": true,
+      "bitstream_local_path": "project/input/knob_suite/board/volume/impl/pnr/knob_volume.fs"
+    },
+    "timbre": {
+      "variant": "timbre",
+      "source_hashes": {
+        "project/input/knob_suite/board/timbre/knob_timbre.gprj": "405968fb49578fa6e768b151d554321686b9195940c9edcbfe0be3a515f842a9",
+        "project/input/knob_suite/board/timbre/build.tcl": "60fd07c48cd1297612aaa5b4d4e29f6af3eb46228f1e925e2b10c1f85f007353",
+        "project/input/knob_suite/src/knob_bank.v": "50548d9b3b8b0db40146de6a13795a9110b4aa5d130c91f7219ae3ae73968de3",
+        "project/input/knob_suite/src/knob_controls.v": "2c024f8f795355cee61570d1f5173f5d6039e6d51446033f01080585595963cb",
+        "project/input/knob_suite/src/knob_effect.v": "53803338e10009e6c7a4831624c6d495626c9d2890103fcc33abf873334c2127",
+        "project/input/knob_suite/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/input/knob_suite/src/knob_reference_voice.v": "80600a27194bef52769a01de3d05e29145971ac7d1644d202318946913818950",
+        "project/input/knob_suite/src/knob_slot.v": "81ce306e881d37db64544e8f54e3e595fb8fcd4e55e8f4fca15362b05abe26c3",
+        "project/input/knob_suite/src/knob_top.v": "f8ab8f07e24c5f7a4c1881e61ebc0118fff791ba060caa7274d4bd425f9fd127",
+        "project/input/knob_suite/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/input/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/system/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+        "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/experiments/timbre/fm/src/fm_note_table.v": "630731dac0438d6df55bb0a9a500e2dcfe0605ecd5138b868e09918a4fe541fe",
+        "project/experiments/timbre/fm/src/fm_sine_interp.v": "6f015813481c5ae7b794d577e524f6846a24de7bd51dfab03ed83d9211699825",
+        "project/experiments/timbre/fm/src/fm_sine_rom.v": "5d850c00aba7c04f9c90748eb86a904e68fae3c811c81dfb11a98d74f37805f3",
+        "project/experiments/timbre/fm/src/fm_voice.v": "5cb080832ec3f1085cbf1cc008fee5c68fd75f3961bdfa0918545419aa43860e",
+        "project/experiments/timbre/pluck/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/experiments/timbre/pluck/src/pluck_voice.v": "8ede30c5e3f85506a22c56791cf7d25f33cd57c1ad241ad9095ee40187291c05",
+        "project/experiments/delay/src/feedback_delay.v": "881b382c4be9b7549ccf13b6f6bb3a6087fa72dcb0055d0256a96f8dc72acafc",
+        "project/input/ec11_probe/src/ec11_probe.cst": "105aa37fd248ea796a79ac3f5fd7b375e02eb7f4360b627805bf0b05143c798b",
+        "project/input/ec11_probe/src/ec11_probe.sdc": "c0446d60e3fdc2f09f792e0b8f07ab07406bd9182019a25e3fa7792229841aef"
+      },
+      "board_tested": false,
+      "elapsed_seconds": 227.16,
+      "tool_exit_code": 0,
+      "build_pass": true,
+      "setup_violated_endpoints": 0,
+      "setup_worst_slack_ns": 0.406,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.227,
+      "timing_pass": true,
+      "bitstream_sha256": "0b02e8efe69f96ca446bb4640d63da939e8181c338acd88f0aacf306646b865f",
+      "resources": {
+        "Logic": {
+          "used": 17765,
+          "available": 59904
+        },
+        "Register": {
+          "used": 7774,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 40,
+          "available": 118
+        },
+        "DSP": {
+          "used": 97,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 7,
+          "available": 297
+        }
+      },
+      "warnings": {
+        "gwsynthesis": [
+          "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"$REPO\\project\\input\\src\\ec11_input.v\":41)",
+          "WARN  (EX3791) : Expression size 26 truncated to fit in target size 16(\"$REPO\\project\\experiments\\timbre\\fm\\src\\fm_sine_interp.v\":34)",
+          "WARN  (EX3791) : Expression size 64 truncated to fit in target size 29(\"$REPO\\project\\experiments\\timbre\\fm\\src\\fm_voice.v\":97)",
+          "WARN  (EX3791) : Expression size 64 truncated to fit in target size 29(\"$REPO\\project\\experiments\\timbre\\fm\\src\\fm_voice.v\":103)",
+          "WARN  (EX3791) : Expression size 64 truncated to fit in target size 32(\"$REPO\\project\\experiments\\timbre\\fm\\src\\fm_voice.v\":110)",
+          "WARN  (EX3791) : Expression size 32 truncated to fit in target size 10(\"$REPO\\project\\experiments\\timbre\\pluck\\src\\pluck_voice.v\":58)",
+          "WARN  (EX3791) : Expression size 42 truncated to fit in target size 25(\"$REPO\\project\\experiments\\timbre\\pluck\\src\\pluck_voice.v\":70)",
+          "WARN  (EX3791) : Expression size 36 truncated to fit in target size 24(\"$REPO\\project\\experiments\\timbre\\pluck\\src\\pluck_voice.v\":175)",
+          "WARN  (EX3791) : Expression size 18 truncated to fit in target size 16(\"$REPO\\project\\experiments\\timbre\\pluck\\src\\pluck_voice.v\":202)",
+          "WARN  (NL0002) : The module \"knob_volume_table\" instantiated to \"volume_lut\" is swept in optimizing(\"$REPO\\project\\input\\knob_suite\\src\\knob_controls.v\":22)"
+        ],
+        "pnr": [
+          "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+        ]
+      },
+      "recommended_for_board_test": true,
+      "bitstream_local_path": "project/input/knob_suite/board/timbre/impl/pnr/knob_timbre.fs"
+    },
+    "release": {
+      "variant": "release",
+      "source_hashes": {
+        "project/input/knob_suite/board/release/knob_release.gprj": "405968fb49578fa6e768b151d554321686b9195940c9edcbfe0be3a515f842a9",
+        "project/input/knob_suite/board/release/build.tcl": "78ef41706845ce46647f42ba787807e58a9d491337037beb7fc6251c39002c1f",
+        "project/input/knob_suite/src/knob_bank.v": "50548d9b3b8b0db40146de6a13795a9110b4aa5d130c91f7219ae3ae73968de3",
+        "project/input/knob_suite/src/knob_controls.v": "2c024f8f795355cee61570d1f5173f5d6039e6d51446033f01080585595963cb",
+        "project/input/knob_suite/src/knob_effect.v": "53803338e10009e6c7a4831624c6d495626c9d2890103fcc33abf873334c2127",
+        "project/input/knob_suite/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/input/knob_suite/src/knob_reference_voice.v": "80600a27194bef52769a01de3d05e29145971ac7d1644d202318946913818950",
+        "project/input/knob_suite/src/knob_slot.v": "81ce306e881d37db64544e8f54e3e595fb8fcd4e55e8f4fca15362b05abe26c3",
+        "project/input/knob_suite/src/knob_top.v": "f8ab8f07e24c5f7a4c1881e61ebc0118fff791ba060caa7274d4bd425f9fd127",
+        "project/input/knob_suite/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/input/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/system/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+        "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/experiments/timbre/fm/src/fm_note_table.v": "630731dac0438d6df55bb0a9a500e2dcfe0605ecd5138b868e09918a4fe541fe",
+        "project/experiments/timbre/fm/src/fm_sine_interp.v": "6f015813481c5ae7b794d577e524f6846a24de7bd51dfab03ed83d9211699825",
+        "project/experiments/timbre/fm/src/fm_sine_rom.v": "5d850c00aba7c04f9c90748eb86a904e68fae3c811c81dfb11a98d74f37805f3",
+        "project/experiments/timbre/fm/src/fm_voice.v": "5cb080832ec3f1085cbf1cc008fee5c68fd75f3961bdfa0918545419aa43860e",
+        "project/experiments/timbre/pluck/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/experiments/timbre/pluck/src/pluck_voice.v": "8ede30c5e3f85506a22c56791cf7d25f33cd57c1ad241ad9095ee40187291c05",
+        "project/experiments/delay/src/feedback_delay.v": "881b382c4be9b7549ccf13b6f6bb3a6087fa72dcb0055d0256a96f8dc72acafc",
+        "project/input/ec11_probe/src/ec11_probe.cst": "105aa37fd248ea796a79ac3f5fd7b375e02eb7f4360b627805bf0b05143c798b",
+        "project/input/ec11_probe/src/ec11_probe.sdc": "c0446d60e3fdc2f09f792e0b8f07ab07406bd9182019a25e3fa7792229841aef"
+      },
+      "board_tested": false,
+      "elapsed_seconds": 46.64,
+      "tool_exit_code": 0,
+      "build_pass": true,
+      "setup_violated_endpoints": 0,
+      "setup_worst_slack_ns": 8.092,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.129,
+      "timing_pass": true,
+      "bitstream_sha256": "f14d8fe362a4fa208d6cd7f7c2eb4130bce97760f3fba443da54e2451b2da98c",
+      "resources": {
+        "Logic": {
+          "used": 4735,
+          "available": 59904
+        },
+        "Register": {
+          "used": 2177,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 16,
+          "available": 118
+        },
+        "DSP": {
+          "used": 17,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 7,
+          "available": 297
+        }
+      },
+      "warnings": {
+        "gwsynthesis": [
+          "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"$REPO\\project\\input\\src\\ec11_input.v\":41)",
+          "WARN  (NL0002) : The module \"knob_volume_table\" instantiated to \"volume_lut\" is swept in optimizing(\"$REPO\\project\\input\\knob_suite\\src\\knob_controls.v\":22)"
+        ],
+        "pnr": [
+          "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+        ]
+      },
+      "recommended_for_board_test": true,
+      "bitstream_local_path": "project/input/knob_suite/board/release/impl/pnr/knob_release.fs"
+    },
+    "echo": {
+      "variant": "echo",
+      "source_hashes": {
+        "project/input/knob_suite/board/echo/knob_echo.gprj": "405968fb49578fa6e768b151d554321686b9195940c9edcbfe0be3a515f842a9",
+        "project/input/knob_suite/board/echo/build.tcl": "54607e4fd26fbcf4416f05a7c6a412de6be1d69313f37a832cf49b8fc324e8c1",
+        "project/input/knob_suite/src/knob_bank.v": "50548d9b3b8b0db40146de6a13795a9110b4aa5d130c91f7219ae3ae73968de3",
+        "project/input/knob_suite/src/knob_controls.v": "2c024f8f795355cee61570d1f5173f5d6039e6d51446033f01080585595963cb",
+        "project/input/knob_suite/src/knob_effect.v": "53803338e10009e6c7a4831624c6d495626c9d2890103fcc33abf873334c2127",
+        "project/input/knob_suite/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/input/knob_suite/src/knob_reference_voice.v": "80600a27194bef52769a01de3d05e29145971ac7d1644d202318946913818950",
+        "project/input/knob_suite/src/knob_slot.v": "81ce306e881d37db64544e8f54e3e595fb8fcd4e55e8f4fca15362b05abe26c3",
+        "project/input/knob_suite/src/knob_top.v": "f8ab8f07e24c5f7a4c1881e61ebc0118fff791ba060caa7274d4bd425f9fd127",
+        "project/input/knob_suite/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/input/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/system/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+        "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/experiments/timbre/fm/src/fm_note_table.v": "630731dac0438d6df55bb0a9a500e2dcfe0605ecd5138b868e09918a4fe541fe",
+        "project/experiments/timbre/fm/src/fm_sine_interp.v": "6f015813481c5ae7b794d577e524f6846a24de7bd51dfab03ed83d9211699825",
+        "project/experiments/timbre/fm/src/fm_sine_rom.v": "5d850c00aba7c04f9c90748eb86a904e68fae3c811c81dfb11a98d74f37805f3",
+        "project/experiments/timbre/fm/src/fm_voice.v": "5cb080832ec3f1085cbf1cc008fee5c68fd75f3961bdfa0918545419aa43860e",
+        "project/experiments/timbre/pluck/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/experiments/timbre/pluck/src/pluck_voice.v": "8ede30c5e3f85506a22c56791cf7d25f33cd57c1ad241ad9095ee40187291c05",
+        "project/experiments/delay/src/feedback_delay.v": "881b382c4be9b7549ccf13b6f6bb3a6087fa72dcb0055d0256a96f8dc72acafc",
+        "project/input/ec11_probe/src/ec11_probe.cst": "105aa37fd248ea796a79ac3f5fd7b375e02eb7f4360b627805bf0b05143c798b",
+        "project/input/ec11_probe/src/ec11_probe.sdc": "c0446d60e3fdc2f09f792e0b8f07ab07406bd9182019a25e3fa7792229841aef"
+      },
+      "board_tested": false,
+      "elapsed_seconds": 51.82,
+      "tool_exit_code": 0,
+      "build_pass": true,
+      "setup_violated_endpoints": 0,
+      "setup_worst_slack_ns": 1.977,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.049,
+      "timing_pass": true,
+      "bitstream_sha256": "a612b984dfaa31bbaa901096eec9a8b3ca7aa0124a5f2ce180946f3612ee10ea",
+      "resources": {
+        "Logic": {
+          "used": 4821,
+          "available": 59904
+        },
+        "Register": {
+          "used": 2106,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 20,
+          "available": 118
+        },
+        "DSP": {
+          "used": 19,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 7,
+          "available": 297
+        }
+      },
+      "warnings": {
+        "gwsynthesis": [
+          "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"$REPO\\project\\input\\src\\ec11_input.v\":41)",
+          "WARN  (EX3791) : Expression size 33 truncated to fit in target size 32(\"$REPO\\project\\experiments\\delay\\src\\feedback_delay.v\":29)",
+          "WARN  (NL0002) : The module \"knob_volume_table\" instantiated to \"volume_lut\" is swept in optimizing(\"$REPO\\project\\input\\knob_suite\\src\\knob_controls.v\":22)"
+        ],
+        "pnr": [
+          "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+        ]
+      },
+      "recommended_for_board_test": true,
+      "bitstream_local_path": "project/input/knob_suite/board/echo/impl/pnr/knob_echo.fs"
+    }
+  },
+  "simulations": {
+    "reference_tb": [
+      "REFERENCE_TB_PASS samples=55736 default_exact=1 independent_adsr=1"
+    ],
+    "bank_tb": [
+      "BANK_TB_PASS frames=76634 accepted=22 rejected=4 same_note_independent=1 coherent_sum16=1 pedals=1"
+    ],
+    "controls_tb": [
+      "CONTROLS_TB_PASS turns=97 modes=5 clamps=1 stable_queue=1 explicit_overflow=2"
+    ],
+    "processing_tb": [
+      "PROCESSING_TB_PASS gain=75000 echo=75000 independent_recurrence=1 bypass_exact=1"
+    ],
+    "pluck_equivalence_tb": [
+      "PLUCK_EQUIVALENCE_TB_PASS samples=42001 dsp_vs_shift_exact=1 low_mid_high=1"
+    ],
+    "lifecycle_tb": [
+      "LIFECYCLE_TB_PASS cancelled_start_phases=8 unsupported_adsr_rejected=1 restart=1"
+    ],
+    "multi_tb": [
+      "MULTI_TB_PASS frames=33400 voices=8 isolated_sum_exact=1 all_tails_zero=1"
+    ],
+    "transport_tb": [
+      "TRANSPORT_TB_PASS modes=5 frames_each=1077 detents=7 real_50MHz=1 serial_pcm_exact=1"
+    ],
+    "render_tb": [
+      "RENDER_TB_PASS modes=5 samples_each=384616 full_pools=0 idle_cycles=96 stereo_mono_source=1"
+    ],
+    "pitch_tb": [
+      "PITCH_TB_PASS samples=240385 glide=1 bend=1 oscillator_phase=1 bounds=1 release=1"
+    ],
+    "pedal_render_tb": [
+      "PEDAL_RENDER_TB_PASS samples=384616 normal_sustain_sostenuto=1"
+    ]
+  },
+  "simulation_provenance": {
+    "retained_unchanged_checks": [
+      "reference_tb",
+      "controls_tb",
+      "processing_tb",
+      "pluck_equivalence_tb"
+    ],
+    "rerun_after_lifecycle_hardening": [
+      "lifecycle_tb",
+      "bank_tb",
+      "multi_tb",
+      "transport_tb",
+      "render_tb",
+      "pedal_render_tb"
+    ],
+    "pitch_tb": "Rerun separately after excluding arithmetic boundary samples from the listening file",
+    "transport_tb": "Only explanatory comments changed after run; short run covers default tone, not later automatic FM/pluck events",
+    "run_script": "FullPools command option added after runs; final default render already used FULL_POOLS=0, IDLE_CYCLES=96"
+  },
+  "verification_sources": {
+    "project/input/knob_suite/src/knob_bank.v": "50548d9b3b8b0db40146de6a13795a9110b4aa5d130c91f7219ae3ae73968de3",
+    "project/input/knob_suite/src/knob_controls.v": "2c024f8f795355cee61570d1f5173f5d6039e6d51446033f01080585595963cb",
+    "project/input/knob_suite/src/knob_effect.v": "53803338e10009e6c7a4831624c6d495626c9d2890103fcc33abf873334c2127",
+    "project/input/knob_suite/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+    "project/input/knob_suite/src/knob_pitch.v": "7a7c8ea4eaffe6226551e25108a341de88d62e895236cc3fc1d6cf93e924ef66",
+    "project/input/knob_suite/src/knob_reference_voice.v": "80600a27194bef52769a01de3d05e29145971ac7d1644d202318946913818950",
+    "project/input/knob_suite/src/knob_slot.v": "81ce306e881d37db64544e8f54e3e595fb8fcd4e55e8f4fca15362b05abe26c3",
+    "project/input/knob_suite/src/knob_top.v": "f8ab8f07e24c5f7a4c1881e61ebc0118fff791ba060caa7274d4bd425f9fd127",
+    "project/input/knob_suite/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+    "project/input/knob_suite/sim/bank_tb.v": "9a7a82fcede0aa79c3b9f75f8bccfb86d375a43957561145925ccad31e75942a",
+    "project/input/knob_suite/sim/controls_tb.v": "7077d7248ef678ad73584271d0a45637bb2257427ee8f0ae032b142f21d7f88b",
+    "project/input/knob_suite/sim/lifecycle_tb.v": "18613f1cab54fbc36f314342fee5cebe26a8ce9527a3eaa6121ab249dcf2da6b",
+    "project/input/knob_suite/sim/multi_tb.v": "005b3b5df062e89912fd92b83aaa5aaf05296bd2ae1d6b5beb6286e29b4d0e5f",
+    "project/input/knob_suite/sim/pedal_render_tb.v": "6485b827e73c398d2740f63d6ef70b49a673d3fb56c5499321ef436eebd60e46",
+    "project/input/knob_suite/sim/pitch_tb.v": "9a23d5248c258034efe8c3a037f12fc40dbd164cfb5647dad011ce8271b7e5cb",
+    "project/input/knob_suite/sim/pluck_equivalence_tb.v": "c56822373fba4424911516361b8385088ab5de1161a5df7a062f8dcb1caebc63",
+    "project/input/knob_suite/sim/processing_tb.v": "3c137b5595336bdbff903592428188d0f2d2042f8afd0b34a849fc50ab1f5fb1",
+    "project/input/knob_suite/sim/reference_tb.v": "a414c31ad5200dd9da47a69539bac821a18719b17d7e2106f3256810b8ecd54c",
+    "project/input/knob_suite/sim/render_tb.v": "7545e60f2ded93f8978a53721bde5677550f561fc59a1600cdc2dae88065666c",
+    "project/input/knob_suite/sim/transport_tb.v": "ff821a0df9726853feb8f5be13e7444f092623d3bf697e936d2a364dc265f22e",
+    "project/input/knob_suite/sim/run.ps1": "656aee9fba81694c0e5e4caeed73c039dd277ef3783129a5130614da2e8b12d2",
+    "project/input/knob_suite/sim/run.do": "b55747e398dc78b7f6debb416af9059fa2ceec18efcf7a8527b5c461e32a0e98",
+    "project/input/knob_suite/tools/build.py": "c4acfc6e9f098504ae7b2004b22f5eda1360e84386eebad1822a79108c0f2b0b",
+    "project/input/knob_suite/tools/create_projects.py": "c8ab2b6d28f41f79eebb72a57f0d188a1ddada14fc4bb25118db8486fb307dfc",
+    "project/input/knob_suite/tools/export_audio.py": "70d65b40170b2081a27d2c76614b7d72224820bbdc8524a3c2b9191ef631f35e",
+    "project/input/knob_suite/tools/performance_oracle.py": "638f6f5ecb51181a0d8ce0b9db47ea9a13ea8ef1f4344acc0e2772ba106a876f",
+    "project/input/knob_suite/tools/record_evidence.py": "2a09fef994c8610b0cab6529bbd1bd5a738a81df22a1d360c45110924b5ba762"
+  }
+}

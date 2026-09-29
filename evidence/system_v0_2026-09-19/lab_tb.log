@@ -1,0 +1,11 @@
+# vsim -do run.do -l lab_tb.log -lib work -c lab_tb 
+# Loading work.lab_tb
+# Loading work.lab_source
+# Loading work.note_table
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# do run.do 
+# LAB_TB_PASS samples=480770 audible=298703 conservative_level=1
+# ** Note: $finish    : $REPO/project/system/sim/lab_tb.v(20)
+#    Time: 153846251 ns  Iteration: 0  Instance: /lab_tb

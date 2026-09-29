@@ -1,0 +1,765 @@
+{
+  "base_commit": "d5ee69f",
+  "branch": "codex/audio-clean-zones",
+  "role": "A",
+  "board_tested": false,
+  "tests": [
+    "PALETTE_EQUIVALENCE_TB_PASS 4582 frames: eight voices, mixed timbres, sustain, release, full rejection",
+    "PALETTE_KEYS_TB_PASS full25, config snapshot, same-pitch identity, boundaries, stalls, ghost/overflow",
+    "PALETTE_SCHEDULER_TB_PASS N=1/16, unique outputs, last=114, forced deadline detected",
+    "PALETTE_CONTROLS_TB_PASS volume/left/right/release, clamps, timbre, sustain, panic",
+    "PALETTE_MATH_TB_PASS 14336 profile/phase/envelope vectors",
+    "PALETTE_RANGE_TB_PASS 49 notes C2-C6, back-to-back init, 35/85/127 rejected, frames=217",
+    "PALETTE_BOARD_TB_PASS physical matrix/buttons/encoder, two-zone identity, ghost recovery, 1296 stereo words 1058 nonzero"
+  ],
+  "cadence_profiles_1000_samples_each": [
+    0,
+    2,
+    5,
+    6
+  ],
+  "math": {
+    "vectors": 14336,
+    "integer_exact": true,
+    "continuous_sine_max_error_pcm_lsb": [
+      16.92901746583709,
+      4.173415678788729,
+      4.5351155371197365,
+      5.273158907061088,
+      3.980962264846198,
+      4.173415678788729,
+      4.173415678788729
+    ],
+    "random_vector_peak_pcm": [
+      2163.0,
+      2158.625,
+      2620.4375,
+      2685.625,
+      1996.4375,
+      2158.625,
+      2158.625
+    ],
+    "zero_envelope_exact_zero": true
+  },
+  "render": [
+    {
+      "variant": "00_shared_reference",
+      "samples": 151300,
+      "duration_seconds": 3.14704,
+      "peak": 5826,
+      "first_C4_rms": 913.0745533635246,
+      "mean_pcm": -0.3988631857237277,
+      "clip_samples": 0,
+      "pcm_sha256": "b8d3e4c85bebd238107d7f1fb76881de6ab7c67fa97e67fb88a8c43573414e39",
+      "matched_group": "DDS",
+      "matched_gain": 1.0,
+      "wav_sha256": "2350e40c328cb2e020f7f48ed9b569e9ab4d1a42de2e1fab1eabbfbcf8f884ea",
+      "wav_matched_sha256": "2350e40c328cb2e020f7f48ed9b569e9ab4d1a42de2e1fab1eabbfbcf8f884ea"
+    },
+    {
+      "variant": "01_piano_precision",
+      "samples": 151300,
+      "duration_seconds": 3.14704,
+      "peak": 5835,
+      "first_C4_rms": 913.0999713065377,
+      "mean_pcm": 0.01612690019828156,
+      "clip_samples": 0,
+      "pcm_sha256": "b955356a50a9076e39534e9347ebadde6c34261f30b3b404552d265c3a4b74cf",
+      "matched_group": "DDS",
+      "matched_gain": 0.9999721630228762,
+      "wav_sha256": "4ec79e57ce8af4f01d52da1e33ae4b41df07ce50e9caef02069256f0f8405f49",
+      "wav_matched_sha256": "4ec79e57ce8af4f01d52da1e33ae4b41df07ce50e9caef02069256f0f8405f49"
+    },
+    {
+      "variant": "02_piano_soft",
+      "samples": 151300,
+      "duration_seconds": 3.14704,
+      "peak": 7584,
+      "first_C4_rms": 1638.1131932806109,
+      "mean_pcm": 0.045551883674818244,
+      "clip_samples": 0,
+      "pcm_sha256": "1d176f1c7c4a6f35061cef27143b6b8db7342c2a28d08a06fbfb0cf635242f8d",
+      "matched_group": "DDS",
+      "matched_gain": 0.5573940537863148,
+      "wav_sha256": "3e4b0a8d5c59992668dadcf69d019d0ca30c77588214d294cb1db8297246f5c4",
+      "wav_matched_sha256": "583c5798e7492c5d5d89d24906e0b97c2d0440edb1f05a11a47517d3e7581e0b"
+    },
+    {
+      "variant": "03_piano_bright",
+      "samples": 151300,
+      "duration_seconds": 3.14704,
+      "peak": 7418,
+      "first_C4_rms": 1324.5717326366284,
+      "mean_pcm": 0.05146067415730337,
+      "clip_samples": 0,
+      "pcm_sha256": "1d5e8718834bbb7190f7f264139f1de463678ee5706b623fea35ac275bce5046",
+      "matched_group": "DDS",
+      "matched_gain": 0.6893356779900494,
+      "wav_sha256": "b3f52ee41b2623c0c24882d6aadcc8c8590b6f557c71145cf6560c5ecbc23259",
+      "wav_matched_sha256": "e87177a6cca93d19fb4da0e9c59b8965481edccf186edf5e8e621a3aa36bb4c2"
+    },
+    {
+      "variant": "04_clean_reed",
+      "samples": 151300,
+      "duration_seconds": 3.14704,
+      "peak": 5792,
+      "first_C4_rms": 966.9777371273859,
+      "mean_pcm": 0.11200925313945803,
+      "clip_samples": 0,
+      "pcm_sha256": "ce92448d4e588caee9aa9c9b44e24c07b92d86d9709e91da0acee677cead9c87",
+      "matched_group": "DDS",
+      "matched_gain": 0.9442560240073445,
+      "wav_sha256": "dcd0e6c6d985dd5d4c54400e99349a55ddcd2aaf326c9ce04041421f6a6bf180",
+      "wav_matched_sha256": "486f74ab55f952395ee8de3dd358ff8cae20a990ed92646b06226b425aac8cae"
+    },
+    {
+      "variant": "05_pluck_detail",
+      "samples": 151300,
+      "duration_seconds": 3.14704,
+      "peak": 725,
+      "first_C4_rms": 36.70101769706121,
+      "mean_pcm": 1.5991341705221414,
+      "clip_samples": 0,
+      "pcm_sha256": "6f490f7460de8f6d78d8c8356c897860a69734509d16dadb0cd31248a15eb8ad",
+      "matched_group": "pluck",
+      "matched_gain": 0.988277459259636,
+      "wav_sha256": "cc5a91fe4e1a44a775b7c4dbbd4c79e2bc63f0b1c9fe1862395290188d86ead0",
+      "wav_matched_sha256": "7e2e8b9efbc5a7d77b1aa488412e3d07029fe58104d5ae5fd94d9766acb9158a"
+    },
+    {
+      "variant": "06_pluck_warm",
+      "samples": 151300,
+      "duration_seconds": 3.14704,
+      "peak": 565,
+      "first_C4_rms": 36.27078852189459,
+      "mean_pcm": 1.5624586913417051,
+      "clip_samples": 0,
+      "pcm_sha256": "f7119ceaaa4bfa80cbf08dd29d5a39128e4f26faf9f3c88ee196a26a48501f51",
+      "matched_group": "pluck",
+      "matched_gain": 1.0,
+      "wav_sha256": "bc6b21f7d4b2993b30042ac09adf29b670c9ab1e2d132479da6ec3539da435d0",
+      "wav_matched_sha256": "bc6b21f7d4b2993b30042ac09adf29b670c9ab1e2d132479da6ec3539da435d0"
+    }
+  ],
+  "builds": [
+    {
+      "variant": "00_shared_reference",
+      "board_tested": false,
+      "source_hashes": {
+        "project/audio_palette_lab/variants/00_shared_reference/00_shared_reference.gprj": "b66fb10fee9949125be3fa767a59175753890f7638a39d4fe6960e9ee61ae2eb",
+        "project/audio_palette_lab/variants/00_shared_reference/build.tcl": "ccdc3a6c4ea1bae3a3bb92cd1b74b8175f6e0c1978f45bb461a584044297b783",
+        "project/audio_palette_lab/variants/00_shared_reference/top.v": "42aafae39f39132c29410baeb60922f626bfb1b56a0f6372fbc5027727668ef6",
+        "project/audio_palette_lab/src/palette_bank.v": "db71ab4b736b75e6ecc4f537d0e67ac50b1f967a5a2feea8e55f99459462982d",
+        "project/audio_palette_lab/src/palette_controls.v": "03171f7eb3ca7c424d3d6b8bc3a220660db3c5b8f7413ddc03cfbbd3c8ae67b8",
+        "project/audio_palette_lab/src/palette_engine.v": "5ae63b0f75520b402eeb8a7a16e92cca7032b2e7973a4d79048ec197e70aa9ed",
+        "project/audio_palette_lab/src/palette_keys.v": "44a71e82cc91afaee08af4d0416a5de51c83df2baed8d15f577b5f824f20d17f",
+        "project/audio_palette_lab/src/palette_pluck.v": "c7c86d36f3a500c16ff2e1a28e358669de5bee3d2e6bd0a2933a9c997ea4e851",
+        "project/audio_palette_lab/src/palette_shared_tone.v": "ef109f3016ff9ac9c3ebd3a371aa1794064fe529b76f9176217337d2d89d5e02",
+        "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+        "project/audio_palette_lab/src/palette_slot.v": "a16d2813b688f480ee130bac88821a94483c6ca510e03db0bbb5ec79f4a4a951",
+        "project/audio_palette_lab/src/palette_tone_state.v": "4965cbece062c4430404888629017720285542c332f8fc867e6ffc44d3d6c62c",
+        "project/audio_palette_lab/src/palette_top.v": "46bcd8eaf39c831ca7f257d914796b4c2bc3860387c6f204b867feb33dbd3704",
+        "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+        "project/final_dual_timbre/src/playable_led.v": "128e18f2440b82da4130c5648b9b14500a4777e45ec7db0e31084660965b62a2",
+        "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+        "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/final_dual_timbre/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/final_dual_timbre/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/final_dual_timbre/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/final_dual_timbre/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/audio_palette_lab/src/palette.cst": "a40c312112e29cb93585f43cb93539931620db898558d189cf0016ee38f89ed7",
+        "project/audio_palette_lab/src/palette.sdc": "513b7ec68e37716bc4f76fceea242edf24141a176070e86fe97317029ad8de12"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 117.91,
+      "build_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 12335,
+          "available": 59904
+        },
+        "Register": {
+          "used": 6594,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 22,
+          "available": 118
+        },
+        "DSP": {
+          "used": 50,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 19,
+          "available": 297
+        }
+      },
+      "setup_violated_endpoints": 0,
+      "hold_violated_endpoints": 0,
+      "timing_pass": true,
+      "budget_pass": true,
+      "bitstream_sha256": "99ce65755817d22bc262a1e136437cb8f063f0b2fb05d5487b964eb22e2d30b1",
+      "setup_worst_slack_ns": 3.525,
+      "hold_worst_slack_ns": 0.247,
+      "ram_types": {
+        "SDPB": 16,
+        "pROM": 6
+      },
+      "warnings": [
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\ec11_input.v\":41)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":82)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":83)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":85)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":86)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_keys.v\":38)",
+        "WARN  (EX3791) : Expression size 43 truncated to fit in target size 26(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_shared_tone.v\":67)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 10(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":57)",
+        "WARN  (EX3791) : Expression size 42 truncated to fit in target size 25(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":69)",
+        "WARN  (EX3791) : Expression size 36 truncated to fit in target size 24(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":174)",
+        "WARN  (EX3791) : Expression size 18 truncated to fit in target size 16(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":201)",
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\playable_led.v\":36)",
+        "WARN  (NL0002) : The module \"note_table\" instantiated to \"notes\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_bank.v\":24)",
+        "WARN  (NL0002) : The module \"knob_volume_table\" instantiated to \"volume\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":37)",
+        "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+      ]
+    },
+    {
+      "variant": "01_piano_precision",
+      "board_tested": false,
+      "source_hashes": {
+        "project/audio_palette_lab/variants/01_piano_precision/01_piano_precision.gprj": "b66fb10fee9949125be3fa767a59175753890f7638a39d4fe6960e9ee61ae2eb",
+        "project/audio_palette_lab/variants/01_piano_precision/build.tcl": "debc7fe122808984e24d556b333882b8cad7ff7fd660677e3173d24472c90195",
+        "project/audio_palette_lab/variants/01_piano_precision/top.v": "0a0d4c1d777ecf87548b833791894010a560a9b391ba999cc3fd3fa66288bd7f",
+        "project/audio_palette_lab/src/palette_bank.v": "db71ab4b736b75e6ecc4f537d0e67ac50b1f967a5a2feea8e55f99459462982d",
+        "project/audio_palette_lab/src/palette_controls.v": "03171f7eb3ca7c424d3d6b8bc3a220660db3c5b8f7413ddc03cfbbd3c8ae67b8",
+        "project/audio_palette_lab/src/palette_engine.v": "5ae63b0f75520b402eeb8a7a16e92cca7032b2e7973a4d79048ec197e70aa9ed",
+        "project/audio_palette_lab/src/palette_keys.v": "44a71e82cc91afaee08af4d0416a5de51c83df2baed8d15f577b5f824f20d17f",
+        "project/audio_palette_lab/src/palette_pluck.v": "c7c86d36f3a500c16ff2e1a28e358669de5bee3d2e6bd0a2933a9c997ea4e851",
+        "project/audio_palette_lab/src/palette_shared_tone.v": "ef109f3016ff9ac9c3ebd3a371aa1794064fe529b76f9176217337d2d89d5e02",
+        "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+        "project/audio_palette_lab/src/palette_slot.v": "a16d2813b688f480ee130bac88821a94483c6ca510e03db0bbb5ec79f4a4a951",
+        "project/audio_palette_lab/src/palette_tone_state.v": "4965cbece062c4430404888629017720285542c332f8fc867e6ffc44d3d6c62c",
+        "project/audio_palette_lab/src/palette_top.v": "46bcd8eaf39c831ca7f257d914796b4c2bc3860387c6f204b867feb33dbd3704",
+        "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+        "project/final_dual_timbre/src/playable_led.v": "128e18f2440b82da4130c5648b9b14500a4777e45ec7db0e31084660965b62a2",
+        "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+        "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/final_dual_timbre/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/final_dual_timbre/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/final_dual_timbre/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/final_dual_timbre/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/audio_palette_lab/src/palette.cst": "a40c312112e29cb93585f43cb93539931620db898558d189cf0016ee38f89ed7",
+        "project/audio_palette_lab/src/palette.sdc": "513b7ec68e37716bc4f76fceea242edf24141a176070e86fe97317029ad8de12"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 123.99,
+      "build_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 12403,
+          "available": 59904
+        },
+        "Register": {
+          "used": 6718,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 34,
+          "available": 118
+        },
+        "DSP": {
+          "used": 50,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 19,
+          "available": 297
+        }
+      },
+      "setup_violated_endpoints": 0,
+      "hold_violated_endpoints": 0,
+      "timing_pass": true,
+      "budget_pass": true,
+      "bitstream_sha256": "fa88157b63d71e57d107fd5511f36e74566630e3e79564ea61fe12a101c0e5ce",
+      "setup_worst_slack_ns": 2.365,
+      "hold_worst_slack_ns": 0.247,
+      "ram_types": {
+        "SDPB": 16,
+        "pROM": 18
+      },
+      "warnings": [
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\ec11_input.v\":41)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":82)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":83)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":85)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":86)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_keys.v\":38)",
+        "WARN  (EX3791) : Expression size 43 truncated to fit in target size 26(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_shared_tone.v\":67)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 10(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":57)",
+        "WARN  (EX3791) : Expression size 42 truncated to fit in target size 25(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":69)",
+        "WARN  (EX3791) : Expression size 36 truncated to fit in target size 24(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":174)",
+        "WARN  (EX3791) : Expression size 18 truncated to fit in target size 16(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":201)",
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\playable_led.v\":36)",
+        "WARN  (NL0002) : The module \"note_table\" instantiated to \"notes\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_bank.v\":24)",
+        "WARN  (NL0002) : The module \"knob_volume_table\" instantiated to \"volume\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":37)",
+        "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+      ]
+    },
+    {
+      "variant": "02_piano_soft",
+      "board_tested": false,
+      "source_hashes": {
+        "project/audio_palette_lab/variants/02_piano_soft/02_piano_soft.gprj": "b66fb10fee9949125be3fa767a59175753890f7638a39d4fe6960e9ee61ae2eb",
+        "project/audio_palette_lab/variants/02_piano_soft/build.tcl": "a82d2d9349a26e1cb951be0690fedfb222eca52e71de416a68f9d51bb0d675b5",
+        "project/audio_palette_lab/variants/02_piano_soft/top.v": "d8788380787e4caee216ed90ae5967084bb31cfa01966c71441b8cb61d9078aa",
+        "project/audio_palette_lab/src/palette_bank.v": "db71ab4b736b75e6ecc4f537d0e67ac50b1f967a5a2feea8e55f99459462982d",
+        "project/audio_palette_lab/src/palette_controls.v": "03171f7eb3ca7c424d3d6b8bc3a220660db3c5b8f7413ddc03cfbbd3c8ae67b8",
+        "project/audio_palette_lab/src/palette_engine.v": "5ae63b0f75520b402eeb8a7a16e92cca7032b2e7973a4d79048ec197e70aa9ed",
+        "project/audio_palette_lab/src/palette_keys.v": "44a71e82cc91afaee08af4d0416a5de51c83df2baed8d15f577b5f824f20d17f",
+        "project/audio_palette_lab/src/palette_pluck.v": "c7c86d36f3a500c16ff2e1a28e358669de5bee3d2e6bd0a2933a9c997ea4e851",
+        "project/audio_palette_lab/src/palette_shared_tone.v": "ef109f3016ff9ac9c3ebd3a371aa1794064fe529b76f9176217337d2d89d5e02",
+        "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+        "project/audio_palette_lab/src/palette_slot.v": "a16d2813b688f480ee130bac88821a94483c6ca510e03db0bbb5ec79f4a4a951",
+        "project/audio_palette_lab/src/palette_tone_state.v": "4965cbece062c4430404888629017720285542c332f8fc867e6ffc44d3d6c62c",
+        "project/audio_palette_lab/src/palette_top.v": "46bcd8eaf39c831ca7f257d914796b4c2bc3860387c6f204b867feb33dbd3704",
+        "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+        "project/final_dual_timbre/src/playable_led.v": "128e18f2440b82da4130c5648b9b14500a4777e45ec7db0e31084660965b62a2",
+        "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+        "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/final_dual_timbre/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/final_dual_timbre/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/final_dual_timbre/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/final_dual_timbre/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/audio_palette_lab/src/palette.cst": "a40c312112e29cb93585f43cb93539931620db898558d189cf0016ee38f89ed7",
+        "project/audio_palette_lab/src/palette.sdc": "513b7ec68e37716bc4f76fceea242edf24141a176070e86fe97317029ad8de12"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 177.23,
+      "build_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 13477,
+          "available": 59904
+        },
+        "Register": {
+          "used": 7021,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 30,
+          "available": 118
+        },
+        "DSP": {
+          "used": 51,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 19,
+          "available": 297
+        }
+      },
+      "setup_violated_endpoints": 0,
+      "hold_violated_endpoints": 0,
+      "timing_pass": true,
+      "budget_pass": true,
+      "bitstream_sha256": "0ad7cf4a09b40cd085f9dc12ac35b7e407f27ddba4edeeab72177c94197fd6c9",
+      "setup_worst_slack_ns": 2.733,
+      "hold_worst_slack_ns": 0.2,
+      "ram_types": {
+        "SDPB": 16,
+        "pROM": 14
+      },
+      "warnings": [
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\ec11_input.v\":41)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":82)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":83)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":85)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":86)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_keys.v\":38)",
+        "WARN  (EX3791) : Expression size 43 truncated to fit in target size 26(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_shared_tone.v\":67)",
+        "WARN  (EX3791) : Expression size 25 truncated to fit in target size 24(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_tone_state.v\":37)",
+        "WARN  (EX3791) : Expression size 25 truncated to fit in target size 24(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_tone_state.v\":39)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 10(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":57)",
+        "WARN  (EX3791) : Expression size 42 truncated to fit in target size 25(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":69)",
+        "WARN  (EX3791) : Expression size 36 truncated to fit in target size 24(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":174)",
+        "WARN  (EX3791) : Expression size 18 truncated to fit in target size 16(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":201)",
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\playable_led.v\":36)",
+        "WARN  (NL0002) : The module \"note_table\" instantiated to \"notes\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_bank.v\":24)",
+        "WARN  (NL0002) : The module \"palette_sine\" instantiated to \"precision_rom.r3\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_shared_tone.v\":28)",
+        "WARN  (NL0002) : The module \"knob_volume_table\" instantiated to \"volume\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":37)",
+        "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+      ]
+    },
+    {
+      "variant": "03_piano_bright",
+      "board_tested": false,
+      "source_hashes": {
+        "project/audio_palette_lab/variants/03_piano_bright/03_piano_bright.gprj": "b66fb10fee9949125be3fa767a59175753890f7638a39d4fe6960e9ee61ae2eb",
+        "project/audio_palette_lab/variants/03_piano_bright/build.tcl": "b9a0480323540223a596a351662f09d4bffeee0d5f28d03e6fc868c516576a4f",
+        "project/audio_palette_lab/variants/03_piano_bright/top.v": "767a8d23d91ba1dd786aee8daaf0440055491b60ccc946e67ef552a0effaab93",
+        "project/audio_palette_lab/src/palette_bank.v": "db71ab4b736b75e6ecc4f537d0e67ac50b1f967a5a2feea8e55f99459462982d",
+        "project/audio_palette_lab/src/palette_controls.v": "03171f7eb3ca7c424d3d6b8bc3a220660db3c5b8f7413ddc03cfbbd3c8ae67b8",
+        "project/audio_palette_lab/src/palette_engine.v": "5ae63b0f75520b402eeb8a7a16e92cca7032b2e7973a4d79048ec197e70aa9ed",
+        "project/audio_palette_lab/src/palette_keys.v": "44a71e82cc91afaee08af4d0416a5de51c83df2baed8d15f577b5f824f20d17f",
+        "project/audio_palette_lab/src/palette_pluck.v": "c7c86d36f3a500c16ff2e1a28e358669de5bee3d2e6bd0a2933a9c997ea4e851",
+        "project/audio_palette_lab/src/palette_shared_tone.v": "ef109f3016ff9ac9c3ebd3a371aa1794064fe529b76f9176217337d2d89d5e02",
+        "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+        "project/audio_palette_lab/src/palette_slot.v": "a16d2813b688f480ee130bac88821a94483c6ca510e03db0bbb5ec79f4a4a951",
+        "project/audio_palette_lab/src/palette_tone_state.v": "4965cbece062c4430404888629017720285542c332f8fc867e6ffc44d3d6c62c",
+        "project/audio_palette_lab/src/palette_top.v": "46bcd8eaf39c831ca7f257d914796b4c2bc3860387c6f204b867feb33dbd3704",
+        "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+        "project/final_dual_timbre/src/playable_led.v": "128e18f2440b82da4130c5648b9b14500a4777e45ec7db0e31084660965b62a2",
+        "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+        "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/final_dual_timbre/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/final_dual_timbre/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/final_dual_timbre/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/final_dual_timbre/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/audio_palette_lab/src/palette.cst": "a40c312112e29cb93585f43cb93539931620db898558d189cf0016ee38f89ed7",
+        "project/audio_palette_lab/src/palette.sdc": "513b7ec68e37716bc4f76fceea242edf24141a176070e86fe97317029ad8de12"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 130.15,
+      "build_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 13490,
+          "available": 59904
+        },
+        "Register": {
+          "used": 7018,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 34,
+          "available": 118
+        },
+        "DSP": {
+          "used": 51,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 19,
+          "available": 297
+        }
+      },
+      "setup_violated_endpoints": 0,
+      "hold_violated_endpoints": 0,
+      "timing_pass": true,
+      "budget_pass": true,
+      "bitstream_sha256": "480b5252e9e2195d8f907316f3a59933cae76f9e5985c9d800607a4acde7c748",
+      "setup_worst_slack_ns": 3.931,
+      "hold_worst_slack_ns": 0.196,
+      "ram_types": {
+        "SDPB": 16,
+        "pROM": 18
+      },
+      "warnings": [
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\ec11_input.v\":41)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":82)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":83)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":85)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":86)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_keys.v\":38)",
+        "WARN  (EX3791) : Expression size 43 truncated to fit in target size 26(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_shared_tone.v\":67)",
+        "WARN  (EX3791) : Expression size 25 truncated to fit in target size 24(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_tone_state.v\":37)",
+        "WARN  (EX3791) : Expression size 25 truncated to fit in target size 24(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_tone_state.v\":39)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 10(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":57)",
+        "WARN  (EX3791) : Expression size 42 truncated to fit in target size 25(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":69)",
+        "WARN  (EX3791) : Expression size 36 truncated to fit in target size 24(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":174)",
+        "WARN  (EX3791) : Expression size 18 truncated to fit in target size 16(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":201)",
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\playable_led.v\":36)",
+        "WARN  (NL0002) : The module \"note_table\" instantiated to \"notes\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_bank.v\":24)",
+        "WARN  (NL0002) : The module \"knob_volume_table\" instantiated to \"volume\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":37)",
+        "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+      ]
+    },
+    {
+      "variant": "04_clean_reed",
+      "board_tested": false,
+      "source_hashes": {
+        "project/audio_palette_lab/variants/04_clean_reed/04_clean_reed.gprj": "b66fb10fee9949125be3fa767a59175753890f7638a39d4fe6960e9ee61ae2eb",
+        "project/audio_palette_lab/variants/04_clean_reed/build.tcl": "d45af7064270852c01b1547e255059d8a85f9d7a749d20a2f740464c8d799a78",
+        "project/audio_palette_lab/variants/04_clean_reed/top.v": "ac7c9c4bc0812acbc15d321ffe5779104134b2156d82c4bf8673b05e9b7762ba",
+        "project/audio_palette_lab/src/palette_bank.v": "db71ab4b736b75e6ecc4f537d0e67ac50b1f967a5a2feea8e55f99459462982d",
+        "project/audio_palette_lab/src/palette_controls.v": "03171f7eb3ca7c424d3d6b8bc3a220660db3c5b8f7413ddc03cfbbd3c8ae67b8",
+        "project/audio_palette_lab/src/palette_engine.v": "5ae63b0f75520b402eeb8a7a16e92cca7032b2e7973a4d79048ec197e70aa9ed",
+        "project/audio_palette_lab/src/palette_keys.v": "44a71e82cc91afaee08af4d0416a5de51c83df2baed8d15f577b5f824f20d17f",
+        "project/audio_palette_lab/src/palette_pluck.v": "c7c86d36f3a500c16ff2e1a28e358669de5bee3d2e6bd0a2933a9c997ea4e851",
+        "project/audio_palette_lab/src/palette_shared_tone.v": "ef109f3016ff9ac9c3ebd3a371aa1794064fe529b76f9176217337d2d89d5e02",
+        "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+        "project/audio_palette_lab/src/palette_slot.v": "a16d2813b688f480ee130bac88821a94483c6ca510e03db0bbb5ec79f4a4a951",
+        "project/audio_palette_lab/src/palette_tone_state.v": "4965cbece062c4430404888629017720285542c332f8fc867e6ffc44d3d6c62c",
+        "project/audio_palette_lab/src/palette_top.v": "46bcd8eaf39c831ca7f257d914796b4c2bc3860387c6f204b867feb33dbd3704",
+        "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+        "project/final_dual_timbre/src/playable_led.v": "128e18f2440b82da4130c5648b9b14500a4777e45ec7db0e31084660965b62a2",
+        "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+        "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/final_dual_timbre/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/final_dual_timbre/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/final_dual_timbre/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/final_dual_timbre/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/audio_palette_lab/src/palette.cst": "a40c312112e29cb93585f43cb93539931620db898558d189cf0016ee38f89ed7",
+        "project/audio_palette_lab/src/palette.sdc": "513b7ec68e37716bc4f76fceea242edf24141a176070e86fe97317029ad8de12"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 121.81,
+      "build_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 12456,
+          "available": 59904
+        },
+        "Register": {
+          "used": 6720,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 26,
+          "available": 118
+        },
+        "DSP": {
+          "used": 50,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 19,
+          "available": 297
+        }
+      },
+      "setup_violated_endpoints": 0,
+      "hold_violated_endpoints": 0,
+      "timing_pass": true,
+      "budget_pass": true,
+      "bitstream_sha256": "3bc7122e74e950803195b298102bcf72c253b2b86d5c5a95a2805bc652a41d9a",
+      "setup_worst_slack_ns": 4.316,
+      "hold_worst_slack_ns": 0.194,
+      "ram_types": {
+        "SDPB": 16,
+        "pROM": 10
+      },
+      "warnings": [
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\ec11_input.v\":41)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":82)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":83)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":85)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":86)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_keys.v\":38)",
+        "WARN  (EX3791) : Expression size 43 truncated to fit in target size 26(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_shared_tone.v\":67)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 10(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":57)",
+        "WARN  (EX3791) : Expression size 42 truncated to fit in target size 25(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":69)",
+        "WARN  (EX3791) : Expression size 36 truncated to fit in target size 24(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":174)",
+        "WARN  (EX3791) : Expression size 18 truncated to fit in target size 16(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":201)",
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\playable_led.v\":36)",
+        "WARN  (NL0002) : The module \"note_table\" instantiated to \"notes\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_bank.v\":24)",
+        "WARN  (NL0002) : The module \"palette_sine\" instantiated to \"precision_rom.r1\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_shared_tone.v\":26)",
+        "WARN  (NL0002) : The module \"palette_sine\" instantiated to \"precision_rom.r3\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_shared_tone.v\":28)",
+        "WARN  (NL0002) : The module \"knob_volume_table\" instantiated to \"volume\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":37)",
+        "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+      ]
+    },
+    {
+      "variant": "05_pluck_detail",
+      "board_tested": false,
+      "source_hashes": {
+        "project/audio_palette_lab/variants/05_pluck_detail/05_pluck_detail.gprj": "b66fb10fee9949125be3fa767a59175753890f7638a39d4fe6960e9ee61ae2eb",
+        "project/audio_palette_lab/variants/05_pluck_detail/build.tcl": "b53045c8fe08c6ef3103d41e4811f737f0c2739d39fed82edcdae8abe69690a3",
+        "project/audio_palette_lab/variants/05_pluck_detail/top.v": "aecade07e1a0eb073c74cc368a7a29e38d7946df9634e4f1e9cc5e046b3cd826",
+        "project/audio_palette_lab/src/palette_bank.v": "db71ab4b736b75e6ecc4f537d0e67ac50b1f967a5a2feea8e55f99459462982d",
+        "project/audio_palette_lab/src/palette_controls.v": "03171f7eb3ca7c424d3d6b8bc3a220660db3c5b8f7413ddc03cfbbd3c8ae67b8",
+        "project/audio_palette_lab/src/palette_engine.v": "5ae63b0f75520b402eeb8a7a16e92cca7032b2e7973a4d79048ec197e70aa9ed",
+        "project/audio_palette_lab/src/palette_keys.v": "44a71e82cc91afaee08af4d0416a5de51c83df2baed8d15f577b5f824f20d17f",
+        "project/audio_palette_lab/src/palette_pluck.v": "c7c86d36f3a500c16ff2e1a28e358669de5bee3d2e6bd0a2933a9c997ea4e851",
+        "project/audio_palette_lab/src/palette_shared_tone.v": "ef109f3016ff9ac9c3ebd3a371aa1794064fe529b76f9176217337d2d89d5e02",
+        "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+        "project/audio_palette_lab/src/palette_slot.v": "a16d2813b688f480ee130bac88821a94483c6ca510e03db0bbb5ec79f4a4a951",
+        "project/audio_palette_lab/src/palette_tone_state.v": "4965cbece062c4430404888629017720285542c332f8fc867e6ffc44d3d6c62c",
+        "project/audio_palette_lab/src/palette_top.v": "46bcd8eaf39c831ca7f257d914796b4c2bc3860387c6f204b867feb33dbd3704",
+        "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+        "project/final_dual_timbre/src/playable_led.v": "128e18f2440b82da4130c5648b9b14500a4777e45ec7db0e31084660965b62a2",
+        "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+        "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/final_dual_timbre/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/final_dual_timbre/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/final_dual_timbre/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/final_dual_timbre/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/audio_palette_lab/src/palette.cst": "a40c312112e29cb93585f43cb93539931620db898558d189cf0016ee38f89ed7",
+        "project/audio_palette_lab/src/palette.sdc": "513b7ec68e37716bc4f76fceea242edf24141a176070e86fe97317029ad8de12"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 131.11,
+      "build_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 12291,
+          "available": 59904
+        },
+        "Register": {
+          "used": 6718,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 34,
+          "available": 118
+        },
+        "DSP": {
+          "used": 50,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 19,
+          "available": 297
+        }
+      },
+      "setup_violated_endpoints": 0,
+      "hold_violated_endpoints": 0,
+      "timing_pass": true,
+      "budget_pass": true,
+      "bitstream_sha256": "964ab8e6eafa4ff2f8f53055ab3d63985e17e7949c5b038cb67e6c11abe34442",
+      "setup_worst_slack_ns": 3.172,
+      "hold_worst_slack_ns": 0.232,
+      "ram_types": {
+        "SDPB": 16,
+        "pROM": 18
+      },
+      "warnings": [
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\ec11_input.v\":41)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":82)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":83)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":85)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":86)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_keys.v\":38)",
+        "WARN  (EX3791) : Expression size 43 truncated to fit in target size 26(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_shared_tone.v\":67)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 10(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":57)",
+        "WARN  (EX3791) : Expression size 42 truncated to fit in target size 25(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":69)",
+        "WARN  (EX3791) : Expression size 36 truncated to fit in target size 24(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":174)",
+        "WARN  (EX3791) : Expression size 18 truncated to fit in target size 16(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":201)",
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\playable_led.v\":36)",
+        "WARN  (NL0002) : The module \"note_table\" instantiated to \"notes\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_bank.v\":24)",
+        "WARN  (NL0002) : The module \"knob_volume_table\" instantiated to \"volume\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":37)",
+        "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+      ]
+    },
+    {
+      "variant": "06_pluck_warm",
+      "board_tested": false,
+      "source_hashes": {
+        "project/audio_palette_lab/variants/06_pluck_warm/06_pluck_warm.gprj": "b66fb10fee9949125be3fa767a59175753890f7638a39d4fe6960e9ee61ae2eb",
+        "project/audio_palette_lab/variants/06_pluck_warm/build.tcl": "b0e10a9ce415e341281a51a26df24524b46e4dabe5b60b13bb24726e985803e4",
+        "project/audio_palette_lab/variants/06_pluck_warm/top.v": "d84060ee05e84fc1a489acc8c8d662692eddcad905afb9825e1124808cf846b0",
+        "project/audio_palette_lab/src/palette_bank.v": "db71ab4b736b75e6ecc4f537d0e67ac50b1f967a5a2feea8e55f99459462982d",
+        "project/audio_palette_lab/src/palette_controls.v": "03171f7eb3ca7c424d3d6b8bc3a220660db3c5b8f7413ddc03cfbbd3c8ae67b8",
+        "project/audio_palette_lab/src/palette_engine.v": "5ae63b0f75520b402eeb8a7a16e92cca7032b2e7973a4d79048ec197e70aa9ed",
+        "project/audio_palette_lab/src/palette_keys.v": "44a71e82cc91afaee08af4d0416a5de51c83df2baed8d15f577b5f824f20d17f",
+        "project/audio_palette_lab/src/palette_pluck.v": "c7c86d36f3a500c16ff2e1a28e358669de5bee3d2e6bd0a2933a9c997ea4e851",
+        "project/audio_palette_lab/src/palette_shared_tone.v": "ef109f3016ff9ac9c3ebd3a371aa1794064fe529b76f9176217337d2d89d5e02",
+        "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+        "project/audio_palette_lab/src/palette_slot.v": "a16d2813b688f480ee130bac88821a94483c6ca510e03db0bbb5ec79f4a4a951",
+        "project/audio_palette_lab/src/palette_tone_state.v": "4965cbece062c4430404888629017720285542c332f8fc867e6ffc44d3d6c62c",
+        "project/audio_palette_lab/src/palette_top.v": "46bcd8eaf39c831ca7f257d914796b4c2bc3860387c6f204b867feb33dbd3704",
+        "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+        "project/final_dual_timbre/src/playable_led.v": "128e18f2440b82da4130c5648b9b14500a4777e45ec7db0e31084660965b62a2",
+        "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+        "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/final_dual_timbre/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/final_dual_timbre/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/final_dual_timbre/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/final_dual_timbre/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/audio_palette_lab/src/palette.cst": "a40c312112e29cb93585f43cb93539931620db898558d189cf0016ee38f89ed7",
+        "project/audio_palette_lab/src/palette.sdc": "513b7ec68e37716bc4f76fceea242edf24141a176070e86fe97317029ad8de12"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 122.58,
+      "build_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 12826,
+          "available": 59904
+        },
+        "Register": {
+          "used": 6974,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 34,
+          "available": 118
+        },
+        "DSP": {
+          "used": 50,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 19,
+          "available": 297
+        }
+      },
+      "setup_violated_endpoints": 0,
+      "hold_violated_endpoints": 0,
+      "timing_pass": true,
+      "budget_pass": true,
+      "bitstream_sha256": "a9e1b136b468e1f9b2dc9638a090d61746e2e7a844ea194cc3ecd8b79187f83d",
+      "setup_worst_slack_ns": 2.255,
+      "hold_worst_slack_ns": 0.247,
+      "ram_types": {
+        "SDPB": 16,
+        "pROM": 18
+      },
+      "warnings": [
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\ec11_input.v\":41)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":82)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":83)",
+        "WARN  (EX3791) : Expression size 8 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":85)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":86)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 7(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_keys.v\":38)",
+        "WARN  (EX3791) : Expression size 43 truncated to fit in target size 26(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_shared_tone.v\":67)",
+        "WARN  (EX3791) : Expression size 32 truncated to fit in target size 10(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":57)",
+        "WARN  (EX3791) : Expression size 42 truncated to fit in target size 25(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":69)",
+        "WARN  (EX3791) : Expression size 36 truncated to fit in target size 24(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":174)",
+        "WARN  (EX3791) : Expression size 18 truncated to fit in target size 16(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_pluck.v\":201)",
+        "WARN  (EX3791) : Expression size 6 truncated to fit in target size 5(\"D:\\uestc\\SCM\\GowinFPGA\\project\\final_dual_timbre\\src\\playable_led.v\":36)",
+        "WARN  (NL0002) : The module \"note_table\" instantiated to \"notes\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_bank.v\":24)",
+        "WARN  (NL0002) : The module \"knob_volume_table\" instantiated to \"volume\" is swept in optimizing(\"D:\\uestc\\SCM\\GowinFPGA\\project\\audio_palette_lab\\src\\palette_controls.v\":37)",
+        "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+      ]
+    }
+  ],
+  "test_source_hashes": {
+    "project/audio_palette_lab/sim/palette_board_tb.v": "192ae35fefdc8f77a80c04bcab80a803ebe4910035eac7aabc67d0a5d9db5036",
+    "project/audio_palette_lab/sim/palette_controls_tb.v": "e7cd5c9c074acde0fa1fbde74b75ba13b47f122f388552df4e298f9ff38d5c1d",
+    "project/audio_palette_lab/sim/palette_equivalence_tb.v": "1d1e4cf6803e1a74ef8892b3042ede4fbcb81d6d503dc3535c74faf317b5b06f",
+    "project/audio_palette_lab/sim/palette_keys_tb.v": "ed1183244f1620dda367602cac484bb677e345538e3e1c80042942fd846e007c",
+    "project/audio_palette_lab/sim/palette_math_tb.v": "1a172a91958215ed1dee25218c8b8daa5e8f40309924d6984ccf015e56c2f34b",
+    "project/audio_palette_lab/sim/palette_range_tb.v": "eea612a10073e3d3aca9d5c7bd4729d8e74e6a2d021da388ef0894a6848a4812",
+    "project/audio_palette_lab/sim/palette_render_tb.v": "ca62ece9e56fdbc037effd38a79d372b733cf2343280d7c4d8a4ba52ac5ce92c",
+    "project/audio_palette_lab/sim/palette_scheduler_tb.v": "f04030df6fe3dd92f3d5e96d6abc6d41c2a55dddaf41bdbf58f4ac3fe9406931"
+  }
+}

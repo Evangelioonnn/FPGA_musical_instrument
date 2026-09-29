@@ -1,0 +1,8 @@
+impl/
+sim/work_fx/
+sim/*.log
+sim/*.wlf
+sim/*_vectors.txt
+sim/*_output.txt
+sim/*.wav
+sim/modelsim.ini

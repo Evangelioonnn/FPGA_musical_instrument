@@ -1,0 +1,7 @@
+# vsim -do run.do -l controls_v0_tb.log -lib work -c controls_v0_tb 
+# Loading work.controls_v0_tb
+# Loading work.system_controls
+# do run.do 
+# CONTROLS_V0_TB_PASS vectors=10000 accepted=661 rejected=6377
+# ** Note: $finish    : $REPO/project/system/sim/controls_v0_tb.v(23)
+#    Time: 200011 ns  Iteration: 0  Instance: /controls_v0_tb

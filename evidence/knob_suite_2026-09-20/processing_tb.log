@@ -1,0 +1,9 @@
+# vsim -do run.do -l processing_tb.log -lib work -c processing_tb
+# Loading work.processing_tb
+# Loading work.knob_gain
+# Loading work.knob_effect
+# Loading work.feedback_delay
+# do run.do
+# PROCESSING_TB_PASS gain=75000 echo=75000 independent_recurrence=1 bypass_exact=1
+# ** Note: $finish    : $REPO/project/input/knob_suite/sim/processing_tb.v(60)
+#    Time: 13500100 ns  Iteration: 1  Instance: /processing_tb

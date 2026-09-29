@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Project>
+  <Template>FPGA</Template>
+  <Version>5</Version>
+  <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+  <FileList>
+    <File path="../../../custom_harmonic_lab/src/custom_gallery_shared_tone.v" type="file.verilog" enable="1" />
+    <File path="../../../custom_harmonic_lab/src/custom_harmonic_params.v" type="file.verilog" enable="1" />
+    <File path="../../../five_timbre_core/src/gallery_keys.v" type="file.verilog" enable="1" />
+    <File path="../../../five_timbre_core/src/gallery_led.v" type="file.verilog" enable="1" />
+    <File path="../../../final_dual_timbre/src/playable_button.v" type="file.verilog" enable="1" />
+    <File path="../../../final_dual_timbre/src/matrix_scanner.v" type="file.verilog" enable="1" />
+    <File path="../../../final_dual_timbre/src/ec11_input.v" type="file.verilog" enable="1" />
+    <File path="../../../final_dual_timbre/src/stream_fifo.v" type="file.verilog" enable="1" />
+    <File path="../../../final_dual_timbre/src/knob_gain.v" type="file.verilog" enable="1" />
+    <File path="../../../final_dual_timbre/src/knob_volume_table.v" type="file.verilog" enable="1" />
+    <File path="../../../final_dual_timbre/src/adsr_envelope.v" type="file.verilog" enable="1" />
+    <File path="../../../final_dual_timbre/src/sine_rom.v" type="file.verilog" enable="1" />
+    <File path="../../../final_dual_timbre/src/note_table.v" type="file.verilog" enable="1" />
+    <File path="../../../final_dual_timbre/src/pluck_note_table.v" type="file.verilog" enable="1" />
+    <File path="../../../final_dual_timbre/src/pt8211_tx.v" type="file.verilog" enable="1" />
+    <File path="../../../audio_palette_lab/src/palette_pluck.v" type="file.verilog" enable="1" />
+    <File path="../../../audio_palette_lab/src/palette_sine.v" type="file.verilog" enable="1" />
+    <File path="../../../audio_output_lab/src/output_tx.v" type="file.verilog" enable="1" />
+    <File path="../../../audio_output_lab/src/output_polarity.v" type="file.verilog" enable="1" />
+    <File path="../../../audio_core_v1/src/audio_panel.v" type="file.verilog" enable="1" />
+    <File path="../../../audio_parameter_lab/src/audio_parameter_service.v" type="file.verilog" enable="1" />
+    <File path="../../../audio_fx_lab/src/short_room_reverb.v" type="file.verilog" enable="1" />
+    <File path="../../../audio_fx_lab/src/vibrato_factor.v" type="file.verilog" enable="1" />
+    <File path="../../src/audio_v2_bank_compact.v" type="file.verilog" enable="1" />
+    <File path="../../src/audio_v2_pluck.v" type="file.verilog" enable="1" />
+    <File path="../../src/audio_v2_pool_slot.v" type="file.verilog" enable="1" />
+    <File path="../../src/audio_v2_tone.v" type="file.verilog" enable="1" />
+    <File path="../../src/audio_v2_core.v" type="file.verilog" enable="1" />
+    <File path="../../src/audio_v2_slot.v" type="file.verilog" enable="1" />
+    <File path="../../src/audio_v2_state.v" type="file.verilog" enable="1" />
+    <File path="../../src/audio_v2_top.v" type="file.verilog" enable="1" />
+    <File path="../../src/audio_v2.cst" type="file.cst" enable="1" />
+    <File path="../../src/audio_v2.sdc" type="file.sdc" enable="1" />
+    <File path="top.v" type="file.verilog" enable="1" />
+  </FileList>
+</Project>

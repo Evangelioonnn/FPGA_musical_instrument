@@ -1,0 +1,31 @@
+# vsim -do run.do -l render_tb.log -lib work -c render_tb
+# Loading work.render_tb
+# Loading work.knob_engine
+# Loading work.knob_controls
+# Loading work.knob_volume_table
+# Loading work.stream_fifo
+# Loading work.knob_bank
+# Loading work.knob_gain
+# Loading work.knob_slot
+# Loading work.note_table
+# Loading work.knob_reference_voice
+# Loading work.knob_effect
+# Loading work.feedback_delay
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# Loading work.fm_voice
+# Loading work.fm_note_table
+# Loading work.fm_sine_interp
+# Loading work.fm_sine_rom
+# Loading work.pluck_voice
+# Loading work.pluck_note_table
+# do run.do
+# RENDER mode=0 samples=384616 peak=1857
+# RENDER mode=1 samples=384616 peak=1837
+# RENDER mode=2 samples=384616 peak=755
+# RENDER mode=3 samples=384616 peak=511
+# RENDER mode=4 samples=384616 peak=511
+# RENDER_TB_PASS modes=5 samples_each=384616 stereo_mono_source=1
+# ** Note: $finish    : $REPO/project/input/knob_suite/sim/render_tb.v(62)
+#    Time: 984710660 ns  Iteration: 1  Instance: /render_tb

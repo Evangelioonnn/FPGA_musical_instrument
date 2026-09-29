@@ -1,0 +1,12 @@
+Reading E:/QuartusII/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.1d
+
+# vsim -do {run -all; quit -f} -lib work_palette -c palette_keys_tb
+# Loading work_palette.palette_keys_tb
+# Loading work_palette.palette_keys
+# Loading work_palette.stream_fifo
+# run -all
+# PALETTE_KEYS_TB_PASS full25, config snapshot, same-pitch identity, boundaries, stalls, ghost/overflow
+# ** Note: $finish    : D:/uestc/SCM/GowinFPGA/project/audio_palette_lab/sim/palette_keys_tb.v(57)
+#    Time: 92260 ns  Iteration: 1  Instance: /palette_keys_tb

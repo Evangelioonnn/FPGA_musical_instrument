@@ -1,0 +1,23 @@
+# vsim -do run.do -l capacity_transport_tb.log -lib work -c capacity_transport_tb 
+# Loading work.capacity_transport_tb
+# Loading work.capacity_top
+# Loading work.system_engine
+# Loading work.stream_fifo
+# Loading work.stream_arbiter2
+# Loading work.system_core
+# Loading work.system_controls
+# Loading work.performance_manager
+# Loading work.baseline_mixer
+# Loading work.audio_meter
+# Loading work.waveform_tap
+# Loading work.pt8211_tx
+# Loading work.serial_checker
+# Loading work.note_table
+# Loading work.system_voice
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# do run.do 
+# CAPACITY_TRANSPORT_TB_PASS frames=2048 events=32 active=32 fifo_stage=1
+# ** Note: $finish    : $REPO/project/system/sim/capacity_transport_tb.v(16)
+#    Time: 42598711 ns  Iteration: 1  Instance: /capacity_transport_tb

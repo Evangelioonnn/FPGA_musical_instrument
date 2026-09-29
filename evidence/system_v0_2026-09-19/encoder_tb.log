@@ -1,0 +1,7 @@
+# vsim -do run.do -l encoder_tb.log -lib work -c encoder_tb 
+# Loading work.encoder_tb
+# Loading work.ec11_input
+# do run.do 
+# ENCODER_TB_PASS positive=10 negative=7 invalid=2 button_edges=2
+# ** Note: $finish    : $REPO/project/system/sim/encoder_tb.v(25)
+#    Time: 23120 ns  Iteration: 1  Instance: /encoder_tb

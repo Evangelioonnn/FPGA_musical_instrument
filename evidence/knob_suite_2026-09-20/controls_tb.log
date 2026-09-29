@@ -1,0 +1,9 @@
+# vsim -do run.do -l controls_tb.log -lib work -c controls_tb
+# Loading work.controls_tb
+# Loading work.knob_controls
+# Loading work.knob_volume_table
+# Loading work.stream_fifo
+# do run.do
+# CONTROLS_TB_PASS turns=97 modes=5 clamps=1 stable_queue=1 explicit_overflow=2
+# ** Note: $finish    : $REPO/project/input/knob_suite/sim/controls_tb.v(46)
+#    Time: 11260 ns  Iteration: 1  Instance: /controls_tb

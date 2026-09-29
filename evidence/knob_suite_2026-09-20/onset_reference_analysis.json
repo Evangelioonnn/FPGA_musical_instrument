@@ -1,0 +1,191 @@
+{
+  "source": "Saved RTL WAVs, not board recordings",
+  "scope": "Fixed reference score only; asynchronous hardware triggers and analog output remain unmeasured",
+  "audio": {
+    "performance": {
+      "sha256": "a2b8ff68cd277751ba88cfc7b442005d3f24ceb1f7d051abd5659bef55d2c787",
+      "samples": 384616,
+      "peak_raw": 1857,
+      "max_adjacent_sample_difference": 123
+    },
+    "timbre": {
+      "sha256": "89f61b8f61e0eeeb15cda5c993f4aa96ca49162168bd84ae0d81d3bd0353843c",
+      "samples": 384616,
+      "peak_raw": 755,
+      "max_adjacent_sample_difference": 365
+    },
+    "release": {
+      "sha256": "9f93d1b90760a167a171c4fcf9dfe889af6187bf42f1b1b9601ea4097b03fc92",
+      "samples": 384616,
+      "peak_raw": 511,
+      "max_adjacent_sample_difference": 19
+    },
+    "volume": {
+      "sha256": "29bf108bf5edf4550c4b66a74ce8cede6f7ef0ca3cdecdaa0987bf0c5581d900",
+      "samples": 384616,
+      "peak_raw": 1837,
+      "max_adjacent_sample_difference": 93
+    },
+    "echo": {
+      "sha256": "1ed521119de811dc5b8215bdb309c7797049daae122d43bdd43442318cb9aa54",
+      "samples": 384616,
+      "peak_raw": 511,
+      "max_adjacent_sample_difference": 19
+    }
+  },
+  "independent_checks": {
+    "default_timbre_samples_exact": 96000,
+    "performance_samples_exact": 384616,
+    "performance_max_audible_voices": 9,
+    "performance_silent_tail_nonzero_samples": 0
+  },
+  "timbre_timing_ms": {
+    "onset_interval": 499.9904,
+    "original_gate": 650.0,
+    "original_release_from_sustain": 227.1984,
+    "previous_release_start_after_next_onset": 150.0096,
+    "previous_envelope_zero_after_next_onset": 377.20799999999997
+  },
+  "performance_onsets": [
+    {
+      "sample": 4808,
+      "time_seconds": 0.1000064,
+      "note": 61,
+      "mixed_pcm_step": 0,
+      "max_mixed_step_first_2ms": 2
+    },
+    {
+      "sample": 48078,
+      "time_seconds": 1.0000224,
+      "note": 62,
+      "mixed_pcm_step": 0,
+      "max_mixed_step_first_2ms": 3
+    },
+    {
+      "sample": 96155,
+      "time_seconds": 2.000024,
+      "note": 63,
+      "mixed_pcm_step": 0,
+      "max_mixed_step_first_2ms": 2
+    },
+    {
+      "sample": 100963,
+      "time_seconds": 2.1000304,
+      "note": 64,
+      "mixed_pcm_step": 10,
+      "max_mixed_step_first_2ms": 16
+    },
+    {
+      "sample": 105771,
+      "time_seconds": 2.2000368,
+      "note": 65,
+      "mixed_pcm_step": 15,
+      "max_mixed_step_first_2ms": 21
+    },
+    {
+      "sample": 110579,
+      "time_seconds": 2.3000431999999997,
+      "note": 66,
+      "mixed_pcm_step": 17,
+      "max_mixed_step_first_2ms": 24
+    },
+    {
+      "sample": 115387,
+      "time_seconds": 2.4000496,
+      "note": 67,
+      "mixed_pcm_step": 22,
+      "max_mixed_step_first_2ms": 28
+    },
+    {
+      "sample": 120195,
+      "time_seconds": 2.500056,
+      "note": 68,
+      "mixed_pcm_step": 18,
+      "max_mixed_step_first_2ms": 19
+    },
+    {
+      "sample": 125003,
+      "time_seconds": 2.6000624,
+      "note": 69,
+      "mixed_pcm_step": -19,
+      "max_mixed_step_first_2ms": 41
+    },
+    {
+      "sample": 129811,
+      "time_seconds": 2.7000688,
+      "note": 70,
+      "mixed_pcm_step": 33,
+      "max_mixed_step_first_2ms": 40
+    },
+    {
+      "sample": 134619,
+      "time_seconds": 2.8000751999999998,
+      "note": 71,
+      "mixed_pcm_step": -1,
+      "max_mixed_step_first_2ms": 52
+    },
+    {
+      "sample": 139427,
+      "time_seconds": 2.9000816,
+      "note": 72,
+      "mixed_pcm_step": 23,
+      "max_mixed_step_first_2ms": 40
+    },
+    {
+      "sample": 144235,
+      "time_seconds": 3.000088,
+      "note": 73,
+      "mixed_pcm_step": 20,
+      "max_mixed_step_first_2ms": 29
+    },
+    {
+      "sample": 149043,
+      "time_seconds": 3.1000944,
+      "note": 74,
+      "mixed_pcm_step": -26,
+      "max_mixed_step_first_2ms": 38
+    },
+    {
+      "sample": 168270,
+      "time_seconds": 3.500016,
+      "note": 73,
+      "mixed_pcm_step": 41,
+      "max_mixed_step_first_2ms": 47
+    },
+    {
+      "sample": 173078,
+      "time_seconds": 3.6000224,
+      "note": 72,
+      "mixed_pcm_step": -46,
+      "max_mixed_step_first_2ms": 49
+    },
+    {
+      "sample": 177886,
+      "time_seconds": 3.7000288,
+      "note": 71,
+      "mixed_pcm_step": -1,
+      "max_mixed_step_first_2ms": 23
+    },
+    {
+      "sample": 182694,
+      "time_seconds": 3.8000352,
+      "note": 70,
+      "mixed_pcm_step": -30,
+      "max_mixed_step_first_2ms": 44
+    },
+    {
+      "sample": 187502,
+      "time_seconds": 3.9000415999999998,
+      "note": 69,
+      "mixed_pcm_step": 11,
+      "max_mixed_step_first_2ms": 56
+    },
+    {
+      "sample": 192310,
+      "time_seconds": 4.000048,
+      "note": 68,
+      "mixed_pcm_step": 25,
+      "max_mixed_step_first_2ms": 67
+    }
+  ]
+}

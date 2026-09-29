@@ -1,0 +1,12 @@
+Reading E:/QuartusII/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.1d
+
+# vsim -do {run -all; quit -f} -lib work_output -c output_math_tb
+# Loading work_output.output_math_tb
+# Loading work_output.output_shared_tone
+# Loading work_output.palette_sine
+# run -all
+# OUTPUT_MATH_TB_PASS 4096 phase/envelope/scaling vectors
+# ** Note: $finish    : D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_math_tb.v(20)
+#    Time: 450640 ns  Iteration: 1  Instance: /output_math_tb

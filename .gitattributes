@@ -22,3 +22,9 @@ references/*.md text eol=lf diff
 references/*.json text eol=lf diff
 # Preserve whitespace in exported vendor reports and original simulator logs.
 evidence/baseline_2026-09-18/** -whitespace
+evidence/system_v0_2026-09-19/** -whitespace
+evidence/system_v0_2026-09-19/*.html linguist-generated=true
+evidence/system_v0_2026-09-19/*.rpt.txt linguist-generated=true
+evidence/knob_suite_2026-09-20/*.html linguist-generated=true
+evidence/knob_suite_2026-09-20/*.rpt.txt linguist-generated=true
+evidence/knob_suite_2026-09-20/initial_timbre_placement/*.rpt.txt linguist-generated=true

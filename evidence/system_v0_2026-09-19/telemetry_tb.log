@@ -1,0 +1,7 @@
+# vsim -do run.do -l telemetry_tb.log -lib work -c telemetry_tb 
+# Loading work.telemetry_tb
+# Loading work.snapshot_cdc
+# do run.do 
+# TELEMETRY_TB_PASS accepted=1228 delivered=1228 dropped=6290
+# ** Note: $finish    : $REPO/project/system/sim/telemetry_tb.v(23)
+#    Time: 200720 ns  Iteration: 1  Instance: /telemetry_tb

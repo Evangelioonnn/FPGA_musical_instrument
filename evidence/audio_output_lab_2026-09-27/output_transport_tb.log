@@ -1,0 +1,13 @@
+Reading E:/QuartusII/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.1d
+
+# vsim -do {run -all; quit -f} -lib work_output -c output_transport_tb
+# Loading work_output.output_transport_tb
+# Loading work_output.output_tx
+# Loading work_output.pt8211_tx
+# Loading work_output.output_polarity
+# run -all
+# OUTPUT_TRANSPORT_TB_PASS full 65536 codes per channel, 131074 words per transport, cadence and setup windows
+# ** Note: $finish    : D:/uestc/SCM/GowinFPGA/project/audio_output_lab/sim/output_transport_tb.v(55)
+#    Time: 1363169760 ns  Iteration: 1  Instance: /output_transport_tb

@@ -1,0 +1,13 @@
+# vsim -do {$REPO\project\input\knob_suite\sim\run.do} -l bank_tb.log -lib work -c bank_tb
+# Loading work.bank_tb
+# Loading work.knob_bank
+# Loading work.note_table
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# Loading work.knob_slot
+# Loading work.knob_reference_voice
+# do {$REPO\project\input\knob_suite\sim\run.do}
+# BANK_TB_PASS frames=76634 accepted=22 rejected=4 same_note_independent=1 coherent_sum16=1 pedals=1
+# ** Note: $finish    : $REPO/project/input/knob_suite/sim/bank_tb.v(75)
+#    Time: 196182540 ns  Iteration: 1  Instance: /bank_tb

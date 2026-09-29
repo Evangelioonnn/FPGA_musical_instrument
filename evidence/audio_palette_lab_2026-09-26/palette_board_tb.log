@@ -1,0 +1,31 @@
+Reading E:/QuartusII/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.1d
+
+# vsim -do {run -all; quit -f} -lib work_palette -c palette_board_tb
+# Loading work_palette.palette_board_tb
+# Loading work_palette.palette_top
+# Loading work_palette.matrix_scanner
+# Loading work_palette.ec11_input
+# Loading work_palette.palette_engine
+# Loading work_palette.palette_controls
+# Loading work_palette.knob_volume_table
+# Loading work_palette.palette_keys
+# Loading work_palette.stream_fifo
+# Loading work_palette.palette_bank
+# Loading work_palette.note_table
+# Loading work_palette.pluck_note_table
+# Loading work_palette.palette_shared_tone
+# Loading work_palette.knob_gain
+# Loading work_palette.pt8211_tx
+# Loading work_palette.playable_led
+# Loading work_palette.playable_button
+# Loading work_palette.palette_sine
+# Loading work_palette.palette_slot
+# Loading work_palette.palette_tone_state
+# Loading work_palette.palette_pluck
+# Loading work_palette.adsr_envelope
+# run -all
+# PALETTE_BOARD_TB_PASS physical matrix/buttons/encoder, two-zone identity, ghost recovery, 1296 stereo words 1058 nonzero
+# ** Note: $finish    : D:/uestc/SCM/GowinFPGA/project/audio_palette_lab/sim/palette_board_tb.v(69)
+#    Time: 13484560 ns  Iteration: 1  Instance: /palette_board_tb

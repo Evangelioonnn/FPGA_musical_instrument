@@ -1,0 +1,7 @@
+# vsim -do run.do -l pressure_tb.log -lib work -c pressure_tb 
+# Loading work.pressure_tb
+# Loading work.pressure_expression
+# do run.do 
+# PRESSURE_TB_PASS vectors=1200 timeout_and_recovery=1
+# ** Note: $finish    : $REPO/project/system/sim/pressure_tb.v(26)
+#    Time: 394220 ns  Iteration: 1  Instance: /pressure_tb

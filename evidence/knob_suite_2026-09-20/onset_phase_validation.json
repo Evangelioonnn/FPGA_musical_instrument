@@ -1,0 +1,28 @@
+{
+  "base_commit": "fba25e8",
+  "scope": "Follow-up on board-only onset noise; no audio RTL or bitstream changes",
+  "command": "& ./project/input/knob_suite/sim/run.ps1 -RunDirectory work_onset -Benches 'onset_phase_tb'",
+  "pass": [
+    "ONSET_PHASE_TB_PASS phases=1040 checked_frames=37441 real_sample_cycles=1040 isolated_sum_exact=1 single_start=1"
+  ],
+  "voices": 2,
+  "phases": 1040,
+  "note_range": [
+    48,
+    84
+  ],
+  "sample_clocks": 1040,
+  "limits": "Bank-level two-voice start phase sweep; uses observed start pulses for isolated original-voice comparison and separately asserts one start per request within 3..5 clocks. Does not verify analog output, external pin capture, all timbres, or hardware encoder event timing.",
+  "source_hashes": {
+    "project/input/knob_suite/sim/onset_phase_tb.v": "fccdbc2898cc3efe8211f724491e7fb6fafd1a848cb4dde58522eb950d913777",
+    "project/input/knob_suite/sim/run.ps1": "656aee9fba81694c0e5e4caeed73c039dd277ef3783129a5130614da2e8b12d2",
+    "project/input/knob_suite/sim/run.do": "b55747e398dc78b7f6debb416af9059fa2ceec18efcf7a8527b5c461e32a0e98",
+    "project/input/knob_suite/src/knob_bank.v": "50548d9b3b8b0db40146de6a13795a9110b4aa5d130c91f7219ae3ae73968de3",
+    "project/input/knob_suite/src/knob_slot.v": "81ce306e881d37db64544e8f54e3e595fb8fcd4e55e8f4fca15362b05abe26c3",
+    "project/input/knob_suite/src/knob_reference_voice.v": "80600a27194bef52769a01de3d05e29145971ac7d1644d202318946913818950",
+    "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+    "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+    "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+    "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c"
+  }
+}

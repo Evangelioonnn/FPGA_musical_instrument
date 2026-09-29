@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-29",
+  "role": "A",
+  "scope": "Exact-hash review of the simulation ROM wrapper library-isolation change; not a new complete audio regression",
+  "transitions": [
+    {
+      "source": "project/audio_core_v1/tools/sim_rom.py",
+      "historical_commit": "615cb94",
+      "transition_commit": "f5dcfe8",
+      "historical_sha256": "13b2180793d00c0ff240944230dbb4a052a074e82f808380d187f91092f6cacc",
+      "historical_lf_sha256": "13b2180793d00c0ff240944230dbb4a052a074e82f808380d187f91092f6cacc",
+      "reviewed_current_lf_sha256": "1f40bdbe1b6355454141e966c8c29aeaaf4f0bae238478d44e84e8a580aec72d",
+      "change": "Use a new temporary ModelSim work library per ROM check and record its workspace. ROM parser, generated HDL/table contents and RTL testbench are unchanged.",
+      "fresh_rom_check": {
+        "pass_marker": "SINE_ROM_ARRAY_EQUIVALENCE_PASS addresses=4096 unknown=8 jumps=2048 initial=0 checks=6152",
+        "source_lf_sha256": {
+          "project/audio_palette_lab/src/palette_sine.v": "4a9bbdf84525ae5bf8c6df97fa89cbde5b49c3d573153ba7b8fc49bd0e8bb620",
+          "project/audio_core_v1/sim/sine_rom_equivalence_tb.v": "1acd88c14da9224276e2826770da02f5aafce5999275e0640111f85f5a26bdbb",
+          "project/audio_core_v1/tools/sim_rom.py": "1f40bdbe1b6355454141e966c8c29aeaaf4f0bae238478d44e84e8a580aec72d"
+        },
+        "generated_sha256": {
+          "project/audio_core_v1/sim/work_rom_data/palette_sine_array.v": "413e7558fd75cc6c5916cfde44c9a626b258417c27ab48af3eb06d1e87e14f90",
+          "project/audio_core_v1/sim/work_rom_data/palette_sine_reference.v": "8ca45557d5697f94cc5a392e513d168a663dd906770fc36bbb82f93020fa21bc",
+          "project/audio_core_v1/sim/work_rom_data/sine4096.hex": "d1f5952989b7395c13250be61b81b34f0f834c51fe23cfe2975acf9a6712e443"
+        },
+        "generated_hashes_match_historical_rom_evidence": true,
+        "synthesis_sources_changed": false,
+        "full_audio_chain_verified": false
+      }
+    }
+  ],
+  "policy": "Only the listed old-to-reviewed-current Python source digest pair is recognized. Further wrapper edits or any RTL/testbench/constraint changes remain errors. Never replace old audio evidence fingerprints with the current wrapper digest."
+}

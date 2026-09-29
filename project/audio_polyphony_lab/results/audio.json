@@ -1,0 +1,38 @@
+[
+  {
+    "voices": 8,
+    "output_shift": 0,
+    "frames": 75700,
+    "sample_rate_exact_hz": 48076.92307692308,
+    "wav_header_hz": 48077,
+    "seconds": 1.57456,
+    "peak": 7666,
+    "wave_sha256": "be58be54c9967f9bef74f59be45ae4729f79c270b2b1bbf76ababbed91d5cbd2",
+    "normalised": false,
+    "source_pcm": "sim/poly_preview_8_0_1_0.txt"
+  },
+  {
+    "voices": 16,
+    "output_shift": 1,
+    "frames": 81300,
+    "sample_rate_exact_hz": 48076.92307692308,
+    "wav_header_hz": 48077,
+    "seconds": 1.6910399999999999,
+    "peak": 4836,
+    "wave_sha256": "616dcfaf46a54c8bada0f94b74cfb07e4d9fb548ef0842fd685e390229ac3fd7",
+    "normalised": false,
+    "source_pcm": "sim/poly_preview_16_1_1_0.txt"
+  },
+  {
+    "voices": 32,
+    "output_shift": 2,
+    "frames": 92500,
+    "sample_rate_exact_hz": 48076.92307692308,
+    "wav_header_hz": 48077,
+    "seconds": 1.924,
+    "peak": 3300,
+    "wave_sha256": "be58f343014de893187bea2d14453048ef840c793c3ac0140c4cd5c884a5f171",
+    "normalised": false,
+    "source_pcm": "sim/poly_preview_32_2_1_0.txt"
+  }
+]

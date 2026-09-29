@@ -1,0 +1,10 @@
+# vsim -do {$REPO\project\input\knob_suite\sim\run.do} -l pitch_tb.log -lib work -c pitch_tb
+# Loading work.pitch_tb
+# Loading work.knob_pitch
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# do {$REPO\project\input\knob_suite\sim\run.do}
+# PITCH_TB_PASS samples=240385 glide=1 bend=1 oscillator_phase=1 bounds=1 release=1
+# ** Note: $finish    : $REPO/project/input/knob_suite/sim/pitch_tb.v(45)
+#    Time: 76923500 ns  Iteration: 1  Instance: /pitch_tb

@@ -1,0 +1,636 @@
+{
+  "baseline_commit": "db653ef",
+  "branch": "codex/audio-output-isolation",
+  "role": "A",
+  "board_tested": false,
+  "noise_fixed": false,
+  "builds": [
+    {
+      "variant": "00_control",
+      "board_tested": false,
+      "source_hashes": {
+        "project/audio_output_lab/variants/00_control/00_control.gprj": "5b947c622eddc38e3becc63dbab3ae95ff67b24be6de087c712c614f4a2e1e06",
+        "project/audio_output_lab/variants/00_control/build.tcl": "7b277989f138f575066c3f746b5d95650a24bbedf7a6bcd2eea5d43036503f92",
+        "project/audio_output_lab/variants/00_control/top.v": "35dab6279de60e762057831be73816a512dc59b443f5b221ef763ab4ab07e6d9",
+        "project/audio_output_lab/src/output_bank.v": "318ae1ffc90b2a2a8937f0fc2848c36e2cd38f91f88d755496abe2405aef6ae2",
+        "project/audio_output_lab/src/output_controls.v": "a0468e68eec94c486ac4040d6e43ac98f2f69d100d52dccc4b05cac0dff49c49",
+        "project/audio_output_lab/src/output_engine.v": "4d8a0f9864f7878eb91a7a1710046bea6f03dc0e9706eb498c3c5f10598c55b7",
+        "project/audio_output_lab/src/output_polarity.v": "678f6604d4a6f0c48074fe9373c5e0d679d06a92ad7804e8146d95fbcd3fe70a",
+        "project/audio_output_lab/src/output_shared_tone.v": "a0699a8cadeb827184cf7c874f740ee7bef71a19eb31ccb5df4ac584060a9c69",
+        "project/audio_output_lab/src/output_top.v": "ba70ec09627a11cc64408633578133c0b9dc23bdafdf40007c8cf66ea0e8280b",
+        "project/audio_output_lab/src/output_tx.v": "7cefd245f5c8984ee6b0a4089b8aabd6ee950f242a11c4a6d34fde46933460c3",
+        "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+        "project/final_dual_timbre/src/playable_led.v": "128e18f2440b82da4130c5648b9b14500a4777e45ec7db0e31084660965b62a2",
+        "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+        "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/final_dual_timbre/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/final_dual_timbre/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/final_dual_timbre/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/final_dual_timbre/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/audio_palette_lab/src/palette_slot.v": "a16d2813b688f480ee130bac88821a94483c6ca510e03db0bbb5ec79f4a4a951",
+        "project/audio_palette_lab/src/palette_tone_state.v": "4965cbece062c4430404888629017720285542c332f8fc867e6ffc44d3d6c62c",
+        "project/audio_palette_lab/src/palette_pluck.v": "c7c86d36f3a500c16ff2e1a28e358669de5bee3d2e6bd0a2933a9c997ea4e851",
+        "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+        "project/audio_palette_lab/src/palette_keys.v": "44a71e82cc91afaee08af4d0416a5de51c83df2baed8d15f577b5f824f20d17f",
+        "project/audio_output_lab/src/output.cst": "a40c312112e29cb93585f43cb93539931620db898558d189cf0016ee38f89ed7",
+        "project/audio_output_lab/src/output.sdc": "513b7ec68e37716bc4f76fceea242edf24141a176070e86fe97317029ad8de12"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 100.96,
+      "build_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 12826,
+          "available": 59904
+        },
+        "Register": {
+          "used": 6974,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 34,
+          "available": 118
+        },
+        "DSP": {
+          "used": 50,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 19,
+          "available": 297
+        }
+      },
+      "setup_violated_endpoints": 0,
+      "hold_violated_endpoints": 0,
+      "timing_pass": true,
+      "budget_pass": true,
+      "bitstream_sha256": "e1d23993ac9a508c645087398831e7de051cf6175b8638e9d371aef7b1ca3136",
+      "setup_worst_slack_ns": 2.255,
+      "hold_worst_slack_ns": 0.247
+    },
+    {
+      "variant": "01_piano_headroom",
+      "board_tested": false,
+      "source_hashes": {
+        "project/audio_output_lab/variants/01_piano_headroom/01_piano_headroom.gprj": "5b947c622eddc38e3becc63dbab3ae95ff67b24be6de087c712c614f4a2e1e06",
+        "project/audio_output_lab/variants/01_piano_headroom/build.tcl": "3fe0031763bfac2953d00ed2633863fa0595549409ab01030118d31d179049ba",
+        "project/audio_output_lab/variants/01_piano_headroom/top.v": "a009e9a2205ce6add46c63061609d6b4d6a5c89abaf91c623de801dc44cbb79e",
+        "project/audio_output_lab/src/output_bank.v": "318ae1ffc90b2a2a8937f0fc2848c36e2cd38f91f88d755496abe2405aef6ae2",
+        "project/audio_output_lab/src/output_controls.v": "a0468e68eec94c486ac4040d6e43ac98f2f69d100d52dccc4b05cac0dff49c49",
+        "project/audio_output_lab/src/output_engine.v": "4d8a0f9864f7878eb91a7a1710046bea6f03dc0e9706eb498c3c5f10598c55b7",
+        "project/audio_output_lab/src/output_polarity.v": "678f6604d4a6f0c48074fe9373c5e0d679d06a92ad7804e8146d95fbcd3fe70a",
+        "project/audio_output_lab/src/output_shared_tone.v": "a0699a8cadeb827184cf7c874f740ee7bef71a19eb31ccb5df4ac584060a9c69",
+        "project/audio_output_lab/src/output_top.v": "ba70ec09627a11cc64408633578133c0b9dc23bdafdf40007c8cf66ea0e8280b",
+        "project/audio_output_lab/src/output_tx.v": "7cefd245f5c8984ee6b0a4089b8aabd6ee950f242a11c4a6d34fde46933460c3",
+        "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+        "project/final_dual_timbre/src/playable_led.v": "128e18f2440b82da4130c5648b9b14500a4777e45ec7db0e31084660965b62a2",
+        "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+        "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/final_dual_timbre/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/final_dual_timbre/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/final_dual_timbre/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/final_dual_timbre/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/audio_palette_lab/src/palette_slot.v": "a16d2813b688f480ee130bac88821a94483c6ca510e03db0bbb5ec79f4a4a951",
+        "project/audio_palette_lab/src/palette_tone_state.v": "4965cbece062c4430404888629017720285542c332f8fc867e6ffc44d3d6c62c",
+        "project/audio_palette_lab/src/palette_pluck.v": "c7c86d36f3a500c16ff2e1a28e358669de5bee3d2e6bd0a2933a9c997ea4e851",
+        "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+        "project/audio_palette_lab/src/palette_keys.v": "44a71e82cc91afaee08af4d0416a5de51c83df2baed8d15f577b5f824f20d17f",
+        "project/audio_output_lab/src/output.cst": "a40c312112e29cb93585f43cb93539931620db898558d189cf0016ee38f89ed7",
+        "project/audio_output_lab/src/output.sdc": "513b7ec68e37716bc4f76fceea242edf24141a176070e86fe97317029ad8de12"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 104.06,
+      "build_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 12969,
+          "available": 59904
+        },
+        "Register": {
+          "used": 6940,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 34,
+          "available": 118
+        },
+        "DSP": {
+          "used": 50,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 19,
+          "available": 297
+        }
+      },
+      "setup_violated_endpoints": 0,
+      "hold_violated_endpoints": 0,
+      "timing_pass": true,
+      "budget_pass": true,
+      "bitstream_sha256": "eca00ad4d7306161dee7ee0c98ad0156cc66a3aa44949032ed4cd116cd2df484",
+      "setup_worst_slack_ns": 2.245,
+      "hold_worst_slack_ns": 0.186
+    },
+    {
+      "variant": "02_edge_spacing",
+      "board_tested": false,
+      "source_hashes": {
+        "project/audio_output_lab/variants/02_edge_spacing/02_edge_spacing.gprj": "5b947c622eddc38e3becc63dbab3ae95ff67b24be6de087c712c614f4a2e1e06",
+        "project/audio_output_lab/variants/02_edge_spacing/build.tcl": "e16183dea674bf5a660037a7592364bb705bc1f28b58e0af5b315fb25524e1e8",
+        "project/audio_output_lab/variants/02_edge_spacing/top.v": "bcee8b2b82a24d34a9955e9a2ca6dee67a1faa312724dd04db517084077fe6f4",
+        "project/audio_output_lab/src/output_bank.v": "318ae1ffc90b2a2a8937f0fc2848c36e2cd38f91f88d755496abe2405aef6ae2",
+        "project/audio_output_lab/src/output_controls.v": "a0468e68eec94c486ac4040d6e43ac98f2f69d100d52dccc4b05cac0dff49c49",
+        "project/audio_output_lab/src/output_engine.v": "4d8a0f9864f7878eb91a7a1710046bea6f03dc0e9706eb498c3c5f10598c55b7",
+        "project/audio_output_lab/src/output_polarity.v": "678f6604d4a6f0c48074fe9373c5e0d679d06a92ad7804e8146d95fbcd3fe70a",
+        "project/audio_output_lab/src/output_shared_tone.v": "a0699a8cadeb827184cf7c874f740ee7bef71a19eb31ccb5df4ac584060a9c69",
+        "project/audio_output_lab/src/output_top.v": "ba70ec09627a11cc64408633578133c0b9dc23bdafdf40007c8cf66ea0e8280b",
+        "project/audio_output_lab/src/output_tx.v": "7cefd245f5c8984ee6b0a4089b8aabd6ee950f242a11c4a6d34fde46933460c3",
+        "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+        "project/final_dual_timbre/src/playable_led.v": "128e18f2440b82da4130c5648b9b14500a4777e45ec7db0e31084660965b62a2",
+        "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+        "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/final_dual_timbre/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/final_dual_timbre/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/final_dual_timbre/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/final_dual_timbre/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/audio_palette_lab/src/palette_slot.v": "a16d2813b688f480ee130bac88821a94483c6ca510e03db0bbb5ec79f4a4a951",
+        "project/audio_palette_lab/src/palette_tone_state.v": "4965cbece062c4430404888629017720285542c332f8fc867e6ffc44d3d6c62c",
+        "project/audio_palette_lab/src/palette_pluck.v": "c7c86d36f3a500c16ff2e1a28e358669de5bee3d2e6bd0a2933a9c997ea4e851",
+        "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+        "project/audio_palette_lab/src/palette_keys.v": "44a71e82cc91afaee08af4d0416a5de51c83df2baed8d15f577b5f824f20d17f",
+        "project/audio_output_lab/src/output.cst": "a40c312112e29cb93585f43cb93539931620db898558d189cf0016ee38f89ed7",
+        "project/audio_output_lab/src/output.sdc": "513b7ec68e37716bc4f76fceea242edf24141a176070e86fe97317029ad8de12"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 104.16,
+      "build_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 12827,
+          "available": 59904
+        },
+        "Register": {
+          "used": 6980,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 34,
+          "available": 118
+        },
+        "DSP": {
+          "used": 50,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 19,
+          "available": 297
+        }
+      },
+      "setup_violated_endpoints": 0,
+      "hold_violated_endpoints": 0,
+      "timing_pass": true,
+      "budget_pass": true,
+      "bitstream_sha256": "a1475048a50e394fe59bcd24bd2cf60823f2b1e95ad59f15f008219cf0994412",
+      "setup_worst_slack_ns": 1.553,
+      "hold_worst_slack_ns": 0.247
+    },
+    {
+      "variant": "03_polarity",
+      "board_tested": false,
+      "source_hashes": {
+        "project/audio_output_lab/variants/03_polarity/03_polarity.gprj": "5b947c622eddc38e3becc63dbab3ae95ff67b24be6de087c712c614f4a2e1e06",
+        "project/audio_output_lab/variants/03_polarity/build.tcl": "15b5d457d89153e7b5bebdd1540442bf2abdd0ccc96792025d20d0f32bd0d267",
+        "project/audio_output_lab/variants/03_polarity/top.v": "30587fdfd989d48796e77f12a03643e728a7d89292f2405986abf9e2bf9d282b",
+        "project/audio_output_lab/src/output_bank.v": "318ae1ffc90b2a2a8937f0fc2848c36e2cd38f91f88d755496abe2405aef6ae2",
+        "project/audio_output_lab/src/output_controls.v": "a0468e68eec94c486ac4040d6e43ac98f2f69d100d52dccc4b05cac0dff49c49",
+        "project/audio_output_lab/src/output_engine.v": "4d8a0f9864f7878eb91a7a1710046bea6f03dc0e9706eb498c3c5f10598c55b7",
+        "project/audio_output_lab/src/output_polarity.v": "678f6604d4a6f0c48074fe9373c5e0d679d06a92ad7804e8146d95fbcd3fe70a",
+        "project/audio_output_lab/src/output_shared_tone.v": "a0699a8cadeb827184cf7c874f740ee7bef71a19eb31ccb5df4ac584060a9c69",
+        "project/audio_output_lab/src/output_top.v": "ba70ec09627a11cc64408633578133c0b9dc23bdafdf40007c8cf66ea0e8280b",
+        "project/audio_output_lab/src/output_tx.v": "7cefd245f5c8984ee6b0a4089b8aabd6ee950f242a11c4a6d34fde46933460c3",
+        "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+        "project/final_dual_timbre/src/playable_led.v": "128e18f2440b82da4130c5648b9b14500a4777e45ec7db0e31084660965b62a2",
+        "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+        "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project/final_dual_timbre/src/knob_volume_table.v": "bff445e4119e983435388f4448e93c3d89fde547680a44153c9652ac19edb3f8",
+        "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/final_dual_timbre/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/final_dual_timbre/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/final_dual_timbre/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/audio_palette_lab/src/palette_slot.v": "a16d2813b688f480ee130bac88821a94483c6ca510e03db0bbb5ec79f4a4a951",
+        "project/audio_palette_lab/src/palette_tone_state.v": "4965cbece062c4430404888629017720285542c332f8fc867e6ffc44d3d6c62c",
+        "project/audio_palette_lab/src/palette_pluck.v": "c7c86d36f3a500c16ff2e1a28e358669de5bee3d2e6bd0a2933a9c997ea4e851",
+        "project/audio_palette_lab/src/palette_sine.v": "368e5caca28aaa5b4501c5486de38b4277be2ad100e66f0099a21e256cedf497",
+        "project/audio_palette_lab/src/palette_keys.v": "44a71e82cc91afaee08af4d0416a5de51c83df2baed8d15f577b5f824f20d17f",
+        "project/audio_output_lab/src/output.cst": "a40c312112e29cb93585f43cb93539931620db898558d189cf0016ee38f89ed7",
+        "project/audio_output_lab/src/output.sdc": "513b7ec68e37716bc4f76fceea242edf24141a176070e86fe97317029ad8de12"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 111.23,
+      "build_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 12891,
+          "available": 59904
+        },
+        "Register": {
+          "used": 6974,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 34,
+          "available": 118
+        },
+        "DSP": {
+          "used": 50,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 19,
+          "available": 297
+        }
+      },
+      "setup_violated_endpoints": 0,
+      "hold_violated_endpoints": 0,
+      "timing_pass": true,
+      "budget_pass": true,
+      "bitstream_sha256": "da290a90826dba12f6f21b4e766bbd16043e533f8c55386162ecb448d0262494",
+      "setup_worst_slack_ns": 3.34,
+      "hold_worst_slack_ns": 0.198
+    }
+  ],
+  "test_pass_lines": [
+    "# OUTPUT_MATH_TB_PASS 4096 phase/envelope/scaling vectors",
+    "# OUTPUT_TRANSPORT_TB_PASS full 65536 codes per channel, 131074 words per transport, cadence and setup windows",
+    "# OUTPUT_EQUIVALENCE_TB_PASS 4582 frames: eight voices, mixed timbres, sustain, release, full rejection",
+    "# OUTPUT_BOARD_TB_PASS physical matrix/buttons/encoder, two-zone identity, ghost recovery, 1296 stereo words 1010 nonzero",
+    "# OUTPUT_RENDER_TB_PASS 150600 samples; gain18..24; pluck exact; fixed per-voice piano gain; no clip/deadline",
+    "# OUTPUT_BOARD_TB_PASS physical matrix/buttons/encoder, two-zone identity, ghost recovery, 1296 stereo words 970 nonzero",
+    "# OUTPUT_BOARD_TB_PASS physical matrix/buttons/encoder, two-zone identity, ghost recovery, 1296 stereo words 1010 nonzero",
+    "# OUTPUT_BOARD_TB_PASS physical matrix/buttons/encoder, two-zone identity, ghost recovery, 1296 stereo words 1010 nonzero",
+    "# OUTPUT_RENDER_TB_PASS 1800 samples; gain18..24; pluck exact; fixed per-voice piano gain; no clip/deadline",
+    "# OUTPUT_RENDER_TB_PASS 1800 samples; gain18..24; pluck exact; fixed per-voice piano gain; no clip/deadline"
+  ],
+  "render": {
+    "samples": 150600,
+    "gain_checks": 2108400,
+    "max_gain_error": 0,
+    "peak_control": 17122,
+    "peak_headroom": 2141,
+    "clip_samples": 0,
+    "sections": [
+      {
+        "section": 1,
+        "samples": 4000,
+        "control_peaks_volume18_to24": [
+          269,
+          380,
+          537,
+          759,
+          1072,
+          1515,
+          2140
+        ],
+        "headroom_peaks_volume18_to24": [
+          33,
+          47,
+          67,
+          95,
+          134,
+          189,
+          268
+        ]
+      },
+      {
+        "section": 2,
+        "samples": 16000,
+        "control_peaks_volume18_to24": [
+          365,
+          515,
+          728,
+          1029,
+          1453,
+          2053,
+          2901
+        ],
+        "headroom_peaks_volume18_to24": [
+          45,
+          64,
+          91,
+          128,
+          181,
+          256,
+          363
+        ]
+      },
+      {
+        "section": 3,
+        "samples": 16000,
+        "control_peaks_volume18_to24": [
+          481,
+          679,
+          959,
+          1355,
+          1915,
+          2705,
+          3821
+        ],
+        "headroom_peaks_volume18_to24": [
+          60,
+          85,
+          120,
+          169,
+          239,
+          338,
+          478
+        ]
+      },
+      {
+        "section": 4,
+        "samples": 8000,
+        "control_peaks_volume18_to24": [
+          316,
+          447,
+          631,
+          891,
+          1259,
+          1779,
+          2514
+        ],
+        "headroom_peaks_volume18_to24": [
+          39,
+          55,
+          78,
+          111,
+          157,
+          222,
+          314
+        ]
+      },
+      {
+        "section": 5,
+        "samples": 4000,
+        "control_peaks_volume18_to24": [
+          268,
+          379,
+          536,
+          757,
+          1070,
+          1512,
+          2136
+        ],
+        "headroom_peaks_volume18_to24": [
+          33,
+          47,
+          67,
+          94,
+          133,
+          189,
+          267
+        ]
+      },
+      {
+        "section": 6,
+        "samples": 16000,
+        "control_peaks_volume18_to24": [
+          434,
+          613,
+          867,
+          1224,
+          1730,
+          2443,
+          3452
+        ],
+        "headroom_peaks_volume18_to24": [
+          54,
+          76,
+          108,
+          152,
+          216,
+          305,
+          431
+        ]
+      },
+      {
+        "section": 7,
+        "samples": 16000,
+        "control_peaks_volume18_to24": [
+          472,
+          667,
+          943,
+          1332,
+          1881,
+          2658,
+          3755
+        ],
+        "headroom_peaks_volume18_to24": [
+          59,
+          83,
+          117,
+          166,
+          235,
+          332,
+          469
+        ]
+      },
+      {
+        "section": 8,
+        "samples": 8000,
+        "control_peaks_volume18_to24": [
+          207,
+          292,
+          413,
+          584,
+          825,
+          1165,
+          1647
+        ],
+        "headroom_peaks_volume18_to24": [
+          25,
+          36,
+          51,
+          73,
+          103,
+          145,
+          206
+        ]
+      },
+      {
+        "section": 9,
+        "samples": 5000,
+        "control_peaks_volume18_to24": [
+          2155,
+          3044,
+          4300,
+          6075,
+          8581,
+          12121,
+          17122
+        ],
+        "headroom_peaks_volume18_to24": [
+          269,
+          380,
+          537,
+          759,
+          1073,
+          1515,
+          2141
+        ]
+      },
+      {
+        "section": 10,
+        "samples": 2000,
+        "control_peaks_volume18_to24": [
+          1079,
+          1524,
+          2153,
+          3042,
+          4297,
+          6069,
+          8574
+        ],
+        "headroom_peaks_volume18_to24": [
+          134,
+          190,
+          269,
+          380,
+          537,
+          758,
+          1072
+        ]
+      },
+      {
+        "section": 11,
+        "samples": 5000,
+        "control_peaks_volume18_to24": [
+          1053,
+          1487,
+          2101,
+          2968,
+          4193,
+          5923,
+          8367
+        ],
+        "headroom_peaks_volume18_to24": [
+          131,
+          186,
+          262,
+          371,
+          524,
+          740,
+          1046
+        ]
+      },
+      {
+        "section": 12,
+        "samples": 2000,
+        "control_peaks_volume18_to24": [
+          568,
+          802,
+          1134,
+          1601,
+          2262,
+          3196,
+          4515
+        ],
+        "headroom_peaks_volume18_to24": [
+          70,
+          100,
+          141,
+          200,
+          282,
+          399,
+          564
+        ]
+      },
+      {
+        "section": 13,
+        "samples": 24000,
+        "control_peaks_volume18_to24": [
+          827,
+          1169,
+          1651,
+          2332,
+          3294,
+          4654,
+          6574
+        ],
+        "headroom_peaks_volume18_to24": [
+          123,
+          174,
+          247,
+          349,
+          493,
+          696,
+          984
+        ]
+      },
+      {
+        "section": 14,
+        "samples": 24000,
+        "control_peaks_volume18_to24": [
+          185,
+          261,
+          369,
+          521,
+          737,
+          1041,
+          1471
+        ],
+        "headroom_peaks_volume18_to24": [
+          34,
+          48,
+          68,
+          96,
+          135,
+          191,
+          271
+        ]
+      }
+    ],
+    "wav_sha256": {
+      "control_volume18.wav": "d312a5befd81d5bdda929f4f13cfb109492c6d1f1cdbf6b087231c8d1557642c",
+      "control_volume24.wav": "c3054bfa90bc24ab62dda22786625c331bbac7d8ab25fd541a3837f5c3993e9b",
+      "headroom_volume24.wav": "8b16c4b9e8eed80a3ed2ef0fe518caaa2cde180cd4940e31c8becf7f91d49053",
+      "polarity_volume24.wav": "3b48dbc117b16b5fd10f58b3e1f20a54e0f3c3875a816ef15fe50131bfd00dee"
+    }
+  },
+  "current_lab_source_hashes": {
+    "project/audio_output_lab/src/output.cst": "a40c312112e29cb93585f43cb93539931620db898558d189cf0016ee38f89ed7",
+    "project/audio_output_lab/src/output.sdc": "513b7ec68e37716bc4f76fceea242edf24141a176070e86fe97317029ad8de12",
+    "project/audio_output_lab/src/output_bank.v": "318ae1ffc90b2a2a8937f0fc2848c36e2cd38f91f88d755496abe2405aef6ae2",
+    "project/audio_output_lab/src/output_controls.v": "a0468e68eec94c486ac4040d6e43ac98f2f69d100d52dccc4b05cac0dff49c49",
+    "project/audio_output_lab/src/output_engine.v": "4d8a0f9864f7878eb91a7a1710046bea6f03dc0e9706eb498c3c5f10598c55b7",
+    "project/audio_output_lab/src/output_polarity.v": "678f6604d4a6f0c48074fe9373c5e0d679d06a92ad7804e8146d95fbcd3fe70a",
+    "project/audio_output_lab/src/output_shared_tone.v": "a0699a8cadeb827184cf7c874f740ee7bef71a19eb31ccb5df4ac584060a9c69",
+    "project/audio_output_lab/src/output_top.v": "ba70ec09627a11cc64408633578133c0b9dc23bdafdf40007c8cf66ea0e8280b",
+    "project/audio_output_lab/src/output_tx.v": "7cefd245f5c8984ee6b0a4089b8aabd6ee950f242a11c4a6d34fde46933460c3",
+    "project/audio_output_lab/sim/output_board_tb.v": "56860e2d104947b7e2395b28a4c1704af0c4da002e113bcdbcd80f18d684e2b4",
+    "project/audio_output_lab/sim/output_equivalence_tb.v": "42959f701e74766c616254473d177d5dee491f53dd1695f41ad3f49c6b53dfa5",
+    "project/audio_output_lab/sim/output_math_tb.v": "5037137386f8ad52d8dbfa3688c0c2583e4b80fd8f3789dd12fa2c86cfacbe69",
+    "project/audio_output_lab/sim/output_render_tb.v": "62b3ba5e5923dc858d895c1b6db607690c95e822cd3aeb7a99c45c462ca44a3c",
+    "project/audio_output_lab/sim/output_transport_tb.v": "b68b93cd21ba0c0191b9f69ab29a6e1c4a051e12060e13e7401b74abb9da325e",
+    "project/audio_output_lab/sim/run.py": "8f690206bb9b2a5fb3ca992d926bc9d238c9015ae916eddfb952ba3f21bc34a8",
+    "project/audio_output_lab/tools/analyze_render.py": "fd196a8a374e241ae7f933a04383b82ad9831bcfb0f16d11fe50c4530046e27c",
+    "project/audio_output_lab/tools/build.py": "8750b7b629d4a93ee588eeba810a18a30c620a3727e5ae5b6ed622452899291f",
+    "project/audio_output_lab/tools/check_math.py": "c847a5d53a0c85d35535e5bbc53b8e437f557f0a65c8181695854db86f868231",
+    "project/audio_output_lab/tools/extra_tests.py": "699d99365fe4e1d4bfae0acc1d3b50a6fe79d4fd5374c3b5ba702ad559cdf173",
+    "project/audio_output_lab/tools/generate.py": "5695e1acc36beddf15ee84515e81563401e0b121fb1521943df79592022a32ed",
+    "project/audio_output_lab/tools/record_validation.py": "695e15ca5c33caaaaebb651248fac6f9a73176e7d54578a81de184c68f5fb892"
+  }
+}

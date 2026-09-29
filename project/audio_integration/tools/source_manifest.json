@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "audio_api_version": 2,
+  "baseline_project": "project/audio_core_v2/audio_v2.gprj",
+  "device": {"family": "GW5AT-60B", "part": "GW5AT-LV60PG484AC1/I0", "id": "gw5at60b-002"},
+  "bank_module": "audio_v2_bank",
+  "default_bank": "project/audio_core_v2/src/audio_v2_bank_stream.v",
+  "profiles": {
+    "core": {
+      "top": "audio_v2_core",
+      "inherits": [],
+      "sources": [
+        "project/final_dual_timbre/src/playable_button.v",
+        "project/final_dual_timbre/src/stream_fifo.v",
+        "project/final_dual_timbre/src/knob_gain.v",
+        "project/final_dual_timbre/src/adsr_envelope.v",
+        "project/final_dual_timbre/src/sine_rom.v",
+        "project/final_dual_timbre/src/note_table.v",
+        "project/final_dual_timbre/src/pluck_note_table.v",
+        "project/custom_harmonic_lab/src/custom_harmonic_params.v",
+        "project/five_timbre_core/src/gallery_keys.v",
+        "project/audio_palette_lab/src/palette_sine.v",
+        "project/audio_core_v1/src/audio_panel.v",
+        "project/audio_parameter_lab/src/audio_parameter_service.v",
+        "project/audio_fx_lab/src/short_room_reverb.v",
+        "project/audio_fx_lab/src/vibrato_factor.v",
+        "project/audio_core_v2/src/audio_v2_state.v",
+        "project/audio_core_v2/src/audio_v2_pluck.v",
+        "project/audio_core_v2/src/audio_v2_pool_slot.v",
+        "project/audio_core_v2/src/audio_v2_tone.v",
+        "project/audio_core_v2/src/audio_v2_bank_stream.v",
+        "project/audio_core_v2/src/audio_v2_core.v"
+      ]
+    },
+    "transport": {
+      "top": "audio_snapshot_bridge",
+      "inherits": [],
+      "sources": [
+        "project/audio_integration/rtl/audio_transport_reset.v",
+        "project/audio_integration/rtl/audio_snapshot_bridge.v",
+        "project/audio_integration/rtl/audio_pcm_bridge.v",
+        "project/audio_integration/rtl/audio_command_bridge.v"
+      ]
+    },
+    "integration": {
+      "top": "audio_integration_example",
+      "inherits": ["core", "transport"],
+      "sources": ["project/audio_integration/examples/audio_integration_example.v"]
+    },
+    "consumer": {
+      "top": "audio_state_view",
+      "inherits": ["transport"],
+      "sources": [
+        "project/audio_integration/examples/audio_state_view.v",
+        "project/audio_integration/examples/audio_observer_mock.v"
+      ]
+    }
+  }
+}

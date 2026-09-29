@@ -1,0 +1,91 @@
+{
+  "source": "independent equal-temperament DDS and analytical ADSR, exact integer sum",
+  "samples_checked": 384616,
+  "events": [
+    [
+      4807,
+      61
+    ],
+    [
+      48077,
+      62
+    ],
+    [
+      96154,
+      63
+    ],
+    [
+      100962,
+      64
+    ],
+    [
+      105770,
+      65
+    ],
+    [
+      110578,
+      66
+    ],
+    [
+      115386,
+      67
+    ],
+    [
+      120194,
+      68
+    ],
+    [
+      125002,
+      69
+    ],
+    [
+      129810,
+      70
+    ],
+    [
+      134618,
+      71
+    ],
+    [
+      139426,
+      72
+    ],
+    [
+      144234,
+      73
+    ],
+    [
+      149042,
+      74
+    ],
+    [
+      168269,
+      73
+    ],
+    [
+      173077,
+      72
+    ],
+    [
+      177885,
+      71
+    ],
+    [
+      182693,
+      70
+    ],
+    [
+      187501,
+      69
+    ],
+    [
+      192309,
+      68
+    ]
+  ],
+  "max_audible_voices": 9,
+  "mismatches": 0,
+  "per_voice_gain": "unchanged; no division by voice count",
+  "pcm_sha256": "3b55642c08b47a677bdf702f98528cd57b57d32a21db75efdba4a8b0dda48e79",
+  "full_render": true
+}

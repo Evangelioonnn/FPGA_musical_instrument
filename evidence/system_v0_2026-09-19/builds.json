@@ -1,0 +1,430 @@
+{
+  "branch": "feat/playable-system-v0",
+  "base_commit": "4ada74edd085fd3adeb5a4272704de9fd1035f65",
+  "tool": "Gowin V1.9.12.03",
+  "board_tested": false,
+  "builds": {
+    "system": {
+      "setup_violated_endpoints": 0,
+      "setup_worst_slack_ns": 1.32,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.143,
+      "fmax_mhz": 53.534,
+      "internal_50mhz_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 5008,
+          "available": 59904
+        },
+        "Register": {
+          "used": 1284,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 8,
+          "available": 118
+        },
+        "DSP": {
+          "used": 13,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 5,
+          "available": 297
+        }
+      },
+      "bitstream_sha256": "ddf176af683994cba4503fc8b61babbe629b55e67af9d8984be23d869be934da",
+      "bitstream_local_path": "project/system/impl/pnr/system.fs",
+      "sources": {
+        "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/instrument/src/instrument.cst": "ab16816b57af3946566f255257fef0f247c9e8dab9b79ff877b083b8e1a386aa",
+        "project/instrument/src/instrument.sdc": "1bab23df2a3b86705304b965bded82f454b96a6d14f15cea2f1049f38d2f6587",
+        "project/expression/src/performance_manager.v": "82733165420c4de95e83de6a865bfa29569206d971f7355d51d87b1acac8e5a3",
+        "project/expression/src/expression_controls.v": "c72fc04c4f84ea839c435defda4c3adc8eddf56723359ef50e0cc8488754b3d5",
+        "project/expression/src/audio_meter.v": "ad0204b31090a6b94bd74e9d0d19d64191710db5d23be2a80c8434af2ac19b57",
+        "project/expression_baseline/src/baseline_core.v": "d686dc36ad998d993c38dfb4fd9a8a16d26fbfb80668c3b2530c23cd04a7b36c",
+        "project/expression_baseline/src/baseline_demo.v": "6cb95580813f230bf9def5ed013a770577a80c19107184dc0c50ac875c3dbbcf",
+        "project/system/src/capacity_top.v": "249ccc170c4879c96e10ac8754af16401331efdf14235d93efbbe4bd5fa67879",
+        "project/system/src/snapshot_cdc.v": "a6ece467a1ec9f33d3fd9d97d8f23ad08eb986df9f85a35e5a4b9d7d9e007294",
+        "project/system/src/stream_arbiter2.v": "85d4ca23ce8a96ea8042db1583e1c0c9a92eb40aed5b945521a487601ca66f18",
+        "project/system/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/system/src/system_controls.v": "5624233a016f361d16a7a57e0f41e349385977ee4dca5c9e68d559d971ec7596",
+        "project/system/src/system_core.v": "568b150db588ffb6974cd3c2e5f297e6a0e81ecf60df5d428a42269507982328",
+        "project/system/src/system_demo.v": "e3974cefa3d8dd552ae92c64a571ff11419706d8b4fd5a354e8a757129954274",
+        "project/system/src/system_engine.v": "bda1fa6f7f37275cef5d4be046e6c7ccef0af134c8f83c05378065e5e2022bb7",
+        "project/system/src/system_top.v": "9607c27d0792489945020959e8c5383038ba20ae0d079a00bb14e49c3d3f5267",
+        "project/system/src/waveform_tap.v": "4d1d1684eef1fa5f7ba8bc428e1304376357f61ea6a5a93b8b4f669d6260968e"
+      },
+      "build_tcl_sha256": "d3a798e25ec194a4bd66c7dd41557ebe571220c55717cf2c29fcc4e41883e9eb"
+    },
+    "capacity16": {
+      "setup_violated_endpoints": 0,
+      "setup_worst_slack_ns": 2.078,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.127,
+      "fmax_mhz": 55.797,
+      "internal_50mhz_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 10049,
+          "available": 59904
+        },
+        "Register": {
+          "used": 2139,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 16,
+          "available": 118
+        },
+        "DSP": {
+          "used": 25,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 5,
+          "available": 297
+        }
+      },
+      "bitstream_sha256": "e159d925e8e2b0045c464babda041d12f971972417df957781913446714c2a74",
+      "bitstream_local_path": "project/experiments/capacity16/impl/pnr/capacity16.fs",
+      "sources": {
+        "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/instrument/src/instrument.cst": "ab16816b57af3946566f255257fef0f247c9e8dab9b79ff877b083b8e1a386aa",
+        "project/instrument/src/instrument.sdc": "1bab23df2a3b86705304b965bded82f454b96a6d14f15cea2f1049f38d2f6587",
+        "project/expression/src/performance_manager.v": "82733165420c4de95e83de6a865bfa29569206d971f7355d51d87b1acac8e5a3",
+        "project/expression/src/expression_controls.v": "c72fc04c4f84ea839c435defda4c3adc8eddf56723359ef50e0cc8488754b3d5",
+        "project/expression/src/audio_meter.v": "ad0204b31090a6b94bd74e9d0d19d64191710db5d23be2a80c8434af2ac19b57",
+        "project/expression_baseline/src/baseline_core.v": "d686dc36ad998d993c38dfb4fd9a8a16d26fbfb80668c3b2530c23cd04a7b36c",
+        "project/expression_baseline/src/baseline_demo.v": "6cb95580813f230bf9def5ed013a770577a80c19107184dc0c50ac875c3dbbcf",
+        "project/system/src/capacity_top.v": "249ccc170c4879c96e10ac8754af16401331efdf14235d93efbbe4bd5fa67879",
+        "project/system/src/snapshot_cdc.v": "a6ece467a1ec9f33d3fd9d97d8f23ad08eb986df9f85a35e5a4b9d7d9e007294",
+        "project/system/src/stream_arbiter2.v": "85d4ca23ce8a96ea8042db1583e1c0c9a92eb40aed5b945521a487601ca66f18",
+        "project/system/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/system/src/system_controls.v": "5624233a016f361d16a7a57e0f41e349385977ee4dca5c9e68d559d971ec7596",
+        "project/system/src/system_core.v": "568b150db588ffb6974cd3c2e5f297e6a0e81ecf60df5d428a42269507982328",
+        "project/system/src/system_demo.v": "e3974cefa3d8dd552ae92c64a571ff11419706d8b4fd5a354e8a757129954274",
+        "project/system/src/system_engine.v": "bda1fa6f7f37275cef5d4be046e6c7ccef0af134c8f83c05378065e5e2022bb7",
+        "project/system/src/system_top.v": "9607c27d0792489945020959e8c5383038ba20ae0d079a00bb14e49c3d3f5267",
+        "project/system/src/waveform_tap.v": "4d1d1684eef1fa5f7ba8bc428e1304376357f61ea6a5a93b8b4f669d6260968e"
+      },
+      "build_tcl_sha256": "f500593abce1c1175fd93c1ebae4222ca573a10a70a40bada80d0a8fb69efd21"
+    },
+    "capacity32": {
+      "setup_violated_endpoints": 230,
+      "setup_worst_slack_ns": -5.458,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.134,
+      "fmax_mhz": 39.28,
+      "internal_50mhz_pass": false,
+      "resources": {
+        "Logic": {
+          "used": 25349,
+          "available": 59904
+        },
+        "Register": {
+          "used": 4069,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 32,
+          "available": 118
+        },
+        "DSP": {
+          "used": 49,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 5,
+          "available": 297
+        }
+      },
+      "bitstream_sha256": "bd7eb9bf7faad5b584fa14c7626580280e99c51dfeab89358056c3b865e2c796",
+      "bitstream_local_path": "project/experiments/capacity32/impl/pnr/capacity32.fs",
+      "sources": {
+        "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/instrument/src/instrument.cst": "ab16816b57af3946566f255257fef0f247c9e8dab9b79ff877b083b8e1a386aa",
+        "project/instrument/src/instrument.sdc": "1bab23df2a3b86705304b965bded82f454b96a6d14f15cea2f1049f38d2f6587",
+        "project/expression/src/performance_manager.v": "82733165420c4de95e83de6a865bfa29569206d971f7355d51d87b1acac8e5a3",
+        "project/expression/src/expression_controls.v": "c72fc04c4f84ea839c435defda4c3adc8eddf56723359ef50e0cc8488754b3d5",
+        "project/expression/src/audio_meter.v": "ad0204b31090a6b94bd74e9d0d19d64191710db5d23be2a80c8434af2ac19b57",
+        "project/expression_baseline/src/baseline_core.v": "d686dc36ad998d993c38dfb4fd9a8a16d26fbfb80668c3b2530c23cd04a7b36c",
+        "project/expression_baseline/src/baseline_demo.v": "6cb95580813f230bf9def5ed013a770577a80c19107184dc0c50ac875c3dbbcf",
+        "project/system/src/capacity_top.v": "249ccc170c4879c96e10ac8754af16401331efdf14235d93efbbe4bd5fa67879",
+        "project/system/src/snapshot_cdc.v": "a6ece467a1ec9f33d3fd9d97d8f23ad08eb986df9f85a35e5a4b9d7d9e007294",
+        "project/system/src/stream_arbiter2.v": "85d4ca23ce8a96ea8042db1583e1c0c9a92eb40aed5b945521a487601ca66f18",
+        "project/system/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project/system/src/system_controls.v": "5624233a016f361d16a7a57e0f41e349385977ee4dca5c9e68d559d971ec7596",
+        "project/system/src/system_core.v": "568b150db588ffb6974cd3c2e5f297e6a0e81ecf60df5d428a42269507982328",
+        "project/system/src/system_demo.v": "e3974cefa3d8dd552ae92c64a571ff11419706d8b4fd5a354e8a757129954274",
+        "project/system/src/system_engine.v": "bda1fa6f7f37275cef5d4be046e6c7ccef0af134c8f83c05378065e5e2022bb7",
+        "project/system/src/system_top.v": "9607c27d0792489945020959e8c5383038ba20ae0d079a00bb14e49c3d3f5267",
+        "project/system/src/waveform_tap.v": "4d1d1684eef1fa5f7ba8bc428e1304376357f61ea6a5a93b8b4f669d6260968e"
+      },
+      "build_tcl_sha256": "ae29116baf0676b08660b4a0fc1ba73065365dec2098acbb1e861736edf097ba"
+    },
+    "delay": {
+      "setup_violated_endpoints": 0,
+      "setup_worst_slack_ns": 3.914,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.046,
+      "fmax_mhz": 62.164,
+      "internal_50mhz_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 454,
+          "available": 59904
+        },
+        "Register": {
+          "used": 181,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 5,
+          "available": 118
+        },
+        "DSP": {
+          "used": 3,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 5,
+          "available": 297
+        }
+      },
+      "bitstream_sha256": "15a19243f0c898678554ba35608d14c0e24cb7d642bcf99fb89d04dbb8eef4e8",
+      "bitstream_local_path": "project/experiments/delay/impl/pnr/delay.fs",
+      "sources": {
+        "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/experiments/delay/src/feedback_delay.v": "881b382c4be9b7549ccf13b6f6bb3a6087fa72dcb0055d0256a96f8dc72acafc",
+        "project/experiments/delay/src/delay_top.v": "3cd812a0de137a7dfe2d64a44a9c5478a75151ca34ea7c895b0fd9c55b1ee96d",
+        "project/instrument/src/instrument.cst": "ab16816b57af3946566f255257fef0f247c9e8dab9b79ff877b083b8e1a386aa",
+        "project/instrument/src/instrument.sdc": "1bab23df2a3b86705304b965bded82f454b96a6d14f15cea2f1049f38d2f6587"
+      },
+      "build_tcl_sha256": "42f6b1d8ade9755024e22e81588bdff4fa1a23bc7adc7184685a358682dabf9c"
+    },
+    "lab_c4": {
+      "setup_violated_endpoints": 0,
+      "setup_worst_slack_ns": 13.29,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.121,
+      "fmax_mhz": 149.033,
+      "internal_50mhz_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 286,
+          "available": 59904
+        },
+        "Register": {
+          "used": 116,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 1,
+          "available": 118
+        },
+        "DSP": {
+          "used": 1,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 5,
+          "available": 297
+        }
+      },
+      "bitstream_sha256": "7d62c76b83dc173bf2029860e248d63ccd2c68e7a8b174b49ddd94fe9e0964a1",
+      "bitstream_local_path": "project/lab/c4/impl/pnr/lab_c4.fs",
+      "sources": {
+        "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/instrument/src/instrument.cst": "ab16816b57af3946566f255257fef0f247c9e8dab9b79ff877b083b8e1a386aa",
+        "project/instrument/src/instrument.sdc": "1bab23df2a3b86705304b965bded82f454b96a6d14f15cea2f1049f38d2f6587",
+        "project/lab/src/lab_top.v": "e1e888cfda1f64a57c72eb3805b1205845d903d586808f9e46b93aed735cda65"
+      },
+      "build_tcl_sha256": "e073dcda4fa305f51bd719fe76edbe1b01f3d571c904f24bc67baca3625ed58f"
+    },
+    "lab_a4": {
+      "setup_violated_endpoints": 0,
+      "setup_worst_slack_ns": 12.788,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.143,
+      "fmax_mhz": 138.664,
+      "internal_50mhz_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 288,
+          "available": 59904
+        },
+        "Register": {
+          "used": 118,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 1,
+          "available": 118
+        },
+        "DSP": {
+          "used": 1,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 5,
+          "available": 297
+        }
+      },
+      "bitstream_sha256": "bb865348ab173dcc255be298a5ecb242eb451c9cb722b196a4c75d26ece8030b",
+      "bitstream_local_path": "project/lab/a4/impl/pnr/lab_a4.fs",
+      "sources": {
+        "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/instrument/src/instrument.cst": "ab16816b57af3946566f255257fef0f247c9e8dab9b79ff877b083b8e1a386aa",
+        "project/instrument/src/instrument.sdc": "1bab23df2a3b86705304b965bded82f454b96a6d14f15cea2f1049f38d2f6587",
+        "project/lab/src/lab_top.v": "e1e888cfda1f64a57c72eb3805b1205845d903d586808f9e46b93aed735cda65"
+      },
+      "build_tcl_sha256": "0ce9abe5b17f192125c9d826589063ba221a9d29dbedc21810c72265733d3be1"
+    },
+    "lab_silent": {
+      "setup_violated_endpoints": 0,
+      "setup_worst_slack_ns": 13.619,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.187,
+      "fmax_mhz": 156.712,
+      "internal_50mhz_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 117,
+          "available": 59904
+        },
+        "Register": {
+          "used": 60,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 1,
+          "available": 118
+        },
+        "DSP": {
+          "used": 1,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 5,
+          "available": 297
+        }
+      },
+      "bitstream_sha256": "d383ac300f306ecccdc6eade9be4cc27044c096b9dfa4ed42666bb5902683cf0",
+      "bitstream_local_path": "project/lab/silent/impl/pnr/lab_silent.fs",
+      "sources": {
+        "project/instrument/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+        "project/instrument/src/sine_rom.v": "c7c3cfff9f86f9f5e1b73689c74d74dae5d378c65dda35ddd1fa7d301a98d7c5",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/synth_voice.v": "caf4fb8ad5cf83e8a2537a8b8e480f60643559ae262b78fa2193c25d74555305",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/instrument/src/instrument.cst": "ab16816b57af3946566f255257fef0f247c9e8dab9b79ff877b083b8e1a386aa",
+        "project/instrument/src/instrument.sdc": "1bab23df2a3b86705304b965bded82f454b96a6d14f15cea2f1049f38d2f6587",
+        "project/lab/src/lab_top.v": "e1e888cfda1f64a57c72eb3805b1205845d903d586808f9e46b93aed735cda65"
+      },
+      "build_tcl_sha256": "7d62fd20f319d992a8dc71f8a9af910c10ce8b41db6dc9ff52149d90abf772d8"
+    }
+  },
+  "simulation": {
+    "arbiter_tb.log": [
+      "ARBITER_TB_PASS a=1481 b=1480"
+    ],
+    "capacity_transport_tb.log": [
+      "CAPACITY_TRANSPORT_TB_PASS frames=2048 events=32 active=32 fifo_stage=1"
+    ],
+    "controls_v0_tb.log": [
+      "CONTROLS_V0_TB_PASS vectors=10000 accepted=661 rejected=6377"
+    ],
+    "core_features_tb_N16.log": [
+      "CORE_FEATURES_TB_PASS N=16 samples=34015 retune=1 steal=1 sustain=1 panic_silent=1"
+    ],
+    "core_features_tb_N32.log": [
+      "CORE_FEATURES_TB_PASS N=32 samples=34025 retune=1 steal=1 sustain=1 panic_silent=1"
+    ],
+    "encoder_tb.log": [
+      "ENCODER_TB_PASS positive=10 negative=7 invalid=2 button_edges=2"
+    ],
+    "equivalence_tb.log": [
+      "EQUIVALENCE_TB_PASS samples=769232 snapshots=751 wave_samples=16026"
+    ],
+    "failsafe_tb.log": [
+      "FAILSAFE_TB_PASS overflow=1 ghost=1 rearm=1 stale_events=0"
+    ],
+    "input_render_tb.log": [
+      "INPUT_RENDER_TB_PASS samples=288462 on=6 off=6 audible=236281"
+    ],
+    "keys_tb.log": [
+      "KEYS_TB_PASS snapshots=2006 events=3808"
+    ],
+    "lab_tb.log": [
+      "LAB_TB_PASS samples=480770 audible=298703 conservative_level=1"
+    ],
+    "matrix_tb.log": [
+      "MATRIX_TB_PASS layouts=236 debounce=1 ghost_graph=1 diode_rollover=100"
+    ],
+    "observability_tb.log": [
+      "OBSERVABILITY_TB_PASS samples=18960 meter_windows=18 wave_samples=395 min_signed=1"
+    ],
+    "pressure_tb.log": [
+      "PRESSURE_TB_PASS vectors=1200 timeout_and_recovery=1"
+    ],
+    "streams_tb.log": [
+      "STREAMS_TB_PASS checked=7456 full_swaps=6033 stalls=10044"
+    ],
+    "system_input_tb.log": [
+      "SYSTEM_INPUT_TB_PASS on=3 off=2 frames=1942 control_to_event_ns=1600370 control_to_serial_ns=1794392 snapshots=1 ghost_release=1"
+    ],
+    "telemetry_tb.log": [
+      "TELEMETRY_TB_PASS accepted=1228 delivered=1228 dropped=6290"
+    ],
+    "transport_v0_tb.log": [
+      "TRANSPORT_V0_TB_PASS frames=2048 events=48 configs=10"
+    ],
+    "delay4096.log": [
+      "FEEDBACK_DELAY_TB_PASS D=4096 samples=378038 clips=1574 resets=2 oracle=python_history"
+    ],
+    "delay8.log": [
+      "FEEDBACK_DELAY_TB_PASS D=8 samples=6030 clips=437 resets=2 oracle=python_history"
+    ],
+    "delay_render.log": [
+      "DELAY_RENDER_TB_PASS samples=865232"
+    ]
+  },
+  "input_audit": {
+    "type": "synthesis only; unbound logical ports; no PnR or physical timing signoff",
+    "report_sha256": "3a9b520800dfe57c4b338c31fa810242f339ad53df41bdf34e8ebc7950e1e9c6",
+    "source_hashes": {
+      "project/input/src/control_surface.v": "eed17d2b13c9cc91945b863a1ccd2724478a8d6f11f71ffdb619f98de09d891c",
+      "project/input/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+      "project/input/src/input_audit_top.v": "cfc99008e92129d541e666de163eb62027ad1ab341b7d48af04f394aa9756304",
+      "project/input/src/key_pipeline.v": "4b1669d65654f0e0b4ab8d2f5d8ebefc8dbfe8ecad07fa35cddee943f6b964aa",
+      "project/input/src/key_router.v": "47be90ddb09075161fada5b384066e3b663157f6475ac54f385bcb512fd26dc1",
+      "project/input/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+      "project/input/src/pressure_expression.v": "395f1b1f9b9344362b38c1f581bbc73f5405138b8d9640fe6d903e0bd5b1c9e5"
+    }
+  }
+}

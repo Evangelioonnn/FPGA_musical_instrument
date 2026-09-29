@@ -1,0 +1,2 @@
+# Raw tool transcripts stay local; reviewed resource summaries are in JSON/Markdown.
+*.log

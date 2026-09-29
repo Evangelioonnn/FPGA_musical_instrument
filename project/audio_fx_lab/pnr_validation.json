@@ -1,0 +1,38 @@
+{
+  "candidate": "fx_resource_top",
+  "board_tested": false,
+  "resources": {
+    "Logic": 788,
+    "Register": 487,
+    "BSRAM": 4,
+    "DSP": 1.5,
+    "I/O Port": 19
+  },
+  "setup_violated_endpoints": 0,
+  "hold_violated_endpoints": 0,
+  "minimum_setup_slack_ns": 8.235,
+  "fmax_mhz": 84.996,
+  "timing_pass": true,
+  "standalone_only": true,
+  "source_sha256": {
+    "audio_fx_lab.gprj": "1cc43c67a6d9d442a694dfa52609e1c821769b4fa541d3e9b8f734b6ec9d0382",
+    "build.tcl": "758e828ce001273a374184d328d24d84658b935f1951099ff1a22a743f06a98c",
+    "fx_resource_top.v": "e02e635d62f98a0b789fc1731376156c88f1a9bf07e60601357c5272f2b36d02",
+    "short_room_reverb.v": "6eb46abe6475e578b73ea6e40def648a4a6304b293ac56c8679bb4478099742d",
+    "vibrato_factor.v": "b4f705871fdc3e32e7f41995fefe62c7322c08de2b98830d7468ae2cdbda2b5e",
+    "pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+    "fx_resource.cst": "3aee665d89380f9105dba1f0222b23e37eafd64c94ab376523c86451fd68b5e6",
+    "fx_resource.sdc": "ce7cdb9b47b773aaadfefa780248ec34247ac8109894b991840acb9cf94d4542"
+  },
+  "bitstream_sha256": "7f2df521c67b042dea3355caa3efb2ffaf104394e0dea06297641ecce855e046",
+  "source_lf_sha256": {
+    "audio_fx_lab.gprj": "1cc43c67a6d9d442a694dfa52609e1c821769b4fa541d3e9b8f734b6ec9d0382",
+    "build.tcl": "758e828ce001273a374184d328d24d84658b935f1951099ff1a22a743f06a98c",
+    "fx_resource_top.v": "e02e635d62f98a0b789fc1731376156c88f1a9bf07e60601357c5272f2b36d02",
+    "short_room_reverb.v": "6eb46abe6475e578b73ea6e40def648a4a6304b293ac56c8679bb4478099742d",
+    "vibrato_factor.v": "b4f705871fdc3e32e7f41995fefe62c7322c08de2b98830d7468ae2cdbda2b5e",
+    "pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+    "fx_resource.cst": "3aee665d89380f9105dba1f0222b23e37eafd64c94ab376523c86451fd68b5e6",
+    "fx_resource.sdc": "ce7cdb9b47b773aaadfefa780248ec34247ac8109894b991840acb9cf94d4542"
+  }
+}

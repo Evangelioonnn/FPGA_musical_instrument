@@ -1,0 +1,13 @@
+Reading E:/QuartusII/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.1d
+
+# vsim -do {run -all; quit -f} -lib work_palette -c palette_scheduler_tb
+# Loading work_palette.palette_scheduler_tb
+# Loading work_palette.palette_shared_tone
+# Loading work_palette.palette_sine
+# Loading work_palette.sine_rom
+# run -all
+# PALETTE_SCHEDULER_TB_PASS N=1/16, unique outputs, last=114, forced deadline detected
+# ** Note: $finish    : D:/uestc/SCM/GowinFPGA/project/audio_palette_lab/sim/palette_scheduler_tb.v(25)
+#    Time: 3740 ns  Iteration: 1  Instance: /palette_scheduler_tb

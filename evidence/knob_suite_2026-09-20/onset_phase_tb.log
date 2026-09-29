@@ -1,0 +1,13 @@
+# vsim -do {$REPO\project\input\knob_suite\sim\run.do} -l onset_phase_tb.log -lib work -c onset_phase_tb
+# Loading work.onset_phase_tb
+# Loading work.knob_bank
+# Loading work.synth_voice
+# Loading work.adsr_envelope
+# Loading work.sine_rom
+# Loading work.knob_slot
+# Loading work.note_table
+# Loading work.knob_reference_voice
+# do {$REPO\project\input\knob_suite\sim\run.do}
+# ONSET_PHASE_TB_PASS phases=1040 checked_frames=37441 real_sample_cycles=1040 isolated_sum_exact=1 single_start=1
+# ** Note: $finish    : $REPO/project/input/knob_suite/sim/onset_phase_tb.v(79)
+#    Time: 758680 us  Iteration: 1  Instance: /onset_phase_tb
