@@ -1,6 +1,15 @@
 # A：音频与总集成 · 当前交接
 
+**2026-10-10最新Looper接口：** [C_HANDOFF](../../project/looper_session_v2/C_HANDOFF.md)定义真实LU1状态、直接命令和PCM。旧音频接入包保留非Looper用途；两种状态协议不能混用。屏幕／蓝牙及整机仍待联合接入，完整接口物理时序尚有待办。
+
+10月10日新候选入口：[Looper session V2](../../project/looper_session_v2/README.md)。鼓组按首轮试听修改，C使用[新C交接](../../project/looper_session_v2/C_HANDOFF.md)的LU1/直接命令；真实屏幕整合后再验复杂交互，本轮未接C屏幕，源码与接口随10月10日开发同步补齐。下方10月9日验收入口及9月29日V2保持历史/回退范围。
+
 A负责实时声音、效果、共享接口、最终顶层/CST/SDC、资源时序和总验收；B/C在各自范围独立设计，不必等待A逐行确认。
+
+10月9日待验收集中入口：[总验收指南](../project/LOOPER_TOTAL_ACCEPTANCE_2026-10-09.md)。
+主选冻结10月8日Looper改进版；[收敛实验](../../project/looper_convergence_lab/VALIDATION.md)仅作对照，
+不替换已认可V2或既有AUDIO_TRANSPORT接口。整合须用C固定源重新检查CLS/时钟布线/PnR，
+不把独立板固件或LR1模型通过当整机通过。
 
 当前演奏基线是[audio_core_v2](../../project/audio_core_v2/README.md)，用户已对完整版本表示听感认可，见[实物反馈范围](../../evidence/audio_core_v2_2026-09-29/BOARD_LISTENING.md)。五音色ID 0/2/3/4/5、共享32槽/12 Warm pluck、总32；谐波固定每音V1的1/4，拨弦原电平。
 

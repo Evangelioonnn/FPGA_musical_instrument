@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-10T18:24:01.984945+08:00",
+  "scope": "Curated development source synchronization; no new board/analog/display qualification",
+  "base": "e70e4dbe7de1a61edb8a4f3ea2c7f361bfcce6d2",
+  "current_local_delivery": {
+    "command": "python -X utf8 project/looper_session_v2/tools/check_delivery.py",
+    "pass": true,
+    "mandatory_cases": 48,
+    "reference_WAVs": 9,
+    "board_50MHz_qualified": true,
+    "full_interface_physical_qualified": false
+  },
+  "clean_export": {
+    "repository_check": {
+      "command": "python -X utf8 tools/check_repository.py",
+      "status": "PASS",
+      "files": 1874
+    },
+    "snapshot_check": {
+      "command": "python -X utf8 tools/check_sync_snapshot.py",
+      "status": "PASS",
+      "files": 642,
+      "evidence_refs": 55
+    },
+    "audio_import": {
+      "command": "python -X utf8 project/audio_integration/tools/package_check.py --static-only",
+      "pass": true
+    },
+    "UI_examples": {
+      "command": "python -X utf8 project/looper_session_v2/tools/check_ui_examples.py",
+      "pass": true,
+      "frames": 8
+    },
+    "real_link": {
+      "command": "python -X utf8 project/looper_session_v2/sim/run.py --test session_link_tb --timeout 2400",
+      "pass": true,
+      "markers": [
+        "SESSION_LINK_TB_PASS real32_12_audio realADC async135MHz held_tagged_reply LUT_status take_track2 undo clear drum_track1 masked_pads master_mix_independent BPM_target PCM_gap snapshots=16"
+      ],
+      "source_fingerprints": {
+        "project\\looper_session_v2\\src\\looper_session_top.v": "9197abb204e748e08db4ecfdb7733eccae7111361dd9b5832c9ed7ddac123fa8",
+        "project\\looper_session_v2\\src\\looper_platform.v": "c646a33523c1eb681f9093ef89785dad10416cc959d59b710a191a39fb301893",
+        "project\\looper_session_v2\\rtl\\refinement_config_arbiter.v": "c67415c17127e9b7e36f4a72cd43acdd78e98f62fe1448747a768892dc409b3f",
+        "project\\looper_session_v2\\src\\looper_audio_core.v": "ff2f0c0c02003c4b120d328eb887c1885f91429c2fb9f6d8c9477f0060ba993c",
+        "project\\looper_session_v2\\src\\looper_audio_bank.v": "a04ca0ee58afcbf3cece7abf9531d70c414f44c67178d23d53e7f43050d50a8a",
+        "project\\looper_session_v2\\src\\audio_v2_tone.v": "532a3de1d415059121799880f64e1c2fa39cc6180f7c1491db9a703d7f46ea74",
+        "project\\looper_session_v2\\src\\audio_v2_pluck.v": "2e27386418df8885bbfa45ddc5b354056bb003fd234d5e9f59f2518bd9319239",
+        "project\\looper_session_v2\\src\\audio_v2_pool_slot.v": "582233542c72383d999129a5f402ceb96b00b1f372f74da8b24fe9baf3919b4b",
+        "project\\final_dual_timbre\\src\\note_table.v": "7d8b1c77069598b4737b685b6d5a733faa2e2f6e77e870132be435112cf4a100",
+        "project\\final_dual_timbre\\src\\pluck_note_table.v": "233c4d5f783a448a7bd5e966485fe018b441a42f16e271168ecece68b051e5fe",
+        "project\\final_dual_timbre\\src\\sine_rom.v": "11c050290b2bd5594b9b64f5e23a0e7fbe1576236b6ebc674493e20284481e44",
+        "project\\looper_session_v2\\src\\refinement_sine.v": "2a130185314dfe487cdd114aa2b3d1aa6c9581e1fa754d0918d0105c380cc6c0",
+        "project\\audio_core_v1\\src\\audio_panel.v": "55bafc9b9a47577ab331f426f55d1a9503a88a761fec58a6b955051f6d70032a",
+        "project\\audio_parameter_lab\\src\\audio_parameter_service.v": "528b047f1cba950e96b5dff8a6054ccdabe42df54c9af7f71529ebdba3616974",
+        "project\\custom_harmonic_lab\\src\\custom_harmonic_params.v": "cfc51e8929c76915cad5ca1338ac0627dfeb20e7ee74ae9503f64327236fe6a2",
+        "project\\final_dual_timbre\\src\\knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+        "project\\audio_fx_lab\\src\\short_room_reverb.v": "6eb46abe6475e578b73ea6e40def648a4a6304b293ac56c8679bb4478099742d",
+        "project\\audio_fx_lab\\src\\vibrato_factor.v": "b4f705871fdc3e32e7f41995fefe62c7322c08de2b98830d7468ae2cdbda2b5e",
+        "project\\looper_session_v2\\src\\looper_keys.v": "a53b56ac774d27dbcd0dc5cd3c741ca77bd43ec2d49efdd54727965ed1238a95",
+        "project\\final_dual_timbre\\src\\stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+        "project\\final_dual_timbre\\src\\matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+        "project\\final_dual_timbre\\src\\ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+        "project\\final_dual_timbre\\src\\playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+        "project\\audio_output_lab\\src\\output_tx.v": "7cefd245f5c8984ee6b0a4089b8aabd6ee950f242a11c4a6d34fde46933460c3",
+        "project\\final_dual_timbre\\src\\pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project\\looper_session_v2\\rtl\\looper_controls.v": "6616fec3f4392182c822e016347b70a6703b7011db324deb94e7058b22fe61aa",
+        "project\\looper_session_v2\\rtl\\looper_expression_capture.v": "7612cd5e58fdb7e626ec786339111076a141bef067e15604516c8a34e9f6bf1a",
+        "project\\looper_session_v2\\rtl\\mcp3208_reader.v": "e1bdcc11ff288da8425146adb040bfbbed1328cce4a11dc29fabf54d726a4bcf",
+        "project\\looper_session_v2\\rtl\\fader_mode_adapter.v": "69f2e672f6481cbff0e5297cb210a278261871abc9a79066e563f5a3f6ad5526",
+        "project\\looper_session_v2\\rtl\\refinement_link.v": "7003481d3fbea712619d5e7da30976f8875b82c7a9e4d1ec762bc7c7818f4773",
+        "project\\looper_session_v2\\rtl\\refinement_snapshot_bridge.v": "e40b6a72183aa9eff6e82f1b77ea3327c4783b5f1b1d5741bb0481a4f32978be",
+        "project\\audio_integration\\rtl\\audio_transport_reset.v": "722317c313ed1ef9b51deca855dcb00c9dce7bb82f60827a1d4f40735e9bd099",
+        "project\\audio_integration\\rtl\\audio_pcm_bridge.v": "bf332b08b857eb2e93983ead6e78540ff588023f2dfafbf335298a617d7dc9f3",
+        "project\\audio_integration\\rtl\\audio_command_bridge.v": "cac6280d48e0b66c03b26966b748868cd059e6ab4d30a17fa4c72371018d2472",
+        "project\\looper_session_v2\\rtl\\metronome_click.v": "57f07bc3a5b24dd2068190e62973f38cd2cae56e38759ab0c67f9b697f576bc2",
+        "project\\looper_session_v2\\rtl\\looper_clock.v": "c6fd39a7990ed899610477f40e57b80bd498133cd0733a3e79f956994d7d4238",
+        "project\\looper_session_v2\\rtl\\looper_transport.v": "9cf04fcf7cf2bc9cf03721ef833f70808b3f5605aae124b35b45aa6b8f9ceb4b",
+        "project\\looper_session_v2\\rtl\\looper_event_store.v": "e9b8e3698d095d756394fbc36d61bc9f34977103e751b89e49db252dd0dadf52",
+        "project\\looper_session_v2\\rtl\\looper_event_router.v": "a6cb37551c7a8eca9bcf76d85ca977f2c75ce6b569371891beece04a5a82f211",
+        "project\\looper_session_v2\\rtl\\looper_drum_engine.v": "645fe3460193240334e8813b23dffdb85ea859e42abab653d35864bf1fe571ba",
+        "project\\looper_session_v2\\rtl\\session_dispatcher.v": "536be0331979273e6c31081487629ebfe0aad723a5797c4722953c82bd4d32a9",
+        "project\\looper_session_v2\\rtl\\session_command_bridge.v": "e9392ce3f31d8ec0455b52259b56a54c7fe655e4ce1a5de031a4558e80f3167a",
+        "project\\looper_session_v2\\rtl\\session_ui_bridge.v": "3001e0d28771262f518219851d9fd3cebcceb8975448df2a22cc0ae3dca4c673",
+        "project\\looper_session_v2\\rtl\\session_ui_unpacker.v": "96721d75471c82613bae865bab6f719d467e7056d303f868517c6175491e66e4",
+        "project\\looper_session_v2\\rtl\\session_link.v": "e1c4a42ef287fefd46aa6e9b506aa411eb7f43b0894af5bbcb93ace60a703d3a",
+        "project\\looper_session_v2\\sim\\session_link_tb.v": "7bb2996f9aa94c1fda530e495a5c97d546aa2425cc992c8bafa02e1b25478402",
+        "project\\looper_session_v2\\sim\\run.py": "a64f9c9388aa4272def5decb40551c563d805935805a81b83bfc8c1d075e091c",
+        "project\\audio_palette_lab\\src\\palette_sine.v": "4a9bbdf84525ae5bf8c6df97fa89cbde5b49c3d573153ba7b8fc49bd0e8bb620",
+        "project\\audio_core_v1\\sim\\sine_rom_equivalence_tb.v": "1acd88c14da9224276e2826770da02f5aafce5999275e0640111f85f5a26bdbb",
+        "project\\audio_core_v1\\tools\\sim_rom.py": "1f40bdbe1b6355454141e966c8c29aeaaf4f0bae238478d44e84e8a580aec72d",
+        "project\\looper_session_v2\\tools\\sim_compact_rom.py": "b2b5cade20891d88b4c6b55a049ca238e906e5a61305018523135c923140c933"
+      },
+      "scope": "Real32/12 audio and modeled MCP3208 with async135MHz observer, commands/record/undo/clear/PCM; not physical display/ADC"
+    }
+  },
+  "reviewed_board_sha256": "9fef757ce0cdec04cb2dcaac7497c8e602ddf12374eae4b157a233c8adb9850d",
+  "minimal_tests_run_in_temporary_export_only": true,
+  "historical_evidence_kept_unchanged": true,
+  "source_LF_note": "Historical raw source hashes may differ after Git newline normalization; use SOURCE_MANIFEST for snapshot identity, rerun task tests for new RTL/tool versions.",
+  "selected_diff_check_pass": true,
+  "frozen_code_files": 330,
+  "frozen_code_unchanged": true
+}

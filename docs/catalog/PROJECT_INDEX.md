@@ -1,6 +1,8 @@
 # 工程分类索引
 
-> 当前开发只从V2、音频接入包和[C设计目标](../team/C_HANDOFF_AND_DISPLAY_PLAN.md)进入；下表保留旧工程生命周期，不把旧“候选”当成与当前基线并列的新任务。
+10月10日新增[looper_session_v2](../../project/looper_session_v2/README.md)：`INTEGRATION_CANDIDATE`，修订鼓组、addr8直接Looper命令和23字LU1/PCM接入；当前19针下载版仍4×4输入，真实C屏幕留到后续。对应[C交接](../../project/looper_session_v2/C_HANDOFF.md)、[验收](../../project/looper_session_v2/BOARD_TEST.md)和[验证](../../project/looper_session_v2/VALIDATION.md)。本轮随[开发同步](../project/GITHUB_SYNC_2026-10-10.md)补齐源码；旧下表保留历史／回退范围。
+
+> 当前Looper开发先从上方session V2进入，稳定演奏／非Looper接入从V2、音频接入包和[C设计目标](../team/C_HANDOFF_AND_DISPLAY_PLAN.md)进入；下表保留旧工程生命周期，不把旧“候选”当成与当前基线并列的新任务。
 
 新增[audio_core_v2](../../project/audio_core_v2/README.md)：`INTEGRATION_CANDIDATE`，固定0/2/3/4/5菜单、32共享逻辑声部/12路Warm pluck物理池，混合总数≤32；谐波固定每音1/4、拨弦原电平。正式入口audio_v2.gprj/audio_v2_top，19针50MHz PnR24052/10684/66/24.5、余量0.632ns；本目录的完整25键+现有输入顶层仅综合审计；后续接入包另有32 IO保留接口PnR审计，见下条，均未合并C/实体ADC。八项数字回归、七段参考音及当前源码核对完成；用户对完整版本总体听感认可，模拟与满载工况仍待测。16拨弦及其他失败架构明确分在experiments，不能下载。用户已认可V1和独立16/32板测，详见[9月29日记录](../../evidence/audio_core_v1_2026-09-29/BOARD_LISTENING.md)。
 
@@ -84,3 +86,15 @@
 - 两个兼容入口的正文：`docs/project/AUDIO_TEST_BASELINE.md`保留历史正弦诊断参数，`docs/team/DEVELOPMENT_METHOD.md`维护通用开发方法。当前进度、分工和接口分别维护在STATUS、角色入口及docs/interfaces，不要求集中写进这两页。
 
 `Notification/` 是本机下载资料，不是仓库当前事实入口；官方资料的精选版本和来源索引在 `references/`。
+
+## 2026-10-09：Looper 工程归位
+
+三轮工程直接归入原 `project/`：
+
+| 目录 | 用途 |
+|---|---|
+| [looper_refinement_lab](../../project/looper_refinement_lab/README.md) | 主验收02改进版 |
+| [looper_convergence_lab](../../project/looper_convergence_lab/README.md) | 01优化对照版，尚未晋升；含统一acceptance固件包 |
+| [looper_lab](../../project/looper_lab/README.md) | 03原版历史对照 |
+
+复用现有音频/输入工程，未复制第二份仓库。新验收指南见 [LOOPER_TOTAL_ACCEPTANCE](../project/LOOPER_TOTAL_ACCEPTANCE_2026-10-09.md)。仍为旧4×4/EC11输入，未适配新控制板；独立PnR不等于整机通过，板测待反馈。

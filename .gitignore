@@ -52,3 +52,26 @@ venv/
 *.pr
 # Original working notes are retained locally; published history is curated in docs/history/.
 /MEETING_BRIEF_2026-09-18.md
+
+# Current editable board is retained; EDA automatic backups and draft exports stay local.
+/BOARD/*_backup/
+/BOARD/*.zip
+/BOARD/New Project_*.eprj
+/BOARD/ProPrj_*.epro
+
+# Local Looper build transcripts and incomplete collection records.
+/project/looper_session_v2/transcript
+/project/looper_session_v2/results/**/*.log
+/project/looper_session_v2/results/**/*.html
+/project/looper_session_v2/results/**/*.txt
+/project/looper_session_v2/results/**/*.timing_paths
+/project/looper_session_v2/audit/results/**/*.log
+/project/looper_session_v2/audit/results/**/*.html
+/project/looper_session_v2/audit/results/**/*.txt
+/project/looper_session_v2/audit/results/**/*.timing_paths
+/project/looper_session_v2/results/regression_partial.json
+/project/looper_session_v2/results/DOC_CHECK.json
+!/project/looper_session_v2/results/sim/*.json
+/evidence/looper_relocation_2026-10-09/
+/project/looper_lab/results/stage_*_sources.json
+/project/looper_lab/results/HISTORY.json

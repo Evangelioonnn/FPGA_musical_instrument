@@ -16,6 +16,8 @@
 *.wav binary
 *.zip binary
 *.7z binary
+# Preserve the reviewed editable EDA source byte for byte.
+*.eprj binary
 # Preserve original reference bytes so manifest SHA256 remains portable.
 references/** -text -diff
 references/*.md text eol=lf diff
