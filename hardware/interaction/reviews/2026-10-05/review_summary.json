@@ -1,0 +1,15 @@
+{
+  "source_file": "F:\\lceda-pro\\jlc\\KEYBOARD.eprj",
+  "source_sha256": "d6fbaa40710c6f3ffa063f4f7e9a0f0b123058133bd50e3ef8c4b4a36de451c8",
+  "pcb_sha256": "4fb38f01dc0fe80cd74570c82a7e27cfa42ae0c5cb8c7a6d98ff198f9788fead",
+  "schematic_sha256": "0ef8116f7e8a2b0d6d945384ad4a29540c27c74f712b374adaf8d5b1e05723eb",
+  "matrix_distinct_positions": 36,
+  "five_slider_rc_chains": "PASS",
+  "spi_connector_mapping": "PASS",
+  "source_document_unchanged_during_review": true,
+  "native_easyeda_drc": "NOT RUN",
+  "gerber_drill_export": "NOT PROVIDED",
+  "mounting_footprint_circle_diameter_mm": 3.1999935999999995,
+  "slider_hole_diameter_mm_user_confirmed": 1.2,
+  "slider_pad_diameter_mm_user_confirmed": 2.2
+}
