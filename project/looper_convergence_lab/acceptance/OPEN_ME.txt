@@ -1,0 +1,4 @@
+主验收：02_refinement_20261008.fs，仅SRAM下载。
+工程：D:\uestc\SCM\GowinFPGA\project\looper_refinement_lab\looper_refinement_lab.gprj
+指南：D:\uestc\SCM\GowinFPGA\docs\project\LOOPER_TOTAL_ACCEPTANCE_2026-10-09.md
+先运行同目录verify.ps1核对四份固件、九份参考音。

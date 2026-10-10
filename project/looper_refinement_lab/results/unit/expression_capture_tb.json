@@ -1,0 +1,14 @@
+{
+  "test": "expression_capture_tb",
+  "generics": [],
+  "pass": true,
+  "markers": [
+    "EXPRESSION_CAPTURE_TB_PASS overflow_retry initial3 same_tick stable_backpressure bounded_bend capture_boundary cancel"
+  ],
+  "sources": {
+    "project\\looper_refinement_lab\\rtl\\looper_expression_capture.v": "ec57dafaae739638805ef593d75be50eebd87b2d9c0f65f2f63a29ae76644a7d",
+    "project\\looper_refinement_lab\\sim\\expression_capture_tb.v": "0afbaccb0ff70c761669d357767d394239f1596f6a88863107c80d164cc41be2",
+    "project\\looper_refinement_lab\\tools\\run_unit.py": "21093023c328fbb407a6f057da32dc2134b9d423775dbe725c68790c4635969e"
+  },
+  "time": "2026-10-07T22:28:58.419426+08:00"
+}

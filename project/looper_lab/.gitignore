@@ -1,0 +1,7 @@
+/build*.log
+/results/**/*.log
+/results/**/*.html
+/results/**/*.txt
+/results/**/*.timing_paths
+/results/stage_*/
+!/results/sim/*.json

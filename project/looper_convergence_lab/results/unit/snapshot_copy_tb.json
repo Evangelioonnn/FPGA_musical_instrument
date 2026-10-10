@@ -1,0 +1,15 @@
+{
+  "test": "snapshot_copy_tb",
+  "generics": [],
+  "pass": true,
+  "markers": [
+    "SNAPSHOT_COPY_TB_PASS complete54word restart owned_drop random_stall reset session"
+  ],
+  "sources": {
+    "project\\looper_convergence_lab\\rtl\\refinement_snapshot_bridge.v": "40bdfd13d6724f1ed7fdf70c744d7b2f2b8307f430a35b87e182051861306e46",
+    "project\\looper_convergence_lab\\..\\audio_integration\\rtl\\audio_transport_reset.v": "722317c313ed1ef9b51deca855dcb00c9dce7bb82f60827a1d4f40735e9bd099",
+    "project\\looper_convergence_lab\\sim\\snapshot_copy_tb.v": "b84fbdbcf778ef51ff7629fa6efe4f6a8b9cef6493b76aa7eb758b4d4a3378d0",
+    "project\\looper_convergence_lab\\tools\\run_unit.py": "79d388c62a4d616f45a6431776272f6d07b8301afef05a710df60da11617452e"
+  },
+  "time": "2026-10-09T01:21:11.557556+08:00"
+}

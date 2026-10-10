@@ -1,0 +1,28 @@
+{
+  "commit": "0199ed7",
+  "source_project": "project/looper_lab",
+  "board_test": "pending",
+  "build": {
+    "time": "2026-10-07T15:39:20.732498+08:00",
+    "top": "looper_top",
+    "physical_io": 19,
+    "clock_hz": 50000000,
+    "sdc_period_ns": 18,
+    "resources": {
+      "Logic": 32251,
+      "Register": 16254,
+      "CLS": 22780,
+      "BSRAM": 86,
+      "I/O Port": 19,
+      "DSP": 33.5
+    },
+    "min_setup_slack_ns": 0.029,
+    "violated_endpoints": {
+      "setup": 0,
+      "hold": 0
+    },
+    "fmax_mhz": 55.644,
+    "firmware_sha256": "d81a4941539ca4c02f25b2bf596c20951a0e884e3ed9465630e76b7c5c126b1c"
+  },
+  "regression_count": 24
+}

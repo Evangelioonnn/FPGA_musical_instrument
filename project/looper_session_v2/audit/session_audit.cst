@@ -1,0 +1,73 @@
+IO_LOC "sys_clk" V22;
+IO_PORT "sys_clk" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "enc_a" T18;
+IO_LOC "enc_b" R17;
+IO_PORT "enc_a" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_PORT "enc_b" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "button_n[0]" AA13;
+IO_LOC "button_n[1]" AB13;
+IO_LOC "button_n[2]" Y12;
+IO_PORT "button_n[0]" IO_TYPE=LVCMOS15 PULL_MODE=UP BANK_VCCIO=1.5;
+IO_PORT "button_n[1]" IO_TYPE=LVCMOS15 PULL_MODE=UP BANK_VCCIO=1.5;
+IO_PORT "button_n[2]" IO_TYPE=LVCMOS15 PULL_MODE=UP BANK_VCCIO=1.5;
+IO_LOC "matrix_col_n[0]" AB22;
+IO_LOC "matrix_col_n[1]" AB21;
+IO_LOC "matrix_col_n[2]" Y22;
+IO_LOC "matrix_col_n[3]" Y21;
+IO_LOC "matrix_row_n[0]" AA20;
+IO_LOC "matrix_row_n[1]" AA21;
+IO_LOC "matrix_row_n[2]" AA19;
+IO_LOC "matrix_row_n[3]" AB20;
+IO_PORT "matrix_col_n[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_PORT "matrix_col_n[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_PORT "matrix_col_n[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_PORT "matrix_col_n[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_PORT "matrix_row_n[0]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "matrix_row_n[1]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "matrix_row_n[2]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "matrix_row_n[3]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=4 BANK_VCCIO=3.3;
+IO_LOC "hp_bck" Y17;
+IO_LOC "hp_ws" AB17;
+IO_LOC "hp_din" AA16;
+IO_LOC "pa_en" AB16;
+IO_LOC "status_led" J16;
+IO_PORT "hp_bck" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "hp_ws" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "hp_din" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "pa_en" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "status_led" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+// Audit placeholders only, no wiring assignment authorized.
+IO_LOC "observer_clk" B17;
+IO_PORT "observer_clk" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "arst" A18;
+IO_PORT "arst" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_miso" E14;
+IO_PORT "adc_miso" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_sclk" E13;
+IO_PORT "adc_sclk" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_mosi" C15;
+IO_PORT "adc_mosi" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_cs_n" C14;
+IO_PORT "adc_cs_n" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "client_seed" B13;
+IO_PORT "client_seed" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "audit_digest" C13;
+IO_PORT "audit_digest" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+
+
+// BEGIN MAPPED RESET HINTS
+// SUG1018 2.7: non-clock reset local routing; all data STA retained.
+CLOCK_LOC "link/platform/audio/bank/voice_rst" LOCAL_CLOCK;
+CLOCK_LOC "link/platform/audio/bank/voice_rst_546" LOCAL_CLOCK;
+CLOCK_LOC "link/platform/audio/bank/voice_rst_552" LOCAL_CLOCK;
+CLOCK_LOC "link/platform/audio/bank/voice_rst_556" LOCAL_CLOCK;
+CLOCK_LOC "link/platform/audio/bank/voice_rst_562" LOCAL_CLOCK;
+CLOCK_LOC "link/platform/audio/bank/voice_rst_569" LOCAL_CLOCK;
+CLOCK_LOC "link/platform/audio/bank/voice_rst_576" LOCAL_CLOCK;
+CLOCK_LOC "link/platform/audio/bank/voice_rst_582" LOCAL_CLOCK;
+CLOCK_LOC "link/platform/audio/bank/voice_rst_589" LOCAL_CLOCK;
+CLOCK_LOC "link/platform/audio/bank/voice_rst_596" LOCAL_CLOCK;
+CLOCK_LOC "link/platform/audio/bank/voice_rst_603" LOCAL_CLOCK;
+CLOCK_LOC "link/platform/audio/bank/voice_rst_610" LOCAL_CLOCK;
+// END MAPPED RESET HINTS

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project>
+  <Template>FPGA</Template>
+  <Version>5</Version>
+  <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+  <FileList>
+    <File path="../src/looper_refinement_top.v" type="file.verilog" enable="1" />
+    <File path="../src/looper_platform.v" type="file.verilog" enable="1" />
+    <File path="../rtl/refinement_config_arbiter.v" type="file.verilog" enable="1" />
+    <File path="../src/looper_audio_core.v" type="file.verilog" enable="1" />
+    <File path="../src/looper_audio_bank.v" type="file.verilog" enable="1" />
+    <File path="../src/audio_v2_tone.v" type="file.verilog" enable="1" />
+    <File path="../src/audio_v2_pluck.v" type="file.verilog" enable="1" />
+    <File path="../src/audio_v2_pool_slot.v" type="file.verilog" enable="1" />
+    <File path="../../final_dual_timbre/src/note_table.v" type="file.verilog" enable="1" />
+    <File path="../../final_dual_timbre/src/pluck_note_table.v" type="file.verilog" enable="1" />
+    <File path="../../final_dual_timbre/src/sine_rom.v" type="file.verilog" enable="1" />
+    <File path="../src/refinement_sine.v" type="file.verilog" enable="1" />
+    <File path="../../audio_core_v1/src/audio_panel.v" type="file.verilog" enable="1" />
+    <File path="../../audio_parameter_lab/src/audio_parameter_service.v" type="file.verilog" enable="1" />
+    <File path="../../custom_harmonic_lab/src/custom_harmonic_params.v" type="file.verilog" enable="1" />
+    <File path="../../final_dual_timbre/src/knob_gain.v" type="file.verilog" enable="1" />
+    <File path="../../audio_fx_lab/src/short_room_reverb.v" type="file.verilog" enable="1" />
+    <File path="../../audio_fx_lab/src/vibrato_factor.v" type="file.verilog" enable="1" />
+    <File path="../src/looper_keys.v" type="file.verilog" enable="1" />
+    <File path="../../final_dual_timbre/src/stream_fifo.v" type="file.verilog" enable="1" />
+    <File path="../../final_dual_timbre/src/matrix_scanner.v" type="file.verilog" enable="1" />
+    <File path="../../final_dual_timbre/src/ec11_input.v" type="file.verilog" enable="1" />
+    <File path="../../final_dual_timbre/src/playable_button.v" type="file.verilog" enable="1" />
+    <File path="../../audio_output_lab/src/output_tx.v" type="file.verilog" enable="1" />
+    <File path="../../final_dual_timbre/src/pt8211_tx.v" type="file.verilog" enable="1" />
+    <File path="../rtl/looper_controls.v" type="file.verilog" enable="1" />
+    <File path="../rtl/looper_expression_capture.v" type="file.verilog" enable="1" />
+    <File path="../rtl/mcp3208_reader.v" type="file.verilog" enable="1" />
+    <File path="../rtl/fader_mode_adapter.v" type="file.verilog" enable="1" />
+    <File path="../rtl/refinement_link.v" type="file.verilog" enable="1" />
+    <File path="../rtl/refinement_snapshot_bridge.v" type="file.verilog" enable="1" />
+    <File path="../../audio_integration/rtl/audio_transport_reset.v" type="file.verilog" enable="1" />
+    <File path="../../audio_integration/rtl/audio_pcm_bridge.v" type="file.verilog" enable="1" />
+    <File path="../../audio_integration/rtl/audio_command_bridge.v" type="file.verilog" enable="1" />
+    <File path="../rtl/metronome_click.v" type="file.verilog" enable="1" />
+    <File path="../rtl/looper_clock.v" type="file.verilog" enable="1" />
+    <File path="../rtl/looper_transport.v" type="file.verilog" enable="1" />
+    <File path="../rtl/looper_event_store.v" type="file.verilog" enable="1" />
+    <File path="../rtl/looper_event_router.v" type="file.verilog" enable="1" />
+    <File path="../rtl/looper_drum_engine.v" type="file.verilog" enable="1" />
+    <File path="refinement_audit_top.v" type="file.verilog" enable="1" /><File path="refinement_audit.cst" type="file.cst" enable="1" /><File path="refinement_audit.sdc" type="file.sdc" enable="1" /></FileList>
+</Project>

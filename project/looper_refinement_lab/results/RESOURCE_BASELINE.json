@@ -1,0 +1,601 @@
+{
+  "source": "0199ed7 original synthesis XML, physical totals separately in BASELINE.json",
+  "hierarchy": [
+    {
+      "module": "/looper_top",
+      "Register": "51",
+      "Alu": "49",
+      "Lut": "65",
+      "MULT12X12": "2",
+      "T_Register": "16254(51)",
+      "T_Alu": "6197(49)",
+      "T_Lut": "25849(65)",
+      "T_MULTALU27X18": "27(0)",
+      "T_MULT12X12": "5(2)",
+      "T_MULT27X36": "2(0)",
+      "T_Bsram": "68(0)"
+    },
+    {
+      "module": "/looper_top/scanner",
+      "Register": "105",
+      "Alu": "27",
+      "Lut": "161",
+      "T_Register": "105(105)",
+      "T_Alu": "27(27)",
+      "T_Lut": "161(161)"
+    },
+    {
+      "module": "/looper_top/encoder",
+      "Register": "29",
+      "Alu": "17",
+      "Lut": "24",
+      "T_Register": "29(29)",
+      "T_Alu": "17(17)",
+      "T_Lut": "24(24)"
+    },
+    {
+      "module": "/looper_top/buttons[0].button_filter",
+      "Register": "22",
+      "Alu": "17",
+      "Lut": "10",
+      "T_Register": "22(22)",
+      "T_Alu": "17(17)",
+      "T_Lut": "10(10)"
+    },
+    {
+      "module": "/looper_top/buttons[1].button_filter",
+      "Register": "22",
+      "Alu": "17",
+      "Lut": "10",
+      "T_Register": "22(22)",
+      "T_Alu": "17(17)",
+      "T_Lut": "10(10)"
+    },
+    {
+      "module": "/looper_top/buttons[2].button_filter",
+      "Register": "22",
+      "Alu": "17",
+      "Lut": "10",
+      "T_Register": "22(22)",
+      "T_Alu": "17(17)",
+      "T_Lut": "10(10)"
+    },
+    {
+      "module": "/looper_top/tx",
+      "T_Register": "46(0)",
+      "T_Alu": "4(0)",
+      "T_Lut": "42(0)"
+    },
+    {
+      "module": "/looper_top/tx/base",
+      "Register": "46",
+      "Alu": "4",
+      "Lut": "42",
+      "T_Register": "46(46)",
+      "T_Alu": "4(4)",
+      "T_Lut": "42(42)"
+    },
+    {
+      "module": "/looper_top/controls",
+      "Register": "356",
+      "Alu": "358",
+      "Lut": "811",
+      "T_Register": "356(356)",
+      "T_Alu": "358(358)",
+      "T_Lut": "811(811)"
+    },
+    {
+      "module": "/looper_top/looper_clock_i",
+      "Register": "82",
+      "Alu": "32",
+      "Lut": "103",
+      "MULTALU27X18": "1",
+      "T_Register": "82(82)",
+      "T_Alu": "32(32)",
+      "T_Lut": "103(103)",
+      "T_MULTALU27X18": "1(1)"
+    },
+    {
+      "module": "/looper_top/transport_i",
+      "Register": "27",
+      "Lut": "79",
+      "MULT12X12": "2",
+      "T_Register": "27(27)",
+      "T_Lut": "79(79)",
+      "T_MULT12X12": "2(2)"
+    },
+    {
+      "module": "/looper_top/click_generator",
+      "Register": "84",
+      "Alu": "46",
+      "Lut": "145",
+      "MULTALU27X18": "2",
+      "T_Register": "84(84)",
+      "T_Alu": "46(46)",
+      "T_Lut": "145(145)",
+      "T_MULTALU27X18": "2(2)"
+    },
+    {
+      "module": "/looper_top/store",
+      "Register": "2695",
+      "Alu": "667",
+      "Lut": "2459",
+      "Bsram": "9",
+      "T_Register": "2695(2695)",
+      "T_Alu": "667(667)",
+      "T_Lut": "2459(2459)",
+      "T_Bsram": "9(9)"
+    },
+    {
+      "module": "/looper_top/drum",
+      "Register": "1409",
+      "Alu": "339",
+      "Lut": "2117",
+      "MULTALU27X18": "2",
+      "T_Register": "1409(1409)",
+      "T_Alu": "339(339)",
+      "T_Lut": "2117(2117)",
+      "T_MULTALU27X18": "2(2)",
+      "T_Bsram": "1(0)"
+    },
+    {
+      "module": "/looper_top/drum/shared_drum_sine",
+      "Bsram": "1",
+      "T_Bsram": "1(1)"
+    },
+    {
+      "module": "/looper_top/audio",
+      "Register": "81",
+      "Lut": "44",
+      "MULTALU27X18": "1",
+      "T_Register": "11304(81)",
+      "T_Alu": "4607(0)",
+      "T_Lut": "19813(44)",
+      "T_MULTALU27X18": "22(1)",
+      "T_MULT12X12": "1(0)",
+      "T_MULT27X36": "2(0)",
+      "T_Bsram": "58(0)"
+    },
+    {
+      "module": "/looper_top/audio/parameters",
+      "Register": "249",
+      "Alu": "33",
+      "Lut": "381",
+      "T_Register": "249(249)",
+      "T_Alu": "33(33)",
+      "T_Lut": "381(381)"
+    },
+    {
+      "module": "/looper_top/audio/harmonic_parameters",
+      "Register": "304",
+      "Alu": "283",
+      "Lut": "390",
+      "T_Register": "304(304)",
+      "T_Alu": "283(283)",
+      "T_Lut": "390(390)"
+    },
+    {
+      "module": "/looper_top/audio/vibrato",
+      "Register": "48",
+      "Alu": "39",
+      "Lut": "135",
+      "MULT12X12": "1",
+      "T_Register": "48(48)",
+      "T_Alu": "39(39)",
+      "T_Lut": "135(135)",
+      "T_MULT12X12": "1(1)"
+    },
+    {
+      "module": "/looper_top/audio/key_events",
+      "Register": "805",
+      "Alu": "38",
+      "Lut": "570",
+      "T_Register": "1079(805)",
+      "T_Alu": "38(38)",
+      "T_Lut": "726(570)"
+    },
+    {
+      "module": "/looper_top/audio/key_events/snapshots",
+      "Register": "274",
+      "Lut": "156",
+      "T_Register": "274(274)",
+      "T_Lut": "156(156)"
+    },
+    {
+      "module": "/looper_top/audio/event_router",
+      "Register": "451",
+      "Alu": "110",
+      "Lut": "620",
+      "Bsram": "3",
+      "T_Register": "451(451)",
+      "T_Alu": "110(110)",
+      "T_Lut": "620(620)",
+      "T_Bsram": "3(3)"
+    },
+    {
+      "module": "/looper_top/audio/bank",
+      "Register": "2256",
+      "Alu": "388",
+      "Lut": "6892",
+      "MULTALU27X18": "2",
+      "MULT27X36": "2",
+      "Bsram": "11",
+      "T_Register": "8700(2256)",
+      "T_Alu": "3773(388)",
+      "T_Lut": "16943(6892)",
+      "T_MULTALU27X18": "18(2)",
+      "T_MULT27X36": "2(2)",
+      "T_Bsram": "51(11)"
+    },
+    {
+      "module": "/looper_top/audio/bank/note_lookup",
+      "Lut": "342",
+      "T_Lut": "342(342)"
+    },
+    {
+      "module": "/looper_top/audio/bank/pluck_lookup",
+      "Lut": "230",
+      "T_Lut": "230(230)"
+    },
+    {
+      "module": "/looper_top/audio/bank/tones",
+      "Register": "228",
+      "Alu": "217",
+      "Lut": "454",
+      "MULTALU27X18": "4",
+      "T_Register": "228(228)",
+      "T_Alu": "217(217)",
+      "T_Lut": "454(454)",
+      "T_MULTALU27X18": "4(4)",
+      "T_Bsram": "16(0)"
+    },
+    {
+      "module": "/looper_top/audio/bank/tones/precision_rom.r0",
+      "Bsram": "4",
+      "T_Bsram": "4(4)"
+    },
+    {
+      "module": "/looper_top/audio/bank/tones/precision_rom.r1",
+      "Bsram": "4",
+      "T_Bsram": "4(4)"
+    },
+    {
+      "module": "/looper_top/audio/bank/tones/precision_rom.r2",
+      "Bsram": "4",
+      "T_Bsram": "4(4)"
+    },
+    {
+      "module": "/looper_top/audio/bank/tones/precision_rom.r3",
+      "Bsram": "4",
+      "T_Bsram": "4(4)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[0].slot",
+      "Register": "139",
+      "Alu": "37",
+      "Lut": "165",
+      "T_Register": "518(139)",
+      "T_Alu": "264(37)",
+      "T_Lut": "800(165)",
+      "T_MULTALU27X18": "1(0)",
+      "T_Bsram": "2(0)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[0].slot/pluck_path.pluck",
+      "Register": "379",
+      "Alu": "227",
+      "Lut": "635",
+      "MULTALU27X18": "1",
+      "Bsram": "2",
+      "T_Register": "379(379)",
+      "T_Alu": "227(227)",
+      "T_Lut": "635(635)",
+      "T_MULTALU27X18": "1(1)",
+      "T_Bsram": "2(2)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[1].slot",
+      "Register": "139",
+      "Alu": "37",
+      "Lut": "165",
+      "T_Register": "518(139)",
+      "T_Alu": "264(37)",
+      "T_Lut": "741(165)",
+      "T_MULTALU27X18": "1(0)",
+      "T_Bsram": "2(0)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[1].slot/pluck_path.pluck",
+      "Register": "379",
+      "Alu": "227",
+      "Lut": "576",
+      "MULTALU27X18": "1",
+      "Bsram": "2",
+      "T_Register": "379(379)",
+      "T_Alu": "227(227)",
+      "T_Lut": "576(576)",
+      "T_MULTALU27X18": "1(1)",
+      "T_Bsram": "2(2)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[2].slot",
+      "Register": "139",
+      "Alu": "37",
+      "Lut": "165",
+      "T_Register": "518(139)",
+      "T_Alu": "264(37)",
+      "T_Lut": "745(165)",
+      "T_MULTALU27X18": "1(0)",
+      "T_Bsram": "2(0)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[2].slot/pluck_path.pluck",
+      "Register": "379",
+      "Alu": "227",
+      "Lut": "580",
+      "MULTALU27X18": "1",
+      "Bsram": "2",
+      "T_Register": "379(379)",
+      "T_Alu": "227(227)",
+      "T_Lut": "580(580)",
+      "T_MULTALU27X18": "1(1)",
+      "T_Bsram": "2(2)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[3].slot",
+      "Register": "139",
+      "Alu": "37",
+      "Lut": "165",
+      "T_Register": "518(139)",
+      "T_Alu": "264(37)",
+      "T_Lut": "739(165)",
+      "T_MULTALU27X18": "1(0)",
+      "T_Bsram": "2(0)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[3].slot/pluck_path.pluck",
+      "Register": "379",
+      "Alu": "227",
+      "Lut": "574",
+      "MULTALU27X18": "1",
+      "Bsram": "2",
+      "T_Register": "379(379)",
+      "T_Alu": "227(227)",
+      "T_Lut": "574(574)",
+      "T_MULTALU27X18": "1(1)",
+      "T_Bsram": "2(2)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[4].slot",
+      "Register": "139",
+      "Alu": "37",
+      "Lut": "165",
+      "T_Register": "518(139)",
+      "T_Alu": "264(37)",
+      "T_Lut": "745(165)",
+      "T_MULTALU27X18": "1(0)",
+      "T_Bsram": "2(0)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[4].slot/pluck_path.pluck",
+      "Register": "379",
+      "Alu": "227",
+      "Lut": "580",
+      "MULTALU27X18": "1",
+      "Bsram": "2",
+      "T_Register": "379(379)",
+      "T_Alu": "227(227)",
+      "T_Lut": "580(580)",
+      "T_MULTALU27X18": "1(1)",
+      "T_Bsram": "2(2)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[5].slot",
+      "Register": "139",
+      "Alu": "37",
+      "Lut": "165",
+      "T_Register": "518(139)",
+      "T_Alu": "264(37)",
+      "T_Lut": "746(165)",
+      "T_MULTALU27X18": "1(0)",
+      "T_Bsram": "2(0)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[5].slot/pluck_path.pluck",
+      "Register": "379",
+      "Alu": "227",
+      "Lut": "581",
+      "MULTALU27X18": "1",
+      "Bsram": "2",
+      "T_Register": "379(379)",
+      "T_Alu": "227(227)",
+      "T_Lut": "581(581)",
+      "T_MULTALU27X18": "1(1)",
+      "T_Bsram": "2(2)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[6].slot",
+      "Register": "139",
+      "Alu": "37",
+      "Lut": "165",
+      "T_Register": "518(139)",
+      "T_Alu": "264(37)",
+      "T_Lut": "747(165)",
+      "T_MULTALU27X18": "1(0)",
+      "T_Bsram": "2(0)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[6].slot/pluck_path.pluck",
+      "Register": "379",
+      "Alu": "227",
+      "Lut": "582",
+      "MULTALU27X18": "1",
+      "Bsram": "2",
+      "T_Register": "379(379)",
+      "T_Alu": "227(227)",
+      "T_Lut": "582(582)",
+      "T_MULTALU27X18": "1(1)",
+      "T_Bsram": "2(2)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[7].slot",
+      "Register": "139",
+      "Alu": "37",
+      "Lut": "165",
+      "T_Register": "518(139)",
+      "T_Alu": "264(37)",
+      "T_Lut": "746(165)",
+      "T_MULTALU27X18": "1(0)",
+      "T_Bsram": "2(0)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[7].slot/pluck_path.pluck",
+      "Register": "379",
+      "Alu": "227",
+      "Lut": "581",
+      "MULTALU27X18": "1",
+      "Bsram": "2",
+      "T_Register": "379(379)",
+      "T_Alu": "227(227)",
+      "T_Lut": "581(581)",
+      "T_MULTALU27X18": "1(1)",
+      "T_Bsram": "2(2)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[8].slot",
+      "Register": "139",
+      "Alu": "37",
+      "Lut": "165",
+      "T_Register": "518(139)",
+      "T_Alu": "264(37)",
+      "T_Lut": "746(165)",
+      "T_MULTALU27X18": "1(0)",
+      "T_Bsram": "2(0)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[8].slot/pluck_path.pluck",
+      "Register": "379",
+      "Alu": "227",
+      "Lut": "581",
+      "MULTALU27X18": "1",
+      "Bsram": "2",
+      "T_Register": "379(379)",
+      "T_Alu": "227(227)",
+      "T_Lut": "581(581)",
+      "T_MULTALU27X18": "1(1)",
+      "T_Bsram": "2(2)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[9].slot",
+      "Register": "139",
+      "Alu": "37",
+      "Lut": "165",
+      "T_Register": "518(139)",
+      "T_Alu": "264(37)",
+      "T_Lut": "745(165)",
+      "T_MULTALU27X18": "1(0)",
+      "T_Bsram": "2(0)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[9].slot/pluck_path.pluck",
+      "Register": "379",
+      "Alu": "227",
+      "Lut": "580",
+      "MULTALU27X18": "1",
+      "Bsram": "2",
+      "T_Register": "379(379)",
+      "T_Alu": "227(227)",
+      "T_Lut": "580(580)",
+      "T_MULTALU27X18": "1(1)",
+      "T_Bsram": "2(2)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[10].slot",
+      "Register": "139",
+      "Alu": "37",
+      "Lut": "165",
+      "T_Register": "518(139)",
+      "T_Alu": "264(37)",
+      "T_Lut": "745(165)",
+      "T_MULTALU27X18": "1(0)",
+      "T_Bsram": "2(0)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[10].slot/pluck_path.pluck",
+      "Register": "379",
+      "Alu": "227",
+      "Lut": "580",
+      "MULTALU27X18": "1",
+      "Bsram": "2",
+      "T_Register": "379(379)",
+      "T_Alu": "227(227)",
+      "T_Lut": "580(580)",
+      "T_MULTALU27X18": "1(1)",
+      "T_Bsram": "2(2)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[11].slot",
+      "Register": "139",
+      "Alu": "37",
+      "Lut": "165",
+      "T_Register": "518(139)",
+      "T_Alu": "264(37)",
+      "T_Lut": "780(165)",
+      "T_MULTALU27X18": "1(0)",
+      "T_Bsram": "2(0)"
+    },
+    {
+      "module": "/looper_top/audio/bank/plucks[11].slot/pluck_path.pluck",
+      "Register": "379",
+      "Alu": "227",
+      "Lut": "615",
+      "MULTALU27X18": "1",
+      "Bsram": "2",
+      "T_Register": "379(379)",
+      "T_Alu": "227(227)",
+      "T_Lut": "615(615)",
+      "T_MULTALU27X18": "1(1)",
+      "T_Bsram": "2(2)"
+    },
+    {
+      "module": "/looper_top/audio/room.effect",
+      "Register": "325",
+      "Alu": "243",
+      "Lut": "380",
+      "MULTALU27X18": "1",
+      "Bsram": "4",
+      "T_Register": "325(325)",
+      "T_Alu": "243(243)",
+      "T_Lut": "380(380)",
+      "T_MULTALU27X18": "1(1)",
+      "T_Bsram": "4(4)"
+    },
+    {
+      "module": "/looper_top/audio/left_gain",
+      "Register": "34",
+      "Alu": "44",
+      "Lut": "88",
+      "MULTALU27X18": "1",
+      "T_Register": "34(34)",
+      "T_Alu": "44(44)",
+      "T_Lut": "88(88)",
+      "T_MULTALU27X18": "1(1)"
+    },
+    {
+      "module": "/looper_top/audio/right_gain",
+      "Register": "33",
+      "Alu": "44",
+      "Lut": "106",
+      "MULTALU27X18": "1",
+      "T_Register": "33(33)",
+      "T_Alu": "44(44)",
+      "T_Lut": "106(106)",
+      "T_MULTALU27X18": "1(1)"
+    }
+  ],
+  "decisions": [
+    "64-bit event already synthesized as five 9-bit RAMs; width cleanup alone saves zero",
+    "Four 4096x16 sine read channels currently use16 BSRAM; exact quarter symmetry candidate keeps four ports and should use4",
+    "Store136x16 frozen patch uses4 shallow blocks; evaluate only after exact ROM candidate"
+  ]
+}

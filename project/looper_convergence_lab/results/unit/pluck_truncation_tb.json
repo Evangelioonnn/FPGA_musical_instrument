@@ -1,0 +1,14 @@
+{
+  "test": "pluck_truncation_tb",
+  "generics": [],
+  "pass": true,
+  "markers": [
+    "PLUCK_TRUNCATION_TB_PASS division_oracle cases=302152 signed_min_and_all_residues"
+  ],
+  "sources": {
+    "project\\looper_convergence_lab\\src\\audio_v2_pluck.v": "e0c748cbe85f8994584edd7a9756856e5966ef283498c2d8fdbceac423c0cf08",
+    "project\\looper_convergence_lab\\sim\\pluck_truncation_tb.v": "1b6e6267c870d021339c5e54a4bd8a2b74b2024c5c305a95b5447a3eb21cbb2c",
+    "project\\looper_convergence_lab\\tools\\run_unit.py": "79d388c62a4d616f45a6431776272f6d07b8301afef05a710df60da11617452e"
+  },
+  "time": "2026-10-09T01:21:10.588771+08:00"
+}

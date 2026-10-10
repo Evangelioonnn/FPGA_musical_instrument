@@ -1,0 +1,15 @@
+{
+  "test": "looper_keys25_tb",
+  "generics": [],
+  "pass": true,
+  "markers": [
+    "LOOPER_KEYS25_TB_PASS chromatic48_to72 split12 zone_shift original_off_tokens 25_independent"
+  ],
+  "sources": {
+    "project\\looper_convergence_lab\\src\\looper_keys.v": "d3e9a39e63bd8832ebd2fb717e15639b1eb3460e93bf1bb9ed8835dbba52383c",
+    "project\\looper_convergence_lab\\..\\final_dual_timbre\\src\\stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+    "project\\looper_convergence_lab\\sim\\looper_keys25_tb.v": "657b6247b2d712fc49935d00e316684f80f62a35b7d0e417b7ef6ede1b3b8661",
+    "project\\looper_convergence_lab\\tools\\run_unit.py": "79d388c62a4d616f45a6431776272f6d07b8301afef05a710df60da11617452e"
+  },
+  "time": "2026-10-09T01:31:10.832653+08:00"
+}
