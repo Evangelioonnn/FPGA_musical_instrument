@@ -1,0 +1,100 @@
+{
+  "test": "looper_v2_equivalence_tb",
+  "generics": [],
+  "pass": true,
+  "time": "2026-10-07T22:27:33.769861+08:00",
+  "markers": [
+    "LOOPER_V2_EQUIVALENCE_TB_PASS live_and_frozen_default_bit_exact_with_original_V2 presets=0_2_3_4_5 comparisons=4000"
+  ],
+  "sources": {
+    "project\\looper_refinement_lab\\src\\looper_refinement_top.v": "1b55ffed946ab407410d3b2f191a496883403daa51189d899a9d8b74d2beea1f",
+    "project\\looper_refinement_lab\\src\\looper_platform.v": "0af284a6685607b836661dbf0556cb3873414aa07860d6ad0a4e51cb7c7986b6",
+    "project\\looper_refinement_lab\\rtl\\refinement_config_arbiter.v": "c67415c17127e9b7e36f4a72cd43acdd78e98f62fe1448747a768892dc409b3f",
+    "project\\looper_refinement_lab\\src\\looper_audio_core.v": "ab35c191be0658d47a4de5285cc4f84099f6b2cf26dbb6c0986248a7d9e71182",
+    "project\\looper_refinement_lab\\src\\looper_audio_bank.v": "0253f8945782be9e25a68898a7103740f79b45baca0197fcaf1d84547aead190",
+    "project\\looper_refinement_lab\\src\\audio_v2_tone.v": "9cf6b5bf55ad74ab3eb2f74f3957dd555850e7b15ec50427d9f043565cf9315a",
+    "project\\looper_refinement_lab\\src\\audio_v2_pluck.v": "2e27386418df8885bbfa45ddc5b354056bb003fd234d5e9f59f2518bd9319239",
+    "project\\looper_refinement_lab\\src\\audio_v2_pool_slot.v": "582233542c72383d999129a5f402ceb96b00b1f372f74da8b24fe9baf3919b4b",
+    "project\\final_dual_timbre\\src\\note_table.v": "7d8b1c77069598b4737b685b6d5a733faa2e2f6e77e870132be435112cf4a100",
+    "project\\final_dual_timbre\\src\\pluck_note_table.v": "233c4d5f783a448a7bd5e966485fe018b441a42f16e271168ecece68b051e5fe",
+    "project\\final_dual_timbre\\src\\sine_rom.v": "11c050290b2bd5594b9b64f5e23a0e7fbe1576236b6ebc674493e20284481e44",
+    "project\\looper_refinement_lab\\src\\refinement_sine.v": "fb39fdb4710f4040c684e847218e0617025e85b50b311c1280356c2f4a01b6fb",
+    "project\\audio_core_v1\\src\\audio_panel.v": "55bafc9b9a47577ab331f426f55d1a9503a88a761fec58a6b955051f6d70032a",
+    "project\\audio_parameter_lab\\src\\audio_parameter_service.v": "528b047f1cba950e96b5dff8a6054ccdabe42df54c9af7f71529ebdba3616974",
+    "project\\custom_harmonic_lab\\src\\custom_harmonic_params.v": "cfc51e8929c76915cad5ca1338ac0627dfeb20e7ee74ae9503f64327236fe6a2",
+    "project\\final_dual_timbre\\src\\knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+    "project\\audio_fx_lab\\src\\short_room_reverb.v": "6eb46abe6475e578b73ea6e40def648a4a6304b293ac56c8679bb4478099742d",
+    "project\\audio_fx_lab\\src\\vibrato_factor.v": "b4f705871fdc3e32e7f41995fefe62c7322c08de2b98830d7468ae2cdbda2b5e",
+    "project\\looper_refinement_lab\\src\\looper_keys.v": "a53b56ac774d27dbcd0dc5cd3c741ca77bd43ec2d49efdd54727965ed1238a95",
+    "project\\final_dual_timbre\\src\\stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+    "project\\final_dual_timbre\\src\\matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+    "project\\final_dual_timbre\\src\\ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+    "project\\final_dual_timbre\\src\\playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+    "project\\audio_output_lab\\src\\output_tx.v": "7cefd245f5c8984ee6b0a4089b8aabd6ee950f242a11c4a6d34fde46933460c3",
+    "project\\final_dual_timbre\\src\\pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+    "project\\looper_refinement_lab\\rtl\\looper_controls.v": "8add12704882b116ede4a4972345db23fe5524a8d5a88a4ae6529a6322842a07",
+    "project\\looper_refinement_lab\\rtl\\looper_expression_capture.v": "ec57dafaae739638805ef593d75be50eebd87b2d9c0f65f2f63a29ae76644a7d",
+    "project\\looper_refinement_lab\\rtl\\mcp3208_reader.v": "e1bdcc11ff288da8425146adb040bfbbed1328cce4a11dc29fabf54d726a4bcf",
+    "project\\looper_refinement_lab\\rtl\\fader_mode_adapter.v": "69f2e672f6481cbff0e5297cb210a278261871abc9a79066e563f5a3f6ad5526",
+    "project\\looper_refinement_lab\\rtl\\refinement_link.v": "7eb7c8546a036818da8d4db009eece2289f61795c23989bb6f9fc1cb16a9cf6c",
+    "project\\looper_refinement_lab\\rtl\\refinement_snapshot_bridge.v": "1dc1c86a406771839a145f846207a1109450e9001ce95941c9475bccfa44b072",
+    "project\\audio_integration\\rtl\\audio_transport_reset.v": "722317c313ed1ef9b51deca855dcb00c9dce7bb82f60827a1d4f40735e9bd099",
+    "project\\audio_integration\\rtl\\audio_pcm_bridge.v": "bf332b08b857eb2e93983ead6e78540ff588023f2dfafbf335298a617d7dc9f3",
+    "project\\audio_integration\\rtl\\audio_command_bridge.v": "cac6280d48e0b66c03b26966b748868cd059e6ab4d30a17fa4c72371018d2472",
+    "project\\looper_refinement_lab\\rtl\\metronome_click.v": "57f07bc3a5b24dd2068190e62973f38cd2cae56e38759ab0c67f9b697f576bc2",
+    "project\\looper_refinement_lab\\rtl\\looper_clock.v": "0084a584280b337392b9db9311e6e209cc48a5c8fcacf38a00d06c6fea3745d8",
+    "project\\looper_refinement_lab\\rtl\\looper_transport.v": "62edebc81482b243976784eb4a006f992a0357b135191ce7fdd91afc5cb0a0dd",
+    "project\\looper_refinement_lab\\rtl\\looper_event_store.v": "4ab7c2b4e1445627b3c4d553aa9e31a06d5fca3cdd9574c63311144a7dc2cf82",
+    "project\\looper_refinement_lab\\rtl\\looper_event_router.v": "a6cb37551c7a8eca9bcf76d85ca977f2c75ce6b569371891beece04a5a82f211",
+    "project\\looper_refinement_lab\\rtl\\looper_drum_engine.v": "af3306afddcd3e1cba1c5c81bf58d7e5793d841c2317b375deb06c69e5391960",
+    "project\\looper_refinement_lab\\sim\\looper_v2_equivalence_tb.v": "b4b7b5ae8c3d274ce588be3e088ce684a05babb9e7b337a54f0a0a9e83b70395",
+    "project\\looper_refinement_lab\\sim\\run.py": "8bd35276d6c55f18df8f563fc8bab9332612af3932916a92bead0bca084de51e",
+    "project\\audio_core_v2\\src\\audio_v2_bank_stream.v": "c16f77aa1d9daab1f779ff58d48a3d7596331d8984712cd7dd6b027fab580b86",
+    "project\\audio_core_v2\\src\\audio_v2_tone.v": "6479cfddd342a3feab10b252b69985285ada18751816aa9d130b88295339b609",
+    "project\\audio_core_v2\\src\\audio_v2_pluck.v": "2e27386418df8885bbfa45ddc5b354056bb003fd234d5e9f59f2518bd9319239",
+    "project\\audio_core_v2\\src\\audio_v2_pool_slot.v": "582233542c72383d999129a5f402ceb96b00b1f372f74da8b24fe9baf3919b4b",
+    "project\\audio_palette_lab\\src\\palette_sine.v": "4a9bbdf84525ae5bf8c6df97fa89cbde5b49c3d573153ba7b8fc49bd0e8bb620",
+    "project\\audio_core_v1\\sim\\sine_rom_equivalence_tb.v": "1acd88c14da9224276e2826770da02f5aafce5999275e0640111f85f5a26bdbb",
+    "project\\audio_core_v1\\tools\\sim_rom.py": "1f40bdbe1b6355454141e966c8c29aeaaf4f0bae238478d44e84e8a580aec72d",
+    "project\\looper_refinement_lab\\tools\\sim_compact_rom.py": "b2b5cade20891d88b4c6b55a049ca238e906e5a61305018523135c923140c933"
+  },
+  "rom_simulation": {
+    "replacement_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\audio_core_v1\\sim\\work_rom_data\\palette_sine_array.v",
+    "reference_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\audio_core_v1\\sim\\work_rom_data\\palette_sine_reference.v",
+    "rom_data": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\audio_core_v1\\sim\\work_rom_data\\sine4096.hex",
+    "bench_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\audio_core_v1\\sim\\sine_rom_equivalence_tb.v",
+    "table_entries": 4096,
+    "all_address_checks": 4096,
+    "unknown_address_checks": 8,
+    "consecutive_jump_checks": 2048,
+    "initial_zero_checked": true,
+    "pass_marker": "# SINE_ROM_ARRAY_EQUIVALENCE_PASS addresses=4096 unknown=8 jumps=2048 initial=0 checks=6152",
+    "source_sha256": {
+      "project/audio_palette_lab/src/palette_sine.v": "4a9bbdf84525ae5bf8c6df97fa89cbde5b49c3d573153ba7b8fc49bd0e8bb620",
+      "project/audio_core_v1/sim/sine_rom_equivalence_tb.v": "1acd88c14da9224276e2826770da02f5aafce5999275e0640111f85f5a26bdbb",
+      "project/audio_core_v1/tools/sim_rom.py": "1f40bdbe1b6355454141e966c8c29aeaaf4f0bae238478d44e84e8a580aec72d"
+    },
+    "source_lf_sha256": {
+      "project/audio_palette_lab/src/palette_sine.v": "4a9bbdf84525ae5bf8c6df97fa89cbde5b49c3d573153ba7b8fc49bd0e8bb620",
+      "project/audio_core_v1/sim/sine_rom_equivalence_tb.v": "1acd88c14da9224276e2826770da02f5aafce5999275e0640111f85f5a26bdbb",
+      "project/audio_core_v1/tools/sim_rom.py": "1f40bdbe1b6355454141e966c8c29aeaaf4f0bae238478d44e84e8a580aec72d"
+    },
+    "generated_sha256": {
+      "project/audio_core_v1/sim/work_rom_data/palette_sine_array.v": "1a5581ca2e9e170581ffccaa6d9011b68e906957acce6fd0b2afec1b7704e26b",
+      "project/audio_core_v1/sim/work_rom_data/palette_sine_reference.v": "8ca45557d5697f94cc5a392e513d168a663dd906770fc36bbb82f93020fa21bc",
+      "project/audio_core_v1/sim/work_rom_data/sine4096.hex": "d1f5952989b7395c13250be61b81b34f0f834c51fe23cfe2975acf9a6712e443"
+    },
+    "verification_seconds": 34.0,
+    "verification_workspace": "tmp/audio_integration_sim/rom-check-lm2fmlow",
+    "synthesis_sources_changed": false,
+    "full_audio_chain_verified": false
+  },
+  "compact_rom_simulation": {
+    "replacement_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\looper_refinement_lab\\sim\\work_compact_data\\check-6dh5iczz\\refinement_sine.v",
+    "verified": true,
+    "source_sha256": {
+      "project\\looper_refinement_lab\\src\\refinement_sine.v": "fb39fdb4710f4040c684e847218e0617025e85b50b311c1280356c2f4a01b6fb",
+      "project\\looper_refinement_lab\\tools\\sim_compact_rom.py": "b2b5cade20891d88b4c6b55a049ca238e906e5a61305018523135c923140c933"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "logical_fs": 48076.92307692308,
+  "tom_reference": "https://tune-bot.com/tuning-guide/",
+  "tom_family": "four tom Call to Post D2-G2-B2-D3, guide uses rounded73.4/98/124/147Hz; our equal temperament frequencies",
+  "tom_steps": {
+    "2": {
+      "midi": 38,
+      "start_step": 13117318,
+      "floor_step": 6558659,
+      "settled_hz": 73.416192138281
+    },
+    "3": {
+      "midi": 43,
+      "start_step": 17509518,
+      "floor_step": 8754759,
+      "settled_hz": 97.99885447137058
+    },
+    "4": {
+      "midi": 47,
+      "start_step": 22060612,
+      "floor_step": 11030306,
+      "settled_hz": 123.47082911918943
+    },
+    "9": {
+      "midi": 50,
+      "start_step": 26234636,
+      "floor_step": 13117318,
+      "settled_hz": 146.832384276562
+    }
+  },
+  "enabled_pad_mask": "0x33ff",
+  "tom_fixed_gain": "9/8 after envelope, no new multiplier",
+  "hat_fixed_gain": "1/2 after envelope",
+  "snare": "same equation/envelope/gain as refinement",
+  "clap_rim": "retained pending user decision",
+  "initial_choke": "spare-slot open-tail fade; full-pool replacement requires regression and is documented separately"
+}

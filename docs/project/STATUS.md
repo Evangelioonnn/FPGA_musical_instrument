@@ -1,4 +1,58 @@
-# 当前状态 · 2026-09-29
+# 当前状态 · 2026-10-10
+
+本次开发同步补齐音频／Looper及当前控制板资料，范围见[GITHUB_SYNC_2026-10-10](GITHUB_SYNC_2026-10-10.md)。最新试听和C接口入口为looper_session_v2；下方按日期保留的旧“本地／未push／待板测”是当轮历史状态，不能覆盖最新入口。
+
+## 2026-10-10 Looper session V2：鼓组修订与C接口
+
+用户授权新候选[looper_session_v2](../../project/looper_session_v2/README.md)，直接位于原D盘project目录；保留旧Looper/refinement/V2。按10月9日反馈重排底鼓、四筒、开闭踩镲与更亮长尾吊镲，去除指定旧鼓；五旋律ID及32/12旋律、另8鼓、2048事件不减。
+
+[C交接](../../project/looper_session_v2/C_HANDOFF.md)增加addr8直接动作与held tagged ACK，以及23字LU1窄快照、解包/字段示例/mock和真实PCM跨域。默认关闭完整LR1声部快照，可显式启用并另预算。用户要求本轮先交接口，**C真实屏幕/蓝牙不在本轮接入**；4×4/EC11/3板载键仍是下载版输入，新6×6控制板另做适配。
+
+独立19针50MHz/20ns PnR **33676 Logic /17123 Register /23771 CLS /75 BSRAM /32.5 DSP**，setup/hold0/0，余量**1.117ns**。实际鼓组PCM、命令/CDC/生命周期、回归与参考音的最终范围、接口保留审计及当前指纹，统一见新lab[VALIDATION](../../project/looper_session_v2/VALIDATION.md)。C原预留保持，独立板资格不替代接口/整机时序。本轮来源延用共享工作区；2026-10-10开发同步通过独立任务提交补齐源码和文档，见本页同步说明。
+
+## 2026-10-09 首轮Looper实物反馈
+
+用户认可原有五音色；基本循环未听出明显缺音，开始/停止/恢复正常，停止后自然尾音、无无限卡音。鼓组需要按新的底鼓/四筒/开闭踩镲方案调整。撤销、清轨、分轨混音、表达与自定义因无显示盲操困难尚未充分验收，不能记为全部通过。用户报告显示已能识别按键并映射到屏幕；尚未核对固定源码或完成Looper联合状态接入。详见[本轮反馈与鼓组修改目标](../../evidence/looper_refinement_2026-10-08/BOARD_LISTENING_2026-10-09.md)。以下此前“待板测”按历史范围理解；本轮不修改固件。
+
+## 2026-10-09 软件收敛与统一待验收入口
+
+用户授权完成无需板测反馈的工作，并统一明日验收。新分支`codex/looper-convergence-20261009`固定比较`9d28244`，
+在[新lab](../../project/looper_convergence_lab/README.md)验证向零截断/共享乘积寄存、54字快照分级复制、
+12个实际物理拨弦复位约束和循环事件ready寄存。没有改动原Looper、refinement或已认可V2。
+
+最终19针50MHz/20ns PnR33722 Logic /17592 Register /23796 CLS /75 BSRAM /31.5 DSP，setup/hold0/0，
+余量0.009ns；相对refinement增加256Logic/517Reg/123CLS，RAM/DSP没有改善。**新候选不晋升，明日主验收仍是10月8日改进版。**
+数字/接口/参考音完整范围见其[VALIDATION](../../project/looper_convergence_lab/VALIDATION.md)；
+[总验收指南](LOOPER_TOTAL_ACCEPTANCE_2026-10-09.md)和[统一包清单](../../project/looper_convergence_lab/results/ACCEPTANCE_PACKAGE.json)
+合并此前两轮未验收操作，保留新实验对照、原Looper和V2回退。本轮只本地提交，没有远端push。
+
+不因局部LUT优化或独立50MHz通过承诺整机可放下；C预留保持，仍须真实C源码/PLL/CDC/电气及联合PnR。
+当前优先已有功能板测与最小集成，不加40旋律槽或tap/细分点击。下面10月8日/7日为冻结比较范围。
+
+最终42项必测＋2预览＋PLL wrapper模型、9份PCM/WAV回读通过；9段参考与冻结refinement逐字节相同。
+实际PLL接口审计2172未布网（42303Logic/23548Reg/26342CLS/79RAM/31.5DSP/1PLLA），无合格STA/FS。
+完整collector拒绝，显式BOARD_DELIVERY只授予独立板资格，当前106个LF源指纹核对；4FS/9WAV包内SHA全部通过。
+主验收固件与102个旧源指纹、FS、9 WAV保持原样。实体ADC/25键/C整机及模拟验收仍未完成。
+
+## 2026-10-08 第二轮独立改进结果
+
+[looper_refinement_lab](../../project/looper_refinement_lab/README.md)位于本地codex/looper-refinement-20261007，比较起点0199ed7。保留32共享旋律/12拨弦、另8鼓及2048事件，新增每层普通/选择性延音和有界弯音录放、空录/溢出恢复、真实MCP3208/五推子模式pickup模型、25键逻辑生命周期及LR1状态/PCM/ACK跨域接入。实体ADC/25键和C最新UI未并入；C先前独立显示进展以她的分支/板测为准，本机未取得固定源码，不能从本审计推断她尚未实现或整机已完成。
+
+19针50MHz PnR为33466Logic/17075Reg/23673CLS/75BSRAM/31.5DSP，setup/hold0/0，20ns余量0.018ns；相对旧Looper净省11RAM/2DSP，Logic与CLS增加。18ns额外guard失败，不混作通过证据。40项必测、2预览、PLL wrapper行为模型和9 WAV当前源通过；四次接口物理审计均失败，最后26IO/PLL拓扑失败3402网、放置41005Logic/22760Reg/26449CLS/79RAM/31.5DSP/1PLLA，未获得接口STA/可用FS。
+
+严格完整collect已拒绝该失败；最终 [BOARD_DELIVERY](../../project/looper_refinement_lab/results/BOARD_DELIVERY.json)只授予独立板候选资格，不是接口或整机通过。40槽和tap/细分延后，保住C预留并优先整合，详见[逐项计划](../../project/looper_refinement_lab/WORK_PLAN.md)和[预算](../team/RESOURCE_BUDGET_V1.md)。板测待用户；本轮只提交本地，未推送GitHub。后续先验收现有硬件操作，再取得C固定源码优化共享状态访问、快照和复位/布线后做最小整机。
+
+下文Looper为固定旧比较，9月29日V2继续是已认可回退，不用本实验继承其板测资格。
+
+## 2026-10-07独立Looper候选更新
+
+[looper_lab](../../project/looper_lab/README.md)已提供四轨×四层事件循环、五音色与16鼓pad、全局40～240 BPM节拍器及现有矩阵/EC11/三键操作。最新完整19针PnR：32251 Logic/16254 Reg/22780 CLS/86 BSRAM/33.5 DSP，18ns约束setup/hold 0/0、余量0.029ns，实物主时钟仍50MHz。数字范围与源指纹按[验证页](../../project/looper_lab/VALIDATION.md)核对，实体听感和操作验收待用户，未替代音频V2或整合C/真实ADC。
+
+本候选位于 `codex/looper-drum-night-20261007`，不把此分支的实验资格写成main成品发布。C的预留未减少，但BSRAM标量合计只剩6块，CLS也需共同检查，详见[更新预算](../team/RESOURCE_BUDGET_V1.md)。以下9月29日内容继续描述原基线，不覆盖后来独立实验/C分支的进度。
+
+
+
+> **控制板更新 · 2026-10-09：** KEYBOARD_V2已完成10月8日R3静态审查，用户报告DRC通过，当前源文件指纹一致。25演奏键＋11功能键、三编码器、五推子、双轴摇杆、25 RGB＋四状态灯；本版不加踏板，实际30根信号IO。版本、真实针序、反贴方向和未验证事项统一见[控制板当前状态](../../hardware/interaction/BOARD_CURRENT.md)。用户已明确确认下单，尚无到货/实物通过反馈，资料尚在本地未推送；双触点力度仅作独立小样探索，不合并到已下单板。以下9月29日音频及团队状态按其日期理解，“实体PCB尚未完成”等旧描述不覆盖本次控制板更新。
 
 本页只保留当前事实和待办。逐轮实验、旧“待板测”和旧推送失败记录已保存为[历史快照](../history/STATUS_BEFORE_C_HANDOFF_2026-09-29.txt)；不能覆盖本页或用户的新决定。
 

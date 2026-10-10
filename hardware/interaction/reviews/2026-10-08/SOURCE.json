@@ -1,0 +1,11 @@
+{
+  "source": "BOARD/KEYBOARD_V2.eprj",
+  "file_sha256_at_read": "fc0d2db1845973f0116b2a64981141e9635e1c9707547f4620bcee550f0fc34b",
+  "source_documents_unchanged_at_finish": true,
+  "document_encoded_sha256": {
+    "p1": "df0a1deca085fc824846b52000d55d73d8afc5b02fd3112aef92e3761184a519",
+    "pcb1": "40ef87148d7cb65a11309891d57a1c243bc8d9400e76b574936e11027a0abeb4"
+  },
+  "native_drc": "user reports zero errors/warnings; not run by this review",
+  "source_modified_by_reviewer": false
+}

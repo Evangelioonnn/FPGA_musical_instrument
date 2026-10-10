@@ -1,0 +1,65 @@
+{
+  "piano": {
+    "samples": 48076,
+    "raw_peak": 534,
+    "audition_gain": 28.089887640449437,
+    "sha256": "2dcc1c527f75fbf0a3ed67a64e5044ebadf48296c9a5fed32429e3caf0907fa7",
+    "wave_rate_hz": 48077,
+    "rtl_logical_rate_hz": 48076.92307692308,
+    "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+  },
+  "warm_pluck": {
+    "samples": 48076,
+    "raw_peak": 182,
+    "audition_gain": 82.41758241758242,
+    "sha256": "8e6aea486c7a1918e3acb5ec82b362ce515d1cdc3eecdf3077c857be2e9c9d5b",
+    "wave_rate_hz": 48077,
+    "rtl_logical_rate_hz": 48076.92307692308,
+    "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+  },
+  "bell": {
+    "samples": 48076,
+    "raw_peak": 473,
+    "audition_gain": 31.712473572938688,
+    "sha256": "b248a0e2b506a8fdfb92079015e835e1d35f811708453b2f5074b545a95a0c48",
+    "wave_rate_hz": 48077,
+    "rtl_logical_rate_hz": 48076.92307692308,
+    "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+  },
+  "drive_lead": {
+    "samples": 48076,
+    "raw_peak": 596,
+    "audition_gain": 25.16778523489933,
+    "sha256": "d29a7cbf77f200217938a4185059f70d31e1223452ad61dd84ce4e94de7df72a",
+    "wave_rate_hz": 48077,
+    "rtl_logical_rate_hz": 48076.92307692308,
+    "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+  },
+  "custom": {
+    "samples": 48076,
+    "raw_peak": 539,
+    "audition_gain": 27.82931354359926,
+    "sha256": "b80d204d10e814625d1776cef1155a41369082f2173d47fee4a41c4f536a68b6",
+    "wave_rate_hz": 48077,
+    "rtl_logical_rate_hz": 48076.92307692308,
+    "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+  },
+  "drum_kit": {
+    "samples": 307695,
+    "raw_peak": 1767,
+    "audition_gain": 8.488964346349745,
+    "sha256": "9b023fa1169201bb1a5867fefc5e4a5ee44c380ff29d0f86b0ae21a052619b58",
+    "wave_rate_hz": 48077,
+    "rtl_logical_rate_hz": 48076.92307692308,
+    "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+  },
+  "metronome120": {
+    "samples": 96153,
+    "raw_peak": 2880,
+    "audition_gain": 5.208333333333333,
+    "sha256": "fc37eb6b4247b41175e128fcd625be05a387fe231933d530601b5d0c3d3ae6a4",
+    "wave_rate_hz": 48077,
+    "rtl_logical_rate_hz": 48076.92307692308,
+    "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+  }
+}

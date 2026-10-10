@@ -1,0 +1,3868 @@
+{
+  "format": 1,
+  "date": "2026-10-10",
+  "base": "e70e4dbe7de1a61edb8a4f3ea2c7f361bfcce6d2",
+  "branch": "codex/github-sync-20261010",
+  "scope": "Curated previously unpushed development files; not a new board qualification",
+  "groups": {
+    "audio": 582,
+    "hardware": 40,
+    "navigation": 22
+  },
+  "files": {
+    ".gitattributes": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "a09e3b92b26b591e955fa185b7ca49d301f9e5799c219f49c57d40c80443a553",
+      "bytes_in_unit": 1039
+    },
+    ".gitignore": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "f69c8b00f04f935221c48e91c44282d24665c1097587aae03a78efd9687fd389",
+      "bytes_in_unit": 2184
+    },
+    "BOARD/KEYBOARD_V2.eprj": {
+      "group": "hardware",
+      "unit": "raw binary bytes",
+      "sha256": "9fef757ce0cdec04cb2dcaac7497c8e602ddf12374eae4b157a233c8adb9850d",
+      "bytes_in_unit": 2379776
+    },
+    "README.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "3d22371b351a75345bd259250a5258431de7bac202ad2cbdaaae130960a80801",
+      "bytes_in_unit": 5446
+    },
+    "docs/catalog/PROJECT_INDEX.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "b88930e62e5a9f00e297ac33b21210cfee8702f9684121c4db5b14f90ce87280",
+      "bytes_in_unit": 16073
+    },
+    "docs/interfaces/LOOPER_SESSION_LU1.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "ff4872d0daca2a323686b4aa02e56fe579dbe66c9eb7b22b9c34d3b9954e3067",
+      "bytes_in_unit": 652
+    },
+    "docs/project/GITHUB_SYNC_2026-10-10.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "31a0057956665baf41ed8f64cf951477c726804d932bd4ddc1153df111afbcdb",
+      "bytes_in_unit": 4266
+    },
+    "docs/project/LOOPER_TOTAL_ACCEPTANCE_2026-10-09.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "52e545f80f1c92c7c2da94a324ba0495b1144c7a141b1b8b5e98bda39cafb2f2",
+      "bytes_in_unit": 14537
+    },
+    "docs/project/STATUS.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "9813e03655472e9d3835fc989638c5ccc6df30b41b4f83dd7215373561779a68",
+      "bytes_in_unit": 13651
+    },
+    "docs/team/C_HANDOFF_AND_DISPLAY_PLAN.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "5550a9a196226055e1c057b106e6635494267156cba4fc3740ee8a389e92047a",
+      "bytes_in_unit": 22421
+    },
+    "docs/team/RESOURCE_BUDGET_V1.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "ae84923c0165b9584657c17cca5d33dc39400ba1b003c4bbb57de7e659bdda12",
+      "bytes_in_unit": 30984
+    },
+    "docs/team/ROLE_A.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "6a874e46e9a3de9bd9a75a6c83a0209149cce434e27f2376d2eeef4337542715",
+      "bytes_in_unit": 3635
+    },
+    "docs/team/ROLE_B.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "f81169bd04b15a68dfa82c9e0002f65dc0f113e42670e9f247b260615364bd00",
+      "bytes_in_unit": 3696
+    },
+    "docs/team/ROLE_C.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "e865516756de2de943eb238f607e3ce1b4715a323e97f9e049251218c0d2d5fc",
+      "bytes_in_unit": 4844
+    },
+    "evidence/INDEX.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "cb70ae41436d5f5bb1246b347764d9bdc4eccbe4de621f2970ef1b641b540ea1",
+      "bytes_in_unit": 8453
+    },
+    "evidence/github_sync_2026-10-10/README.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "3eefea0dfdce1ae708bcf7cbb1fedd60e825fb6af2037023b8c32aae3455017f",
+      "bytes_in_unit": 936
+    },
+    "evidence/looper_convergence_2026-10-09/README.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "1f71254fa46b6da26220b1585b12958c0b3475317b9a43fada15cff0419d5034",
+      "bytes_in_unit": 1841
+    },
+    "evidence/looper_refinement_2026-10-08/BOARD_LISTENING_2026-10-09.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "a437f28abf2317bbecf20c8300e1060b939f3267c0dec7f17d21dd03d17e54f2",
+      "bytes_in_unit": 3483
+    },
+    "evidence/looper_refinement_2026-10-08/README.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "cbe248caea8efd0c23786ac977a10e96aa951d1287484f010bb60e9539336eb5",
+      "bytes_in_unit": 4050
+    },
+    "evidence/looper_session_v2_2026-10-10/README.md": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "deb4d65ef643505a53e3268a88bd97e7cbab650d73e6e779f1e29e7c16e6ec60",
+      "bytes_in_unit": 1744
+    },
+    "hardware/interaction/BOARD_CURRENT.md": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "bf027780be3f81dd586816d209a96f7e1dbd691cfb577820bad130d2b804f06f",
+      "bytes_in_unit": 7430
+    },
+    "hardware/interaction/CONTROL_BOARD_SINGLE_PCB_V1.md": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "a36a7607750ab7ebfaea1e3fb17c635d0d49fc2b29029b0b096a935c9daef963",
+      "bytes_in_unit": 9080
+    },
+    "hardware/interaction/README.md": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "12acf60fd4f666ee4a360c9ad1dd13c92dfb4f5a0df359d5355c58e92e5c479d",
+      "bytes_in_unit": 1682
+    },
+    "hardware/interaction/RGB_BACKLIGHT_V1.md": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "ce77d91287c395b0602b8bc469287e374ac7831250cda0c987d150736973ed68",
+      "bytes_in_unit": 9706
+    },
+    "hardware/interaction/references/rgb/C5149201_SK6812MINI-E.pdf": {
+      "group": "hardware",
+      "unit": "raw binary bytes",
+      "sha256": "d78c60d7a163c7fdb69db78a2fccf0faa8104532fdee0b0472736aaeac427cc7",
+      "bytes_in_unit": 819307
+    },
+    "hardware/interaction/references/rgb/sn74ahct1g125.pdf": {
+      "group": "hardware",
+      "unit": "raw binary bytes",
+      "sha256": "386389b623620d89a260b11d272af5625e387e0b24d0981cb4f7d66a4e1bc9fa",
+      "bytes_in_unit": 1253763
+    },
+    "hardware/interaction/research/DUAL_CONTACT_VELOCITY_2026-10-09.md": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "acd7636f21e4afd6aafc6d14f80e43af9173985f9f69e94768777d7604db8c5b",
+      "bytes_in_unit": 10585
+    },
+    "hardware/interaction/reviews/2026-10-05/REVIEW.md": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "4b3e7d6262e413f1edc90d58af8f06fe786ff9d421fb7388a1732d198e8efa93",
+      "bytes_in_unit": 7790
+    },
+    "hardware/interaction/reviews/2026-10-05/adc_detail.png": {
+      "group": "hardware",
+      "unit": "raw binary bytes",
+      "sha256": "fff1300bcda80048076e9147965f5ecfd1ef58fd6ffe16e53643848118059c6d",
+      "bytes_in_unit": 117416
+    },
+    "hardware/interaction/reviews/2026-10-05/audit_results.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "346e712224297cac734f2791fa1423a4d8372f865039b1c3bbe446a7416f04e2",
+      "bytes_in_unit": 197592
+    },
+    "hardware/interaction/reviews/2026-10-05/bottom_overview.png": {
+      "group": "hardware",
+      "unit": "raw binary bytes",
+      "sha256": "85d65b48186a313bc459697ee9311b480eae120e2ffe5ac3bd3442a76a8d4c3c",
+      "bytes_in_unit": 390465
+    },
+    "hardware/interaction/reviews/2026-10-05/matrix_map.csv": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "8602b1f785992ebfce333a27bb9ff3e73fea3817c3e1c1c1f7f6648b153b51c8",
+      "bytes_in_unit": 695
+    },
+    "hardware/interaction/reviews/2026-10-05/netlist_results.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "becceed0797cacb79abaf50e75fb50fad0999e5e7cec8ef3db3818484af717b1",
+      "bytes_in_unit": 132
+    },
+    "hardware/interaction/reviews/2026-10-05/review_summary.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "ddc650a908ec37717f875a567ac11d7d1d828c1345d785bd51784dba482b37ae",
+      "bytes_in_unit": 709
+    },
+    "hardware/interaction/reviews/2026-10-05/top_overview.png": {
+      "group": "hardware",
+      "unit": "raw binary bytes",
+      "sha256": "c6c76a07646435939103292e53ef9069df177c624448257673c0fb2ed1845f79",
+      "bytes_in_unit": 437274
+    },
+    "hardware/interaction/reviews/2026-10-08/RECHECK_R2.md": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "0ffc0e927871c970fe5d38ce83ccdd011f3fe4b230185f194f32b966fa3d820b",
+      "bytes_in_unit": 3898
+    },
+    "hardware/interaction/reviews/2026-10-08/RECHECK_R3.md": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "61d97ade25c2e0e0eab28123db5ed014f28fbcbf1505bf9d9e091bf27185f812",
+      "bytes_in_unit": 2608
+    },
+    "hardware/interaction/reviews/2026-10-08/REVIEW.md": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "afe6e17562de03f0f34d76b1de8d9ee9e785eda435de574e7e58018d61aa217f",
+      "bytes_in_unit": 7729
+    },
+    "hardware/interaction/reviews/2026-10-08/SOURCE.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "9343da15afb4a8444edd109617b3c563cf6b731a09717b71fe25fe92c7a23225",
+      "bytes_in_unit": 491
+    },
+    "hardware/interaction/reviews/2026-10-08/audit_results.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "7d7a41d60bcd13d84a9c1fab8a1e8e60df99bdc7daaebb24905bed8b73968956",
+      "bytes_in_unit": 174924
+    },
+    "hardware/interaction/reviews/2026-10-08/key_rgb_detail.png": {
+      "group": "hardware",
+      "unit": "raw binary bytes",
+      "sha256": "43747d70117c7fec5786f8f795fcfe9d5c298375b134138b6e95faaf04dc9200",
+      "bytes_in_unit": 68731
+    },
+    "hardware/interaction/reviews/2026-10-08/layout_metrics.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "75b515ee93e38e6df8a37c9f35b0b52f1e92aad5ff7b2c1e5cb90ce3bce1098e",
+      "bytes_in_unit": 174
+    },
+    "hardware/interaction/reviews/2026-10-08/matrix_map.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "ff215b29c728db0e1fc829ec74bdeba9770796386c3f4c293348358318c9de6d",
+      "bytes_in_unit": 2000
+    },
+    "hardware/interaction/reviews/2026-10-08/mount_slider_detail.png": {
+      "group": "hardware",
+      "unit": "raw binary bytes",
+      "sha256": "597742bedd8d20027594f915ed8d3901994409e38568959307b8b3d801380c00",
+      "bytes_in_unit": 58643
+    },
+    "hardware/interaction/reviews/2026-10-08/netlist_results.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "73f50e48556e8998429064c1a09162346892c4b56079c141cb1e131b4dbfa0a8",
+      "bytes_in_unit": 132
+    },
+    "hardware/interaction/reviews/2026-10-08/r2/SOURCE.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "1f461c9cec9c05024841cafa345b2710c684276bae50fae0a3769db0314ba415",
+      "bytes_in_unit": 171
+    },
+    "hardware/interaction/reviews/2026-10-08/r2/audit_results.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "e6de95bba17f6e71e3b261889d765c9c7fb7c5feabc0d30335c91d6133bb6e6b",
+      "bytes_in_unit": 174886
+    },
+    "hardware/interaction/reviews/2026-10-08/r2/key_rgb_detail.png": {
+      "group": "hardware",
+      "unit": "raw binary bytes",
+      "sha256": "43747d70117c7fec5786f8f795fcfe9d5c298375b134138b6e95faaf04dc9200",
+      "bytes_in_unit": 68731
+    },
+    "hardware/interaction/reviews/2026-10-08/r2/layout_metrics.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "49d4730d0a40c50df6cdadb8b414a0c02b953dc853bd0b99547e4110ebec5256",
+      "bytes_in_unit": 175
+    },
+    "hardware/interaction/reviews/2026-10-08/r2/led_orientation.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "f4c735b2177e3aa695d99e15462e79758fce552b6e5e82e40467081e14512fc0",
+      "bytes_in_unit": 10306
+    },
+    "hardware/interaction/reviews/2026-10-08/r2/mount_slider_detail.png": {
+      "group": "hardware",
+      "unit": "raw binary bytes",
+      "sha256": "95ffc153eb237dd5c69b46a1b9e255b7fd8570434797c32a38783bc316a727b1",
+      "bytes_in_unit": 58492
+    },
+    "hardware/interaction/reviews/2026-10-08/r2/netlist_results.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "73f50e48556e8998429064c1a09162346892c4b56079c141cb1e131b4dbfa0a8",
+      "bytes_in_unit": 132
+    },
+    "hardware/interaction/reviews/2026-10-08/r2/rgb_driver.png": {
+      "group": "hardware",
+      "unit": "raw binary bytes",
+      "sha256": "4e4e801d788db3e3576524c02ea194af1061c1272ff44b8107b998619b79f15f",
+      "bytes_in_unit": 97072
+    },
+    "hardware/interaction/reviews/2026-10-08/r3/SOURCE.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "8537a392349ef62ccb6e4e412f4135d7b97e9866959d8534520a8eb4878cc618",
+      "bytes_in_unit": 171
+    },
+    "hardware/interaction/reviews/2026-10-08/r3/audit_results.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "ceac853fb370dc3bfddd6545050f9412c60eb717ec89261290219388a097d391",
+      "bytes_in_unit": 174912
+    },
+    "hardware/interaction/reviews/2026-10-08/r3/layout_metrics.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "49d4730d0a40c50df6cdadb8b414a0c02b953dc853bd0b99547e4110ebec5256",
+      "bytes_in_unit": 175
+    },
+    "hardware/interaction/reviews/2026-10-08/r3/led_orientation.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "8d41a817143f6060bdb20d1440edd596078079895071d9aa80528afeeb0568bd",
+      "bytes_in_unit": 10306
+    },
+    "hardware/interaction/reviews/2026-10-08/r3/netlist_results.json": {
+      "group": "hardware",
+      "unit": "LF-normalized bytes",
+      "sha256": "73f50e48556e8998429064c1a09162346892c4b56079c141cb1e131b4dbfa0a8",
+      "bytes_in_unit": 132
+    },
+    "hardware/interaction/reviews/2026-10-08/rgb_driver.png": {
+      "group": "hardware",
+      "unit": "raw binary bytes",
+      "sha256": "f190d09adb2450400ea058e93c26933ab982763cd36db4e499ce77117976ef4d",
+      "bytes_in_unit": 90879
+    },
+    "project/looper_convergence_lab/.gitignore": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d0ccbd7ec29746e1da93e5c34c7febfbe33329f19a84a325908d3834cb57b368",
+      "bytes_in_unit": 412
+    },
+    "project/looper_convergence_lab/ACCEPTANCE_FEEDBACK.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d5123e09157c796c8a02289294a13382ea67b7cd4ef360de773703026c6c483a",
+      "bytes_in_unit": 1075
+    },
+    "project/looper_convergence_lab/AGENTS.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7d18b52a72a7a3c98e6b82836f7bf1f0109f84079e6bbd830319a6e317c7966a",
+      "bytes_in_unit": 1395
+    },
+    "project/looper_convergence_lab/INTEGRATION.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "565a9e2cfb4ff77f33a6fb6c5b3edc078a9df43309c1db4fab45c5744994328c",
+      "bytes_in_unit": 6425
+    },
+    "project/looper_convergence_lab/README.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "acea3c14b4abd8ae3353f62b05dd914a3de6f4135a4e831ed96072b199d05ca6",
+      "bytes_in_unit": 4284
+    },
+    "project/looper_convergence_lab/VALIDATION.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "28b0da57362138c7229d2859abd68e2eaea8d08d6a2ef884c5b868a541e4843e",
+      "bytes_in_unit": 9060
+    },
+    "project/looper_convergence_lab/WORK_PLAN.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "874ddf3b5b2eacde87ed9d8f8585dccc6a5975d3b6a232e86e292c8c5cd60ca5",
+      "bytes_in_unit": 3678
+    },
+    "project/looper_convergence_lab/acceptance/.gitignore": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d1016cb93fb7c693471d2a92dd657d94f6cdeb5c17a48a07588d361b7def11f8",
+      "bytes_in_unit": 22
+    },
+    "project/looper_convergence_lab/acceptance/OPEN_ME.txt": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "799f5f69f5b5f6ca3ff30cadbfc218c8ec57b15959c54379e3d49ff807664dd5",
+      "bytes_in_unit": 297
+    },
+    "project/looper_convergence_lab/acceptance/manifest.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f02f28955bc63a7064e9851c3549cadebfd5cbdfed607a574cb4c096efb7a38e",
+      "bytes_in_unit": 10710
+    },
+    "project/looper_convergence_lab/acceptance/verify.ps1": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "6901e1e0e0e2c5107004564d3da39dfb65fe235383eb0943e0309fa597101fe5",
+      "bytes_in_unit": 1141
+    },
+    "project/looper_convergence_lab/audit/build.tcl": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "bf8d9b8a15a3c9f8718a436684451bce607f8fa40488f219382d6810ce310722",
+      "bytes_in_unit": 220
+    },
+    "project/looper_convergence_lab/audit/refinement_audit.cst": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9102166d895354008bd9f94e7fb5eb5dbff30bac807c72c9f8b240ae8d4cf2b2",
+      "bytes_in_unit": 2936
+    },
+    "project/looper_convergence_lab/audit/refinement_audit.gprj": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "1398916ca269fb71f90883acbdfc87041f2e4afa78869d0cf17e4d380c896317",
+      "bytes_in_unit": 3850
+    },
+    "project/looper_convergence_lab/audit/refinement_audit.sdc": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a42da4e1ce30b2a5c8b7e2a970e894569ab62ea8fbd45daabc1c69fa01aa10b3",
+      "bytes_in_unit": 2061
+    },
+    "project/looper_convergence_lab/audit/refinement_audit_top.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "471b2e8bce3e888b590246b51d53a36e73b171a35014ab86ab11fd5b60885508",
+      "bytes_in_unit": 2742
+    },
+    "project/looper_convergence_lab/audit_pll/build.tcl": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e4f9fa25d70b084b69b95707e0c18133f8f94d6f10e1a25e193eca9266e9923b",
+      "bytes_in_unit": 264
+    },
+    "project/looper_convergence_lab/audit_pll/refinement_pll_audit.cst": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "6466b53b95aa6841780194af56b051bd103dadbe47f1ab2b81506047db2c6efc",
+      "bytes_in_unit": 4060
+    },
+    "project/looper_convergence_lab/audit_pll/refinement_pll_audit.gprj": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3af9b87505bcbe49e171bfa2d36b8ad6fcb70436c3085c89b1d7fefe0cd781fe",
+      "bytes_in_unit": 4245
+    },
+    "project/looper_convergence_lab/audit_pll/refinement_pll_audit.sdc": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ad23ee3f0dfa2869b64b47b0ccc8332d0e487b1f3cf0e680e47ff9c06d6f2a24",
+      "bytes_in_unit": 2116
+    },
+    "project/looper_convergence_lab/audit_pll/refinement_pll_audit_top.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2127d3d53b7ae6067877c358f3caafc239c14a79343542d7ee4dc1c7d777e15b",
+      "bytes_in_unit": 1084
+    },
+    "project/looper_convergence_lab/audit_pll/results/CLOCK_MODEL.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "88e3473d4867d49ef392f957c7ffea90e05dca706997b56ca4b5c3b14071bfce",
+      "bytes_in_unit": 6172
+    },
+    "project/looper_convergence_lab/audit_pll/results/mapped_resets_50mhz/FAILURE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e86ecbc01780f1af6a8a514eace6a499a4a875c8c20043d24087d8a4e0195ac3",
+      "bytes_in_unit": 10225
+    },
+    "project/looper_convergence_lab/audit_pll/results/pipeline_no_rep_50mhz/FAILURE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "5801ff5e11b4d64fab63e6a35466f3b2a31810f0dd3c84551665262d9f67523e",
+      "bytes_in_unit": 10225
+    },
+    "project/looper_convergence_lab/audit_pll/results/registered_ready_50mhz/FAILURE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f85052cbf2852500d6d80380cfba6f36ee356cef093c7830569146aa20e1f219",
+      "bytes_in_unit": 10500
+    },
+    "project/looper_convergence_lab/audit_pll/sim/pll_clock_model_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "18fd84e892e63b7d9f57a09b8f1ea5c01186d017673322b607a696c27f9bb37f",
+      "bytes_in_unit": 2009
+    },
+    "project/looper_convergence_lab/audit_pll/sim/run_clock_model.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "dce09f273db2cc3b53cf10b41b3e87439398661a485df8a7cc9263e231965f02",
+      "bytes_in_unit": 2366
+    },
+    "project/looper_convergence_lab/build.tcl": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "1f346e3f203b66d923b59a75629fd6dcbe104ea5210d43da42d1d7fb28675e0c",
+      "bytes_in_unit": 266
+    },
+    "project/looper_convergence_lab/build_audit.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c1a72a12caa5261cae4bb57b730d7cdad018420323c82be9e3755f38bf8cae59",
+      "bytes_in_unit": 5328
+    },
+    "project/looper_convergence_lab/build_delivery.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "5130f5fe4cbe6639b6adb409b42391e1b3ba31bf32bf152ed2c5ce2ddef86dea",
+      "bytes_in_unit": 3104
+    },
+    "project/looper_convergence_lab/collect_evidence.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "11d89eb09334ff9220921ebf959e9095bffc6baafdde731f2b42127ab1b6c3a9",
+      "bytes_in_unit": 7007
+    },
+    "project/looper_convergence_lab/looper_convergence_lab.gprj": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "243caed67ef2bcbb215f066fe7bfa42716911c5371be3f8b13a0240d98d42c6d",
+      "bytes_in_unit": 3720
+    },
+    "project/looper_convergence_lab/results/ACCEPTANCE_PACKAGE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f02f28955bc63a7064e9851c3549cadebfd5cbdfed607a574cb4c096efb7a38e",
+      "bytes_in_unit": 10710
+    },
+    "project/looper_convergence_lab/results/BOARD_DELIVERY.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "000b86cb70a0a54d07e94f4d158366277aa1314df2307af6d7a48ff37e3c85d8",
+      "bytes_in_unit": 287401
+    },
+    "project/looper_convergence_lab/results/FROZEN_REFINEMENT_CHECK.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "69418d14ee642bc130b0fbc7147e79e54ca1923c09479b57bd8137fcc1967b6d",
+      "bytes_in_unit": 173
+    },
+    "project/looper_convergence_lab/results/PREVIEW_EQUIVALENCE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "5ff322281ccacd45328f0301505d05ca1bb787eddcd067b83965b2ed27011fbe",
+      "bytes_in_unit": 3795
+    },
+    "project/looper_convergence_lab/results/RESET_MAPPING_board.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "344029476decb48bf6aa6fbaac75958015698d0cac11574a97f598c5634926ed",
+      "bytes_in_unit": 6169
+    },
+    "project/looper_convergence_lab/results/RESET_MAPPING_pll.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "4d23e8b2732552bce7dd2c1188edcec56a679356606833bdec7ccc50f21883ff",
+      "bytes_in_unit": 6999
+    },
+    "project/looper_convergence_lab/results/SYNTHESIS_PROFILE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "63965f94b39e633b90ba6413d3f3b54123c2902e6811322473dac8f31deacdc7",
+      "bytes_in_unit": 55339
+    },
+    "project/looper_convergence_lab/results/all_resets_unbuffered_50mhz/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d071f18ff8d4c3b15edc658af4000d6842eaf6a387bf500d06b2bec4f62e4916",
+      "bytes_in_unit": 6213
+    },
+    "project/looper_convergence_lab/results/arithmetic_50mhz/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d63ef5871b34963aa4708ebf0ac880736ac67dc593734a32042a14fdef7b7ece",
+      "bytes_in_unit": 6217
+    },
+    "project/looper_convergence_lab/results/base_reset_50mhz/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "035e5b9ab23cb5c9baf2edd9c13f5b8ac3570e785d26141fb2d1817587ad65b0",
+      "bytes_in_unit": 6217
+    },
+    "project/looper_convergence_lab/results/final_50mhz/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fccf376ca10a00629d7f9cb8f186ab0d906269b46f04ee710497d0229c652f45",
+      "bytes_in_unit": 6491
+    },
+    "project/looper_convergence_lab/results/pipeline_50mhz/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "26f7801cdabb4b2671a706f54684b61c70754e140595519aba6c14b67393c202",
+      "bytes_in_unit": 6217
+    },
+    "project/looper_convergence_lab/results/preview.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b172064c7a442124c1ef8620ab53cd8abd7c642d6f0f0494cc7e9e0c977aeedf",
+      "bytes_in_unit": 7022
+    },
+    "project/looper_convergence_lab/results/regression.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "78893be244874445d4d75bc4118139f4ae9484cb02573b4633b25622e20c1ff4",
+      "bytes_in_unit": 5420
+    },
+    "project/looper_convergence_lab/results/sim/arrangement_preview_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "98b1e20ff89a75a3ec93724a38794facd3137b5a214cf56171f64c450895f921",
+      "bytes_in_unit": 9130
+    },
+    "project/looper_convergence_lab/results/sim/arrangement_stress_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "24cf2b28170bfc696d8a2e130122f8c15a351d6b979642766ff42ffc7947648f",
+      "bytes_in_unit": 9184
+    },
+    "project/looper_convergence_lab/results/sim/custom_service_bound_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "443f31f3bd345aa77c85e239aef14b886f9ef037eef3c196ed06760a917fe39b",
+      "bytes_in_unit": 9136
+    },
+    "project/looper_convergence_lab/results/sim/expression_bank_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "58fa3b0e34c65586c1f7bfebb6aaf5bc97c98ce9f19c35f8dffcb0a685af1686",
+      "bytes_in_unit": 9103
+    },
+    "project/looper_convergence_lab/results/sim/expression_empty_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "cb5e52db4fd863c75d28f5c2964b675fa3b1a2e530ab00aa4785422cdbd58dfc",
+      "bytes_in_unit": 9063
+    },
+    "project/looper_convergence_lab/results/sim/expression_roundtrip_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "13f7bf28d8280a51069b4100b15ea9a6d1d4823e0657bc4138b7d59190af1864",
+      "bytes_in_unit": 9112
+    },
+    "project/looper_convergence_lab/results/sim/expression_store_router_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d899fcf5a3c0c6820df45012055f93cc321671adcf4802c553c7c1ff2200f564",
+      "bytes_in_unit": 9097
+    },
+    "project/looper_convergence_lab/results/sim/looper_auto_close_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b0ff66dd442c94603789cf6f7478458f9e387ca81e6bc9a1b711d557e9624bd1",
+      "bytes_in_unit": 9033
+    },
+    "project/looper_convergence_lab/results/sim/looper_boundary_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f0a7a7a68692db1b8836fd1a0e763a9171e870d8c8670b3ae03d59b15b2c4c2b",
+      "bytes_in_unit": 9092
+    },
+    "project/looper_convergence_lab/results/sim/looper_clock_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b4c4460351c31b6308da26d38a14feee80714fe0be2e628889cbcb333581240d",
+      "bytes_in_unit": 9177
+    },
+    "project/looper_convergence_lab/results/sim/looper_controls_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fd7d6dc5ae226c7f221217f01a40e59bce96170cfad2656cb9fd896d5692d30b",
+      "bytes_in_unit": 9093
+    },
+    "project/looper_convergence_lab/results/sim/looper_custom_bound_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b39397e94fb8d0bb5479c0daf8e0ec95c93451e8ddbe21d211c3dbc46a48f00f",
+      "bytes_in_unit": 9080
+    },
+    "project/looper_convergence_lab/results/sim/looper_custom_bound_tb__N=32__FULL=0.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "56e4e153ba9b16e33e78079a7433af727b3d18ec97aae6b2b0af8c41b4ef8492",
+      "bytes_in_unit": 9109
+    },
+    "project/looper_convergence_lab/results/sim/looper_custom_bound_tb__N=32__FULL=1.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c8f0b68f35bfe7fabe6aa4bbac5a28365de77d59b7bba0c33a7c224eb3926e5a",
+      "bytes_in_unit": 9111
+    },
+    "project/looper_convergence_lab/results/sim/looper_drum_engine_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b38b6bbfb73c80d87147234b89b93b69d79cd161a6fdf9b9df8a626bdf5a32e1",
+      "bytes_in_unit": 9077
+    },
+    "project/looper_convergence_lab/results/sim/looper_event_path_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9e27b3fab8fb08e8ab0abc069da729b4897b03ee1c557beda5abd682f10e1805",
+      "bytes_in_unit": 9076
+    },
+    "project/looper_convergence_lab/results/sim/looper_event_router_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fe725b4df104b0dd033cc1cc9c331f4dc571454a725e7aaa3a5b47b32c30d1d8",
+      "bytes_in_unit": 9089
+    },
+    "project/looper_convergence_lab/results/sim/looper_event_store_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "814311d331bf2c9ec8b8ff620e797616b316b62e7213d9c739cac5bc65277d73",
+      "bytes_in_unit": 9089
+    },
+    "project/looper_convergence_lab/results/sim/looper_full_load_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "534362a2fbbda16b4ba9ca087cb65cc7cfb128d2842b465f77acb9d2b1d8fb1d",
+      "bytes_in_unit": 9089
+    },
+    "project/looper_convergence_lab/results/sim/looper_mix_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "686a2d1e9a8062c6b838a0be8c30131e42c2fea97aa72f9922d5dc9f81a6f324",
+      "bytes_in_unit": 9073
+    },
+    "project/looper_convergence_lab/results/sim/looper_patch_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7295f8ebabc8740ff494ce247c8819973432ef81ffe8a6e95c4d3cbd86ce6b63",
+      "bytes_in_unit": 9083
+    },
+    "project/looper_convergence_lab/results/sim/looper_pitch32_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "5a2160ada4c0238707692c396a7c207ae44e157cb989d97ec4d1edcdbe11dde0",
+      "bytes_in_unit": 9143
+    },
+    "project/looper_convergence_lab/results/sim/looper_pitch32_tb__ALL_CUSTOM=1.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "86a334699a88ec0611044b2080100f179a6937435b8e439f5b489106cbf2c99e",
+      "bytes_in_unit": 9165
+    },
+    "project/looper_convergence_lab/results/sim/looper_preview_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "1cbd689d0bff2b87a35e6f5443c01d685b6851ca00b042bd1db2669ab2526a05",
+      "bytes_in_unit": 9066
+    },
+    "project/looper_convergence_lab/results/sim/looper_store_capacity_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "db06673809393cdf58126459e11a86f6dbd5f52cf80264713bbddda7e4d80aea",
+      "bytes_in_unit": 9111
+    },
+    "project/looper_convergence_lab/results/sim/looper_store_capacity_tb__SERIAL=1.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "256ebb66393f3d3f1263902fad9dc61600427b43ced6fb2721e27da3f077b7ed",
+      "bytes_in_unit": 9129
+    },
+    "project/looper_convergence_lab/results/sim/looper_top_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ace484b0b410d8d0bb72455326a0fda92014ec58e569f7ad49d2b1598536252c",
+      "bytes_in_unit": 9101
+    },
+    "project/looper_convergence_lab/results/sim/looper_track_layout_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "541b4c03050f7373aa0b427f30cd71b0900596afafc3e40e0a434c5f283e7d55",
+      "bytes_in_unit": 9068
+    },
+    "project/looper_convergence_lab/results/sim/looper_transport_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b2ca32891fdebc464d30b6ba6db903e66aec15f87ff4bb0f4ea6111a045d3bd8",
+      "bytes_in_unit": 9070
+    },
+    "project/looper_convergence_lab/results/sim/looper_v2_equivalence_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "14404d385b5e99f5e01e789fee86e128b2327ea56d745e3cc314e53fa2275aea",
+      "bytes_in_unit": 9601
+    },
+    "project/looper_convergence_lab/results/sim/metronome_accuracy_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "28b0ae3c7c20e3bd4a8b4184b3f116b006c67e6a3c39610456bc7355d58baaec",
+      "bytes_in_unit": 9077
+    },
+    "project/looper_convergence_lab/results/sim/metronome_accuracy_tb__CADENCE=1040__SWEEP=0.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2e8ee9a431df1170e1c50aaaf13614018a4ebb3a1f4df0e36f42f025829f22c5",
+      "bytes_in_unit": 9117
+    },
+    "project/looper_convergence_lab/results/sim/metronome_control_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "bd737a3f0b01427f1926e772be79d217e32e6b2346fb538a960abf9bb90edf30",
+      "bytes_in_unit": 9086
+    },
+    "project/looper_convergence_lab/results/sim/record_merge_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e9c4b0bad664e40f448dcd46dc41f13ca8abaea1e766ff351529f55be06c2ccf",
+      "bytes_in_unit": 9087
+    },
+    "project/looper_convergence_lab/results/sim/refinement_link_reset_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d8837795bcd4284f4502f5e74d7b361e5de98aa87211c2b9175d2643fb901c42",
+      "bytes_in_unit": 9108
+    },
+    "project/looper_convergence_lab/results/sim/refinement_link_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c2a1bdd715a1c175ba1f7f698a68994d68a5e52d91064492475588be80927771",
+      "bytes_in_unit": 9174
+    },
+    "project/looper_convergence_lab/results/sim/sine_compact_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3b22ac3c60f87948f345110cec0c6a973f56d6f691fb010b3ddffe049cbedb69",
+      "bytes_in_unit": 8411
+    },
+    "project/looper_convergence_lab/results/unit/expression_capture_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "49a1b866879ecc4c33261794a146526ff7f03dff44bd2af84c7b415b634f8c18",
+      "bytes_in_unit": 685
+    },
+    "project/looper_convergence_lab/results/unit/fader_mode_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "17151431607482b67bf2821b9c56939c6f259fa240de90b99e82f239a8372ed0",
+      "bytes_in_unit": 643
+    },
+    "project/looper_convergence_lab/results/unit/looper_keys25_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "14738b1b59d35014ef0213859a9194bbd82134d01b0b26535a92d5429de413ec",
+      "bytes_in_unit": 786
+    },
+    "project/looper_convergence_lab/results/unit/mcp3208_reader_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "436fd46b835d4530474af6f95f0efa206247dc27847ca0286de3d0d0a76815c9",
+      "bytes_in_unit": 644
+    },
+    "project/looper_convergence_lab/results/unit/mcp3208_reader_tb__HALF=50__SCAN=50000.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "06a1bf54098ebb374fc5e6a06cdb7026ea0131a16ee82bc544c24f295cb8673a",
+      "bytes_in_unit": 679
+    },
+    "project/looper_convergence_lab/results/unit/pluck_truncation_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7358c74def7d5e7f5e95a41d17f26cfa61fc7fe5613af6fcc1ef4f407fc87de3",
+      "bytes_in_unit": 634
+    },
+    "project/looper_convergence_lab/results/unit/snapshot_copy_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b7f9f6695d0e9c3ecf4053aaa175ec9685d0deb2dc432ff27c1a408ae14f6d8f",
+      "bytes_in_unit": 801
+    },
+    "project/looper_convergence_lab/rtl/fader_mode_adapter.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "69f2e672f6481cbff0e5297cb210a278261871abc9a79066e563f5a3f6ad5526",
+      "bytes_in_unit": 3208
+    },
+    "project/looper_convergence_lab/rtl/looper_clock.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c6fd39a7990ed899610477f40e57b80bd498133cd0733a3e79f956994d7d4238",
+      "bytes_in_unit": 3053
+    },
+    "project/looper_convergence_lab/rtl/looper_controls.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c88402b580bd127f95b12dbfe1d9a4485e4ee7400da256f9dd32a9d60e9e4355",
+      "bytes_in_unit": 7827
+    },
+    "project/looper_convergence_lab/rtl/looper_drum_engine.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "84002ac69d6d75d77e46b45f74efac095a718c31397fc60a47a1ab8abb335c9e",
+      "bytes_in_unit": 11823
+    },
+    "project/looper_convergence_lab/rtl/looper_event_router.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b2a951ebeab1277fd5aa451965de41154f7b369bab0a096c21e6a8737db9ad52",
+      "bytes_in_unit": 11255
+    },
+    "project/looper_convergence_lab/rtl/looper_event_store.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3c3ce69e56ced82fdc8206de477641acca928399a657829beb2b5aad5460111a",
+      "bytes_in_unit": 22048
+    },
+    "project/looper_convergence_lab/rtl/looper_expression_capture.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7612cd5e58fdb7e626ec786339111076a141bef067e15604516c8a34e9f6bf1a",
+      "bytes_in_unit": 3751
+    },
+    "project/looper_convergence_lab/rtl/looper_transport.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9cf04fcf7cf2bc9cf03721ef833f70808b3f5605aae124b35b45aa6b8f9ceb4b",
+      "bytes_in_unit": 7090
+    },
+    "project/looper_convergence_lab/rtl/mcp3208_reader.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e1bdcc11ff288da8425146adb040bfbbed1328cce4a11dc29fabf54d726a4bcf",
+      "bytes_in_unit": 2678
+    },
+    "project/looper_convergence_lab/rtl/metronome_click.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "57f07bc3a5b24dd2068190e62973f38cd2cae56e38759ab0c67f9b697f576bc2",
+      "bytes_in_unit": 2372
+    },
+    "project/looper_convergence_lab/rtl/refinement_config_arbiter.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c67415c17127e9b7e36f4a72cd43acdd78e98f62fe1448747a768892dc409b3f",
+      "bytes_in_unit": 2214
+    },
+    "project/looper_convergence_lab/rtl/refinement_link.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7eb7c8546a036818da8d4db009eece2289f61795c23989bb6f9fc1cb16a9cf6c",
+      "bytes_in_unit": 5644
+    },
+    "project/looper_convergence_lab/rtl/refinement_snapshot_bridge.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "4b6b5d85953dc49ce6189b20c7c0f90a613d4dc118defb1793845818f5462d5b",
+      "bytes_in_unit": 6094
+    },
+    "project/looper_convergence_lab/sim/arrangement_preview_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "113084e9a2cdd5bd88d8a2d326b59efee9489037bfce4f9ca1bcc3b28f210803",
+      "bytes_in_unit": 6473
+    },
+    "project/looper_convergence_lab/sim/arrangement_stress_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "048a233ac0c4509b13a7d964b2e46d189d2945f53926c0faf7c18231700dc202",
+      "bytes_in_unit": 5720
+    },
+    "project/looper_convergence_lab/sim/custom_service_bound_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8ccd0cc61ce1989cea340c095c348d7e9ba4aeb14004a5e040c1c60c688f5a0c",
+      "bytes_in_unit": 6176
+    },
+    "project/looper_convergence_lab/sim/expression_bank_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ffee8e1160b44d6d7f12ec3e3dc48f99aedc4e11cda35bb8766a4cca27a2f903",
+      "bytes_in_unit": 5246
+    },
+    "project/looper_convergence_lab/sim/expression_capture_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "74ec46b654e118d2c1c977adbc6b3d3dc8fa7ff3dbf7ae01c26c16b0b2afa1ea",
+      "bytes_in_unit": 2626
+    },
+    "project/looper_convergence_lab/sim/expression_empty_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "802d0ff4aa7b924892f1b38ad4b843e4f4610f22a4238ec9f33d1c7193d610af",
+      "bytes_in_unit": 4047
+    },
+    "project/looper_convergence_lab/sim/expression_roundtrip_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "890cc62354932e04144a2b09de11d7bb2bece834c32388e7a3a00a3a000af821",
+      "bytes_in_unit": 6144
+    },
+    "project/looper_convergence_lab/sim/expression_store_router_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "da14f6c2f3610512f45a1c4ea7443c9e1eccb0584f18451c025ac9f93639b306",
+      "bytes_in_unit": 4550
+    },
+    "project/looper_convergence_lab/sim/fader_mode_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e1cfa167e672535d23c0d9c6ecb2a9c76002ad1d06cc005c11df5df793b338bc",
+      "bytes_in_unit": 1947
+    },
+    "project/looper_convergence_lab/sim/looper_auto_close_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b6ca7529bd43804c097620c6cd6cd4e80f2cd285397a7d998966121d7c04c4bb",
+      "bytes_in_unit": 3549
+    },
+    "project/looper_convergence_lab/sim/looper_boundary_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "de634755435117b14885084c6c65532262083e469b522f4f6e802282fd25f09d",
+      "bytes_in_unit": 2322
+    },
+    "project/looper_convergence_lab/sim/looper_clock_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "0d575092c8e96f0428c41a6d33fb8e0a912f4d78829815c146cd5f8824ce8187",
+      "bytes_in_unit": 2134
+    },
+    "project/looper_convergence_lab/sim/looper_controls_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8f4f5f1d869f181e5b309d736eb73b0bc142a477ea2dbb00a280fd14eb3c55e8",
+      "bytes_in_unit": 2783
+    },
+    "project/looper_convergence_lab/sim/looper_custom_bound_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "74eee8417c2521e12f8189d5ceafbeaa3176fc905298cba1b0c52bed45ab59ae",
+      "bytes_in_unit": 2764
+    },
+    "project/looper_convergence_lab/sim/looper_drum_engine_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "dde11fd57e843dfe7f2b8751244b61a466f54dbd2e0f263641c27151ca9313b0",
+      "bytes_in_unit": 4573
+    },
+    "project/looper_convergence_lab/sim/looper_event_path_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "456416e7eba5abf82206b9c841ecea0f03d579ca595de9678caeaffd73349080",
+      "bytes_in_unit": 6615
+    },
+    "project/looper_convergence_lab/sim/looper_event_router_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fe854aaf1f33debb7b0c9bf29602efe757387549de5c4a2162c794d67d71d129",
+      "bytes_in_unit": 4706
+    },
+    "project/looper_convergence_lab/sim/looper_event_store_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "74c9d8ce36a94336fcf2c8913bb8ad9407a17422948045674e1dc604711f8118",
+      "bytes_in_unit": 9455
+    },
+    "project/looper_convergence_lab/sim/looper_full_load_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a29f2e35eaa0054313edc0197491074f6dc6fb876cb6bdca57a81200b5915291",
+      "bytes_in_unit": 4904
+    },
+    "project/looper_convergence_lab/sim/looper_keys25_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8555ab794d25de68e828cd2e10351684b9890198b826017f6479d743afb35a6c",
+      "bytes_in_unit": 1798
+    },
+    "project/looper_convergence_lab/sim/looper_mix_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "07c906ca11115210ebaabf286d1a08f13aec80490eb03466de39344e3b4c3b20",
+      "bytes_in_unit": 4044
+    },
+    "project/looper_convergence_lab/sim/looper_patch_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e53ef52075fc97499f26db3eeb411feb3e98c5b3f057b5cf1d04131e931fbe02",
+      "bytes_in_unit": 4146
+    },
+    "project/looper_convergence_lab/sim/looper_pitch32_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b1a762f941adfcfcff602ed3dee8683842efb6b8b78d0c644aa18ec9b8170d2a",
+      "bytes_in_unit": 4407
+    },
+    "project/looper_convergence_lab/sim/looper_preview_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b2cc99cac79378a62c83c24e1d39f66382d8c6f59ca365d9402567c7bdcf1d41",
+      "bytes_in_unit": 4126
+    },
+    "project/looper_convergence_lab/sim/looper_store_capacity_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2e74b9e6a08174307f40154f3888f487defb3d93bbbd0d874cd18832b21bfa1c",
+      "bytes_in_unit": 3050
+    },
+    "project/looper_convergence_lab/sim/looper_top_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "bb2b210e084a9365b4ea50f510e8dd35a0417e4a90e3cffedece265df4815153",
+      "bytes_in_unit": 5552
+    },
+    "project/looper_convergence_lab/sim/looper_track_layout_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a26d9bc83f17d223a083ed8391661632d6caab0a919f379ff5976d390e3f64fd",
+      "bytes_in_unit": 2479
+    },
+    "project/looper_convergence_lab/sim/looper_transport_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e0456be52792cb63363a54f5e9e492733ee0fed53dad0947973e507b5e275f18",
+      "bytes_in_unit": 5198
+    },
+    "project/looper_convergence_lab/sim/looper_v2_equivalence_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "4fad3444d1afadaebc82a758d3f8c1120ea01496b8215d259895c3f14d20ef34",
+      "bytes_in_unit": 4638
+    },
+    "project/looper_convergence_lab/sim/mcp3208_reader_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "1a7fd8e569fb5ca957b9744412f6ebe8a545688ed52d72544b3b03d8c8e6a8a1",
+      "bytes_in_unit": 2102
+    },
+    "project/looper_convergence_lab/sim/metronome_accuracy_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "29bf0205d21cd90b95291048d680484aa77656f18b9a61e64443e6a057d04afc",
+      "bytes_in_unit": 2900
+    },
+    "project/looper_convergence_lab/sim/metronome_control_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8ca7582edf429a7484114fb38954ff7a0dc419ce4c50b5781dfcec3bd405316b",
+      "bytes_in_unit": 2366
+    },
+    "project/looper_convergence_lab/sim/pluck_truncation_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "1b6e6267c870d021339c5e54a4bd8a2b74b2024c5c305a95b5447a3eb21cbb2c",
+      "bytes_in_unit": 2202
+    },
+    "project/looper_convergence_lab/sim/preview.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2c45afc2a01d63d95c01495068845a3798267d191151ad56258b512c8f637710",
+      "bytes_in_unit": 3507
+    },
+    "project/looper_convergence_lab/sim/record_merge_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8990185fa0584ee645437fa6ca4acf0dc13648aa69b430076847ffdc854c81f2",
+      "bytes_in_unit": 5215
+    },
+    "project/looper_convergence_lab/sim/refinement_link_reset_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ed24f218d4f5ab6cfb31dc59e5e8e0aabf84a4ff4bcb9f38df1ce066ba294507",
+      "bytes_in_unit": 6172
+    },
+    "project/looper_convergence_lab/sim/refinement_link_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3340fd512dc7ee0816af5d9429d785127e1dcb8101207bd0c599cee982a1c2ce",
+      "bytes_in_unit": 6872
+    },
+    "project/looper_convergence_lab/sim/regress.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d88ab95daf0fd2d410c4b1f99f8132224273e4f18e19331eaadad69b3dbfa381",
+      "bytes_in_unit": 2346
+    },
+    "project/looper_convergence_lab/sim/regression_cases.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "78afb766ce8f45f084fba461cb406098ed5057e1799b5bcdd8843a21baf28893",
+      "bytes_in_unit": 1325
+    },
+    "project/looper_convergence_lab/sim/run.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "91f6fdeaf0383e93634e1984e1320ed5227146c046c07c0a91a6387c09e6bc74",
+      "bytes_in_unit": 4914
+    },
+    "project/looper_convergence_lab/sim/sine_compact_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "37fa83ac7e26b7a7a1a051cd9d61d808bf912c37f058df848b32f9c6ed91537f",
+      "bytes_in_unit": 721
+    },
+    "project/looper_convergence_lab/sim/snapshot_copy_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b84fbdbcf778ef51ff7629fa6efe4f6a8b9cef6493b76aa7eb758b4d4a3378d0",
+      "bytes_in_unit": 3586
+    },
+    "project/looper_convergence_lab/src/audio_v2_pluck.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fb4a1c352304199f99f10866764d7fe62c9e6b2e0f4885b58b653bc0b82f66d4",
+      "bytes_in_unit": 12040
+    },
+    "project/looper_convergence_lab/src/audio_v2_pool_slot.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "582233542c72383d999129a5f402ceb96b00b1f372f74da8b24fe9baf3919b4b",
+      "bytes_in_unit": 7971
+    },
+    "project/looper_convergence_lab/src/audio_v2_tone.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "532a3de1d415059121799880f64e1c2fa39cc6180f7c1491db9a703d7f46ea74",
+      "bytes_in_unit": 7889
+    },
+    "project/looper_convergence_lab/src/looper_audio_bank.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a04ca0ee58afcbf3cece7abf9531d70c414f44c67178d23d53e7f43050d50a8a",
+      "bytes_in_unit": 28336
+    },
+    "project/looper_convergence_lab/src/looper_audio_core.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "88c7114a7551b37b75d4116337055a046f66d49e9230e19d192eca4de7e21581",
+      "bytes_in_unit": 25345
+    },
+    "project/looper_convergence_lab/src/looper_audio_top_base.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b697064239ecd0f11d0268717360fda28800d94885e3c0add6e3e2822fbf9a61",
+      "bytes_in_unit": 2371
+    },
+    "project/looper_convergence_lab/src/looper_convergence_lab.cst": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "1bc66499bad7f0ec7b10e82f8def22a35162d5ab7118a973bf861be176e41819",
+      "bytes_in_unit": 2928
+    },
+    "project/looper_convergence_lab/src/looper_convergence_lab.sdc": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "5463e7756f99cfb4c111696a050da9441dfb91bc7a44754616e8a78e4ecc3b23",
+      "bytes_in_unit": 240
+    },
+    "project/looper_convergence_lab/src/looper_convergence_top.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f8c525ec7766ee5fb3254fccad68c8043b8977a8803c0dfa2be890860d24ca94",
+      "bytes_in_unit": 952
+    },
+    "project/looper_convergence_lab/src/looper_gallery_shared_tone.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "715bea5084e9196f3282b1e0ee8cbc3d3223388431b66efaa4838b8ac00d70cd",
+      "bytes_in_unit": 8060
+    },
+    "project/looper_convergence_lab/src/looper_keys.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a53b56ac774d27dbcd0dc5cd3c741ca77bd43ec2d49efdd54727965ed1238a95",
+      "bytes_in_unit": 4522
+    },
+    "project/looper_convergence_lab/src/looper_platform.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b0b370819e23c4fed0293dbd079e433c547a142f0f5e902f565eba9ee5b4801c",
+      "bytes_in_unit": 19162
+    },
+    "project/looper_convergence_lab/src/refinement_sine.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2a130185314dfe487cdd114aa2b3d1aa6c9581e1fa754d0918d0105c380cc6c0",
+      "bytes_in_unit": 43731
+    },
+    "project/looper_convergence_lab/tools/generate_quarter_sine.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "92063e8010cdc0ea4d6fb981197d8a75a360418671b78675f1d2addc677f9736",
+      "bytes_in_unit": 1173
+    },
+    "project/looper_convergence_lab/tools/package_acceptance.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9648d9ab919c54aec3153cbc0c250e58c6c945ec596b1359a124e718afdcfd0b",
+      "bytes_in_unit": 4937
+    },
+    "project/looper_convergence_lab/tools/prepare_reset_build.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f15dee5831afa2354f545c8f5129992b2cea6299b68f84a03eb476b331fb8539",
+      "bytes_in_unit": 1444
+    },
+    "project/looper_convergence_lab/tools/profile_synthesis.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "6e23c799c7d7a2601a889b60f008ddad7bef6cc098e6839b72da8f5a692acd1b",
+      "bytes_in_unit": 1968
+    },
+    "project/looper_convergence_lab/tools/reset_constraints.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "87bfd8aabd920e1408ffedcf2d0fdac0d9dd08cba8a5614ef132323f6c0a3053",
+      "bytes_in_unit": 3323
+    },
+    "project/looper_convergence_lab/tools/run_unit.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d733470b359e3520bf4b81f3d2f3b9a4aa064f5d0824344e3c7c84eca9e8f7f4",
+      "bytes_in_unit": 2213
+    },
+    "project/looper_convergence_lab/tools/sim_compact_rom.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b2b5cade20891d88b4c6b55a049ca238e906e5a61305018523135c923140c933",
+      "bytes_in_unit": 3045
+    },
+    "project/looper_convergence_lab/tools/verify_acceptance.ps1": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "6901e1e0e0e2c5107004564d3da39dfb65fe235383eb0943e0309fa597101fe5",
+      "bytes_in_unit": 1141
+    },
+    "project/looper_lab/.gitignore": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7a619973abf00fa46bb97c741e3bd684a2aade8d7b4e11d0c16f2e92230ab0dd",
+      "bytes_in_unit": 133
+    },
+    "project/looper_lab/AGENTS.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f2c918d3f6209004090f551b7bf2cb47de8f367bf4051f33553198d3a3107b18",
+      "bytes_in_unit": 766
+    },
+    "project/looper_lab/BOARD_TEST.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "43222cdc0e4ee441fda0571d730b82504fbc4085df24d7c219a68001a2e05ef6",
+      "bytes_in_unit": 5856
+    },
+    "project/looper_lab/INTEGRATION.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b47a78188d9b438050131c57afcba117ebac12e209ac8915fccc4ce33fd7e39c",
+      "bytes_in_unit": 3832
+    },
+    "project/looper_lab/README.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b22c58b7683acc5b1479913c5cb7fe187a488e0c04da9591face755b72018fe2",
+      "bytes_in_unit": 3545
+    },
+    "project/looper_lab/REVIEW_2026-10-07.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d9f3d470724eee241d50f2c4eb810652bb3fe4c5d0def8aebe9eb16fbb4c4f9d",
+      "bytes_in_unit": 6401
+    },
+    "project/looper_lab/SPEC.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "045aefb89c5d6ae89096d4b8868f0f03345775af74932f6625c1a6bad5d979a6",
+      "bytes_in_unit": 5722
+    },
+    "project/looper_lab/TASK_2026-10-07.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "56810a1e0522713fd640834520564d5919ffbecdc30dcab2d61c799a582aadb6",
+      "bytes_in_unit": 1513
+    },
+    "project/looper_lab/VALIDATION.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "79021e92e878149183bbd8f3bb5ed963b009c6f0a377d05c39caded6eb35beb4",
+      "bytes_in_unit": 5634
+    },
+    "project/looper_lab/build.tcl": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7d614b501dbee6047b2278579431b3fb6dc4911c25823dfa982d65661c6739fa",
+      "bytes_in_unit": 198
+    },
+    "project/looper_lab/build_delivery.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e86b65603daedd9cb11e87c200a7a2b8ac6e47cfd9400877701ced9843617d88",
+      "bytes_in_unit": 2631
+    },
+    "project/looper_lab/collect_evidence.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "1958f02e4244bd40b9432f406614067f6906f3b4a7e4207cea7528b0558eebc5",
+      "bytes_in_unit": 2248
+    },
+    "project/looper_lab/looper_lab.gprj": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "038d7942f366ae640a26a47b36613ba23157a3b1071d88f53bb727cfb0a6c858",
+      "bytes_in_unit": 2864
+    },
+    "project/looper_lab/results/DELIVERY.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "927208c86cb37723024142f4dfaa095fcadb3b1143706b211f181e78724dc589",
+      "bytes_in_unit": 13289
+    },
+    "project/looper_lab/results/final/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "cc73efdbf6a383c5995bba122e61fe5518c0b7a41877cf8ea75502d01e6f429f",
+      "bytes_in_unit": 4591
+    },
+    "project/looper_lab/results/preview.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ab07d1710211a3627a3cc542f2bda7967aa38c5e831349fc38ae17ed78ee22b8",
+      "bytes_in_unit": 2526
+    },
+    "project/looper_lab/results/regression.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "1ad30d57c1c21d504dd1ac906c518434ada5082d65c80c71c020b0bc091d82f4",
+      "bytes_in_unit": 2492
+    },
+    "project/looper_lab/results/sim/looper_auto_close_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "16e0371195448ee34260bb123eb89ec54609c8a068630cde7234f956a1ba84ee",
+      "bytes_in_unit": 6583
+    },
+    "project/looper_lab/results/sim/looper_boundary_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "11aa5071678aecc7125b28f6a2e1c07e32f64162845fef3fa3148f984216fd81",
+      "bytes_in_unit": 6640
+    },
+    "project/looper_lab/results/sim/looper_clock_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "421a9db121dcf64d6bdda3c1ae98a5449e907bddefde161e4cae909ff0ebd971",
+      "bytes_in_unit": 6726
+    },
+    "project/looper_lab/results/sim/looper_controls_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e465a0b7d03e8c773bfedf9c55728b691bce6b801c3f01f1818c8b49328ab199",
+      "bytes_in_unit": 6642
+    },
+    "project/looper_lab/results/sim/looper_custom_bound_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "38bbabbb482ce77a0ef13e0795db77b51f0b971e859a87af2fb5a58b9fecc8d4",
+      "bytes_in_unit": 6629
+    },
+    "project/looper_lab/results/sim/looper_custom_bound_tb__N=32__FULL=0.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "48c74a0828191e37291b904fbd2e73b341f4cccf3202bc78767641768caac687",
+      "bytes_in_unit": 6658
+    },
+    "project/looper_lab/results/sim/looper_custom_bound_tb__N=32__FULL=1.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fe1449a820b246579245864a3fbbbded039fc316758f37b89645383558161fba",
+      "bytes_in_unit": 6660
+    },
+    "project/looper_lab/results/sim/looper_drum_engine_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "14e66789dd86a5468a1015b305548506a3301aecc4ee694531cca503bfd8bca3",
+      "bytes_in_unit": 6626
+    },
+    "project/looper_lab/results/sim/looper_event_path_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "1a731f1f10a2dadfbf871569f13f9c9c070315bebc8d79b99410cdeea4e77adc",
+      "bytes_in_unit": 6625
+    },
+    "project/looper_lab/results/sim/looper_event_router_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c1d8ad640531d3793d62918d997e0ae5c1968177912338aa72821be391ada43b",
+      "bytes_in_unit": 6638
+    },
+    "project/looper_lab/results/sim/looper_event_store_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2c950d10079b991ee24c35935f3d6272d75a9efa912d77f37c2ce63b97d46dc4",
+      "bytes_in_unit": 6638
+    },
+    "project/looper_lab/results/sim/looper_full_load_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9d29e71ef0c1949ed461283ec304ecd96c0ae7a5d6f499dced180088c13c2dde",
+      "bytes_in_unit": 6638
+    },
+    "project/looper_lab/results/sim/looper_mix_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e47b7e44d98b7150c744bf0691fc04ff95add58d0010890936575bb4770861e5",
+      "bytes_in_unit": 6622
+    },
+    "project/looper_lab/results/sim/looper_patch_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "0af1a02c26d23ce955291bb1dbc78f2e58a117a542d5eac7d46f23080f73b9c0",
+      "bytes_in_unit": 6632
+    },
+    "project/looper_lab/results/sim/looper_pitch32_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b94659a663bb7f9c7b5f45e82177c9cdb70503e51353be45408e4dbff91b3007",
+      "bytes_in_unit": 6692
+    },
+    "project/looper_lab/results/sim/looper_pitch32_tb__ALL_CUSTOM=1.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fabd941852c394b59830ed6a073621458f12d3ddb8a3428667d9b64ea00c36a9",
+      "bytes_in_unit": 6714
+    },
+    "project/looper_lab/results/sim/looper_preview_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2ca09f8f0a4c459f5b76cd25e35ac7414e118d633c92b2130b75ed1e0a772090",
+      "bytes_in_unit": 6615
+    },
+    "project/looper_lab/results/sim/looper_store_capacity_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a3f2b1ad23c08e1b4123c864e2ee1f60828816d90cbb1487f7c439e3535e8b43",
+      "bytes_in_unit": 6651
+    },
+    "project/looper_lab/results/sim/looper_top_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "047b2eb7a94edfe2ed0c3e8aacfd07d5ab6b5f1c5c0c8d2d9aff9e298087964e",
+      "bytes_in_unit": 6650
+    },
+    "project/looper_lab/results/sim/looper_track_layout_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "5199d412d9c9d42a2f790e9746b1e63ed09f267c7c24caadf1af96acde6ce4b0",
+      "bytes_in_unit": 6617
+    },
+    "project/looper_lab/results/sim/looper_transport_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f15ceea227a68b8ac4f5ca1e43fe7fd6241450273a8d45b6df80755946dc1c34",
+      "bytes_in_unit": 6620
+    },
+    "project/looper_lab/results/sim/looper_v2_equivalence_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "858f34bd9e4bd245fd635b4ac55e41e4eb21dac697256c125720c9cac8a041d0",
+      "bytes_in_unit": 7150
+    },
+    "project/looper_lab/results/sim/metronome_accuracy_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "960a9a51f60d38b0e2928b6824c285f0fee9880226ebaff6f8dd9ae16356878d",
+      "bytes_in_unit": 6626
+    },
+    "project/looper_lab/results/sim/metronome_accuracy_tb__CADENCE=1040__SWEEP=0.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3e03275790f45b66301261ef02c9451e39cc333c157e8c8ad5541f2bb3d72593",
+      "bytes_in_unit": 6666
+    },
+    "project/looper_lab/results/sim/metronome_control_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a2a1e86bd8ce30b6a0a72b1387654ee4f8965bdb4a3bf10526e6e03548533b5b",
+      "bytes_in_unit": 6635
+    },
+    "project/looper_lab/rtl/looper_clock.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "dc583b8d2aedb187943058e25f258f6f9030ae6e7c62d34bc4835fe5c0aab493",
+      "bytes_in_unit": 2983
+    },
+    "project/looper_lab/rtl/looper_controls.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "0bfb9c72e3ae306e108d4a8dd03ab0cac1a01a5529b622d4a952dd6e9c9c9d65",
+      "bytes_in_unit": 6654
+    },
+    "project/looper_lab/rtl/looper_drum_engine.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "aed82a5657bdae2a59cdfe7d94ca8f1240482add671e44dc27132c145d4bb519",
+      "bytes_in_unit": 12173
+    },
+    "project/looper_lab/rtl/looper_event_router.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e347a62e5e6ed0a2c89a6b7c4df245e672bf15101aaf65f3e586751fe4050721",
+      "bytes_in_unit": 9935
+    },
+    "project/looper_lab/rtl/looper_event_store.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "5f6036169ca0cb9c7f5896a7a06861884fd1232fef9e04b8aac6044e70f2be80",
+      "bytes_in_unit": 20041
+    },
+    "project/looper_lab/rtl/looper_transport.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e4785bb8974c1a8c4abc6be89ab7b36df6c5d4bb1bb1429f74c68bf00834dcfc",
+      "bytes_in_unit": 4693
+    },
+    "project/looper_lab/rtl/metronome_click.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "57f07bc3a5b24dd2068190e62973f38cd2cae56e38759ab0c67f9b697f576bc2",
+      "bytes_in_unit": 2372
+    },
+    "project/looper_lab/sim/looper_auto_close_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "5e28b6cd51b8d2e506c95763afcaf94ea18eca91bcaaee80e989e9fdafe69e34",
+      "bytes_in_unit": 3532
+    },
+    "project/looper_lab/sim/looper_boundary_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "bee3fcb9c4791f09bb028bf6a94d7a77d8d41fc2455816c3b33f754a17fb4197",
+      "bytes_in_unit": 2305
+    },
+    "project/looper_lab/sim/looper_clock_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2af700f1c8e30917a1696adc1fd2f6398c1a8c4d0ffa1752fe928ddbb9e27734",
+      "bytes_in_unit": 2119
+    },
+    "project/looper_lab/sim/looper_controls_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3420bd1d115199463a7f86581e6af4eacd3ba81175a8a2eca7d138adae7479a6",
+      "bytes_in_unit": 2620
+    },
+    "project/looper_lab/sim/looper_custom_bound_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "74eee8417c2521e12f8189d5ceafbeaa3176fc905298cba1b0c52bed45ab59ae",
+      "bytes_in_unit": 2764
+    },
+    "project/looper_lab/sim/looper_drum_engine_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "35525e3625541d0ee81fdaff640508cbcc7af306641c0b4eb749a143d349bfe4",
+      "bytes_in_unit": 4519
+    },
+    "project/looper_lab/sim/looper_event_path_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "adf56c4eacb85cf192f1dfa4bd2b198b3a14061443de7b309c106cdf65c6b22a",
+      "bytes_in_unit": 6420
+    },
+    "project/looper_lab/sim/looper_event_router_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "acda3e35b3f78a7eb7762d6c0c223c4b71e7f15739531c8c966959858f45bd81",
+      "bytes_in_unit": 4551
+    },
+    "project/looper_lab/sim/looper_event_store_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "69824be9d6db13453f18c26a25edc8dc612437b45fc78e46de9a221ed0af3e10",
+      "bytes_in_unit": 9438
+    },
+    "project/looper_lab/sim/looper_full_load_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a29f2e35eaa0054313edc0197491074f6dc6fb876cb6bdca57a81200b5915291",
+      "bytes_in_unit": 4904
+    },
+    "project/looper_lab/sim/looper_mix_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "07c906ca11115210ebaabf286d1a08f13aec80490eb03466de39344e3b4c3b20",
+      "bytes_in_unit": 4044
+    },
+    "project/looper_lab/sim/looper_patch_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e53ef52075fc97499f26db3eeb411feb3e98c5b3f057b5cf1d04131e931fbe02",
+      "bytes_in_unit": 4146
+    },
+    "project/looper_lab/sim/looper_pitch32_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b1a762f941adfcfcff602ed3dee8683842efb6b8b78d0c644aa18ec9b8170d2a",
+      "bytes_in_unit": 4407
+    },
+    "project/looper_lab/sim/looper_preview_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b2cc99cac79378a62c83c24e1d39f66382d8c6f59ca365d9402567c7bdcf1d41",
+      "bytes_in_unit": 4126
+    },
+    "project/looper_lab/sim/looper_store_capacity_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9ea845f582785032a76ccc7548e2a8e817a28e52d74da2ea28b9d210131d85ee",
+      "bytes_in_unit": 2968
+    },
+    "project/looper_lab/sim/looper_top_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "df19ad0519a0b2420c0c09347ae3a361448a95ded1e03d91ef43372f4ecb3103",
+      "bytes_in_unit": 4953
+    },
+    "project/looper_lab/sim/looper_track_layout_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "48a907c1ea4215359c21aa30b9f67e150448634534e3cde70c5edc9d09f1443a",
+      "bytes_in_unit": 2462
+    },
+    "project/looper_lab/sim/looper_transport_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e0456be52792cb63363a54f5e9e492733ee0fed53dad0947973e507b5e275f18",
+      "bytes_in_unit": 5198
+    },
+    "project/looper_lab/sim/looper_v2_equivalence_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "4fad3444d1afadaebc82a758d3f8c1120ea01496b8215d259895c3f14d20ef34",
+      "bytes_in_unit": 4638
+    },
+    "project/looper_lab/sim/metronome_accuracy_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "cce60dc847e61f1452c7a25af485cfbb7d21d1330a9576a795fcbd49863ba16d",
+      "bytes_in_unit": 2885
+    },
+    "project/looper_lab/sim/metronome_control_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "82d8075344305cef1c8f2ea1a41658c116a7fa061d04c4f975166cf8a893be06",
+      "bytes_in_unit": 2351
+    },
+    "project/looper_lab/sim/metronome_delivery_audit_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "50ae4952a341d69f094946ca477a34d0f89b7b84404a92854c68ef6eb72530c4",
+      "bytes_in_unit": 2030
+    },
+    "project/looper_lab/sim/preview.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "de734fdac040454e1a99bafb2a6bdc7273f864958788ca7cd5799409f281ecb6",
+      "bytes_in_unit": 1361
+    },
+    "project/looper_lab/sim/regress.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "90be87f0859d38cce26dcac4500000ae0a5fafa0879842432af4a388f927d785",
+      "bytes_in_unit": 1898
+    },
+    "project/looper_lab/sim/run.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e73d0bb113347101b3d569424a43ad0e5f1c2dadb37c344e669639dd162b0161",
+      "bytes_in_unit": 4087
+    },
+    "project/looper_lab/src/audio_v2_pluck.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2e27386418df8885bbfa45ddc5b354056bb003fd234d5e9f59f2518bd9319239",
+      "bytes_in_unit": 11121
+    },
+    "project/looper_lab/src/audio_v2_pool_slot.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "582233542c72383d999129a5f402ceb96b00b1f372f74da8b24fe9baf3919b4b",
+      "bytes_in_unit": 7971
+    },
+    "project/looper_lab/src/audio_v2_tone.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "6479cfddd342a3feab10b252b69985285ada18751816aa9d130b88295339b609",
+      "bytes_in_unit": 7877
+    },
+    "project/looper_lab/src/looper_audio_bank.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fbd6692a6e27233b2d398fec56eb0862cd2b0e5b1ad513d6901d19720bf2effa",
+      "bytes_in_unit": 24930
+    },
+    "project/looper_lab/src/looper_audio_core.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9ebde6b1ba8e9e62227eafaad9039d1ed1186408113189515a1866633ee965d2",
+      "bytes_in_unit": 21763
+    },
+    "project/looper_lab/src/looper_audio_top_base.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b697064239ecd0f11d0268717360fda28800d94885e3c0add6e3e2822fbf9a61",
+      "bytes_in_unit": 2371
+    },
+    "project/looper_lab/src/looper_gallery_shared_tone.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "715bea5084e9196f3282b1e0ee8cbc3d3223388431b66efaa4838b8ac00d70cd",
+      "bytes_in_unit": 8060
+    },
+    "project/looper_lab/src/looper_keys.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a53b56ac774d27dbcd0dc5cd3c741ca77bd43ec2d49efdd54727965ed1238a95",
+      "bytes_in_unit": 4522
+    },
+    "project/looper_lab/src/looper_lab.cst": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "17ccf9754356049fe2e6ca511fe95778044834dd6bf82b060f06bc88c36799e3",
+      "bytes_in_unit": 1843
+    },
+    "project/looper_lab/src/looper_lab.sdc": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8fb99b998919f2d515b9c68bf0feb65c5d62f6dedecc92c9b6dd117fd46830f5",
+      "bytes_in_unit": 232
+    },
+    "project/looper_lab/src/looper_top.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "6ec88d2c1a53ba06fd0240ccfae37ae16046a545cb01df00dd3dd0eb7da53b23",
+      "bytes_in_unit": 13009
+    },
+    "project/looper_lab/variants/drum_audit/build.tcl": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f60e88e81771c41ca27908a685c5d82cfb85d00df251ae0cb8b879f7ca3269eb",
+      "bytes_in_unit": 202
+    },
+    "project/looper_lab/variants/drum_audit/drum_audit.gprj": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d4628b2ba8f86418232095d09acd901ace25ebd3f68537ebf4524dbf42c6f6af",
+      "bytes_in_unit": 538
+    },
+    "project/looper_lab/variants/drum_audit/drum_audit.sdc": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "1bab23df2a3b86705304b965bded82f454b96a6d14f15cea2f1049f38d2f6587",
+      "bytes_in_unit": 81
+    },
+    "project/looper_lab/variants/drum_audit/top.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "78ebc15069e22e0c37af5c4d085828e9a0d1d616c57870997a4b55f0978ce374",
+      "bytes_in_unit": 1319
+    },
+    "project/looper_refinement_lab/.gitignore": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d0ccbd7ec29746e1da93e5c34c7febfbe33329f19a84a325908d3834cb57b368",
+      "bytes_in_unit": 412
+    },
+    "project/looper_refinement_lab/AGENTS.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "0cc47ebe5a49ba0de2fb60642ed41d1234511434589c30ddbb42ee18c6af7fae",
+      "bytes_in_unit": 1920
+    },
+    "project/looper_refinement_lab/BOARD_TEST.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7eb6a522491536caa2c96ef3d16f6b71e751a504618104dce7035a8dfa214328",
+      "bytes_in_unit": 8444
+    },
+    "project/looper_refinement_lab/INTEGRATION.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f4b1787fa19b49a536c92fe61c0f70939a807583e8870a0cc99bfa93e720aeee",
+      "bytes_in_unit": 6223
+    },
+    "project/looper_refinement_lab/PROGRESS.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b39c00cf2cf5228500d95b7e0943ebed7c153beaee9a297ded92e98620afb586",
+      "bytes_in_unit": 1981
+    },
+    "project/looper_refinement_lab/README.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a8b3af33a018a5d6421503513e27cf03969b7ac674cc6dfeb94e846d2080fdc6",
+      "bytes_in_unit": 4362
+    },
+    "project/looper_refinement_lab/RESOURCE_REVIEW.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2a9ca48bc07621a06255dafcc9a89efca99260a2eedf1b5c6f96e9fac1364dd3",
+      "bytes_in_unit": 3398
+    },
+    "project/looper_refinement_lab/SPEC.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9b01dd53e358acd9f68c7a56893c34208c73c52b459338ffadaf1e00510d0a51",
+      "bytes_in_unit": 7886
+    },
+    "project/looper_refinement_lab/TASK_2026-10-07.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "413cc99819440c84d37027eb4cfd6e224e881a3e41866ce0f91e5f71cf64ce3e",
+      "bytes_in_unit": 1022
+    },
+    "project/looper_refinement_lab/VALIDATION.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d04bed4b7d1a3ff4f1835bb35fc4f5575e8de31f0974268a4e64308db8fb66fa",
+      "bytes_in_unit": 8312
+    },
+    "project/looper_refinement_lab/WORK_PLAN.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "780cdbae67d265bb01744f22cb19c6c49622ab44d22a3768eb26130a52ee85df",
+      "bytes_in_unit": 2680
+    },
+    "project/looper_refinement_lab/audit/build.tcl": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "bf8d9b8a15a3c9f8718a436684451bce607f8fa40488f219382d6810ce310722",
+      "bytes_in_unit": 220
+    },
+    "project/looper_refinement_lab/audit/refinement_audit.cst": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9102166d895354008bd9f94e7fb5eb5dbff30bac807c72c9f8b240ae8d4cf2b2",
+      "bytes_in_unit": 2936
+    },
+    "project/looper_refinement_lab/audit/refinement_audit.gprj": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c013faf8fb667deb5f6ceff5774780fbedb9b0513373f3f6812dd8b7b7170e52",
+      "bytes_in_unit": 3849
+    },
+    "project/looper_refinement_lab/audit/refinement_audit.sdc": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a42da4e1ce30b2a5c8b7e2a970e894569ab62ea8fbd45daabc1c69fa01aa10b3",
+      "bytes_in_unit": 2061
+    },
+    "project/looper_refinement_lab/audit/refinement_audit_top.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "471b2e8bce3e888b590246b51d53a36e73b171a35014ab86ab11fd5b60885508",
+      "bytes_in_unit": 2742
+    },
+    "project/looper_refinement_lab/audit/results/final_audit/FAILURE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "16cf7bad6167af74a219872dadb171de943dcf567e62f4df2334aa4246e2c359",
+      "bytes_in_unit": 6204
+    },
+    "project/looper_refinement_lab/audit/results/final_audit_50mhz/FAILURE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "5862fef355ccd6dde047ef919a7e1375989f483a487df55734ed78dcd55079a7",
+      "bytes_in_unit": 9551
+    },
+    "project/looper_refinement_lab/audit/results/local_reset_50mhz/FAILURE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ca03938f82b9f0f50e244ada44a37a4c609cf53b332b49e4639fe0b2e9194241",
+      "bytes_in_unit": 9598
+    },
+    "project/looper_refinement_lab/audit_pll/build.tcl": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "6d898e003667c34108d23ef447e156fefe3efd821e1306209d8c390dd7de7b04",
+      "bytes_in_unit": 232
+    },
+    "project/looper_refinement_lab/audit_pll/refinement_pll_audit.cst": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9a8d31ae7a1dc745b6430a9c54520740ae579ad5a88ddd36f637cbc80e96dc35",
+      "bytes_in_unit": 2846
+    },
+    "project/looper_refinement_lab/audit_pll/refinement_pll_audit.gprj": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a1f76e575447a6a7436cf709cc70e26ddd7b4451928693a5cc30928165081815",
+      "bytes_in_unit": 4244
+    },
+    "project/looper_refinement_lab/audit_pll/refinement_pll_audit.sdc": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ad23ee3f0dfa2869b64b47b0ccc8332d0e487b1f3cf0e680e47ff9c06d6f2a24",
+      "bytes_in_unit": 2116
+    },
+    "project/looper_refinement_lab/audit_pll/refinement_pll_audit_top.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2127d3d53b7ae6067877c358f3caafc239c14a79343542d7ee4dc1c7d777e15b",
+      "bytes_in_unit": 1084
+    },
+    "project/looper_refinement_lab/audit_pll/results/CLOCK_MODEL.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "eb30f68beb17f88fe72d691bf1f0f6c5828b7f0986649dda6797f76ce2231e60",
+      "bytes_in_unit": 6144
+    },
+    "project/looper_refinement_lab/audit_pll/results/pll_50mhz/FAILURE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3061545cf540462857664118430cb92e3ff5a479ad0f7726d12c8fcbab19e8d6",
+      "bytes_in_unit": 10199
+    },
+    "project/looper_refinement_lab/audit_pll/sim/pll_clock_model_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "18fd84e892e63b7d9f57a09b8f1ea5c01186d017673322b607a696c27f9bb37f",
+      "bytes_in_unit": 2009
+    },
+    "project/looper_refinement_lab/audit_pll/sim/run_clock_model.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "dce09f273db2cc3b53cf10b41b3e87439398661a485df8a7cc9263e231965f02",
+      "bytes_in_unit": 2366
+    },
+    "project/looper_refinement_lab/build.tcl": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8735cfa315f25d71b7e831f6c1743ab8706ae264948c39759e6acafb49f1c865",
+      "bytes_in_unit": 231
+    },
+    "project/looper_refinement_lab/build_audit.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "411a54a76853fac28e946fd6abbf8eed1fd4a12978a55aecc0eeafb6cb6d6df7",
+      "bytes_in_unit": 5040
+    },
+    "project/looper_refinement_lab/build_delivery.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "1653ec2a2e15fae316dd437972dacae83801563880c6325a7fc76bab38b52ecc",
+      "bytes_in_unit": 2842
+    },
+    "project/looper_refinement_lab/collect_evidence.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e39d153197c1cd69c12c30796019815ef862669aeef68160a2a0e04e618a5dc1",
+      "bytes_in_unit": 6162
+    },
+    "project/looper_refinement_lab/looper_refinement_lab.gprj": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "6f5daf68e7e9d8fc9be2912341e2a8ed08e297c2c3986b596b20d5e12acc2544",
+      "bytes_in_unit": 3717
+    },
+    "project/looper_refinement_lab/results/BASELINE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "662a731393f3d7fd55d544911addf8cf335ee1bbe625b991bf1860ebc5fec64c",
+      "bytes_in_unit": 653
+    },
+    "project/looper_refinement_lab/results/BOARD_DELIVERY.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "56d2583f6b95da4987306c8cf23cc9c0204383cf945ccb36ef91211fc71f7751",
+      "bytes_in_unit": 282881
+    },
+    "project/looper_refinement_lab/results/RESOURCE_BASELINE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "4f448c9b025692f57bea3014a5efc3b48476256dc770ad6ceef2ca7e82207275",
+      "bytes_in_unit": 14968
+    },
+    "project/looper_refinement_lab/results/SYNTHESIS_PROFILE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "35b1605133c12fc9bf381161606b59f389ab6556d95abd0c4fa95c5dae3c3812",
+      "bytes_in_unit": 82867
+    },
+    "project/looper_refinement_lab/results/final/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d4c711ab144f58c0c47c6617feb6cc6111acdd61bfc81945ff5801d36fbdbaa1",
+      "bytes_in_unit": 6186
+    },
+    "project/looper_refinement_lab/results/final_50mhz/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "eecb63bcf1c550288c3097f34a3b14726937a5f1b19b78ed975b970056c50718",
+      "bytes_in_unit": 6186
+    },
+    "project/looper_refinement_lab/results/geometry_candidate/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "4909b9786e45d17d6139c6b556379018689ab7ba59b9baca1e1b8e33ba66412a",
+      "bytes_in_unit": 6184
+    },
+    "project/looper_refinement_lab/results/pipelined_candidate/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "004ecb9e9ece626aa9e2ee4bd14018ef57ccb72c2fdcac83a6b84d1813dc6c3a",
+      "bytes_in_unit": 6187
+    },
+    "project/looper_refinement_lab/results/preview.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e9726679edcce11182288eb0259c7a0fa18203d6db0019365dab53338e1e5414",
+      "bytes_in_unit": 7013
+    },
+    "project/looper_refinement_lab/results/regression.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f56ee0c9e4649a55fe67c12a0f5ab47a8dad029a9ae18cfa709ab910e404c3bd",
+      "bytes_in_unit": 5598
+    },
+    "project/looper_refinement_lab/results/rom_candidate/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8525691b53671298c3d7a74a929d481b9546c8871cefd36593db8104f55e01e8",
+      "bytes_in_unit": 4851
+    },
+    "project/looper_refinement_lab/results/sim/arrangement_preview_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8e3013c53f72b326c744180b4eb86fc06d9da69829ddff1fbe494a742949dd72",
+      "bytes_in_unit": 9101
+    },
+    "project/looper_refinement_lab/results/sim/arrangement_stress_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "5e30f5fec56a35dd965f0f95129047bf27b084f441ae980a7ad01e37d8159f58",
+      "bytes_in_unit": 9155
+    },
+    "project/looper_refinement_lab/results/sim/custom_service_bound_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "97e4700fe026b34af61a9fa4b5833bf1297911fef7a6758871d765435b794727",
+      "bytes_in_unit": 9107
+    },
+    "project/looper_refinement_lab/results/sim/expression_bank_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "49057c99b7ac8c2ab52aa93b2c6f028c29bce9f0a33c54b0532e259a6a561d00",
+      "bytes_in_unit": 9075
+    },
+    "project/looper_refinement_lab/results/sim/expression_empty_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "479da04642df714ec452a0269a5001a474dae34ab184476bb432c0640b7114d8",
+      "bytes_in_unit": 9034
+    },
+    "project/looper_refinement_lab/results/sim/expression_roundtrip_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7a98564ac21c09cac42ba95c342254504ff7fcadf52848ef4cd9c5afb1496f64",
+      "bytes_in_unit": 9083
+    },
+    "project/looper_refinement_lab/results/sim/expression_store_router_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "980bbe9e30f9b697fc753cbfd728f55480fe4394e7b1f89553b10da7f05217a1",
+      "bytes_in_unit": 9068
+    },
+    "project/looper_refinement_lab/results/sim/looper_auto_close_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "639d3d9b4aba9f3f75543148ec9a46fdee136b9b2bb585f5209267fc18952d8c",
+      "bytes_in_unit": 9005
+    },
+    "project/looper_refinement_lab/results/sim/looper_boundary_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "50b658d0880c97119f53d0b6c963f602b4d88c9d781b7c2ecddbe663a4ddd3f0",
+      "bytes_in_unit": 9063
+    },
+    "project/looper_refinement_lab/results/sim/looper_clock_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9016cde2e17a34a8a09a8579b11e30a3fb4d48d35f6968083d1ae3f4355b4d01",
+      "bytes_in_unit": 9148
+    },
+    "project/looper_refinement_lab/results/sim/looper_controls_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f070a6ca476c017bf8a36446f3f71dcdcc10b73e96a5e215acda3a163b7a051f",
+      "bytes_in_unit": 9064
+    },
+    "project/looper_refinement_lab/results/sim/looper_custom_bound_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "0c3b58fc369214789e6734b93283b38e11c96af041d4f4cb211e556a4b31e033",
+      "bytes_in_unit": 9052
+    },
+    "project/looper_refinement_lab/results/sim/looper_custom_bound_tb__N=32__FULL=0.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ad7fa9aa057c4863a2b298a883595b7fcfc36527435863b1c0f20ae774cf0203",
+      "bytes_in_unit": 9081
+    },
+    "project/looper_refinement_lab/results/sim/looper_custom_bound_tb__N=32__FULL=1.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b62b409c0289c3e4cae555ca005f3714f6b038b7942ee0ed551c83e02addef56",
+      "bytes_in_unit": 9083
+    },
+    "project/looper_refinement_lab/results/sim/looper_drum_engine_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a12cba56b693e8a3ce2c7ec121ee9f0ac1a99979f95de22721c50f5dd9e20b80",
+      "bytes_in_unit": 9048
+    },
+    "project/looper_refinement_lab/results/sim/looper_event_path_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8bc4f69bfeb21969112e8b44fb6e0ab4b485d7b7bb44a36077ebb5166cc7223e",
+      "bytes_in_unit": 9047
+    },
+    "project/looper_refinement_lab/results/sim/looper_event_router_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2c5e205dbbfe428b6d73fa4480c9e1f90c5a079ec0216abf36ff19160a9b9f1e",
+      "bytes_in_unit": 9060
+    },
+    "project/looper_refinement_lab/results/sim/looper_event_store_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3f99c453aff460dd95fdd4177ffcdb04a4f3e5e6debfab98c4f47d1a71bf2e40",
+      "bytes_in_unit": 9060
+    },
+    "project/looper_refinement_lab/results/sim/looper_full_load_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a87929272000a6f16819e2e7089b2f20eabcb1c3ff22bb1bc4e51676b08dbac5",
+      "bytes_in_unit": 9060
+    },
+    "project/looper_refinement_lab/results/sim/looper_mix_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7e72c05be8d865d617fc0fb01b53747b88f3d17c3539dfee4c1af21e7c34df7b",
+      "bytes_in_unit": 9044
+    },
+    "project/looper_refinement_lab/results/sim/looper_patch_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "4ab314102680455b2a83f5a2b3a4027e432efa423bd88c15c97ab91d10f83d09",
+      "bytes_in_unit": 9054
+    },
+    "project/looper_refinement_lab/results/sim/looper_pitch32_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d691376497a9c3fdfb60bbaa7a168738545b63a217b5d7f0e06d663357073abd",
+      "bytes_in_unit": 9114
+    },
+    "project/looper_refinement_lab/results/sim/looper_pitch32_tb__ALL_CUSTOM=1.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "531edeeaa67123733fabfc7dda7e52c288d9b87eb554af06f433ba906263d456",
+      "bytes_in_unit": 9136
+    },
+    "project/looper_refinement_lab/results/sim/looper_preview_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "dbe8374a73e254f53247cbaccd3bfc0b91987cbdfece5745d71a728d3a50f89a",
+      "bytes_in_unit": 9037
+    },
+    "project/looper_refinement_lab/results/sim/looper_store_capacity_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a08ebc266b2420b8cedb4c74224b8a0994b0276e1d4c077d2cf43edc6f4ea323",
+      "bytes_in_unit": 9082
+    },
+    "project/looper_refinement_lab/results/sim/looper_store_capacity_tb__SERIAL=1.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "0ba87d2c39d219e03ebc0858819f7c5270996683cad9f7f2cbf5bf80766a3ff0",
+      "bytes_in_unit": 9100
+    },
+    "project/looper_refinement_lab/results/sim/looper_top_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3080c1416a70a112f2ec49aa9d69f37196812fd32945909cf17c92033b1779b6",
+      "bytes_in_unit": 9072
+    },
+    "project/looper_refinement_lab/results/sim/looper_track_layout_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "275c9b3c7d0109ada744eb9a7843ec1308f53fd4c98ff76d06ced01fbff5fb7f",
+      "bytes_in_unit": 9039
+    },
+    "project/looper_refinement_lab/results/sim/looper_transport_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "cfad95666b1458f63b07bb3c90cef75d7e47c3f4550a003f2cf1bee938d2c4e5",
+      "bytes_in_unit": 9042
+    },
+    "project/looper_refinement_lab/results/sim/looper_v2_equivalence_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "842b5d3d196a6b4a18dcdb180272190b605be37e507f996fb067cd22fb2d16c3",
+      "bytes_in_unit": 9571
+    },
+    "project/looper_refinement_lab/results/sim/metronome_accuracy_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "890bc5e93fa7fef62fa182ea46a615600e731f23acd922253c3804bccb770b7f",
+      "bytes_in_unit": 9049
+    },
+    "project/looper_refinement_lab/results/sim/metronome_accuracy_tb__CADENCE=1040__SWEEP=0.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "60a32d79c489f8e1b09f47e4d1eba615679bab8574273d9d6aaa54d9afc629ca",
+      "bytes_in_unit": 9089
+    },
+    "project/looper_refinement_lab/results/sim/metronome_control_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "79136fcb4551588f8bcbb8229c28990618c6ee64740ecb34a549d1740572e207",
+      "bytes_in_unit": 9057
+    },
+    "project/looper_refinement_lab/results/sim/record_merge_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8976569fcdabdf2d99166d9d840cb6f5f768cb75495839cd4582621d17b51c63",
+      "bytes_in_unit": 9058
+    },
+    "project/looper_refinement_lab/results/sim/refinement_link_reset_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "634cb09dc77dcf1270be35a1e327ea2ce248b3bee0da660f6d9092b8e8251d26",
+      "bytes_in_unit": 9078
+    },
+    "project/looper_refinement_lab/results/sim/refinement_link_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "4f749a7ea8b77e9c326614dd8b3a4b46c0cd90dcfc3e077cefbf1e4a346355c0",
+      "bytes_in_unit": 9145
+    },
+    "project/looper_refinement_lab/results/sim/sine_compact_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "be74fbfa78b99a24584574a2a3d3a48db001dde3c4d9ed5f59e3eefb364d7798",
+      "bytes_in_unit": 8386
+    },
+    "project/looper_refinement_lab/results/unit/expression_capture_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9c14cc90451add3fefdd35a6aee703a55f14f0b92e01c0f8fe8eb8cf2871384f",
+      "bytes_in_unit": 682
+    },
+    "project/looper_refinement_lab/results/unit/fader_mode_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c11d0a0b35837025587af6a35de3c79b40b4fef796be92e477c87a33436f1d57",
+      "bytes_in_unit": 640
+    },
+    "project/looper_refinement_lab/results/unit/looper_keys25_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "46ca25f5c451104ebf46653b226610538b9e4ede445bafc058ee3ec978ba4538",
+      "bytes_in_unit": 782
+    },
+    "project/looper_refinement_lab/results/unit/mcp3208_reader_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f4066244d334484d8e9d310fb338dd4f44e782dca9b844a77b826c65225d1b2c",
+      "bytes_in_unit": 641
+    },
+    "project/looper_refinement_lab/results/unit/mcp3208_reader_tb__HALF=50__SCAN=50000.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8f12dddbd1ab05c9f91888f098d190426e5a666a77bafd484566236f17199cf6",
+      "bytes_in_unit": 676
+    },
+    "project/looper_refinement_lab/rtl/fader_mode_adapter.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "69f2e672f6481cbff0e5297cb210a278261871abc9a79066e563f5a3f6ad5526",
+      "bytes_in_unit": 3208
+    },
+    "project/looper_refinement_lab/rtl/looper_clock.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c6fd39a7990ed899610477f40e57b80bd498133cd0733a3e79f956994d7d4238",
+      "bytes_in_unit": 3053
+    },
+    "project/looper_refinement_lab/rtl/looper_controls.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c88402b580bd127f95b12dbfe1d9a4485e4ee7400da256f9dd32a9d60e9e4355",
+      "bytes_in_unit": 7827
+    },
+    "project/looper_refinement_lab/rtl/looper_drum_engine.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "84002ac69d6d75d77e46b45f74efac095a718c31397fc60a47a1ab8abb335c9e",
+      "bytes_in_unit": 11823
+    },
+    "project/looper_refinement_lab/rtl/looper_event_router.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a6cb37551c7a8eca9bcf76d85ca977f2c75ce6b569371891beece04a5a82f211",
+      "bytes_in_unit": 10782
+    },
+    "project/looper_refinement_lab/rtl/looper_event_store.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3c3ce69e56ced82fdc8206de477641acca928399a657829beb2b5aad5460111a",
+      "bytes_in_unit": 22048
+    },
+    "project/looper_refinement_lab/rtl/looper_expression_capture.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7612cd5e58fdb7e626ec786339111076a141bef067e15604516c8a34e9f6bf1a",
+      "bytes_in_unit": 3751
+    },
+    "project/looper_refinement_lab/rtl/looper_transport.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9cf04fcf7cf2bc9cf03721ef833f70808b3f5605aae124b35b45aa6b8f9ceb4b",
+      "bytes_in_unit": 7090
+    },
+    "project/looper_refinement_lab/rtl/mcp3208_reader.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e1bdcc11ff288da8425146adb040bfbbed1328cce4a11dc29fabf54d726a4bcf",
+      "bytes_in_unit": 2678
+    },
+    "project/looper_refinement_lab/rtl/metronome_click.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "57f07bc3a5b24dd2068190e62973f38cd2cae56e38759ab0c67f9b697f576bc2",
+      "bytes_in_unit": 2372
+    },
+    "project/looper_refinement_lab/rtl/refinement_config_arbiter.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c67415c17127e9b7e36f4a72cd43acdd78e98f62fe1448747a768892dc409b3f",
+      "bytes_in_unit": 2214
+    },
+    "project/looper_refinement_lab/rtl/refinement_link.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7eb7c8546a036818da8d4db009eece2289f61795c23989bb6f9fc1cb16a9cf6c",
+      "bytes_in_unit": 5644
+    },
+    "project/looper_refinement_lab/rtl/refinement_snapshot_bridge.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e40b6a72183aa9eff6e82f1b77ea3327c4783b5f1b1d5741bb0481a4f32978be",
+      "bytes_in_unit": 5381
+    },
+    "project/looper_refinement_lab/sim/arrangement_preview_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "113084e9a2cdd5bd88d8a2d326b59efee9489037bfce4f9ca1bcc3b28f210803",
+      "bytes_in_unit": 6473
+    },
+    "project/looper_refinement_lab/sim/arrangement_stress_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "048a233ac0c4509b13a7d964b2e46d189d2945f53926c0faf7c18231700dc202",
+      "bytes_in_unit": 5720
+    },
+    "project/looper_refinement_lab/sim/custom_service_bound_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8ccd0cc61ce1989cea340c095c348d7e9ba4aeb14004a5e040c1c60c688f5a0c",
+      "bytes_in_unit": 6176
+    },
+    "project/looper_refinement_lab/sim/expression_bank_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ffee8e1160b44d6d7f12ec3e3dc48f99aedc4e11cda35bb8766a4cca27a2f903",
+      "bytes_in_unit": 5246
+    },
+    "project/looper_refinement_lab/sim/expression_capture_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "74ec46b654e118d2c1c977adbc6b3d3dc8fa7ff3dbf7ae01c26c16b0b2afa1ea",
+      "bytes_in_unit": 2626
+    },
+    "project/looper_refinement_lab/sim/expression_empty_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "802d0ff4aa7b924892f1b38ad4b843e4f4610f22a4238ec9f33d1c7193d610af",
+      "bytes_in_unit": 4047
+    },
+    "project/looper_refinement_lab/sim/expression_roundtrip_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "890cc62354932e04144a2b09de11d7bb2bece834c32388e7a3a00a3a000af821",
+      "bytes_in_unit": 6144
+    },
+    "project/looper_refinement_lab/sim/expression_store_router_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "da14f6c2f3610512f45a1c4ea7443c9e1eccb0584f18451c025ac9f93639b306",
+      "bytes_in_unit": 4550
+    },
+    "project/looper_refinement_lab/sim/fader_mode_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e1cfa167e672535d23c0d9c6ecb2a9c76002ad1d06cc005c11df5df793b338bc",
+      "bytes_in_unit": 1947
+    },
+    "project/looper_refinement_lab/sim/looper_auto_close_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b6ca7529bd43804c097620c6cd6cd4e80f2cd285397a7d998966121d7c04c4bb",
+      "bytes_in_unit": 3549
+    },
+    "project/looper_refinement_lab/sim/looper_boundary_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "de634755435117b14885084c6c65532262083e469b522f4f6e802282fd25f09d",
+      "bytes_in_unit": 2322
+    },
+    "project/looper_refinement_lab/sim/looper_clock_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "0d575092c8e96f0428c41a6d33fb8e0a912f4d78829815c146cd5f8824ce8187",
+      "bytes_in_unit": 2134
+    },
+    "project/looper_refinement_lab/sim/looper_controls_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8f4f5f1d869f181e5b309d736eb73b0bc142a477ea2dbb00a280fd14eb3c55e8",
+      "bytes_in_unit": 2783
+    },
+    "project/looper_refinement_lab/sim/looper_custom_bound_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "74eee8417c2521e12f8189d5ceafbeaa3176fc905298cba1b0c52bed45ab59ae",
+      "bytes_in_unit": 2764
+    },
+    "project/looper_refinement_lab/sim/looper_drum_engine_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "dde11fd57e843dfe7f2b8751244b61a466f54dbd2e0f263641c27151ca9313b0",
+      "bytes_in_unit": 4573
+    },
+    "project/looper_refinement_lab/sim/looper_event_path_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "adf56c4eacb85cf192f1dfa4bd2b198b3a14061443de7b309c106cdf65c6b22a",
+      "bytes_in_unit": 6420
+    },
+    "project/looper_refinement_lab/sim/looper_event_router_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fe854aaf1f33debb7b0c9bf29602efe757387549de5c4a2162c794d67d71d129",
+      "bytes_in_unit": 4706
+    },
+    "project/looper_refinement_lab/sim/looper_event_store_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "74c9d8ce36a94336fcf2c8913bb8ad9407a17422948045674e1dc604711f8118",
+      "bytes_in_unit": 9455
+    },
+    "project/looper_refinement_lab/sim/looper_full_load_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a29f2e35eaa0054313edc0197491074f6dc6fb876cb6bdca57a81200b5915291",
+      "bytes_in_unit": 4904
+    },
+    "project/looper_refinement_lab/sim/looper_keys25_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8555ab794d25de68e828cd2e10351684b9890198b826017f6479d743afb35a6c",
+      "bytes_in_unit": 1798
+    },
+    "project/looper_refinement_lab/sim/looper_mix_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "07c906ca11115210ebaabf286d1a08f13aec80490eb03466de39344e3b4c3b20",
+      "bytes_in_unit": 4044
+    },
+    "project/looper_refinement_lab/sim/looper_patch_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e53ef52075fc97499f26db3eeb411feb3e98c5b3f057b5cf1d04131e931fbe02",
+      "bytes_in_unit": 4146
+    },
+    "project/looper_refinement_lab/sim/looper_pitch32_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b1a762f941adfcfcff602ed3dee8683842efb6b8b78d0c644aa18ec9b8170d2a",
+      "bytes_in_unit": 4407
+    },
+    "project/looper_refinement_lab/sim/looper_preview_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b2cc99cac79378a62c83c24e1d39f66382d8c6f59ca365d9402567c7bdcf1d41",
+      "bytes_in_unit": 4126
+    },
+    "project/looper_refinement_lab/sim/looper_store_capacity_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2e74b9e6a08174307f40154f3888f487defb3d93bbbd0d874cd18832b21bfa1c",
+      "bytes_in_unit": 3050
+    },
+    "project/looper_refinement_lab/sim/looper_top_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "24857c727d1557be54771f0bc3be051ec18e817ae8e5e6e1cbb2c215f8f23790",
+      "bytes_in_unit": 5551
+    },
+    "project/looper_refinement_lab/sim/looper_track_layout_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a26d9bc83f17d223a083ed8391661632d6caab0a919f379ff5976d390e3f64fd",
+      "bytes_in_unit": 2479
+    },
+    "project/looper_refinement_lab/sim/looper_transport_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e0456be52792cb63363a54f5e9e492733ee0fed53dad0947973e507b5e275f18",
+      "bytes_in_unit": 5198
+    },
+    "project/looper_refinement_lab/sim/looper_v2_equivalence_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "4fad3444d1afadaebc82a758d3f8c1120ea01496b8215d259895c3f14d20ef34",
+      "bytes_in_unit": 4638
+    },
+    "project/looper_refinement_lab/sim/mcp3208_reader_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "1a7fd8e569fb5ca957b9744412f6ebe8a545688ed52d72544b3b03d8c8e6a8a1",
+      "bytes_in_unit": 2102
+    },
+    "project/looper_refinement_lab/sim/metronome_accuracy_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "29bf0205d21cd90b95291048d680484aa77656f18b9a61e64443e6a057d04afc",
+      "bytes_in_unit": 2900
+    },
+    "project/looper_refinement_lab/sim/metronome_control_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8ca7582edf429a7484114fb38954ff7a0dc419ce4c50b5781dfcec3bd405316b",
+      "bytes_in_unit": 2366
+    },
+    "project/looper_refinement_lab/sim/preview.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2c45afc2a01d63d95c01495068845a3798267d191151ad56258b512c8f637710",
+      "bytes_in_unit": 3507
+    },
+    "project/looper_refinement_lab/sim/record_merge_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8990185fa0584ee645437fa6ca4acf0dc13648aa69b430076847ffdc854c81f2",
+      "bytes_in_unit": 5215
+    },
+    "project/looper_refinement_lab/sim/refinement_link_reset_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ed24f218d4f5ab6cfb31dc59e5e8e0aabf84a4ff4bcb9f38df1ce066ba294507",
+      "bytes_in_unit": 6172
+    },
+    "project/looper_refinement_lab/sim/refinement_link_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3340fd512dc7ee0816af5d9429d785127e1dcb8101207bd0c599cee982a1c2ce",
+      "bytes_in_unit": 6872
+    },
+    "project/looper_refinement_lab/sim/regress.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d88ab95daf0fd2d410c4b1f99f8132224273e4f18e19331eaadad69b3dbfa381",
+      "bytes_in_unit": 2346
+    },
+    "project/looper_refinement_lab/sim/regression_cases.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c8d2ab0401e33448fd68f29bb5f999897e844aa3060077cee475f994bdd1d9ea",
+      "bytes_in_unit": 1274
+    },
+    "project/looper_refinement_lab/sim/run.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "db479b90483223bc5dbead27fb292f9af789ed1b6ea4e4bada9976e1377cb7a6",
+      "bytes_in_unit": 4913
+    },
+    "project/looper_refinement_lab/sim/sine_compact_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "37fa83ac7e26b7a7a1a051cd9d61d808bf912c37f058df848b32f9c6ed91537f",
+      "bytes_in_unit": 721
+    },
+    "project/looper_refinement_lab/src/audio_v2_pluck.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2e27386418df8885bbfa45ddc5b354056bb003fd234d5e9f59f2518bd9319239",
+      "bytes_in_unit": 11121
+    },
+    "project/looper_refinement_lab/src/audio_v2_pool_slot.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "582233542c72383d999129a5f402ceb96b00b1f372f74da8b24fe9baf3919b4b",
+      "bytes_in_unit": 7971
+    },
+    "project/looper_refinement_lab/src/audio_v2_tone.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "532a3de1d415059121799880f64e1c2fa39cc6180f7c1491db9a703d7f46ea74",
+      "bytes_in_unit": 7889
+    },
+    "project/looper_refinement_lab/src/looper_audio_bank.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a04ca0ee58afcbf3cece7abf9531d70c414f44c67178d23d53e7f43050d50a8a",
+      "bytes_in_unit": 28336
+    },
+    "project/looper_refinement_lab/src/looper_audio_core.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "88c7114a7551b37b75d4116337055a046f66d49e9230e19d192eca4de7e21581",
+      "bytes_in_unit": 25345
+    },
+    "project/looper_refinement_lab/src/looper_audio_top_base.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b697064239ecd0f11d0268717360fda28800d94885e3c0add6e3e2822fbf9a61",
+      "bytes_in_unit": 2371
+    },
+    "project/looper_refinement_lab/src/looper_gallery_shared_tone.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "715bea5084e9196f3282b1e0ee8cbc3d3223388431b66efaa4838b8ac00d70cd",
+      "bytes_in_unit": 8060
+    },
+    "project/looper_refinement_lab/src/looper_keys.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a53b56ac774d27dbcd0dc5cd3c741ca77bd43ec2d49efdd54727965ed1238a95",
+      "bytes_in_unit": 4522
+    },
+    "project/looper_refinement_lab/src/looper_platform.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b0b370819e23c4fed0293dbd079e433c547a142f0f5e902f565eba9ee5b4801c",
+      "bytes_in_unit": 19162
+    },
+    "project/looper_refinement_lab/src/looper_refinement_lab.cst": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "17ccf9754356049fe2e6ca511fe95778044834dd6bf82b060f06bc88c36799e3",
+      "bytes_in_unit": 1843
+    },
+    "project/looper_refinement_lab/src/looper_refinement_lab.sdc": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "5463e7756f99cfb4c111696a050da9441dfb91bc7a44754616e8a78e4ecc3b23",
+      "bytes_in_unit": 240
+    },
+    "project/looper_refinement_lab/src/looper_refinement_top.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "79ac09514be872f00182719e654ae847c3b0b5a4858f7828e0bcf013d04de3b1",
+      "bytes_in_unit": 951
+    },
+    "project/looper_refinement_lab/src/refinement_sine.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2a130185314dfe487cdd114aa2b3d1aa6c9581e1fa754d0918d0105c380cc6c0",
+      "bytes_in_unit": 43731
+    },
+    "project/looper_refinement_lab/tools/generate_quarter_sine.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "92063e8010cdc0ea4d6fb981197d8a75a360418671b78675f1d2addc677f9736",
+      "bytes_in_unit": 1173
+    },
+    "project/looper_refinement_lab/tools/profile_synthesis.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3a04a2c61b91cfbf186dbd1f47ba6b75e3b3d323b5e2dda542404ee58282fcea",
+      "bytes_in_unit": 1773
+    },
+    "project/looper_refinement_lab/tools/run_unit.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "68f9e4416f7aa6c3368a39f88c4ce4e6e5f8315fedfee517f476df73b1d247c3",
+      "bytes_in_unit": 2049
+    },
+    "project/looper_refinement_lab/tools/sim_compact_rom.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b2b5cade20891d88b4c6b55a049ca238e906e5a61305018523135c923140c933",
+      "bytes_in_unit": 3045
+    },
+    "project/looper_session_v2/AGENTS.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b650cd9b86ec38161a2acd01858720ed09532355fcfc1cb7e8c6ae0db7c3dfc6",
+      "bytes_in_unit": 1008
+    },
+    "project/looper_session_v2/BOARD_TEST.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2e7ddfbaabab9bc6e738546ab95ec970d5fa1d3574ee5abde5a35349764acefc",
+      "bytes_in_unit": 3135
+    },
+    "project/looper_session_v2/C_HANDOFF.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fdcfc8133e2369d4dde1c176644ff97045f388e5547467cd6f2b2a4aec2149ca",
+      "bytes_in_unit": 6005
+    },
+    "project/looper_session_v2/DRUM_SPEC.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7dc45b28b74a0a22264a1c818bf7297017fc7c722bb10679fffe21515fbf3a14",
+      "bytes_in_unit": 2684
+    },
+    "project/looper_session_v2/README.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7fbc9796311bb306ffb7d96a0d0f137d1a25a37245bf6f8dabb2caed351dfb03",
+      "bytes_in_unit": 2366
+    },
+    "project/looper_session_v2/UI_CONTRACT.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fb10d7bb50b74087cfe0469cd34b0715d8bade332d36cf0ea729586e09a934e5",
+      "bytes_in_unit": 6069
+    },
+    "project/looper_session_v2/VALIDATION.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a69392dbd1764bff59705d15c5c1c75062607a3d26baf6d3c57b7f82a0d0517f",
+      "bytes_in_unit": 6342
+    },
+    "project/looper_session_v2/WORK_PLAN.md": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d9655b964b39fe02f25fece1e28d2cab8b5081512bc2eedf371338d15f4fddd8",
+      "bytes_in_unit": 1560
+    },
+    "project/looper_session_v2/audit/build.tcl": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c08fed72a98a567e310b9f82e737b5573f826a8bf055650eb444a4a16dd7ec8c",
+      "bytes_in_unit": 211
+    },
+    "project/looper_session_v2/audit/results/compact_lu1/FAILURE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "99c024520fa26c2e547788f9e98f3fae956186e706a577d8ccd207fa915dc84b",
+      "bytes_in_unit": 9837
+    },
+    "project/looper_session_v2/audit/results/compact_lu1_mapped/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3e3c00f83dc7bdd7c676e58b6afc891680b63624cd6ee1abe8da416297ca3560",
+      "bytes_in_unit": 7040
+    },
+    "project/looper_session_v2/audit/results/mapped_local_resets/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3026738d58f302dcbc5ceeb95a855a64d59c98dcdcbeb8ece6e89e8140d6497d",
+      "bytes_in_unit": 7042
+    },
+    "project/looper_session_v2/audit/results/pipelined_harness/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e0adaafde22717da450d7f43e2c523cc7f9fafab4af5a2e07a09c2e6af2fc41b",
+      "bytes_in_unit": 7042
+    },
+    "project/looper_session_v2/audit/session_audit.cst": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "449456186c2a064111d2c0a910e295fe17b6448ff4a60001efcd9ed9e1fef5c5",
+      "bytes_in_unit": 3529
+    },
+    "project/looper_session_v2/audit/session_audit.gprj": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7ecc65be2ddc9845a8274a448f0defd7d7ce8cf424a7558f0fc472014aba046f",
+      "bytes_in_unit": 4228
+    },
+    "project/looper_session_v2/audit/session_audit.sdc": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7ac5d38d8cb7b316e6d2809ba1c4d0f04a970b8f9cfd3f317ea7ff3a3507882f",
+      "bytes_in_unit": 2681
+    },
+    "project/looper_session_v2/audit/session_audit_top.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7a323d30743ebed6206e3d9a8129b3bc87b9016317b839087f23fc76fe701606",
+      "bytes_in_unit": 3465
+    },
+    "project/looper_session_v2/build.tcl": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "919b8638e8ccdacf31dc1daaf0a080eb787bb7f8714572d1755b7a905ce8c869",
+      "bytes_in_unit": 220
+    },
+    "project/looper_session_v2/build_audit.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "58217ec98a83967470611fb2dc1b096cb407c1f5bdbdfd48944801cec096e1d7",
+      "bytes_in_unit": 4980
+    },
+    "project/looper_session_v2/build_delivery.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "4b4b90cf15eb2ddb601c5c1252772448892e482bdbce3a5ecbd81f99b04a45e6",
+      "bytes_in_unit": 2799
+    },
+    "project/looper_session_v2/examples/session_ui_mock.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d64940871db840818b48658cd6358732edd94e2980e734a28ddd3037c87506c7",
+      "bytes_in_unit": 1947
+    },
+    "project/looper_session_v2/examples/session_ui_view.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ea976f8f88cdd33205473b32438d1c6bb87e7a9a09dea21aafa0ef592b176a23",
+      "bytes_in_unit": 2071
+    },
+    "project/looper_session_v2/looper_session_v2.gprj": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "828e87d924fde5399d9534bec46a1693913e612bf40f4634c05f975aaf069062",
+      "bytes_in_unit": 4084
+    },
+    "project/looper_session_v2/results/AUDIT_RESET_MAPPING.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c57c3974b4811afb4e137353fb87f178157ea0fd57c760fd68c8c7f742d7b893",
+      "bytes_in_unit": 6867
+    },
+    "project/looper_session_v2/results/BASELINE.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "5a21594516d3b7feb87b8a172cbc71ede6712b816d6d3b1f5aee21658105be04",
+      "bytes_in_unit": 5785
+    },
+    "project/looper_session_v2/results/BOARD_DELIVERY.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b0b930acea27e39001d78ed947c56cebf2d45b402a3a2b70915862d1c52356a5",
+      "bytes_in_unit": 22745
+    },
+    "project/looper_session_v2/results/DRUM_MATH.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9ab7689e36d5dcb0341111a3a0cf2c3a8923d2d7c1bf9c82f976758eef8c775a",
+      "bytes_in_unit": 13795
+    },
+    "project/looper_session_v2/results/DRUM_SPEC.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ddc78f1df7227d9ac0cad65680ee5ab3546d87ca61a1d07ada7dabefb922f1a7",
+      "bytes_in_unit": 1131
+    },
+    "project/looper_session_v2/results/SOURCE_MANIFEST.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "bc24d19f0c6028a38a4d485537d6c78be71c5b04bec5a7793c5f9b338a4d1c4a",
+      "bytes_in_unit": 6831
+    },
+    "project/looper_session_v2/results/UI_EXAMPLES.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "47302ac7afe275a0a942fc8f44dd600cbc307268c114be3794217cb1fd5fb4ab",
+      "bytes_in_unit": 5784
+    },
+    "project/looper_session_v2/results/first_pnr/BUILD.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "99bb4184b05d89d498a73e6765927d0c9f45fff0c828dcce539c707d4659ab06",
+      "bytes_in_unit": 6707
+    },
+    "project/looper_session_v2/results/preview.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9cbfbcc78da81f02fbc39910728166d2a5808f27b4ff6ee6dafd7efafb784c18",
+      "bytes_in_unit": 7093
+    },
+    "project/looper_session_v2/results/regression.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d1c64a6b5fcf3857c10672f75a9cb357e4fe9058d8e68949220d37dd41cf35d1",
+      "bytes_in_unit": 6257
+    },
+    "project/looper_session_v2/results/sim/arrangement_preview_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "28755f97ed6a02fc5ed4ec70fe8663539d528ef155715009d2f7376df421305f",
+      "bytes_in_unit": 9424
+    },
+    "project/looper_session_v2/results/sim/arrangement_stress_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "07fea92b9fd6ad37a1a4ed1d43e51215af101173aa554ab742dd1c6e1d7258b5",
+      "bytes_in_unit": 9478
+    },
+    "project/looper_session_v2/results/sim/custom_service_bound_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "4dc9582901da17c574e38f26eb2c5e97bd7362e2b470633ae26fb0f1d7629b16",
+      "bytes_in_unit": 9430
+    },
+    "project/looper_session_v2/results/sim/drum_capacity_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "64995044501b6d424c17cf5101a15a9e5792fe1347989d4e9fbe269ca4d7aba8",
+      "bytes_in_unit": 9438
+    },
+    "project/looper_session_v2/results/sim/drum_revision_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "eb674f297c86dcf487c68f8c25eb19e54cf000878860621365602bcd72c96d61",
+      "bytes_in_unit": 9559
+    },
+    "project/looper_session_v2/results/sim/expression_bank_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "796cf69d8e4de3bc11233866f8d778a439e31e09a2051151aba4dde3e83b884f",
+      "bytes_in_unit": 9398
+    },
+    "project/looper_session_v2/results/sim/expression_empty_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a4f984c7a589c011055df4a103ebd0dd2aa93404668c5c4218df60c071e6963d",
+      "bytes_in_unit": 9357
+    },
+    "project/looper_session_v2/results/sim/expression_roundtrip_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fc0afc03aca027f42a280828e0ab165a0dd148437a9b4a3560442b69e97c9db3",
+      "bytes_in_unit": 9406
+    },
+    "project/looper_session_v2/results/sim/expression_store_router_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f59693648064cee23c49a766348dca63802454db497bd1fc08cea214269c471a",
+      "bytes_in_unit": 9391
+    },
+    "project/looper_session_v2/results/sim/looper_auto_close_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "35081bebba206ad07810b3c1158fd766fd0883fde3473f97c5d290ffcbf38e40",
+      "bytes_in_unit": 9328
+    },
+    "project/looper_session_v2/results/sim/looper_boundary_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "82c8214e9394c1e9c6be33cbbc36a3e6b5c7dd4659fe106515c3f7f43856a1be",
+      "bytes_in_unit": 9386
+    },
+    "project/looper_session_v2/results/sim/looper_clock_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "111b3f6bd8e4e84ae11ba625d229c0b07ebef203952fd6b86f2261a8f1ce2496",
+      "bytes_in_unit": 9471
+    },
+    "project/looper_session_v2/results/sim/looper_controls_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "13919f02db641d074f1cd98aac9c8b8308add1fef756b2acbae0d11b176bad0e",
+      "bytes_in_unit": 9387
+    },
+    "project/looper_session_v2/results/sim/looper_custom_bound_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "36b167e4906346393432abe69fe5295b168897498170405a3ee50efd88e323ec",
+      "bytes_in_unit": 9374
+    },
+    "project/looper_session_v2/results/sim/looper_custom_bound_tb__N=32__FULL=0.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "0ae8f17684911cd3a742f2e790267ebd566146259968036305cdf53b8473a0b0",
+      "bytes_in_unit": 9402
+    },
+    "project/looper_session_v2/results/sim/looper_custom_bound_tb__N=32__FULL=1.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f51e53e89c558f135f6be48aff7a94fe7904058809f373a5c677e5c145836084",
+      "bytes_in_unit": 9405
+    },
+    "project/looper_session_v2/results/sim/looper_drum_engine_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "65c9eb6b9b9776df56c601bc3fef5e460dd6d2e8b9c323539558878fea50ce64",
+      "bytes_in_unit": 9384
+    },
+    "project/looper_session_v2/results/sim/looper_event_path_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "652731253138128105f2925c3d980577d3d62a44a84da6a917d68aa51848c2f8",
+      "bytes_in_unit": 9370
+    },
+    "project/looper_session_v2/results/sim/looper_event_router_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8b7516086e07ddcc4a22f32a8a7c3ad173295cb4b03296a23ae5dddf7e9ad1d2",
+      "bytes_in_unit": 9382
+    },
+    "project/looper_session_v2/results/sim/looper_event_store_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "db7b152db97de1107c6b50f285d36557cf75e452cecab097da67c3e66a78a75d",
+      "bytes_in_unit": 9383
+    },
+    "project/looper_session_v2/results/sim/looper_full_load_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d7c06dd89c2ef47da46064976ab14b565dced92e5004e2de8c5c5a07f90dfdb8",
+      "bytes_in_unit": 9383
+    },
+    "project/looper_session_v2/results/sim/looper_mix_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2ae393fdca585d14a9e3c51fd02cfa0048876f0f45afb68e9d72e99d7db7f395",
+      "bytes_in_unit": 9367
+    },
+    "project/looper_session_v2/results/sim/looper_patch_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "654547ded4156e58c3a4031a86788822c7c455d6d2ac1a8f7946f50404cf8253",
+      "bytes_in_unit": 9377
+    },
+    "project/looper_session_v2/results/sim/looper_pitch32_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "0c4924fba4d9b3267074431167e5e8e8c94b7cf42b3ea2b8882cd5e0a19afb7e",
+      "bytes_in_unit": 9437
+    },
+    "project/looper_session_v2/results/sim/looper_pitch32_tb__ALL_CUSTOM=1.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "799b8b40ecb76fcb898bee05e17f198e064bce88177c66146b0e04abbc2c3188",
+      "bytes_in_unit": 9459
+    },
+    "project/looper_session_v2/results/sim/looper_preview_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "bfb8d6dc0f7a268869cb4512566d1baa06a5c7f4b190dc315a9db5120e639c23",
+      "bytes_in_unit": 9368
+    },
+    "project/looper_session_v2/results/sim/looper_store_capacity_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3660a845038f7af9cbba1e0a4ddf52af5b2e7cb6e8022f4df156454b51b7d4b6",
+      "bytes_in_unit": 9405
+    },
+    "project/looper_session_v2/results/sim/looper_store_capacity_tb__SERIAL=1.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "cd064f2a7f85f93217a525b196d20c9a14fa6881b9bb54d8e7b1386a829d4130",
+      "bytes_in_unit": 9423
+    },
+    "project/looper_session_v2/results/sim/looper_top_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e727cb7dd7faf828debfd70c3735106afbe4e846dd57499a89797da9169b69ce",
+      "bytes_in_unit": 9395
+    },
+    "project/looper_session_v2/results/sim/looper_track_layout_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7d5d531eeaa337ba2327bdc555e92f9f91a04c618cf4de90b3d7c06145b5a296",
+      "bytes_in_unit": 9362
+    },
+    "project/looper_session_v2/results/sim/looper_transport_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "29f7da54ee550d6efa8fb73f3ca987f0f5b4d5da45331be4542a3e11113bfa2e",
+      "bytes_in_unit": 9365
+    },
+    "project/looper_session_v2/results/sim/looper_v2_equivalence_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c5f5eacd4c77549a23250b967401178b053ffbfe74cc947d6f5f40f60c17bc55",
+      "bytes_in_unit": 9895
+    },
+    "project/looper_session_v2/results/sim/metronome_accuracy_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "6c8ac0db6ba5a12635127b7c0f47ae12732ee64d862ff19289f0ac8ff630c6f3",
+      "bytes_in_unit": 9371
+    },
+    "project/looper_session_v2/results/sim/metronome_accuracy_tb__CADENCE=1040__SWEEP=0.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "79905026301ad2ec65161288be081e79aa833c92fbd118ad73cf177372bfadbe",
+      "bytes_in_unit": 9411
+    },
+    "project/looper_session_v2/results/sim/metronome_control_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "62d8658cf8752428f8bd01c7aff581fa95a77fb7d2471c39f12b5882607c3c65",
+      "bytes_in_unit": 9379
+    },
+    "project/looper_session_v2/results/sim/record_merge_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8aa1d1c6b805ed5e5d7034b8cd0f2a6bf72a7fda193e0dda3dc0b309ab53ce8e",
+      "bytes_in_unit": 9381
+    },
+    "project/looper_session_v2/results/sim/refinement_link_reset_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e402d92c5439c5a63a693e393355cd96d641e3a5f83c48aa7457c1b07f6897a0",
+      "bytes_in_unit": 9401
+    },
+    "project/looper_session_v2/results/sim/refinement_link_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "959dc8163b4630b240d0c4d231cc6f82641648fdb55b8a6d54aa88b0dfbe405d",
+      "bytes_in_unit": 9468
+    },
+    "project/looper_session_v2/results/sim/session_command_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "bdc947f5e3d554e18c0b9211bd4c318bceae2fd3a88c0c33a4596ffe9dbdd785",
+      "bytes_in_unit": 9416
+    },
+    "project/looper_session_v2/results/sim/session_controls_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9beb800a11a00097d6ae3a415004dbba942c6e13df6bec9b6c02fb14b52432d6",
+      "bytes_in_unit": 9400
+    },
+    "project/looper_session_v2/results/sim/session_link_reset_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2d49804b9fa98f2abd8b2d062aa115aafcb0509ec5a7a3cab70d4226c6933bc2",
+      "bytes_in_unit": 9408
+    },
+    "project/looper_session_v2/results/sim/session_link_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c3fffb2c97a67edefdc0096be261b0a3ae792d440a070250f2c70529ded8151f",
+      "bytes_in_unit": 9456
+    },
+    "project/looper_session_v2/results/sim/session_ui_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "316b55284e270b4c2fb3d82fed0ebb214336808c4e6478f3a841adee43b49e43",
+      "bytes_in_unit": 9372
+    },
+    "project/looper_session_v2/results/sim/session_unpacker_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "06b748362efd4cb36947df175a2eb55d1fb1172f943627efdc6915be06eb09c5",
+      "bytes_in_unit": 9366
+    },
+    "project/looper_session_v2/results/sim/sine_compact_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "df0381d10cdc592f23ee95036c298b511d785cd6ea1db77fdcef89323eb38987",
+      "bytes_in_unit": 8766
+    },
+    "project/looper_session_v2/results/unit/expression_capture_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7dc2920d641276d60d0bceca98d586d835ab573eb6f775253a29e27701b10cb0",
+      "bytes_in_unit": 670
+    },
+    "project/looper_session_v2/results/unit/fader_mode_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2e80c24b0a74e70086badf52b12aacc8f4f8b066541f2f6e4cf5dcf071fb3519",
+      "bytes_in_unit": 628
+    },
+    "project/looper_session_v2/results/unit/looper_keys25_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8a6f0f407bf53f214bca85a615a590400f211d44da77e2fd475de71e1e83d57e",
+      "bytes_in_unit": 766
+    },
+    "project/looper_session_v2/results/unit/mcp3208_reader_tb.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "474491cad200bb2a9bcb3fd7575dceb8bc9b2c754f2d8b1576bf1977b71860d4",
+      "bytes_in_unit": 629
+    },
+    "project/looper_session_v2/results/unit/mcp3208_reader_tb__HALF=50__SCAN=50000.json": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "94c57f864c14a947bd0142b0cf288bd8d709d3cb6156708964368ff08abf3809",
+      "bytes_in_unit": 664
+    },
+    "project/looper_session_v2/rtl/fader_mode_adapter.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "69f2e672f6481cbff0e5297cb210a278261871abc9a79066e563f5a3f6ad5526",
+      "bytes_in_unit": 3208
+    },
+    "project/looper_session_v2/rtl/looper_clock.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c6fd39a7990ed899610477f40e57b80bd498133cd0733a3e79f956994d7d4238",
+      "bytes_in_unit": 3053
+    },
+    "project/looper_session_v2/rtl/looper_controls.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "6616fec3f4392182c822e016347b70a6703b7011db324deb94e7058b22fe61aa",
+      "bytes_in_unit": 11649
+    },
+    "project/looper_session_v2/rtl/looper_drum_engine.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "645fe3460193240334e8813b23dffdb85ea859e42abab653d35864bf1fe571ba",
+      "bytes_in_unit": 12794
+    },
+    "project/looper_session_v2/rtl/looper_event_router.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a6cb37551c7a8eca9bcf76d85ca977f2c75ce6b569371891beece04a5a82f211",
+      "bytes_in_unit": 10782
+    },
+    "project/looper_session_v2/rtl/looper_event_store.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e9b8e3698d095d756394fbc36d61bc9f34977103e751b89e49db252dd0dadf52",
+      "bytes_in_unit": 22154
+    },
+    "project/looper_session_v2/rtl/looper_expression_capture.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7612cd5e58fdb7e626ec786339111076a141bef067e15604516c8a34e9f6bf1a",
+      "bytes_in_unit": 3751
+    },
+    "project/looper_session_v2/rtl/looper_transport.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9cf04fcf7cf2bc9cf03721ef833f70808b3f5605aae124b35b45aa6b8f9ceb4b",
+      "bytes_in_unit": 7090
+    },
+    "project/looper_session_v2/rtl/mcp3208_reader.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e1bdcc11ff288da8425146adb040bfbbed1328cce4a11dc29fabf54d726a4bcf",
+      "bytes_in_unit": 2678
+    },
+    "project/looper_session_v2/rtl/metronome_click.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "57f07bc3a5b24dd2068190e62973f38cd2cae56e38759ab0c67f9b697f576bc2",
+      "bytes_in_unit": 2372
+    },
+    "project/looper_session_v2/rtl/refinement_config_arbiter.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c67415c17127e9b7e36f4a72cd43acdd78e98f62fe1448747a768892dc409b3f",
+      "bytes_in_unit": 2214
+    },
+    "project/looper_session_v2/rtl/refinement_link.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7003481d3fbea712619d5e7da30976f8875b82c7a9e4d1ec762bc7c7818f4773",
+      "bytes_in_unit": 5749
+    },
+    "project/looper_session_v2/rtl/refinement_snapshot_bridge.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e40b6a72183aa9eff6e82f1b77ea3327c4783b5f1b1d5741bb0481a4f32978be",
+      "bytes_in_unit": 5381
+    },
+    "project/looper_session_v2/rtl/session_command_bridge.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e9392ce3f31d8ec0455b52259b56a54c7fe655e4ce1a5de031a4558e80f3167a",
+      "bytes_in_unit": 4653
+    },
+    "project/looper_session_v2/rtl/session_dispatcher.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "536be0331979273e6c31081487629ebfe0aad723a5797c4722953c82bd4d32a9",
+      "bytes_in_unit": 3223
+    },
+    "project/looper_session_v2/rtl/session_link.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e1c4a42ef287fefd46aa6e9b506aa411eb7f43b0894af5bbcb93ace60a703d3a",
+      "bytes_in_unit": 8335
+    },
+    "project/looper_session_v2/rtl/session_ui_bridge.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3001e0d28771262f518219851d9fd3cebcceb8975448df2a22cc0ae3dca4c673",
+      "bytes_in_unit": 3423
+    },
+    "project/looper_session_v2/rtl/session_ui_unpacker.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "96721d75471c82613bae865bab6f719d467e7056d303f868517c6175491e66e4",
+      "bytes_in_unit": 1838
+    },
+    "project/looper_session_v2/sim/arrangement_preview_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a9d71fdec2342ba56bb5ea1c901220faba86d645b13896c9a30cb4cde83656f2",
+      "bytes_in_unit": 6472
+    },
+    "project/looper_session_v2/sim/arrangement_stress_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "048a233ac0c4509b13a7d964b2e46d189d2945f53926c0faf7c18231700dc202",
+      "bytes_in_unit": 5720
+    },
+    "project/looper_session_v2/sim/custom_service_bound_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8ccd0cc61ce1989cea340c095c348d7e9ba4aeb14004a5e040c1c60c688f5a0c",
+      "bytes_in_unit": 6176
+    },
+    "project/looper_session_v2/sim/drum_capacity_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "0f6e903d16c833ea1634fadc0d6eda1c9502f51d2fa1f4d627afba79fc476698",
+      "bytes_in_unit": 3293
+    },
+    "project/looper_session_v2/sim/drum_revision_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "af3c25621cb4c31c47c38bc0270716e6dcd8e5f253a29cbdc550c850d6ce0aa3",
+      "bytes_in_unit": 3591
+    },
+    "project/looper_session_v2/sim/expression_bank_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ffee8e1160b44d6d7f12ec3e3dc48f99aedc4e11cda35bb8766a4cca27a2f903",
+      "bytes_in_unit": 5246
+    },
+    "project/looper_session_v2/sim/expression_capture_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "74ec46b654e118d2c1c977adbc6b3d3dc8fa7ff3dbf7ae01c26c16b0b2afa1ea",
+      "bytes_in_unit": 2626
+    },
+    "project/looper_session_v2/sim/expression_empty_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "802d0ff4aa7b924892f1b38ad4b843e4f4610f22a4238ec9f33d1c7193d610af",
+      "bytes_in_unit": 4047
+    },
+    "project/looper_session_v2/sim/expression_roundtrip_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "890cc62354932e04144a2b09de11d7bb2bece834c32388e7a3a00a3a000af821",
+      "bytes_in_unit": 6144
+    },
+    "project/looper_session_v2/sim/expression_store_router_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "da14f6c2f3610512f45a1c4ea7443c9e1eccb0584f18451c025ac9f93639b306",
+      "bytes_in_unit": 4550
+    },
+    "project/looper_session_v2/sim/fader_mode_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e1cfa167e672535d23c0d9c6ecb2a9c76002ad1d06cc005c11df5df793b338bc",
+      "bytes_in_unit": 1947
+    },
+    "project/looper_session_v2/sim/looper_auto_close_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ba9d9ffb172f0f16d3909218cf7d19514e51300bd9b34a150d25446ef4c123c2",
+      "bytes_in_unit": 3562
+    },
+    "project/looper_session_v2/sim/looper_boundary_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ca64d94aab22ef1dc6aa0cc53f7133d39030d6202e861a7fdbd7d03a28bed327",
+      "bytes_in_unit": 2335
+    },
+    "project/looper_session_v2/sim/looper_clock_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "0d575092c8e96f0428c41a6d33fb8e0a912f4d78829815c146cd5f8824ce8187",
+      "bytes_in_unit": 2134
+    },
+    "project/looper_session_v2/sim/looper_controls_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "bca766879e6a1b0f2deca5721fc746d8dd2629b49097e0e0f57d8f470f71e574",
+      "bytes_in_unit": 3040
+    },
+    "project/looper_session_v2/sim/looper_custom_bound_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "74eee8417c2521e12f8189d5ceafbeaa3176fc905298cba1b0c52bed45ab59ae",
+      "bytes_in_unit": 2764
+    },
+    "project/looper_session_v2/sim/looper_drum_engine_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "dacc3df813f13c3781693abb91a8b780f818b1366bfb76aee21312d615dcfb0e",
+      "bytes_in_unit": 4575
+    },
+    "project/looper_session_v2/sim/looper_event_path_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "adf56c4eacb85cf192f1dfa4bd2b198b3a14061443de7b309c106cdf65c6b22a",
+      "bytes_in_unit": 6420
+    },
+    "project/looper_session_v2/sim/looper_event_router_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fe854aaf1f33debb7b0c9bf29602efe757387549de5c4a2162c794d67d71d129",
+      "bytes_in_unit": 4706
+    },
+    "project/looper_session_v2/sim/looper_event_store_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3e03956ff05ee61accfba7167ada2a50c3462c3447a52d7cf71f5cd7f564c921",
+      "bytes_in_unit": 9468
+    },
+    "project/looper_session_v2/sim/looper_full_load_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a29f2e35eaa0054313edc0197491074f6dc6fb876cb6bdca57a81200b5915291",
+      "bytes_in_unit": 4904
+    },
+    "project/looper_session_v2/sim/looper_keys25_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8555ab794d25de68e828cd2e10351684b9890198b826017f6479d743afb35a6c",
+      "bytes_in_unit": 1798
+    },
+    "project/looper_session_v2/sim/looper_mix_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "07c906ca11115210ebaabf286d1a08f13aec80490eb03466de39344e3b4c3b20",
+      "bytes_in_unit": 4044
+    },
+    "project/looper_session_v2/sim/looper_patch_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e53ef52075fc97499f26db3eeb411feb3e98c5b3f057b5cf1d04131e931fbe02",
+      "bytes_in_unit": 4146
+    },
+    "project/looper_session_v2/sim/looper_pitch32_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b1a762f941adfcfcff602ed3dee8683842efb6b8b78d0c644aa18ec9b8170d2a",
+      "bytes_in_unit": 4407
+    },
+    "project/looper_session_v2/sim/looper_preview_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "f4e65e3f23deec2bd301cc644e026230a21e1fcd63e203485afa984541f73d2e",
+      "bytes_in_unit": 4434
+    },
+    "project/looper_session_v2/sim/looper_store_capacity_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e95c33c748ee6fcf19d952073beaccc872348c920a3c56de571c460b7c5c726e",
+      "bytes_in_unit": 3063
+    },
+    "project/looper_session_v2/sim/looper_top_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b8c2cb2119aa08c332e4f03197b434082bc53e1f5dd1e2b4d88b4571cccc9b04",
+      "bytes_in_unit": 5548
+    },
+    "project/looper_session_v2/sim/looper_track_layout_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e546364856f18f337522dd2f2888226346c6617c09c6b13bc7538e452b369846",
+      "bytes_in_unit": 2492
+    },
+    "project/looper_session_v2/sim/looper_transport_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "e0456be52792cb63363a54f5e9e492733ee0fed53dad0947973e507b5e275f18",
+      "bytes_in_unit": 5198
+    },
+    "project/looper_session_v2/sim/looper_v2_equivalence_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "4fad3444d1afadaebc82a758d3f8c1120ea01496b8215d259895c3f14d20ef34",
+      "bytes_in_unit": 4638
+    },
+    "project/looper_session_v2/sim/mcp3208_reader_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "1a7fd8e569fb5ca957b9744412f6ebe8a545688ed52d72544b3b03d8c8e6a8a1",
+      "bytes_in_unit": 2102
+    },
+    "project/looper_session_v2/sim/metronome_accuracy_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "29bf0205d21cd90b95291048d680484aa77656f18b9a61e64443e6a057d04afc",
+      "bytes_in_unit": 2900
+    },
+    "project/looper_session_v2/sim/metronome_control_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8ca7582edf429a7484114fb38954ff7a0dc419ce4c50b5781dfcec3bd405316b",
+      "bytes_in_unit": 2366
+    },
+    "project/looper_session_v2/sim/preview.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "96ce6e49cae828192992bfe31327237ba08bf25b865ed72ce7b712b107939972",
+      "bytes_in_unit": 3613
+    },
+    "project/looper_session_v2/sim/record_merge_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "8990185fa0584ee645437fa6ca4acf0dc13648aa69b430076847ffdc854c81f2",
+      "bytes_in_unit": 5215
+    },
+    "project/looper_session_v2/sim/refinement_link_reset_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ed24f218d4f5ab6cfb31dc59e5e8e0aabf84a4ff4bcb9f38df1ce066ba294507",
+      "bytes_in_unit": 6172
+    },
+    "project/looper_session_v2/sim/refinement_link_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "3340fd512dc7ee0816af5d9429d785127e1dcb8101207bd0c599cee982a1c2ce",
+      "bytes_in_unit": 6872
+    },
+    "project/looper_session_v2/sim/regress.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "d88ab95daf0fd2d410c4b1f99f8132224273e4f18e19331eaadad69b3dbfa381",
+      "bytes_in_unit": 2346
+    },
+    "project/looper_session_v2/sim/regression_cases.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a20af31f96ae4210070eb981036cc16775777ee3380c2678b29bb5ec6d3078f0",
+      "bytes_in_unit": 1480
+    },
+    "project/looper_session_v2/sim/run.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a64f9c9388aa4272def5decb40551c563d805935805a81b83bfc8c1d075e091c",
+      "bytes_in_unit": 5202
+    },
+    "project/looper_session_v2/sim/session_command_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a7e4b66827709d53654c27b62b542803e38561c06d29f7d671d405facadb964d",
+      "bytes_in_unit": 3842
+    },
+    "project/looper_session_v2/sim/session_controls_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c9745906af57ef22d041da713c6d589a37c449a142775149588cefecd4edb142",
+      "bytes_in_unit": 4171
+    },
+    "project/looper_session_v2/sim/session_examples_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "be45c5be872a8b1606514a8b6c7906f42340945b1ef041c029515e98cf5e0852",
+      "bytes_in_unit": 2058
+    },
+    "project/looper_session_v2/sim/session_link_reset_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c350b3d121cc2435150ac8f7a991d5f6aa5c3de01676b3efd6da328fe572ff90",
+      "bytes_in_unit": 6192
+    },
+    "project/looper_session_v2/sim/session_link_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "7bb2996f9aa94c1fda530e495a5c97d546aa2425cc992c8bafa02e1b25478402",
+      "bytes_in_unit": 8299
+    },
+    "project/looper_session_v2/sim/session_ui_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b16469f5d6981de5ca48c7636ae80756481f6eba7be5d6083273cb44d6245c34",
+      "bytes_in_unit": 3205
+    },
+    "project/looper_session_v2/sim/session_unpacker_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "90fc2f085c84df6a5d066daf0badad3c215faa4684ba755f20357ec949bd67dc",
+      "bytes_in_unit": 1467
+    },
+    "project/looper_session_v2/sim/sine_compact_tb.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "37fa83ac7e26b7a7a1a051cd9d61d808bf912c37f058df848b32f9c6ed91537f",
+      "bytes_in_unit": 721
+    },
+    "project/looper_session_v2/src/audio_v2_pluck.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2e27386418df8885bbfa45ddc5b354056bb003fd234d5e9f59f2518bd9319239",
+      "bytes_in_unit": 11121
+    },
+    "project/looper_session_v2/src/audio_v2_pool_slot.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "582233542c72383d999129a5f402ceb96b00b1f372f74da8b24fe9baf3919b4b",
+      "bytes_in_unit": 7971
+    },
+    "project/looper_session_v2/src/audio_v2_tone.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "532a3de1d415059121799880f64e1c2fa39cc6180f7c1491db9a703d7f46ea74",
+      "bytes_in_unit": 7889
+    },
+    "project/looper_session_v2/src/looper_audio_bank.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a04ca0ee58afcbf3cece7abf9531d70c414f44c67178d23d53e7f43050d50a8a",
+      "bytes_in_unit": 28336
+    },
+    "project/looper_session_v2/src/looper_audio_core.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "ff2f0c0c02003c4b120d328eb887c1885f91429c2fb9f6d8c9477f0060ba993c",
+      "bytes_in_unit": 25625
+    },
+    "project/looper_session_v2/src/looper_audio_top_base.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b697064239ecd0f11d0268717360fda28800d94885e3c0add6e3e2822fbf9a61",
+      "bytes_in_unit": 2371
+    },
+    "project/looper_session_v2/src/looper_gallery_shared_tone.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "715bea5084e9196f3282b1e0ee8cbc3d3223388431b66efaa4838b8ac00d70cd",
+      "bytes_in_unit": 8060
+    },
+    "project/looper_session_v2/src/looper_keys.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "a53b56ac774d27dbcd0dc5cd3c741ca77bd43ec2d49efdd54727965ed1238a95",
+      "bytes_in_unit": 4522
+    },
+    "project/looper_session_v2/src/looper_platform.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "c646a33523c1eb681f9093ef89785dad10416cc959d59b710a191a39fb301893",
+      "bytes_in_unit": 23154
+    },
+    "project/looper_session_v2/src/looper_session_top.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "9197abb204e748e08db4ecfdb7733eccae7111361dd9b5832c9ed7ddac123fa8",
+      "bytes_in_unit": 1053
+    },
+    "project/looper_session_v2/src/looper_session_v2.cst": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "17ccf9754356049fe2e6ca511fe95778044834dd6bf82b060f06bc88c36799e3",
+      "bytes_in_unit": 1843
+    },
+    "project/looper_session_v2/src/looper_session_v2.sdc": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "5463e7756f99cfb4c111696a050da9441dfb91bc7a44754616e8a78e4ecc3b23",
+      "bytes_in_unit": 240
+    },
+    "project/looper_session_v2/src/refinement_sine.v": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2a130185314dfe487cdd114aa2b3d1aa6c9581e1fa754d0918d0105c380cc6c0",
+      "bytes_in_unit": 43731
+    },
+    "project/looper_session_v2/tools/audit_reset_constraints.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "4fff875e5545040f204621448879b10160d4da66a43a9519d3aea3dafef645af",
+      "bytes_in_unit": 2062
+    },
+    "project/looper_session_v2/tools/check_delivery.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b60a36f13143b442ee8c903bfc8d0a4726338ced4d69b7c21f4c3cd1748c08ab",
+      "bytes_in_unit": 6457
+    },
+    "project/looper_session_v2/tools/check_drum_math.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "fb3bb94314ca318c774f76317341921bceba047646147178680154e13e0f36e6",
+      "bytes_in_unit": 4166
+    },
+    "project/looper_session_v2/tools/check_ui_examples.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "35f23c3cbb32b9a53c95cc3f6fb8792dd105e6647ad4984e35925138dcf5dc7c",
+      "bytes_in_unit": 1493
+    },
+    "project/looper_session_v2/tools/generate_quarter_sine.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "92063e8010cdc0ea4d6fb981197d8a75a360418671b78675f1d2addc677f9736",
+      "bytes_in_unit": 1173
+    },
+    "project/looper_session_v2/tools/profile_synthesis.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "2d6798e12ac462e921ec32b7f3b6a98e24a177ff76d2ced84e6a9566b806ee65",
+      "bytes_in_unit": 1765
+    },
+    "project/looper_session_v2/tools/run_unit.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "68f9e4416f7aa6c3368a39f88c4ce4e6e5f8315fedfee517f476df73b1d247c3",
+      "bytes_in_unit": 2049
+    },
+    "project/looper_session_v2/tools/sim_compact_rom.py": {
+      "group": "audio",
+      "unit": "LF-normalized bytes",
+      "sha256": "b2b5cade20891d88b4c6b55a049ca238e906e5a61305018523135c923140c933",
+      "bytes_in_unit": 3045
+    },
+    "tools/check_sync_snapshot.py": {
+      "group": "navigation",
+      "unit": "LF-normalized bytes",
+      "sha256": "2837c069ef382ede121e732fab404f068ba5ec894bf2fbecd023cd4a08fe699f",
+      "bytes_in_unit": 1667
+    }
+  },
+  "excluded": "impl, FS, WAV/PCM, simulation libraries, logs/HTML/timing outputs, partial records, EDA backups/redundant exports/draft EPRJ, local relocation records",
+  "note": "Historical raw result hashes remain untouched; text snapshot check uses LF and reviewed EDA stays binary. Manifest and checks are excluded from their own source hash set."
+}

@@ -1,0 +1,298 @@
+[
+  {
+    "test": "looper_clock_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_transport_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_event_store_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_auto_close_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_track_layout_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_boundary_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_store_capacity_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 6.0
+  },
+  {
+    "test": "looper_event_router_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_event_path_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_drum_engine_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_patch_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_pitch32_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_controls_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_top_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_mix_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "metronome_control_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_full_load_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "record_merge_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "sine_compact_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "expression_bank_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "expression_store_router_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "expression_roundtrip_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "expression_empty_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "custom_service_bound_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "refinement_link_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "refinement_link_reset_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "arrangement_stress_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_store_capacity_tb",
+    "generics": [
+      "SERIAL=1"
+    ],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_pitch32_tb",
+    "generics": [
+      "ALL_CUSTOM=1"
+    ],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "metronome_accuracy_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "metronome_accuracy_tb",
+    "generics": [
+      "CADENCE=1040",
+      "SWEEP=0"
+    ],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_v2_equivalence_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_custom_bound_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_custom_bound_tb",
+    "generics": [
+      "N=32",
+      "FULL=0"
+    ],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_custom_bound_tb",
+    "generics": [
+      "N=32",
+      "FULL=1"
+    ],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "expression_capture_tb",
+    "generics": [],
+    "unit": true,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "fader_mode_tb",
+    "generics": [],
+    "unit": true,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_keys25_tb",
+    "generics": [],
+    "unit": true,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "mcp3208_reader_tb",
+    "generics": [],
+    "unit": true,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "mcp3208_reader_tb",
+    "generics": [
+      "HALF=50",
+      "SCAN=50000"
+    ],
+    "unit": true,
+    "pass": true,
+    "reused_current_result": true
+  }
+]

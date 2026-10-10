@@ -1,0 +1,312 @@
+[
+  {
+    "test": "looper_clock_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 17.6
+  },
+  {
+    "test": "looper_transport_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 4.2
+  },
+  {
+    "test": "looper_event_store_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 3.6
+  },
+  {
+    "test": "looper_auto_close_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 3.5
+  },
+  {
+    "test": "looper_track_layout_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 3.6
+  },
+  {
+    "test": "looper_boundary_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 3.5
+  },
+  {
+    "test": "looper_store_capacity_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 3.6
+  },
+  {
+    "test": "looper_event_router_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_event_path_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_drum_engine_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 37.6
+  },
+  {
+    "test": "looper_patch_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 18.1
+  },
+  {
+    "test": "looper_pitch32_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 40.1
+  },
+  {
+    "test": "looper_controls_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 3.8
+  },
+  {
+    "test": "looper_top_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 188.5
+  },
+  {
+    "test": "looper_mix_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 12.4
+  },
+  {
+    "test": "metronome_control_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 4.1
+  },
+  {
+    "test": "looper_full_load_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 52.2
+  },
+  {
+    "test": "record_merge_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 4.0
+  },
+  {
+    "test": "sine_compact_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 3.0
+  },
+  {
+    "test": "expression_bank_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 5.3
+  },
+  {
+    "test": "expression_store_router_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 4.0
+  },
+  {
+    "test": "expression_roundtrip_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "expression_empty_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 4.1
+  },
+  {
+    "test": "custom_service_bound_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 23.5
+  },
+  {
+    "test": "refinement_link_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 168.3
+  },
+  {
+    "test": "refinement_link_reset_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 230.0
+  },
+  {
+    "test": "arrangement_stress_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 81.2
+  },
+  {
+    "test": "looper_store_capacity_tb",
+    "generics": [
+      "SERIAL=1"
+    ],
+    "unit": false,
+    "pass": true,
+    "seconds": 5.3
+  },
+  {
+    "test": "looper_pitch32_tb",
+    "generics": [
+      "ALL_CUSTOM=1"
+    ],
+    "unit": false,
+    "pass": true,
+    "seconds": 48.7
+  },
+  {
+    "test": "metronome_accuracy_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 85.5
+  },
+  {
+    "test": "metronome_accuracy_tb",
+    "generics": [
+      "CADENCE=1040",
+      "SWEEP=0"
+    ],
+    "unit": false,
+    "pass": true,
+    "seconds": 333.2
+  },
+  {
+    "test": "looper_v2_equivalence_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 74.8
+  },
+  {
+    "test": "looper_custom_bound_tb",
+    "generics": [],
+    "unit": false,
+    "pass": true,
+    "seconds": 11.5
+  },
+  {
+    "test": "looper_custom_bound_tb",
+    "generics": [
+      "N=32",
+      "FULL=0"
+    ],
+    "unit": false,
+    "pass": true,
+    "seconds": 12.9
+  },
+  {
+    "test": "looper_custom_bound_tb",
+    "generics": [
+      "N=32",
+      "FULL=1"
+    ],
+    "unit": false,
+    "pass": true,
+    "seconds": 13.8
+  },
+  {
+    "test": "pluck_truncation_tb",
+    "generics": [],
+    "unit": true,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "snapshot_copy_tb",
+    "generics": [],
+    "unit": true,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "expression_capture_tb",
+    "generics": [],
+    "unit": true,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "fader_mode_tb",
+    "generics": [],
+    "unit": true,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "looper_keys25_tb",
+    "generics": [],
+    "unit": true,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "mcp3208_reader_tb",
+    "generics": [],
+    "unit": true,
+    "pass": true,
+    "reused_current_result": true
+  },
+  {
+    "test": "mcp3208_reader_tb",
+    "generics": [
+      "HALF=50",
+      "SCAN=50000"
+    ],
+    "unit": true,
+    "pass": true,
+    "reused_current_result": true
+  }
+]

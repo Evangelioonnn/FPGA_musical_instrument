@@ -1,0 +1,17 @@
+{
+  "test": "mcp3208_reader_tb",
+  "generics": [
+    "HALF=50",
+    "SCAN=50000"
+  ],
+  "pass": true,
+  "markers": [
+    "MCP3208_READER_TB_PASS mode0 command24 channels8 endpoints coherent_scan backpressure skipped=3"
+  ],
+  "sources": {
+    "project\\looper_refinement_lab\\rtl\\mcp3208_reader.v": "e1bdcc11ff288da8425146adb040bfbbed1328cce4a11dc29fabf54d726a4bcf",
+    "project\\looper_refinement_lab\\sim\\mcp3208_reader_tb.v": "4ede96bc62da442bfc4e5a40183a900b625195b5404dd59013acbbb73a79eb3f",
+    "project\\looper_refinement_lab\\tools\\run_unit.py": "21093023c328fbb407a6f057da32dc2134b9d423775dbe725c68790c4635969e"
+  },
+  "time": "2026-10-07T22:29:09.639905+08:00"
+}

@@ -1,0 +1,309 @@
+{
+  "time": "2026-10-07T15:56:34.514369+08:00",
+  "board_test": "pending",
+  "tests": [
+    {
+      "test": "looper_clock_tb",
+      "markers": [
+        "CLOCK_TEMPO_PASS bpm=40 ticks=3839 beats=40 bars=9",
+        "CLOCK_TEMPO_PASS bpm=120 ticks=11519 beats=120 bars=29",
+        "CLOCK_TEMPO_PASS bpm=240 ticks=23039 beats=240 bars=59",
+        "LOOPER_CLOCK_TB_PASS"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_transport_tb",
+      "markers": [
+        "LOOPER_TRANSPORT_TB_PASS countin=one_bar_plus_record_downbeat ticks_per_pass=384 loops=3"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_event_store_tb",
+      "markers": [
+        "LOOPER_EVENT_STORE_TB_PASS quantize=48/96 patches=5/2 undo=track0 wrap_stall=preserved overflow=atomic"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_auto_close_tb",
+      "markers": [
+        "LOOPER_AUTO_CLOSE_TB_PASS held_note_closed_at=191"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_track_layout_tb",
+      "markers": [
+        "LOOPER_TRACK_LAYOUT_TB_PASS four_lanes=four_tracks clear=selected cancel=atomic"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_boundary_tb",
+      "markers": [
+        "LOOPER_BOUNDARY_TB_PASS raw_stamp=383 pending_drained_before_close on_off_order=preserved track3_layer3=correct"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_store_capacity_tb",
+      "markers": [
+        "LOOPER_STORE_CAPACITY_TB_PASS tracks=4 layers=4 events_per_layer=128 replayed=2048 random_backpressure=stable"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_event_router_tb",
+      "markers": [
+        "LOOPER_EVENT_ROUTER_TB_PASS track_identity=isolated stalled_payload=stable flush=clean record_pair=1"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_event_path_tb",
+      "markers": [
+        "LOOPER_EVENT_PATH_TB_PASS recorded_note_pair=1 replay_token_match=1 quantized=48/96 patch=5"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_drum_engine_tb",
+      "markers": [
+        "LOOPER_DRUM_ENGINE_TB_PASS voices=8 shared_sine=1 choke=closed_hat overflow=1 tail=cleared"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_patch_tb",
+      "markers": [
+        "LOOPER_PATCH_TB_PASS frozen_custom=PCM_equal upstream_poison=ignored loop_off=ignores_live_pedal frames=1400"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_pitch32_tb",
+      "markers": [
+        "LOOPER_PITCH32_TB_PASS MIDI36..67, four mixed harmonic presets, independent equal-temperament phase model, comparisons=38468 frames=1203 all_custom=0 max_render=533"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_controls_tb",
+      "markers": [
+        "LOOPER_CONTROLS_TB_PASS menu=0_2_3_4_5_6 master=0..65536 mixer=independent bpm=40..240 bars=1..4 custom=editable"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_top_tb",
+      "markers": [
+        "LOOPER_TOP_TB_PASS physical_matrix=PCM six_presets=selectable drums=playable record_replay_stop=clean N=32 PLUCK=12 max_render=488"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_mix_tb",
+      "markers": [
+        "LOOPER_MIX_TB_PASS busy_drum_and_click=both_delivered master_mute=all_sources click_recording=excluded"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "metronome_control_tb",
+      "markers": [
+        "METRONOME_CONTROL_TB_PASS enable=phase_continuous tempo=next_beat restart=accented_zero mute=PCM_zero"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_pitch32_tb__ALL_CUSTOM=1",
+      "markers": [
+        "LOOPER_PITCH32_TB_PASS MIDI36..67, four mixed harmonic presets, independent equal-temperament phase model, comparisons=38465 frames=1203 all_custom=1 max_render=653"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "metronome_accuracy_tb",
+      "markers": [
+        "METRONOME_ACCURACY_TB_PASS cadence=4 sweep=1 each_beat_error<=1_sample PCM_clicks=complete"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "metronome_accuracy_tb__CADENCE=1040__SWEEP=0",
+      "markers": [
+        "METRONOME_ACCURACY_TB_PASS cadence=1040 sweep=0 each_beat_error<=1_sample PCM_clicks=complete"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_v2_equivalence_tb",
+      "markers": [
+        "LOOPER_V2_EQUIVALENCE_TB_PASS live_and_frozen_default_bit_exact_with_original_V2 presets=0_2_3_4_5 comparisons=4000"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_custom_bound_tb",
+      "markers": [
+        "LOOPER_CUSTOM_BOUND_TB_PASS N=8 full=1 same_pitch=1 peak=13241 clip_frames=0 max_render=162"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_custom_bound_tb__N=32__FULL=0",
+      "markers": [
+        "LOOPER_CUSTOM_BOUND_TB_PASS N=32 full=0 same_pitch=1 peak=17243 clip_frames=0 max_render=642"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_custom_bound_tb__N=32__FULL=1",
+      "markers": [
+        "LOOPER_CUSTOM_BOUND_TB_PASS N=32 full=1 same_pitch=1 peak=32768 clip_frames=244 max_render=642"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_full_load_tb",
+      "markers": [
+        "LOOPER_FULL_LOAD_TB_PASS melody32 drum8 click FX master_unity final_peak=13707 max_render=680 cadence=1040"
+      ],
+      "rom_array_verified": true
+    },
+    {
+      "test": "looper_preview_tb",
+      "markers": [
+        "LOOPER_PREVIEW_TB_PASS five_presets drum16 metronome120 dry_pre_master accelerated_CE64"
+      ],
+      "rom_array_verified": true
+    }
+  ],
+  "regression_count": 24,
+  "build": {
+    "time": "2026-10-07T15:39:20.732498+08:00",
+    "top": "looper_top",
+    "physical_io": 19,
+    "clock_hz": 50000000,
+    "sdc_period_ns": 18,
+    "resources": {
+      "Logic": 32251,
+      "Register": 16254,
+      "CLS": 22780,
+      "BSRAM": 86,
+      "I/O Port": 19,
+      "DSP": 33.5
+    },
+    "min_setup_slack_ns": 0.029,
+    "violated_endpoints": {
+      "setup": 0,
+      "hold": 0
+    },
+    "fmax_mhz": 55.644,
+    "firmware_sha256": "d81a4941539ca4c02f25b2bf596c20951a0e884e3ed9465630e76b7c5c126b1c"
+  },
+  "preview": {
+    "piano": {
+      "samples": 48076,
+      "raw_peak": 534,
+      "audition_gain": 28.089887640449437,
+      "sha256": "2dcc1c527f75fbf0a3ed67a64e5044ebadf48296c9a5fed32429e3caf0907fa7",
+      "wave_rate_hz": 48077,
+      "rtl_logical_rate_hz": 48076.92307692308,
+      "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+    },
+    "warm_pluck": {
+      "samples": 48076,
+      "raw_peak": 182,
+      "audition_gain": 82.41758241758242,
+      "sha256": "8e6aea486c7a1918e3acb5ec82b362ce515d1cdc3eecdf3077c857be2e9c9d5b",
+      "wave_rate_hz": 48077,
+      "rtl_logical_rate_hz": 48076.92307692308,
+      "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+    },
+    "bell": {
+      "samples": 48076,
+      "raw_peak": 473,
+      "audition_gain": 31.712473572938688,
+      "sha256": "b248a0e2b506a8fdfb92079015e835e1d35f811708453b2f5074b545a95a0c48",
+      "wave_rate_hz": 48077,
+      "rtl_logical_rate_hz": 48076.92307692308,
+      "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+    },
+    "drive_lead": {
+      "samples": 48076,
+      "raw_peak": 596,
+      "audition_gain": 25.16778523489933,
+      "sha256": "d29a7cbf77f200217938a4185059f70d31e1223452ad61dd84ce4e94de7df72a",
+      "wave_rate_hz": 48077,
+      "rtl_logical_rate_hz": 48076.92307692308,
+      "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+    },
+    "custom": {
+      "samples": 48076,
+      "raw_peak": 539,
+      "audition_gain": 27.82931354359926,
+      "sha256": "b80d204d10e814625d1776cef1155a41369082f2173d47fee4a41c4f536a68b6",
+      "wave_rate_hz": 48077,
+      "rtl_logical_rate_hz": 48076.92307692308,
+      "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+    },
+    "drum_kit": {
+      "samples": 307695,
+      "raw_peak": 1767,
+      "audition_gain": 8.488964346349745,
+      "sha256": "9b023fa1169201bb1a5867fefc5e4a5ee44c380ff29d0f86b0ae21a052619b58",
+      "wave_rate_hz": 48077,
+      "rtl_logical_rate_hz": 48076.92307692308,
+      "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+    },
+    "metronome120": {
+      "samples": 96153,
+      "raw_peak": 2880,
+      "audition_gain": 5.208333333333333,
+      "sha256": "fc37eb6b4247b41175e128fcd625be05a387fe231933d530601b5d0c3d3ae6a4",
+      "wave_rate_hz": 48077,
+      "rtl_logical_rate_hz": 48076.92307692308,
+      "scope": "N1/P1 dry pre-master, CE64 offline accelerated; NOT full-top output or deadline proof"
+    }
+  },
+  "current_sources_verified": true,
+  "build_source_lf_sha256": {
+    "project\\looper_lab\\looper_lab.gprj": "038d7942f366ae640a26a47b36613ba23157a3b1071d88f53bb727cfb0a6c858",
+    "project\\looper_lab\\build.tcl": "7d614b501dbee6047b2278579431b3fb6dc4911c25823dfa982d65661c6739fa",
+    "project\\looper_lab\\src\\looper_top.v": "6ec88d2c1a53ba06fd0240ccfae37ae16046a545cb01df00dd3dd0eb7da53b23",
+    "project\\looper_lab\\src\\looper_audio_core.v": "9ebde6b1ba8e9e62227eafaad9039d1ed1186408113189515a1866633ee965d2",
+    "project\\looper_lab\\src\\looper_audio_bank.v": "fbd6692a6e27233b2d398fec56eb0862cd2b0e5b1ad513d6901d19720bf2effa",
+    "project\\looper_lab\\src\\audio_v2_tone.v": "6479cfddd342a3feab10b252b69985285ada18751816aa9d130b88295339b609",
+    "project\\looper_lab\\src\\audio_v2_pluck.v": "2e27386418df8885bbfa45ddc5b354056bb003fd234d5e9f59f2518bd9319239",
+    "project\\looper_lab\\src\\audio_v2_pool_slot.v": "582233542c72383d999129a5f402ceb96b00b1f372f74da8b24fe9baf3919b4b",
+    "project\\final_dual_timbre\\src\\note_table.v": "7d8b1c77069598b4737b685b6d5a733faa2e2f6e77e870132be435112cf4a100",
+    "project\\final_dual_timbre\\src\\pluck_note_table.v": "233c4d5f783a448a7bd5e966485fe018b441a42f16e271168ecece68b051e5fe",
+    "project\\final_dual_timbre\\src\\sine_rom.v": "11c050290b2bd5594b9b64f5e23a0e7fbe1576236b6ebc674493e20284481e44",
+    "project\\audio_palette_lab\\src\\palette_sine.v": "4a9bbdf84525ae5bf8c6df97fa89cbde5b49c3d573153ba7b8fc49bd0e8bb620",
+    "project\\audio_core_v1\\src\\audio_panel.v": "55bafc9b9a47577ab331f426f55d1a9503a88a761fec58a6b955051f6d70032a",
+    "project\\audio_parameter_lab\\src\\audio_parameter_service.v": "528b047f1cba950e96b5dff8a6054ccdabe42df54c9af7f71529ebdba3616974",
+    "project\\custom_harmonic_lab\\src\\custom_harmonic_params.v": "cfc51e8929c76915cad5ca1338ac0627dfeb20e7ee74ae9503f64327236fe6a2",
+    "project\\final_dual_timbre\\src\\knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+    "project\\audio_fx_lab\\src\\short_room_reverb.v": "6eb46abe6475e578b73ea6e40def648a4a6304b293ac56c8679bb4478099742d",
+    "project\\audio_fx_lab\\src\\vibrato_factor.v": "b4f705871fdc3e32e7f41995fefe62c7322c08de2b98830d7468ae2cdbda2b5e",
+    "project\\looper_lab\\src\\looper_keys.v": "a53b56ac774d27dbcd0dc5cd3c741ca77bd43ec2d49efdd54727965ed1238a95",
+    "project\\final_dual_timbre\\src\\stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+    "project\\final_dual_timbre\\src\\matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+    "project\\final_dual_timbre\\src\\ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+    "project\\final_dual_timbre\\src\\playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+    "project\\audio_output_lab\\src\\output_tx.v": "7cefd245f5c8984ee6b0a4089b8aabd6ee950f242a11c4a6d34fde46933460c3",
+    "project\\final_dual_timbre\\src\\pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+    "project\\looper_lab\\rtl\\looper_controls.v": "0bfb9c72e3ae306e108d4a8dd03ab0cac1a01a5529b622d4a952dd6e9c9c9d65",
+    "project\\looper_lab\\rtl\\metronome_click.v": "57f07bc3a5b24dd2068190e62973f38cd2cae56e38759ab0c67f9b697f576bc2",
+    "project\\looper_lab\\rtl\\looper_clock.v": "dc583b8d2aedb187943058e25f258f6f9030ae6e7c62d34bc4835fe5c0aab493",
+    "project\\looper_lab\\rtl\\looper_transport.v": "e4785bb8974c1a8c4abc6be89ab7b36df6c5d4bb1bb1429f74c68bf00834dcfc",
+    "project\\looper_lab\\rtl\\looper_event_store.v": "5f6036169ca0cb9c7f5896a7a06861884fd1232fef9e04b8aac6044e70f2be80",
+    "project\\looper_lab\\rtl\\looper_event_router.v": "e347a62e5e6ed0a2c89a6b7c4df245e672bf15101aaf65f3e586751fe4050721",
+    "project\\looper_lab\\rtl\\looper_drum_engine.v": "aed82a5657bdae2a59cdfe7d94ca8f1240482add671e44dc27132c145d4bb519",
+    "project\\looper_lab\\src\\looper_lab.cst": "17ccf9754356049fe2e6ca511fe95778044834dd6bf82b060f06bc88c36799e3",
+    "project\\looper_lab\\src\\looper_lab.sdc": "8fb99b998919f2d515b9c68bf0feb65c5d62f6dedecc92c9b6dd117fd46830f5"
+  }
+}

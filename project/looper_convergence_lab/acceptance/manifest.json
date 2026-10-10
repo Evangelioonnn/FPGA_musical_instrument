@@ -1,0 +1,168 @@
+{
+  "time": "2026-10-09T02:36:06.221293+08:00",
+  "preferred": "02_refinement_20261008.fs",
+  "selection_reason": "Convergence has no aggregate area/timing benefit; retain the frozen refinement candidate for board acceptance.",
+  "guide": "docs/project/LOOPER_TOTAL_ACCEPTANCE_2026-10-09.md",
+  "package_directory": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance",
+  "contains_C_display_or_bluetooth": false,
+  "files": [
+    {
+      "source": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\impl\\pnr\\looper_convergence_lab.fs",
+      "file": "01_convergence_20261009.fs",
+      "sha256": "c7c3375da9c37929ce959c001712e64f3cddac7bcb51ccec083777f2b404099b",
+      "top": "looper_convergence_top",
+      "qualification": "independent_board_candidate",
+      "board_feedback": "pending",
+      "resources": {
+        "Logic": 33722,
+        "Register": 17592,
+        "CLS": 23796,
+        "BSRAM": 75,
+        "I/O Port": 19,
+        "DSP": 31.5
+      },
+      "setup_slack_ns": 0.009,
+      "interface_qualified": false,
+      "whole_instrument_qualified": false,
+      "preferred": false,
+      "package_path": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance\\01_convergence_20261009.fs",
+      "physical_io": 19,
+      "programming_mode": "SRAM_only",
+      "historical_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\looper_convergence_lab\\impl\\pnr\\looper_convergence_lab.fs"
+    },
+    {
+      "source": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_refinement_lab\\impl\\pnr\\looper_refinement_lab.fs",
+      "file": "02_refinement_20261008.fs",
+      "sha256": "ce06b7105a62f311cabbab9cb972bef0f680282afb895f4fb799b025f8828a3d",
+      "top": "looper_refinement_top",
+      "qualification": "independent_board_candidate",
+      "board_feedback": "pending",
+      "resources": {
+        "Logic": 33466,
+        "Register": 17075,
+        "CLS": 23673,
+        "BSRAM": 75,
+        "I/O Port": 19,
+        "DSP": 31.5
+      },
+      "setup_slack_ns": 0.018,
+      "interface_qualified": false,
+      "whole_instrument_qualified": false,
+      "preferred": true,
+      "package_path": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance\\02_refinement_20261008.fs",
+      "physical_io": 19,
+      "programming_mode": "SRAM_only",
+      "historical_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\looper_refinement_lab\\impl\\pnr\\looper_refinement_lab.fs"
+    },
+    {
+      "source": "D:\\uestc\\SCM\\GowinFPGA-looper-20261007\\project\\looper_lab\\impl\\pnr\\looper_lab.fs",
+      "file": "03_original_looper_metronome.fs",
+      "sha256": "d81a4941539ca4c02f25b2bf596c20951a0e884e3ed9465630e76b7c5c126b1c",
+      "top": "looper_top",
+      "qualification": "previous_independent_candidate",
+      "board_feedback": "pending",
+      "preferred": false,
+      "package_path": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance\\03_original_looper_metronome.fs",
+      "physical_io": 19,
+      "programming_mode": "SRAM_only",
+      "historical_source": "D:\\uestc\\SCM\\GowinFPGA-looper-20261007\\project\\looper_lab\\impl\\pnr\\looper_lab.fs"
+    },
+    {
+      "source": "D:\\uestc\\SCM\\GowinFPGA\\project\\audio_core_v2\\impl\\pnr\\audio_v2.fs",
+      "file": "04_accepted_audio_v2_fallback.fs",
+      "sha256": "576de89cc54c78fdd88fcf7d92d03a00fba4beeecd508abeabb4e949870c4e83",
+      "top": "audio_v2_top",
+      "qualification": "accepted_listening_baseline",
+      "board_feedback": "overall_listening_accepted",
+      "preferred": false,
+      "package_path": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance\\04_accepted_audio_v2_fallback.fs",
+      "physical_io": 19,
+      "programming_mode": "SRAM_only",
+      "historical_source": "D:\\uestc\\SCM\\GowinFPGA\\project\\audio_core_v2\\impl\\pnr\\audio_v2.fs"
+    }
+  ],
+  "reference_audio": [
+    {
+      "file": "reference_audio/piano.wav",
+      "sha256": "2dcc1c527f75fbf0a3ed67a64e5044ebadf48296c9a5fed32429e3caf0907fa7",
+      "package_path": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance\\reference_audio\\piano.wav",
+      "source": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\piano.wav",
+      "fixed_gain": 28.089887640449437,
+      "scope": "N1/P1 dry pre-master (drums/click own engine), offline CE64; fixed audition gain; not full-top/deadline/analog proof",
+      "historical_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\piano.wav"
+    },
+    {
+      "file": "reference_audio/warm_pluck.wav",
+      "sha256": "8e6aea486c7a1918e3acb5ec82b362ce515d1cdc3eecdf3077c857be2e9c9d5b",
+      "package_path": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance\\reference_audio\\warm_pluck.wav",
+      "source": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\warm_pluck.wav",
+      "fixed_gain": 82.41758241758242,
+      "scope": "N1/P1 dry pre-master (drums/click own engine), offline CE64; fixed audition gain; not full-top/deadline/analog proof",
+      "historical_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\warm_pluck.wav"
+    },
+    {
+      "file": "reference_audio/bell.wav",
+      "sha256": "b248a0e2b506a8fdfb92079015e835e1d35f811708453b2f5074b545a95a0c48",
+      "package_path": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance\\reference_audio\\bell.wav",
+      "source": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\bell.wav",
+      "fixed_gain": 31.712473572938688,
+      "scope": "N1/P1 dry pre-master (drums/click own engine), offline CE64; fixed audition gain; not full-top/deadline/analog proof",
+      "historical_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\bell.wav"
+    },
+    {
+      "file": "reference_audio/drive_lead.wav",
+      "sha256": "d29a7cbf77f200217938a4185059f70d31e1223452ad61dd84ce4e94de7df72a",
+      "package_path": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance\\reference_audio\\drive_lead.wav",
+      "source": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\drive_lead.wav",
+      "fixed_gain": 25.16778523489933,
+      "scope": "N1/P1 dry pre-master (drums/click own engine), offline CE64; fixed audition gain; not full-top/deadline/analog proof",
+      "historical_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\drive_lead.wav"
+    },
+    {
+      "file": "reference_audio/custom.wav",
+      "sha256": "b80d204d10e814625d1776cef1155a41369082f2173d47fee4a41c4f536a68b6",
+      "package_path": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance\\reference_audio\\custom.wav",
+      "source": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\custom.wav",
+      "fixed_gain": 27.82931354359926,
+      "scope": "N1/P1 dry pre-master (drums/click own engine), offline CE64; fixed audition gain; not full-top/deadline/analog proof",
+      "historical_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\custom.wav"
+    },
+    {
+      "file": "reference_audio/drum_kit.wav",
+      "sha256": "9b023fa1169201bb1a5867fefc5e4a5ee44c380ff29d0f86b0ae21a052619b58",
+      "package_path": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance\\reference_audio\\drum_kit.wav",
+      "source": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\drum_kit.wav",
+      "fixed_gain": 8.488964346349745,
+      "scope": "N1/P1 dry pre-master (drums/click own engine), offline CE64; fixed audition gain; not full-top/deadline/analog proof",
+      "historical_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\drum_kit.wav"
+    },
+    {
+      "file": "reference_audio/metronome120.wav",
+      "sha256": "fc37eb6b4247b41175e128fcd625be05a387fe231933d530601b5d0c3d3ae6a4",
+      "package_path": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance\\reference_audio\\metronome120.wav",
+      "source": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\metronome120.wav",
+      "fixed_gain": 5.208333333333333,
+      "scope": "N1/P1 dry pre-master (drums/click own engine), offline CE64; fixed audition gain; not full-top/deadline/analog proof",
+      "historical_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\metronome120.wav"
+    },
+    {
+      "file": "reference_audio/arrangement_fixed.wav",
+      "sha256": "80d82502bf1c642a985710844dba22a8717d8594bb04580166fe1a28b98bc159",
+      "package_path": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance\\reference_audio\\arrangement_fixed.wav",
+      "source": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\arrangement_fixed.wav",
+      "fixed_gain": 1,
+      "scope": "Actual audio_core N8/P4 final stereo PCM with five tones, drums/click, layer expression/glide and track fade; room pipeline present but bypassed; offline CE256, not stored-event roundtrip or 32-voice deadline proof. Active FX covered separately by full-load regression",
+      "historical_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\arrangement_fixed.wav"
+    },
+    {
+      "file": "reference_audio/arrangement_audition.wav",
+      "sha256": "7b8d0dc86ee9300115875654f731d8a4ff84ae4da79e9826142223a5d5ae6e7e",
+      "package_path": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_convergence_lab\\acceptance\\reference_audio\\arrangement_audition.wav",
+      "source": "D:\\uestc\\SCM\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\arrangement_audition.wav",
+      "fixed_gain": 10.653409090909092,
+      "scope": "Actual audio_core N8/P4 final stereo PCM with five tones, drums/click, layer expression/glide and track fade; room pipeline present but bypassed; offline CE256, not stored-event roundtrip or 32-voice deadline proof. Active FX covered separately by full-load regression; fixed per-file audition gain",
+      "historical_source": "C:\\Users\\lenovo\\.codex\\worktrees\\looper-refinement\\GowinFPGA\\project\\looper_refinement_lab\\sim\\audio\\arrangement_audition.wav"
+    }
+  ],
+  "relocated_on": "2026-10-09"
+}

@@ -1,5 +1,7 @@
 # B：实体控制与控制板 · 当前交接
 
+**2026-10-10当前硬件：** 先读[BOARD_CURRENT](../../hardware/interaction/BOARD_CURRENT.md)与R3；25＋11键的6×6矩阵、三编码器、五推子／摇杆、MCP3208、RGB与普通LED共30根信号IO。本版不加踏板，准确CST及线束仍需统一；旧PMOD／按键数量规划不覆盖当前源工程。
+
 你负责布局、手感、器件/原理图/PCB、操控信号、电气/线束和机械配合；A与B共同根据已认可声音设计精确控制。工作目录：[hardware/interaction](../../hardware/interaction/README.md)。
 
 先读[当前状态](../project/STATUS.md)、[最新资源预算](RESOURCE_BUDGET_V1.md)、[J13针表](../board/J13_GPIO.md)和[音频接口V2](../interfaces/AUDIO_CORE_V2.md)。输入RTL作者按扫描、SPI采集、标定、事件/LED适配逐项确定，不默认全由B或A承担。

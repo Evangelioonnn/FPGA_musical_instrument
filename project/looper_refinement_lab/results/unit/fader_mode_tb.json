@@ -1,0 +1,14 @@
+{
+  "test": "fader_mode_tb",
+  "generics": [],
+  "pass": true,
+  "markers": [
+    "FADER_MODE_TB_PASS master_independent edit_mix_pickup jitter crossing external_owner stable_bundle"
+  ],
+  "sources": {
+    "project\\looper_refinement_lab\\rtl\\fader_mode_adapter.v": "69f2e672f6481cbff0e5297cb210a278261871abc9a79066e563f5a3f6ad5526",
+    "project\\looper_refinement_lab\\sim\\fader_mode_tb.v": "c3020522e4f35d7923105614ef81432d6ea0d662febc686d1acdec794b129b6a",
+    "project\\looper_refinement_lab\\tools\\run_unit.py": "21093023c328fbb407a6f057da32dc2134b9d423775dbe725c68790c4635969e"
+  },
+  "time": "2026-10-07T22:29:01.414837+08:00"
+}

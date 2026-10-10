@@ -1,0 +1,727 @@
+[
+  {
+    "ref": "LED11",
+    "pcb_rotation_deg": 180,
+    "emitting_face_rotation_deg": 180,
+    "pad_quadrants_top_view": {
+      "3": [
+        -1,
+        1
+      ],
+      "4": [
+        -1,
+        -1
+      ],
+      "1": [
+        1,
+        -1
+      ],
+      "2": [
+        1,
+        1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N52082",
+      "1": "5V",
+      "2": "$1N51920"
+    }
+  },
+  {
+    "ref": "LED7",
+    "pcb_rotation_deg": 180,
+    "emitting_face_rotation_deg": 180,
+    "pad_quadrants_top_view": {
+      "3": [
+        -1,
+        1
+      ],
+      "4": [
+        -1,
+        -1
+      ],
+      "1": [
+        1,
+        -1
+      ],
+      "2": [
+        1,
+        1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N51836",
+      "1": "5V",
+      "2": "$1N56351"
+    }
+  },
+  {
+    "ref": "LED12",
+    "pcb_rotation_deg": 180,
+    "emitting_face_rotation_deg": 180,
+    "pad_quadrants_top_view": {
+      "3": [
+        -1,
+        1
+      ],
+      "4": [
+        -1,
+        -1
+      ],
+      "1": [
+        1,
+        -1
+      ],
+      "2": [
+        1,
+        1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N51833",
+      "1": "5V",
+      "2": "$1N51881"
+    }
+  },
+  {
+    "ref": "LED8",
+    "pcb_rotation_deg": 180,
+    "emitting_face_rotation_deg": 180,
+    "pad_quadrants_top_view": {
+      "3": [
+        -1,
+        1
+      ],
+      "4": [
+        -1,
+        -1
+      ],
+      "1": [
+        1,
+        -1
+      ],
+      "2": [
+        1,
+        1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N52099",
+      "1": "5V",
+      "2": "$1N52773"
+    }
+  },
+  {
+    "ref": "LED9",
+    "pcb_rotation_deg": 180,
+    "emitting_face_rotation_deg": 180,
+    "pad_quadrants_top_view": {
+      "3": [
+        -1,
+        1
+      ],
+      "4": [
+        -1,
+        -1
+      ],
+      "1": [
+        1,
+        -1
+      ],
+      "2": [
+        1,
+        1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N52093",
+      "1": "5V",
+      "2": "$1N52039"
+    }
+  },
+  {
+    "ref": "LED10",
+    "pcb_rotation_deg": 180,
+    "emitting_face_rotation_deg": 180,
+    "pad_quadrants_top_view": {
+      "3": [
+        -1,
+        1
+      ],
+      "4": [
+        -1,
+        -1
+      ],
+      "1": [
+        1,
+        -1
+      ],
+      "2": [
+        1,
+        1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N52087",
+      "1": "5V",
+      "2": "$1N51959"
+    }
+  },
+  {
+    "ref": "LED13",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N53756",
+      "1": "5V",
+      "2": "$1N56390"
+    }
+  },
+  {
+    "ref": "LED14",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N53776",
+      "1": "5V",
+      "2": "$1N53810"
+    }
+  },
+  {
+    "ref": "LED15",
+    "pcb_rotation_deg": 180,
+    "emitting_face_rotation_deg": 180,
+    "pad_quadrants_top_view": {
+      "3": [
+        -1,
+        1
+      ],
+      "4": [
+        -1,
+        -1
+      ],
+      "1": [
+        1,
+        -1
+      ],
+      "2": [
+        1,
+        1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N53773",
+      "1": "5V",
+      "2": "$1N53765"
+    }
+  },
+  {
+    "ref": "LED16",
+    "pcb_rotation_deg": 180,
+    "emitting_face_rotation_deg": 180,
+    "pad_quadrants_top_view": {
+      "3": [
+        -1,
+        1
+      ],
+      "4": [
+        -1,
+        -1
+      ],
+      "1": [
+        1,
+        -1
+      ],
+      "2": [
+        1,
+        1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N53770",
+      "1": "5V",
+      "2": "$1N53763"
+    }
+  },
+  {
+    "ref": "LED17",
+    "pcb_rotation_deg": 180,
+    "emitting_face_rotation_deg": 180,
+    "pad_quadrants_top_view": {
+      "3": [
+        -1,
+        1
+      ],
+      "4": [
+        -1,
+        -1
+      ],
+      "1": [
+        1,
+        -1
+      ],
+      "2": [
+        1,
+        1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N53767",
+      "1": "5V",
+      "2": "$1N53761"
+    }
+  },
+  {
+    "ref": "LED18",
+    "pcb_rotation_deg": 180,
+    "emitting_face_rotation_deg": 180,
+    "pad_quadrants_top_view": {
+      "3": [
+        -1,
+        1
+      ],
+      "4": [
+        -1,
+        -1
+      ],
+      "1": [
+        1,
+        -1
+      ],
+      "2": [
+        1,
+        1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N53754",
+      "1": "5V",
+      "2": "$1N53759"
+    }
+  },
+  {
+    "ref": "LED19",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N54623",
+      "1": "5V",
+      "2": "$1N56429"
+    }
+  },
+  {
+    "ref": "LED20",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N54643",
+      "1": "5V",
+      "2": "$1N54677"
+    }
+  },
+  {
+    "ref": "LED21",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N54640",
+      "1": "5V",
+      "2": "$1N54632"
+    }
+  },
+  {
+    "ref": "LED22",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N54637",
+      "1": "5V",
+      "2": "$1N54630"
+    }
+  },
+  {
+    "ref": "LED23",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N54634",
+      "1": "5V",
+      "2": "$1N54628"
+    }
+  },
+  {
+    "ref": "LED24",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N54621",
+      "1": "5V",
+      "2": "$1N54626"
+    }
+  },
+  {
+    "ref": "LED25",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N55490",
+      "1": "5V",
+      "2": "$1N56093"
+    }
+  },
+  {
+    "ref": "LED26",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N55510",
+      "1": "5V",
+      "2": "$1N55544"
+    }
+  },
+  {
+    "ref": "LED27",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N55507",
+      "1": "5V",
+      "2": "$1N55499"
+    }
+  },
+  {
+    "ref": "LED28",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N55504",
+      "1": "5V",
+      "2": "$1N55497"
+    }
+  },
+  {
+    "ref": "LED29",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N55501",
+      "1": "5V",
+      "2": "$1N55495"
+    }
+  },
+  {
+    "ref": "LED30",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N55488",
+      "1": "5V",
+      "2": "$1N55493"
+    }
+  },
+  {
+    "ref": "LED31",
+    "pcb_rotation_deg": 0,
+    "emitting_face_rotation_deg": 0,
+    "pad_quadrants_top_view": {
+      "3": [
+        1,
+        -1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        -1,
+        1
+      ],
+      "2": [
+        -1,
+        -1
+      ]
+    },
+    "pad_nets": {
+      "3": "GND",
+      "4": "$1N56103",
+      "1": "5V",
+      "2": ""
+    }
+  }
+]

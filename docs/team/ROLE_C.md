@@ -1,5 +1,7 @@
 # C：显示与蓝牙 · 当前开工入口
 
+**2026-10-10最新Looper接口：** [C_HANDOFF](../../project/looper_session_v2/C_HANDOFF.md)定义真实LU1状态、直接命令和PCM。旧音频接入包保留非Looper用途；两种状态协议不能混用。屏幕／蓝牙及整机仍待联合接入，完整接口物理时序尚有待办。
+
 你负责FPGA可视化、蓝牙扩展、必要客户端、曲谱/LED引导和素材；具体首屏、模式与实现顺序由你设计。首先阅读[给C的交接与屏幕/蓝牙设计目标](C_HANDOFF_AND_DISPLAY_PLAN.md)，其中列出多页面/旋钮交互、四谐波编辑、声音分析、练习LED及无线拓展的可选效果和阶段目标。直接基于A提供的[音频接入包](../../project/audio_integration/README.md)开工，不必从SYSTEM_V0或旧final重新发明音频适配。
 
 **先读这四份：** [STATUS](../project/STATUS.md)、[最新资源预算](RESOURCE_BUDGET_V1.md)、[导入规则](../interfaces/AUDIO_IMPORT_V1.md)、[传输契约](../interfaces/AUDIO_TRANSPORT_V1.md)。字段/单位详见[音频V2](../interfaces/AUDIO_CORE_V2.md)及其引用的V1位布局。

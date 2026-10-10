@@ -1,0 +1,151 @@
+[
+  {
+    "test": "looper_clock_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 80.7
+  },
+  {
+    "test": "looper_transport_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 6.3
+  },
+  {
+    "test": "looper_event_store_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 6.3
+  },
+  {
+    "test": "looper_auto_close_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 4.9
+  },
+  {
+    "test": "looper_track_layout_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 4.9
+  },
+  {
+    "test": "looper_boundary_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 4.9
+  },
+  {
+    "test": "looper_store_capacity_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 5.0
+  },
+  {
+    "test": "looper_event_router_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 3.8
+  },
+  {
+    "test": "looper_event_path_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 3.7
+  },
+  {
+    "test": "looper_drum_engine_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 213.3
+  },
+  {
+    "test": "looper_patch_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 87.1
+  },
+  {
+    "test": "looper_pitch32_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 237.9
+  },
+  {
+    "test": "looper_controls_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 3.8
+  },
+  {
+    "test": "looper_top_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 991.6
+  },
+  {
+    "test": "looper_mix_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 54.8
+  },
+  {
+    "test": "metronome_control_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 4.0
+  },
+  {
+    "test": "looper_pitch32_tb",
+    "generics": [
+      "ALL_CUSTOM=1"
+    ],
+    "pass": true,
+    "seconds": 79.7
+  },
+  {
+    "test": "metronome_accuracy_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 271.3
+  },
+  {
+    "test": "metronome_accuracy_tb",
+    "generics": [
+      "CADENCE=1040",
+      "SWEEP=0"
+    ],
+    "pass": true,
+    "seconds": 1569.1
+  },
+  {
+    "test": "looper_v2_equivalence_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 373.0
+  },
+  {
+    "test": "looper_custom_bound_tb",
+    "generics": [],
+    "pass": true,
+    "seconds": 37.1
+  },
+  {
+    "test": "looper_custom_bound_tb",
+    "generics": [
+      "N=32",
+      "FULL=0"
+    ],
+    "pass": true,
+    "seconds": 43.3
+  },
+  {
+    "test": "looper_custom_bound_tb",
+    "generics": [
+      "N=32",
+      "FULL=1"
+    ],
+    "pass": true,
+    "seconds": 46.5
+  }
+]
