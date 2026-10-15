@@ -1,0 +1,347 @@
+{
+  "routed_timing_pass": true,
+  "source_timestamps_fresh": true,
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "clocks": [
+    {
+      "name": "sys_clk",
+      "required_mhz": 50.0,
+      "fmax_mhz": 51.858
+    },
+    {
+      "name": "pll/u_pll/PLLA_inst/CLKOUT0.default_gen_clk",
+      "required_mhz": 150.0,
+      "fmax_mhz": 151.004
+    }
+  ],
+  "worst_setup_slack_ns": 0.044,
+  "pnr_warnings": [
+    "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+  ],
+  "pin_mapping_pass": true,
+  "pin_mapping": {
+    "sys_clk": {
+      "ball": "V22",
+      "bank": "7",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "enc_a": {
+      "ball": "T18",
+      "bank": "6",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "enc_b": {
+      "ball": "R17",
+      "bank": "6",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "button_n[0]": {
+      "ball": "AA13",
+      "bank": "9",
+      "io_type": "LVCMOS15",
+      "vccio": "1.5",
+      "constrained": "Y"
+    },
+    "button_n[1]": {
+      "ball": "AB13",
+      "bank": "9",
+      "io_type": "LVCMOS15",
+      "vccio": "1.5",
+      "constrained": "Y"
+    },
+    "button_n[2]": {
+      "ball": "Y12",
+      "bank": "9",
+      "io_type": "LVCMOS15",
+      "vccio": "1.5",
+      "constrained": "Y"
+    },
+    "matrix_col_n[0]": {
+      "ball": "AB22",
+      "bank": "8",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "matrix_col_n[1]": {
+      "ball": "AB21",
+      "bank": "8",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "matrix_col_n[2]": {
+      "ball": "Y22",
+      "bank": "8",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "matrix_col_n[3]": {
+      "ball": "Y21",
+      "bank": "8",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "matrix_row_n[0]": {
+      "ball": "AA20",
+      "bank": "7",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "matrix_row_n[1]": {
+      "ball": "AA21",
+      "bank": "7",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "matrix_row_n[2]": {
+      "ball": "AA19",
+      "bank": "8",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "matrix_row_n[3]": {
+      "ball": "AB20",
+      "bank": "8",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "hp_bck": {
+      "ball": "Y17",
+      "bank": "7",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "hp_ws": {
+      "ball": "AB17",
+      "bank": "7",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "hp_din": {
+      "ball": "AA16",
+      "bank": "7",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "pa_en": {
+      "ball": "AB16",
+      "bank": "7",
+      "io_type": "LVCMOS33",
+      "vccio": "3.3",
+      "constrained": "Y"
+    },
+    "tmds_clk_n_0": {
+      "ball": "G16",
+      "bank": "4",
+      "io_type": "LVDS25E",
+      "vccio": "2.5",
+      "constrained": "Y"
+    },
+    "tmds_clk_p_0": {
+      "ball": "G15",
+      "bank": "4",
+      "io_type": "LVDS25E",
+      "vccio": "2.5",
+      "constrained": "Y"
+    },
+    "tmds_d_n_0[0]": {
+      "ball": "H14",
+      "bank": "4",
+      "io_type": "LVDS25E",
+      "vccio": "2.5",
+      "constrained": "Y"
+    },
+    "tmds_d_n_0[1]": {
+      "ball": "H15",
+      "bank": "4",
+      "io_type": "LVDS25E",
+      "vccio": "2.5",
+      "constrained": "Y"
+    },
+    "tmds_d_n_0[2]": {
+      "ball": "J17",
+      "bank": "5",
+      "io_type": "LVDS25E",
+      "vccio": "2.5",
+      "constrained": "Y"
+    },
+    "tmds_d_p_0[0]": {
+      "ball": "J14",
+      "bank": "4",
+      "io_type": "LVDS25E",
+      "vccio": "2.5",
+      "constrained": "Y"
+    },
+    "tmds_d_p_0[1]": {
+      "ball": "J15",
+      "bank": "4",
+      "io_type": "LVDS25E",
+      "vccio": "2.5",
+      "constrained": "Y"
+    },
+    "tmds_d_p_0[2]": {
+      "ball": "K17",
+      "bank": "5",
+      "io_type": "LVDS25E",
+      "vccio": "2.5",
+      "constrained": "Y"
+    }
+  },
+  "download_gate_pass": true,
+  "resources": {
+    "Logic": {
+      "used": 28254.0,
+      "available": 59904.0
+    },
+    "Register": {
+      "used": 13947.0,
+      "available": 60780.0
+    },
+    "BSRAM": {
+      "used": 83.0,
+      "available": 118.0
+    },
+    "DSP": {
+      "used": 27.5,
+      "available": 118.0
+    },
+    "I/O Port": {
+      "used": 26.0,
+      "available": 297.0
+    },
+    "PLLA": {
+      "used": 1.0,
+      "available": 8.0
+    },
+    "PRIMARY": {
+      "used": 8.0,
+      "available": 8.0
+    },
+    "LW": {
+      "used": 8.0,
+      "available": 8.0
+    }
+  },
+  "fs_sha256": "1289e561feab0fbab8ba2a8e6b4ba6a367b51bbc57e422d56a074ffb5126ca84",
+  "source_sha256": {
+    "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+    "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+    "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+    "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+    "project/final_dual_timbre/src/sine_rom.v": "11c050290b2bd5594b9b64f5e23a0e7fbe1576236b6ebc674493e20284481e44",
+    "project/final_dual_timbre/src/note_table.v": "7d8b1c77069598b4737b685b6d5a733faa2e2f6e77e870132be435112cf4a100",
+    "project/final_dual_timbre/src/pluck_note_table.v": "233c4d5f783a448a7bd5e966485fe018b441a42f16e271168ecece68b051e5fe",
+    "project/custom_harmonic_lab/src/custom_harmonic_params.v": "cfc51e8929c76915cad5ca1338ac0627dfeb20e7ee74ae9503f64327236fe6a2",
+    "project/five_timbre_core/src/gallery_keys.v": "10e7ed230ac61d88185fb0bb712034a212ab41830aad343564800668ea215fb7",
+    "project/audio_palette_lab/src/palette_sine.v": "4a9bbdf84525ae5bf8c6df97fa89cbde5b49c3d573153ba7b8fc49bd0e8bb620",
+    "project/audio_core_v1/src/audio_panel.v": "55bafc9b9a47577ab331f426f55d1a9503a88a761fec58a6b955051f6d70032a",
+    "project/audio_parameter_lab/src/audio_parameter_service.v": "528b047f1cba950e96b5dff8a6054ccdabe42df54c9af7f71529ebdba3616974",
+    "project/audio_fx_lab/src/short_room_reverb.v": "6eb46abe6475e578b73ea6e40def648a4a6304b293ac56c8679bb4478099742d",
+    "project/audio_fx_lab/src/vibrato_factor.v": "b4f705871fdc3e32e7f41995fefe62c7322c08de2b98830d7468ae2cdbda2b5e",
+    "project/audio_core_v2/src/audio_v2_state.v": "7455735c777c5db2dab7c139da32acdfd2665a9de560a720cc84dac20e1580e0",
+    "project/audio_core_v2/src/audio_v2_pluck.v": "2e27386418df8885bbfa45ddc5b354056bb003fd234d5e9f59f2518bd9319239",
+    "project/audio_core_v2/src/audio_v2_pool_slot.v": "582233542c72383d999129a5f402ceb96b00b1f372f74da8b24fe9baf3919b4b",
+    "project/audio_core_v2/src/audio_v2_tone.v": "6479cfddd342a3feab10b252b69985285ada18751816aa9d130b88295339b609",
+    "project/audio_core_v2/src/audio_v2_bank_stream.v": "c16f77aa1d9daab1f779ff58d48a3d7596331d8984712cd7dd6b027fab580b86",
+    "project/audio_core_v2/src/audio_v2_core.v": "e6487ff9ca5d027ecdc3668cb453d5af82d1318709c0458fd9f41bd23d0f3a39",
+    "project/audio_integration/rtl/audio_transport_reset.v": "722317c313ed1ef9b51deca855dcb00c9dce7bb82f60827a1d4f40735e9bd099",
+    "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+    "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+    "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+    "project/audio_output_lab/src/output_tx.v": "7cefd245f5c8984ee6b0a4089b8aabd6ee950f242a11c4a6d34fde46933460c3",
+    "project/visual/dvi_colorbar_probe/src/gowin_pll/gowin_pll.v": "72148180b64daada0ffac77b30dc6f18517348d73a1fb6a65c39dfc4fc296d3d",
+    "project/visual/dvi_colorbar_probe/src/gowin_pll/gowin_pll_mod.v": "d9ec902d4a9eca26a7ce0e0fccd5f90efbd1c7eea2fdd184273f1b3d485fbb86",
+    "project/visual/dvi_colorbar_probe/src/pll_init.v": "3fc6bef9a7086f0920bfa47265b1766854a53f6ca1c0f75084eaf6b6ef4d6258",
+    "project/visual/instrument_ui_redesign/src/rtl/dvi_tx_tmds_enc.v": "51d5278dcdfc6a3715a40ea16d3b530f2424339875f65386d87ca860673b30a1",
+    "project/visual/instrument_ui_redesign/src/audio_display.cst": "4281934761d0c5049c566eff50f66194272a502c5df5d221259a5bad1e628806",
+    "project/visual/instrument_ui_redesign/src/audio_display.sdc": "1ee8671b211bedc09e44e1e5174276c2dcc49b54063456f09800efb72c2d950a",
+    "project/visual/instrument_ui_redesign/src/rtl/av_frame_ram.v": "956e06c5cbe48cbe581d0616692fbd1d6d9f577b773ad20045424abff6b64e44",
+    "project/visual/instrument_ui_redesign/src/rtl/av_timing.v": "7ffb2a0c66809930708e2640726769d2dc4f1542efe9bbe31100b684885be1dd",
+    "project/visual/instrument_ui_redesign/src/rtl/av_page_writer.v": "a1772ec9462c23d6032c08e0f2c4f29ba432cba6e4ea239570e516c711ad39bd",
+    "project/visual/instrument_ui_redesign/src/rtl/av_labels.v": "9497bea29fcca920582946abe6ffc66788485a7f128fc22af9de3cbdb29d05a7",
+    "project/visual/instrument_ui_redesign/src/rtl/av_font.v": "5e28d19f97cc601a96c835a1cfcb839b35a47d8525cf75bec51abd5faf5ed5e0",
+    "project/visual/instrument_ui_redesign/src/rtl/av_renderer.v": "c38a622d324dfb9ebe8d5d275f10f25df75c1476ab5a44344b4942b0705fd2d5",
+    "project/visual/instrument_ui_redesign/src/rtl/av_navigation.v": "3d4caf2f450860bb60b738d4a3e8f2d86dc09ca838b703b2ab6e443994917afb",
+    "project/visual/instrument_ui_redesign/src/rtl/av_wave_capture.v": "fbb9a3c7685823c02c18110b48eaf9dc39d245ce9b143195ebf21ec337b86a3e",
+    "project/visual/instrument_ui_redesign/src/rtl/av_pcm_window.v": "6ae24b2ef60b332bb6d77507d4462f117f8b9fc81ba56f328d2fec5f9a70e1a7",
+    "project/visual/instrument_ui_redesign/src/rtl/av_wave_labels.v": "8c140d8afa9d7b46693f62dabed5ec59425677b245ab0ceae13df1f4f9620a78",
+    "project/visual/instrument_ui_redesign/src/rtl/av_wave_renderer.v": "0f32c7239d47f670a478d42978641d7aecfdb4d48bf1eecb9dd493b137f748bb",
+    "project/visual/instrument_ui_redesign/src/rtl/av_display.v": "0d1fd527e513c9eec55cef275072001072770c43ca17a61b8b8ddffa831fdb08",
+    "project/visual/instrument_ui_redesign/src/rtl/av_top.v": "a264339181ce537132d4902c93fb9206f93498c0b8ea711e00417352661633d3",
+    "project/visual/instrument_ui_redesign/src/rtl/av_serializer_start.v": "605111304eab3aaf1b34398255a46a01fb4feb1d59fde196a0dcc96247fbc7ed",
+    "project/visual/instrument_ui_redesign/src/rtl/av_dvi_tx.v": "274cb1ed4c0fd9c6d727cdf087f4cd025223e5de7e76a44d195ba12141a1a2c5",
+    "project/visual/instrument_ui_redesign/instrument_ui_redesign.gprj": "6bfc76536e2a0f776aa5d9fade30f9c9b6339d6dc2291e0c02a7cd90ff59a754",
+    "project/visual/instrument_ui_redesign/build.tcl": "5109575e46475f627404b33d19691b0d99e11a365eb5c09ac7879a47135d8c6b",
+    "project/audio_integration/include/audio_api_v2.vh": "2216795fc5f248808d6aabd87ee9dae9dd088a8c5fa9b161208d7837b472c341"
+  },
+  "source_lf_sha256": {
+    "project/final_dual_timbre/src/playable_button.v": "50eff281024b2551b3a1b456d84b384564fb928bc0fc045f61a282cb33cf24fc",
+    "project/final_dual_timbre/src/stream_fifo.v": "13ff9b41128bf626f360eeca94fcb86e4974b37b2444fa850e03bb846f424559",
+    "project/final_dual_timbre/src/knob_gain.v": "c33b008b5bf539f8fb0fb6f8e930edbb97c8535ade38e2caf0e81d3ca01a3913",
+    "project/final_dual_timbre/src/adsr_envelope.v": "a39342ebc2910958c8903771353652a1b018d41d71b93ef76266e6bf98c7221d",
+    "project/final_dual_timbre/src/sine_rom.v": "11c050290b2bd5594b9b64f5e23a0e7fbe1576236b6ebc674493e20284481e44",
+    "project/final_dual_timbre/src/note_table.v": "7d8b1c77069598b4737b685b6d5a733faa2e2f6e77e870132be435112cf4a100",
+    "project/final_dual_timbre/src/pluck_note_table.v": "233c4d5f783a448a7bd5e966485fe018b441a42f16e271168ecece68b051e5fe",
+    "project/custom_harmonic_lab/src/custom_harmonic_params.v": "cfc51e8929c76915cad5ca1338ac0627dfeb20e7ee74ae9503f64327236fe6a2",
+    "project/five_timbre_core/src/gallery_keys.v": "10e7ed230ac61d88185fb0bb712034a212ab41830aad343564800668ea215fb7",
+    "project/audio_palette_lab/src/palette_sine.v": "4a9bbdf84525ae5bf8c6df97fa89cbde5b49c3d573153ba7b8fc49bd0e8bb620",
+    "project/audio_core_v1/src/audio_panel.v": "55bafc9b9a47577ab331f426f55d1a9503a88a761fec58a6b955051f6d70032a",
+    "project/audio_parameter_lab/src/audio_parameter_service.v": "528b047f1cba950e96b5dff8a6054ccdabe42df54c9af7f71529ebdba3616974",
+    "project/audio_fx_lab/src/short_room_reverb.v": "6eb46abe6475e578b73ea6e40def648a4a6304b293ac56c8679bb4478099742d",
+    "project/audio_fx_lab/src/vibrato_factor.v": "b4f705871fdc3e32e7f41995fefe62c7322c08de2b98830d7468ae2cdbda2b5e",
+    "project/audio_core_v2/src/audio_v2_state.v": "7455735c777c5db2dab7c139da32acdfd2665a9de560a720cc84dac20e1580e0",
+    "project/audio_core_v2/src/audio_v2_pluck.v": "2e27386418df8885bbfa45ddc5b354056bb003fd234d5e9f59f2518bd9319239",
+    "project/audio_core_v2/src/audio_v2_pool_slot.v": "582233542c72383d999129a5f402ceb96b00b1f372f74da8b24fe9baf3919b4b",
+    "project/audio_core_v2/src/audio_v2_tone.v": "6479cfddd342a3feab10b252b69985285ada18751816aa9d130b88295339b609",
+    "project/audio_core_v2/src/audio_v2_bank_stream.v": "c16f77aa1d9daab1f779ff58d48a3d7596331d8984712cd7dd6b027fab580b86",
+    "project/audio_core_v2/src/audio_v2_core.v": "e6487ff9ca5d027ecdc3668cb453d5af82d1318709c0458fd9f41bd23d0f3a39",
+    "project/audio_integration/rtl/audio_transport_reset.v": "722317c313ed1ef9b51deca855dcb00c9dce7bb82f60827a1d4f40735e9bd099",
+    "project/final_dual_timbre/src/matrix_scanner.v": "1e99c8bab9f2cf07cbaf6ebd7688653a7db1863198d3c20bd80396b4f4f6db38",
+    "project/final_dual_timbre/src/ec11_input.v": "5d3a5b75ec71f07d9abd35df56c89e8638fc956806dfe57bdad7aa6adc01a14f",
+    "project/final_dual_timbre/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+    "project/audio_output_lab/src/output_tx.v": "7cefd245f5c8984ee6b0a4089b8aabd6ee950f242a11c4a6d34fde46933460c3",
+    "project/visual/dvi_colorbar_probe/src/gowin_pll/gowin_pll.v": "72148180b64daada0ffac77b30dc6f18517348d73a1fb6a65c39dfc4fc296d3d",
+    "project/visual/dvi_colorbar_probe/src/gowin_pll/gowin_pll_mod.v": "d9ec902d4a9eca26a7ce0e0fccd5f90efbd1c7eea2fdd184273f1b3d485fbb86",
+    "project/visual/dvi_colorbar_probe/src/pll_init.v": "3fc6bef9a7086f0920bfa47265b1766854a53f6ca1c0f75084eaf6b6ef4d6258",
+    "project/visual/instrument_ui_redesign/src/rtl/dvi_tx_tmds_enc.v": "51d5278dcdfc6a3715a40ea16d3b530f2424339875f65386d87ca860673b30a1",
+    "project/visual/instrument_ui_redesign/src/audio_display.cst": "4281934761d0c5049c566eff50f66194272a502c5df5d221259a5bad1e628806",
+    "project/visual/instrument_ui_redesign/src/audio_display.sdc": "080992e391324b64794d343e5a6440b83d60800514821813bf5274f370c82108",
+    "project/visual/instrument_ui_redesign/src/rtl/av_frame_ram.v": "956e06c5cbe48cbe581d0616692fbd1d6d9f577b773ad20045424abff6b64e44",
+    "project/visual/instrument_ui_redesign/src/rtl/av_timing.v": "7ffb2a0c66809930708e2640726769d2dc4f1542efe9bbe31100b684885be1dd",
+    "project/visual/instrument_ui_redesign/src/rtl/av_page_writer.v": "a1772ec9462c23d6032c08e0f2c4f29ba432cba6e4ea239570e516c711ad39bd",
+    "project/visual/instrument_ui_redesign/src/rtl/av_labels.v": "ec4b633eef492eb3e3e1b511d581193098a00b83ede0cdb4091944684dbc6be0",
+    "project/visual/instrument_ui_redesign/src/rtl/av_font.v": "82026aeeb8ade5bc80e1acd7c53084e35fbecb38ea7df67dd8bf8fe29a782eea",
+    "project/visual/instrument_ui_redesign/src/rtl/av_renderer.v": "4e12ca5ff3dec65e90b250c18e20259b919914290adda81ab8a96792f4cdcfd4",
+    "project/visual/instrument_ui_redesign/src/rtl/av_navigation.v": "3d4caf2f450860bb60b738d4a3e8f2d86dc09ca838b703b2ab6e443994917afb",
+    "project/visual/instrument_ui_redesign/src/rtl/av_wave_capture.v": "fbb9a3c7685823c02c18110b48eaf9dc39d245ce9b143195ebf21ec337b86a3e",
+    "project/visual/instrument_ui_redesign/src/rtl/av_pcm_window.v": "6ae24b2ef60b332bb6d77507d4462f117f8b9fc81ba56f328d2fec5f9a70e1a7",
+    "project/visual/instrument_ui_redesign/src/rtl/av_wave_labels.v": "db56f9c2ed78fd26a39592513a9dadb3d65d5d36a6e8d2d96b48a2280dcdbf2f",
+    "project/visual/instrument_ui_redesign/src/rtl/av_wave_renderer.v": "afa43469bff4cc10b7058d62ce118c298e24bd1de947dec9a2ba5d3d75b102b3",
+    "project/visual/instrument_ui_redesign/src/rtl/av_display.v": "8a8c8da0730bf09c81bd50e224d12cbb9243a349d1b7f71bb16d882ef40ff7ca",
+    "project/visual/instrument_ui_redesign/src/rtl/av_top.v": "f8ea394b5c113e37f1a954f83cd4b3c492b92d0741072f0327fe62dfc261fd19",
+    "project/visual/instrument_ui_redesign/src/rtl/av_serializer_start.v": "0c5b0507bdc3a04c9bc3c2d9ee15bf6751a81fc896d62afc184661cd8952ce1a",
+    "project/visual/instrument_ui_redesign/src/rtl/av_dvi_tx.v": "ab70cfb66ca38df88d6f3c7841eb2a9c5ba760e72cfe54d04b6ffd2856eadc20",
+    "project/visual/instrument_ui_redesign/instrument_ui_redesign.gprj": "830015c73f4ca5113c6dfad24474007895da7e0b1d8269b75a76b177c093b374",
+    "project/visual/instrument_ui_redesign/build.tcl": "ac7e59b55e7d70bb474fa1148eaa8b70232fe523c86f508b94ec6e038f522466",
+    "project/audio_integration/include/audio_api_v2.vh": "06f2c9e3a68171424f2537302186fcc4a9be4962eb88078b33efea679c4ef799"
+  },
+  "board_test": "NOT RUN",
+  "note": "Review CDC/IO constraints and build warnings separately; passing STA is not board acceptance."
+}

@@ -1,0 +1,95 @@
+{
+  "verified_at": "2026-10-15T17:03:15+08:00",
+  "branch": "codex/c-waveform-page",
+  "audio_baseline_commit": "e70e4dbe7de1a61edb8a4f3ea2c7f361bfcce6d2",
+  "rtl_tests": {
+    "av_units_tb": {
+      "pass": true,
+      "markers": [
+        "AV_UNITS_TB_PASS atomic snapshot 16/25-key adapters H/S/R 25-key geometry endpoints colors frame-boundary ownership reset"
+      ],
+      "log_sha256": "b654a87e14b4d55b1aee2405657ad1e79b2de79af350097ad50835c4519a7ef4",
+      "test_source_sha256": "d5c255bb699aa43b5e3348d516c59ff099de45338dd9117335adeffd8e4c5bf9"
+    },
+    "av_video_tb": {
+      "pass": true,
+      "markers": [
+        "AV_VIDEO_TB_PASS 25-key Chinese performance page 2200x1125 active1920x1080 RGB-control latency8"
+      ],
+      "log_sha256": "db8f6b480c62186e71ac43f65c1d4ce09faef9b78891301105007c987364da55",
+      "test_source_sha256": "6c0b7bd7ff388d0e1f9c3343186bc84ce7f009841d2028266df9c3cf1c7ce69f"
+    },
+    "tmds_pipeline_tb": {
+      "pass": true,
+      "markers": [
+        "TMDS_PIPELINE_TB_PASS checked=       4088"
+      ],
+      "log_sha256": "7277bfe40d1b28164032fceddb4362002bcda0a9053edfc26521b1e9b0d355cb",
+      "test_source_sha256": "f14c0e745f4274b8e74d9b7eb84bb38dd0e49d65d267983e156593dfb09c2abc"
+    },
+    "av_wave_units_tb": {
+      "pass": true,
+      "markers": [
+        "AV_WAVE_UNITS_TB_PASS bounce short/long isolation frame-only page 512 exact PCM stereo trigger silence ownership resume"
+      ],
+      "log_sha256": "a91b38ac66c1555541fbbc8f258d1dc9bec5b571bb7c210d5b29f793bb76a883",
+      "test_source_sha256": "08a67f11191aa9f049cb36f04ee9f0afffebb629dcd7092cc46c521b9088a193"
+    },
+    "av_wave_auto_tb": {
+      "pass": true,
+      "markers": [
+        "AV_WAVE_AUTO_TB_PASS six windows exact512 stereo scale peak lastsample negativefullscale silence async-bank backpressure"
+      ],
+      "log_sha256": "436e2acb3f7482ca74d45f44406cb2766620db3f4f8e63cd9f075209eddacd4d",
+      "test_source_sha256": "e03b4ac21b622efa80815261566c60eb0df5722192757c6d6482b3d00d65eaac"
+    },
+    "av_wave_video_tb": {
+      "pass": true,
+      "markers": [
+        "AV_WAVE_VIDEO_TB_PASS complete1920x1080 latency9 page-frame fullscale/zero stereo pixels blanking"
+      ],
+      "log_sha256": "43660b8c628b9b835d0df81aef146fd0968cf689fe0f51303cee594504356fa6",
+      "test_source_sha256": "41b80bc28a004d8389fcd44181c1093a32c64b2c83df78a1d0c50f668d70d1c1"
+    }
+  },
+  "shared_sources_unchanged": {
+    "project/final_dual_timbre/src/playable_button.v": true,
+    "project/final_dual_timbre/src/stream_fifo.v": true,
+    "project/final_dual_timbre/src/knob_gain.v": true,
+    "project/final_dual_timbre/src/adsr_envelope.v": true,
+    "project/final_dual_timbre/src/sine_rom.v": true,
+    "project/final_dual_timbre/src/note_table.v": true,
+    "project/final_dual_timbre/src/pluck_note_table.v": true,
+    "project/custom_harmonic_lab/src/custom_harmonic_params.v": true,
+    "project/five_timbre_core/src/gallery_keys.v": true,
+    "project/audio_palette_lab/src/palette_sine.v": true,
+    "project/audio_core_v1/src/audio_panel.v": true,
+    "project/audio_parameter_lab/src/audio_parameter_service.v": true,
+    "project/audio_fx_lab/src/short_room_reverb.v": true,
+    "project/audio_fx_lab/src/vibrato_factor.v": true,
+    "project/audio_core_v2/src/audio_v2_state.v": true,
+    "project/audio_core_v2/src/audio_v2_pluck.v": true,
+    "project/audio_core_v2/src/audio_v2_pool_slot.v": true,
+    "project/audio_core_v2/src/audio_v2_tone.v": true,
+    "project/audio_core_v2/src/audio_v2_bank_stream.v": true,
+    "project/audio_core_v2/src/audio_v2_core.v": true,
+    "project/audio_integration/rtl/audio_transport_reset.v": true,
+    "project/final_dual_timbre/src/matrix_scanner.v": true,
+    "project/final_dual_timbre/src/ec11_input.v": true,
+    "project/final_dual_timbre/src/pt8211_tx.v": true,
+    "project/audio_output_lab/src/output_tx.v": true,
+    "project/visual/dvi_colorbar_probe/src/gowin_pll/gowin_pll.v": true,
+    "project/visual/dvi_colorbar_probe/src/gowin_pll/gowin_pll_mod.v": true,
+    "project/visual/dvi_colorbar_probe/src/pll_init.v": true,
+    "project/audio_integration/include/audio_api_v2.vh": true
+  },
+  "all_checks_pass": true,
+  "board_observation": "User confirmed waveform implementation can be used after AUTO V2 delivery. This is functional feedback, not full-load/endurance/analog-latency acceptance.",
+  "observed_firmware_sha256": "cb44e5e143be0a8527a31648ca94006d21f5a7ef8a1479ff718b3dd6d1231086",
+  "clean_package_board_test": "Not separately repeated after removal of unused project/test source",
+  "window_samples": 512,
+  "sample_rate_hz": 48076.92307692308,
+  "window_ms": 10.6496,
+  "preview": "Synthetic RTL stimulus; not a board photograph",
+  "flash": "NOT WRITTEN"
+}

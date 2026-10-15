@@ -1,0 +1,25 @@
+/impl/
+/fallback/
+/*.gprj.user
+/*.fs
+**/__pycache__/
+*.pyc
+
+# Local historical experiments are deliberately excluded from this delivery.
+/design/
+/src/rtl/av_scope_capture.v
+/tools/record_wave.py
+/tools/record_validation.py
+/tools/generate_text_roms.py
+/sim/run_phy.ps1
+/sim/av_phy_tb.v
+/validation/timing_attempt_*.json
+/validation/baseline_manifest.json
+/validation/project_check.json
+/validation/preview_check.json
+/validation/rtl_results.json
+/validation/pixel_equivalence.json
+/validation/VALIDATION.md
+/validation/WAVEFORM_VALIDATION.md
+/validation/AUTO_SCALE_2026-10-15.md
+/validation/wave_preview.png

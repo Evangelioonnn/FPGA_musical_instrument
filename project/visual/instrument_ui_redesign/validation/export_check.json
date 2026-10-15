@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "staged_files": 47,
+  "export_files_with_dependencies": 77,
+  "method": "Read only staged Git blobs into a fresh directory; verify relative GPRJ paths and normalized routed-source digests without old projects, impl or fallback.",
+  "forbidden_artifacts": false,
+  "source_verifier": {
+    "source_pass": true,
+    "local_simulations": {
+      "av_units_tb": false,
+      "av_video_tb": false,
+      "tmds_pipeline_tb": false,
+      "av_wave_units_tb": false,
+      "av_wave_auto_tb": false,
+      "av_wave_video_tb": false
+    },
+    "simulation_required": false,
+    "pass": true
+  }
+}
