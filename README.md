@@ -6,6 +6,8 @@
 
 **9月19日夜间任务分支：** 新增[system集成候选](project/system/README.md)、输入RTL、真实观测接口、长音诊断和效果实验；已数字验证，未新增真实上板验收。先读[早上验收指南](docs/project/MORNING_REVIEW.md)，B/C看[system接口](docs/interfaces/SYSTEM_V0.md)。这批工作在`feat/playable-system-v0`，不要求大家直接在A的任务分支共同开发。
 
+**新音色任务分支：** `feat/fm-pluck-rtl`在system v0分支上新增[FM/拨弦单声部RTL](project/experiments/timbre/README.md)及真实RTL试听、数值测试和独立构建。两个离线候选已获认可；新RTL未完成用户上板验收或整机音色切换接入。
+
 ## 从这里接手
 
 | 角色 | 负责什么 | 开工入口 |
@@ -39,7 +41,7 @@
 |---|---|
 | [system](project/system/README.md)、[input](project/input/README.md) | 原声不变的集成候选；输入/配置/观测数字验证，物理输入待绑定 |
 | [lab](project/lab/README.md) | C4/A4长音与静音诊断，复用原音色及输出 |
-| [experiments](project/experiments/README.md) | 16/32容量、短反馈延迟、离线新音色，成熟度分别标注 |
+| [experiments](project/experiments/README.md) | 16/32容量、短反馈延迟、FM/拨弦单声部新音色，成熟度分别标注 |
 | [expression_baseline](project/expression_baseline/README.md) | 当前默认试听；8声部统一原音色、音量/力度/两类延音，自动演示；电脑可接受，板卡杂音待定位 |
 | [instrument](project/instrument/README.md) | 原单声部正弦DDS＋ADSR，默认音色来源 |
 | [expression](project/expression/README.md) | 表情、参数、状态接口候选；其他音色不作为默认，未接外设 |

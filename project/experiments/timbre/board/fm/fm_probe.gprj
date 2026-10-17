@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+  <Template>FPGA</Template><Version>5</Version>
+  <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+  <FileList>
+    <File path="../../fm/src/fm_note_table.v" type="file.verilog" enable="1"/>
+    <File path="../../fm/src/fm_sine_interp.v" type="file.verilog" enable="1"/>
+    <File path="../../fm/src/fm_sine_rom.v" type="file.verilog" enable="1"/>
+    <File path="../../fm/src/fm_voice.v" type="file.verilog" enable="1"/>
+    <File path="../../pluck/src/pluck_note_table.v" type="file.verilog" enable="1"/>
+    <File path="../../pluck/src/pluck_voice.v" type="file.verilog" enable="1"/>
+    <File path="../../shared/timbre_demo.v" type="file.verilog" enable="1"/>
+    <File path="../../shared/timbre_probe.v" type="file.verilog" enable="1"/>
+    <File path="../../../../instrument/src/note_table.v" type="file.verilog" enable="1"/>
+    <File path="../../../../instrument/src/pt8211_tx.v" type="file.verilog" enable="1"/>
+    <File path="../../../../instrument/src/instrument.cst" type="file.cst" enable="1"/>
+    <File path="../../../../instrument/src/instrument.sdc" type="file.sdc" enable="1"/>
+  </FileList>
+</Project>

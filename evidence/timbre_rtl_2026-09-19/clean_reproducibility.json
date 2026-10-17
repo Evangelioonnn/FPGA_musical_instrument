@@ -1,0 +1,18 @@
+{
+  "method": "git checkout-index --all into new directory; no impl, ModelSim work or generated samples copied",
+  "simulation_benches_passed": 5,
+  "board_tested": false,
+  "clean_export_pnr_repeated": false,
+  "audio": {
+    "fm": {
+      "wav_bytes": 721204,
+      "sha256": "501e4ea7982c9da21a196fac2aa422f102788fd9ba67a5bff64192dc428061b3",
+      "byte_identical": true
+    },
+    "pluck": {
+      "wav_bytes": 721204,
+      "sha256": "8a407eae09a224dc39eefc3271d4171a01532b049c6b4a8ce28aa9b2852f34b3",
+      "byte_identical": true
+    }
+  }
+}

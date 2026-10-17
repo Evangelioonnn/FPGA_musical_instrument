@@ -1,0 +1,158 @@
+{
+  "branch": "feat/fm-pluck-rtl",
+  "base_commit": "cac8fe0c7789e09731c7c62ca947c84bf7e96930",
+  "board_tested": false,
+  "builds": {
+    "fm_probe": {
+      "sources": {
+        "project/experiments/timbre/board/fm/fm_probe.gprj": "ccbb366356f6096b743cb7186136c81d0451731d95193b72282feda0a293b6f6",
+        "project/experiments/timbre/board/fm/build.tcl": "0de0da29a22b11a6e9cf1acee2fc225c1ab7339a5ab188a697201b0ff584884c",
+        "project/experiments/timbre/fm/src/fm_note_table.v": "630731dac0438d6df55bb0a9a500e2dcfe0605ecd5138b868e09918a4fe541fe",
+        "project/experiments/timbre/fm/src/fm_sine_interp.v": "6f015813481c5ae7b794d577e524f6846a24de7bd51dfab03ed83d9211699825",
+        "project/experiments/timbre/fm/src/fm_sine_rom.v": "5d850c00aba7c04f9c90748eb86a904e68fae3c811c81dfb11a98d74f37805f3",
+        "project/experiments/timbre/fm/src/fm_voice.v": "5cb080832ec3f1085cbf1cc008fee5c68fd75f3961bdfa0918545419aa43860e",
+        "project/experiments/timbre/pluck/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/experiments/timbre/pluck/src/pluck_voice.v": "676424e3f0d5612678df9fe0ff8401afcc18fd16c18394757288ea220e96ddf9",
+        "project/experiments/timbre/shared/timbre_demo.v": "c5bc045e1dcda5c2f32f6d455a2545e4a5e60137aec2a5f1342ecf9a92d7c5fe",
+        "project/experiments/timbre/shared/timbre_probe.v": "5ed7f9422cfe5679a44063b2cc6fe8ecc20ba860eecef18431c103587b1b49ac",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/instrument/src/instrument.cst": "ab16816b57af3946566f255257fef0f247c9e8dab9b79ff877b083b8e1a386aa",
+        "project/instrument/src/instrument.sdc": "1bab23df2a3b86705304b965bded82f454b96a6d14f15cea2f1049f38d2f6587"
+      },
+      "tool": "Gowin V1.9.12.03",
+      "bitstream_sha256": "da37494e92a7db0e7e3e9af6dead7b709f98a49c3e0d6439c6d6c038049f6ed7",
+      "board_tested": false,
+      "setup_violated_endpoints": 0,
+      "setup_worst_slack_ns": 10.049,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.21,
+      "internal_50mhz_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 1093,
+          "available": 59904
+        },
+        "Register": {
+          "used": 521,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 4,
+          "available": 118
+        },
+        "DSP": {
+          "used": 7,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 5,
+          "available": 297
+        }
+      },
+      "warnings": {
+        "gwsynthesis": [
+          "WARN  (EX3791) : Expression size 26 truncated to fit in target size 16(\"$REPO\\project\\experiments\\timbre\\fm\\src\\fm_sine_interp.v\":34)",
+          "WARN  (EX3791) : Expression size 64 truncated to fit in target size 29(\"$REPO\\project\\experiments\\timbre\\fm\\src\\fm_voice.v\":97)",
+          "WARN  (EX3791) : Expression size 64 truncated to fit in target size 29(\"$REPO\\project\\experiments\\timbre\\fm\\src\\fm_voice.v\":103)",
+          "WARN  (EX3791) : Expression size 64 truncated to fit in target size 32(\"$REPO\\project\\experiments\\timbre\\fm\\src\\fm_voice.v\":110)",
+          "WARN  (NL0002) : The module \"fm_note_table\" instantiated to \"notes\" is swept in optimizing(\"$REPO\\project\\experiments\\timbre\\fm\\src\\fm_voice.v\":35)"
+        ],
+        "pnr": [
+          "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+        ]
+      },
+      "bitstream_local_path": "project/experiments/timbre/board/fm/impl/pnr/fm_probe.fs"
+    },
+    "pluck_probe": {
+      "sources": {
+        "project/experiments/timbre/board/pluck/pluck_probe.gprj": "ccbb366356f6096b743cb7186136c81d0451731d95193b72282feda0a293b6f6",
+        "project/experiments/timbre/board/pluck/build.tcl": "3e87c31b256d5c2fa4054731428a809771024126b72ca5062c040f96bf04a922",
+        "project/experiments/timbre/fm/src/fm_note_table.v": "630731dac0438d6df55bb0a9a500e2dcfe0605ecd5138b868e09918a4fe541fe",
+        "project/experiments/timbre/fm/src/fm_sine_interp.v": "6f015813481c5ae7b794d577e524f6846a24de7bd51dfab03ed83d9211699825",
+        "project/experiments/timbre/fm/src/fm_sine_rom.v": "5d850c00aba7c04f9c90748eb86a904e68fae3c811c81dfb11a98d74f37805f3",
+        "project/experiments/timbre/fm/src/fm_voice.v": "5cb080832ec3f1085cbf1cc008fee5c68fd75f3961bdfa0918545419aa43860e",
+        "project/experiments/timbre/pluck/src/pluck_note_table.v": "c119bd83bf5f70c52219fc3f5b74e09ae100c0c4fd12e97ba9d9c308d2e2fce9",
+        "project/experiments/timbre/pluck/src/pluck_voice.v": "676424e3f0d5612678df9fe0ff8401afcc18fd16c18394757288ea220e96ddf9",
+        "project/experiments/timbre/shared/timbre_demo.v": "c5bc045e1dcda5c2f32f6d455a2545e4a5e60137aec2a5f1342ecf9a92d7c5fe",
+        "project/experiments/timbre/shared/timbre_probe.v": "5ed7f9422cfe5679a44063b2cc6fe8ecc20ba860eecef18431c103587b1b49ac",
+        "project/instrument/src/note_table.v": "fccd2112a06122ccd186103f272548d7134b137161bae7b7eeaf952459e6559c",
+        "project/instrument/src/pt8211_tx.v": "e731cbd285bea34ce3a44caf1a79feedebebf6d9896c0ef639f34b5039ebe46a",
+        "project/instrument/src/instrument.cst": "ab16816b57af3946566f255257fef0f247c9e8dab9b79ff877b083b8e1a386aa",
+        "project/instrument/src/instrument.sdc": "1bab23df2a3b86705304b965bded82f454b96a6d14f15cea2f1049f38d2f6587"
+      },
+      "tool": "Gowin V1.9.12.03",
+      "bitstream_sha256": "6774ab6a3505085ac68b20f1ce7aea0cacafed8ab5fb54a7e7ae031cbc489962",
+      "board_tested": false,
+      "setup_violated_endpoints": 0,
+      "setup_worst_slack_ns": 10.558,
+      "hold_violated_endpoints": 0,
+      "hold_worst_slack_ns": 0.121,
+      "internal_50mhz_pass": true,
+      "resources": {
+        "Logic": {
+          "used": 916,
+          "available": 59904
+        },
+        "Register": {
+          "used": 402,
+          "available": 60780
+        },
+        "BSRAM": {
+          "used": 6,
+          "available": 118
+        },
+        "DSP": {
+          "used": 7,
+          "available": 118
+        },
+        "I/O Port": {
+          "used": 5,
+          "available": 297
+        }
+      },
+      "warnings": {
+        "gwsynthesis": [
+          "WARN  (EX3791) : Expression size 32 truncated to fit in target size 10(\"$REPO\\project\\experiments\\timbre\\pluck\\src\\pluck_voice.v\":55)",
+          "WARN  (EX3791) : Expression size 42 truncated to fit in target size 25(\"$REPO\\project\\experiments\\timbre\\pluck\\src\\pluck_voice.v\":67)",
+          "WARN  (EX3791) : Expression size 36 truncated to fit in target size 24(\"$REPO\\project\\experiments\\timbre\\pluck\\src\\pluck_voice.v\":172)",
+          "WARN  (EX3791) : Expression size 18 truncated to fit in target size 16(\"$REPO\\project\\experiments\\timbre\\pluck\\src\\pluck_voice.v\":196)",
+          "WARN  (NL0002) : The module \"pluck_note_table\" instantiated to \"lookup\" is swept in optimizing(\"$REPO\\project\\experiments\\timbre\\pluck\\src\\pluck_voice.v\":26)"
+        ],
+        "pnr": [
+          "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+        ]
+      },
+      "bitstream_local_path": "project/experiments/timbre/board/pluck/impl/pnr/pluck_probe.fs"
+    }
+  },
+  "simulation": {
+    "fm/sim/fm_control_tb.log": [
+      "FM_CONTROL_TB_PASS range reserved retrigger clamp repeated_off backpressure panic reset release"
+    ],
+    "fm/sim/fm_numeric_tb.log": [
+      "FM_NUMERIC_TB_PASS samples=1092390 max_latency=16"
+    ],
+    "pluck/sim/pluck_tb.log": [
+      "PLUCK_TB_PASS samples=785605 max_latency=12"
+    ],
+    "sim/demo_tb.log": [
+      "DEMO_TB_PASS accepted=41 held_payload_cycles=40"
+    ],
+    "sim/probe_tb.log": [
+      "PROBE_TB_PASS fm_frames=3124 pluck_frames=3124 fm_valid=3124 pluck_valid=3124 fm_latency=17 pluck_latency=13 fm_commands=13 pluck_commands=13"
+    ]
+  },
+  "audio": {
+    "fm": {
+      "file": "evidence/audio/candidate_fm_rtl.wav",
+      "sha256": "501e4ea7982c9da21a196fac2aa422f102788fd9ba67a5bff64192dc428061b3",
+      "normalization": "none; signed16 RTL algorithm output; board probe uses fixed divide by 32"
+    },
+    "pluck": {
+      "file": "evidence/audio/candidate_pluck_rtl.wav",
+      "sha256": "8a407eae09a224dc39eefc3271d4171a01532b049c6b4a8ce28aa9b2852f34b3",
+      "normalization": "none; signed16 RTL algorithm output; board probe uses fixed divide by 32"
+    }
+  }
+}

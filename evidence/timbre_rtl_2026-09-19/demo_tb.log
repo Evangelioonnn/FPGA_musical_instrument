@@ -1,0 +1,7 @@
+# vsim -do run.do -l demo_tb.log -lib work -c demo_tb
+# Loading work.demo_tb
+# Loading work.timbre_demo
+# do run.do
+# DEMO_TB_PASS accepted=41 held_payload_cycles=40
+# ** Note: $finish    : demo_tb.v(44)
+#    Time: 4100 ns  Iteration: 1  Instance: /demo_tb

@@ -1,0 +1,10 @@
+# vsim -do run.do -l fm_numeric_tb.log -lib work -c fm_numeric_tb
+# Loading work.fm_numeric_tb
+# Loading work.fm_voice
+# Loading work.fm_note_table
+# Loading work.fm_sine_interp
+# Loading work.fm_sine_rom
+# do run.do
+# FM_NUMERIC_TB_PASS samples=1092390 max_latency=16
+# ** Note: $finish    : $REPO/project/experiments/timbre/fm/sim/fm_numeric_tb.v(62)
+#    Time: 440035780 ns  Iteration: 1  Instance: /fm_numeric_tb

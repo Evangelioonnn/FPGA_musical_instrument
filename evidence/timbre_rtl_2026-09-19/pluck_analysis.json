@@ -1,0 +1,59 @@
+{
+  "fs": 48076.92307692308,
+  "model": "float64 original .997 fractional-delay recurrence; same xorshift excitation",
+  "notes": [
+    {
+      "note": 36,
+      "requested_hz": 65.40639132514966,
+      "measured_hz": 65.4063903734705,
+      "cents_error": -2.5189883416748058e-05,
+      "model_max_error_lsb": 2.2446616672497157,
+      "model_rms_error_lsb": 0.7778035505400451,
+      "normalized_rms_error": 0.0008512387282907686,
+      "initial_100ms_rms": 2241.7901719663223,
+      "late_100ms_rms": 644.2609123280212
+    },
+    {
+      "note": 60,
+      "requested_hz": 261.6255653005986,
+      "measured_hz": 261.62562554911625,
+      "cents_error": 0.00039867767905819,
+      "model_max_error_lsb": 1.9206583075420554,
+      "model_rms_error_lsb": 0.7952080487158432,
+      "normalized_rms_error": 0.0019835955593849857,
+      "initial_100ms_rms": 1490.0008140792202,
+      "late_100ms_rms": 104.4195931087897
+    },
+    {
+      "note": 84,
+      "requested_hz": 1046.5022612023945,
+      "measured_hz": 1046.5011023368836,
+      "cents_error": -0.0019171182097985763,
+      "model_max_error_lsb": 1.6076604158996588,
+      "model_rms_error_lsb": 0.571924306586324,
+      "normalized_rms_error": 0.0028099578822336773,
+      "initial_100ms_rms": 970.0200109005076,
+      "late_100ms_rms": 1.0
+    }
+  ],
+  "passed": [
+    "low/middle/high pitch within 5 cents",
+    "same-excitation float model <1% relative RMS and <5 LSB max",
+    "natural decay at all three notes",
+    "no raw saturation",
+    "velocity linearity 0.25/0.5/1.0",
+    "overrange velocity equals full scale",
+    "150ms linear release and exact silence"
+  ],
+  "release_duration_ms": 150.0096,
+  "release_max_error_lsb": 1.7958688968673748,
+  "audition": {
+    "file": "pluck_rtl_raw.wav",
+    "samples": 360580,
+    "peak": 7045,
+    "rms": 678.4352074263085,
+    "normalization": "none; direct signed16 RTL",
+    "seventh_slot": "single C4 replaces offline three-note chord"
+  },
+  "tested_peak": 7573
+}

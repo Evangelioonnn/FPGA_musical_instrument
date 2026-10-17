@@ -1,0 +1,18 @@
+# vsim -do run.do -l probe_tb.log -lib work -c probe_tb
+# Loading work.probe_tb
+# Loading work.fm_probe_top
+# Loading work.timbre_probe
+# Loading work.timbre_demo
+# Loading work.pt8211_tx
+# Loading work.pluck_probe_top
+# Loading work.serial_checker
+# Loading work.fm_voice
+# Loading work.fm_note_table
+# Loading work.fm_sine_interp
+# Loading work.fm_sine_rom
+# Loading work.pluck_voice
+# Loading work.pluck_note_table
+# do run.do
+# PROBE_TB_PASS fm_frames=3124 pluck_frames=3124 fm_valid=3124 pluck_valid=3124 fm_latency=17 pluck_latency=13 fm_commands=13 pluck_commands=13
+# ** Note: $finish    : probe_tb.v(70)
+#    Time: 65 ms  Iteration: 0  Instance: /probe_tb
